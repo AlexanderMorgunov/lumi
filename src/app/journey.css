@@ -1,0 +1,558 @@
+.journey-overview {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: #eee7d6;
+  background: #10262c;
+  font:
+    15px/1.4 system-ui,
+    sans-serif;
+}
+.journey-overview *,
+.episode-preview * {
+  box-sizing: border-box;
+}
+.journey-overview button,
+.journey-overview select,
+.episode-preview button {
+  font: inherit;
+  min-height: 44px;
+  color: inherit;
+  cursor: pointer;
+  border: 1px solid #81958780;
+  border-radius: 8px;
+  background: #193a36;
+  padding: 8px 14px;
+}
+.journey-overview button:focus-visible,
+.journey-overview select:focus-visible,
+.episode-preview :focus-visible {
+  outline: 3px solid #ffe9a6;
+  outline-offset: 3px;
+}
+.overview-heading {
+  flex: none;
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  padding: 10px 20px;
+  background: #10272ce8;
+}
+.overview-heading h2 {
+  font:
+    23px Georgia,
+    serif;
+  color: #f7e3b9;
+  margin: 0;
+}
+.overview-heading p {
+  margin: 2px 0 0;
+  font-size: 11px;
+  color: #bccdbd;
+}
+.overview-heading label {
+  margin-left: auto;
+}
+.overview-heading select {
+  width: 245px;
+  max-width: 100%;
+}
+.overview-scene {
+  flex: 1;
+  min-height: 0;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  container-type: size;
+  background: #123039 url('/art/journey/workshop-road-rain-v1.png') center
+    49.383% / 100% 146.286% no-repeat;
+}
+.overview-scene::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0 0 60px #06192066;
+  pointer-events: none;
+}
+.journey-overview .lantern-stop {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: 56px;
+  height: clamp(52px, 15cqh, 110px);
+  min-width: 44px;
+  min-height: 44px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  gap: 0;
+  transform: translate(-50%, -100%);
+  color: #e8ebd8;
+  border: 0;
+  border-radius: 6px;
+  background: transparent;
+  box-shadow: none;
+  z-index: 2;
+}
+.journey-overview .lantern-stop:hover:enabled,
+.journey-overview .lantern-stop:active:enabled,
+.journey-overview .lantern-stop[aria-pressed='true'] {
+  transform: translate(-50%, -100%);
+  background: transparent;
+  border: 0;
+}
+.journey-overview .lantern-stop::after {
+  display: none;
+}
+.road-lamp {
+  height: calc(100% - 20px);
+  width: auto;
+  overflow: visible;
+  filter: drop-shadow(2px 3px 2px #061a22);
+}
+.road-lamp .glass {
+  fill: #1c3134;
+  stroke: #a59675;
+  stroke-width: 2;
+}
+.road-lamp .flame {
+  opacity: 0;
+}
+.completed .road-lamp .glass {
+  fill: #efbd68;
+}
+.completed .road-lamp .flame {
+  opacity: 1;
+}
+.completed .road-lamp {
+  filter: drop-shadow(0 0 12px #ffd57d);
+}
+.journey-overview .lantern-stop.completed::before {
+  content: '';
+  position: absolute;
+  inset: -25px -32px -12px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse, #ffc76f38, transparent 68%);
+  z-index: -1;
+  pointer-events: none;
+}
+.road-number {
+  min-width: 29px;
+  padding: 1px 6px;
+  border-radius: 20px;
+  border: 1px solid #9daf99;
+  background: #17352ee8;
+  color: #f4ead3;
+  font:
+    12px/18px system-ui,
+    sans-serif;
+}
+.completed .road-number {
+  background: #6b5227;
+  border-color: #f4d58f;
+}
+.lantern-stop[aria-current='step'] .road-number {
+  outline: 2px solid #ffe5a4;
+  outline-offset: 3px;
+}
+.road-lumi {
+  position: absolute;
+  width: clamp(47px, 14cqh, 100px);
+  height: clamp(47px, 14cqh, 100px);
+  left: 30px;
+  bottom: -4px;
+  background: url('/art/lumi/lumi-v1.png') 0 0 / 400% 400%;
+  filter: drop-shadow(0 0 12px #ffc75e88);
+  pointer-events: none;
+}
+.lantern-stop[data-side='left'] .road-lumi {
+  left: auto;
+  right: 30px;
+}
+.road-here {
+  position: absolute;
+  left: calc(100% + 6px);
+  bottom: calc(100% - 12px);
+  padding: 2px 6px;
+  color: #ffe6ac;
+  background: #132c2ce0;
+  border-radius: 8px;
+  font: 10px/1.3 system-ui;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.lantern-stop[data-side='left'] .road-here {
+  left: auto;
+  right: calc(100% + 6px);
+}
+.overview-gate {
+  position: absolute;
+  top: 2%;
+  right: 3%;
+  z-index: 3;
+  font-size: 12px !important;
+  background: #102d2ce0 !important;
+}
+.overview-footer {
+  flex: none;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 6px 20px;
+  background: #10272c;
+}
+.overview-footer p {
+  margin: 0;
+  font-size: 12px;
+  color: #d0dcc5;
+}
+.overview-footer .overview-tip {
+  margin-left: auto;
+}
+.overview-footer button {
+  font-size: 13px;
+}
+.episode-preview {
+  position: fixed;
+  inset: auto 20px 20px auto;
+  margin: 0;
+  width: min(370px, calc(100% - 24px));
+  max-width: calc(100% - 24px);
+  max-height: calc(100dvh - 24px);
+  padding: 20px;
+  color: #f1ead6;
+  border: 1px solid #a79d72;
+  border-radius: 16px;
+  background: linear-gradient(145deg, #28443d, #102a2d);
+  box-shadow: 0 20px 80px #0008;
+  font:
+    15px/1.45 system-ui,
+    sans-serif;
+  overflow: auto;
+}
+.episode-preview::backdrop {
+  background: #061a2338;
+}
+.preview-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.preview-heading p {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  color: #e4c991;
+  margin: 0;
+}
+.preview-heading button {
+  min-width: 44px;
+  padding: 4px;
+}
+.episode-preview h3 {
+  font:
+    28px/1.15 Georgia,
+    serif;
+  margin: 12px 0;
+  color: #ffe3ae;
+}
+.episode-preview .journey-topic {
+  color: #efd29a;
+  font-weight: 600;
+}
+.episode-preview .road-state {
+  color: #c9d8c2;
+  font-size: 13px;
+}
+.preview-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+}
+.development-preview {
+  border-top: 1px dashed #abb28b55;
+  margin-top: 16px;
+  padding-top: 8px;
+}
+.development-preview p {
+  color: #b8c9bc;
+  font-size: 12px;
+}
+.episode-preview button.primary {
+  color: #22352d;
+  background: #efcd8d;
+  font-weight: 700;
+}
+.episode-preview button:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+.episode-preview details {
+  margin-top: 14px;
+  border-top: 1px solid #abb28b55;
+}
+.episode-preview summary {
+  min-height: 44px;
+  padding: 12px 0;
+  cursor: pointer;
+}
+.overview-future {
+  flex: 1;
+  display: grid;
+  place-content: center;
+  padding: 24px;
+  text-align: center;
+  background:
+    linear-gradient(#0c2835aa, #0c2835dd),
+    url('/art/prologue/valley-v1.png') center / cover;
+  overflow: auto;
+}
+.overview-future h3 {
+  font: 32px Georgia;
+  color: #efdaaa;
+}
+.overview-future p {
+  max-width: 480px;
+}
+.rain-layer {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+.rain-layer i {
+  position: absolute;
+  top: -40px;
+  left: var(--drop-x);
+  width: 1px;
+  height: 28px;
+  opacity: 0.38;
+  background: linear-gradient(transparent, #d6ecf7, transparent);
+  transform: rotate(12deg);
+  animation: journey-rain var(--fall-time) linear var(--fall-delay) infinite;
+}
+@keyframes journey-rain {
+  from {
+    transform: translate(0, -40px) rotate(12deg);
+  }
+  to {
+    transform: translate(-70px, calc(100cqh + 80px)) rotate(12deg);
+  }
+}
+[data-weather='paused'] .rain-layer i {
+  animation-play-state: paused;
+}
+[data-weather='still'] .rain-layer i {
+  animation: none;
+  top: var(--drop-y);
+}
+@media (prefers-reduced-motion: reduce) {
+  .rain-layer i {
+    animation: none;
+    top: var(--drop-y);
+  }
+}
+@media (max-height: 520px) and (min-width: 621px) {
+  .overview-heading {
+    padding: 5px 12px;
+    gap: 12px;
+  }
+  .overview-heading h2 {
+    font-size: 19px;
+  }
+  .overview-heading p {
+    display: none;
+  }
+  .overview-heading select {
+    width: 230px;
+  }
+  .overview-footer {
+    padding: 4px 12px;
+  }
+  .overview-footer .overview-tip {
+    font-size: 11px;
+  }
+  .episode-preview {
+    padding: 14px;
+    width: 340px;
+    inset: auto 12px 12px auto;
+  }
+  .episode-preview h3 {
+    font-size: 23px;
+    margin: 8px 0;
+  }
+  .episode-preview p {
+    margin: 8px 0;
+  }
+}
+@media (max-aspect-ratio: 1/1) {
+  .overview-scene {
+    background-image: url('/art/journey/workshop-road-portrait-rain-v1.png');
+    background-position: center;
+    background-size: 100% 100%;
+  }
+  .journey-overview .lantern-stop {
+    left: var(--px);
+    top: var(--py);
+    height: clamp(52px, 11cqh, 90px);
+    width: 48px;
+  }
+  .road-lumi {
+    width: clamp(48px, 10cqh, 82px);
+    height: clamp(48px, 10cqh, 82px);
+    left: 23px;
+  }
+  .lantern-stop[data-side='left'] .road-lumi {
+    right: 23px;
+  }
+  .road-here {
+    display: none;
+  }
+  .overview-gate {
+    right: 4%;
+    top: 3%;
+    max-width: 160px;
+  }
+}
+@media (max-width: 620px) {
+  .overview-heading {
+    padding: 8px 12px;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .overview-heading h2 {
+    font-size: 21px;
+  }
+  .overview-heading p {
+    display: none;
+  }
+  .overview-heading > button {
+    margin-left: auto;
+    font-size: 12px;
+  }
+  .overview-heading label {
+    order: 3;
+    width: 100%;
+    margin: 0;
+  }
+  .overview-heading select {
+    width: 100%;
+    min-height: 36px;
+    padding: 5px 8px;
+    font-size: 13px;
+  }
+  .overview-footer {
+    gap: 8px;
+    padding: 6px 12px;
+  }
+  .overview-footer p {
+    font-size: 11px;
+    max-width: 155px;
+  }
+  .overview-footer .overview-tip {
+    display: none;
+  }
+  .overview-footer button {
+    margin-left: auto;
+    padding: 6px 10px;
+  }
+  .episode-preview {
+    inset: auto 12px 12px;
+    width: calc(100% - 24px);
+    max-height: min(65dvh, 540px);
+    padding: 16px;
+  }
+}
+.episode-preview {
+  box-sizing: border-box;
+  scroll-padding: 64px 0 16px;
+}
+.episode-preview .preview-heading {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background: #213e38;
+}
+.road-lumi {
+  min-width: 58px;
+  min-height: 58px;
+}
+.overview-gate {
+  top: auto;
+  bottom: 3%;
+}
+.journey-road-dialog {
+  width: 100%;
+  max-width: 100%;
+  height: 100dvh;
+  max-height: 100dvh;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  overflow: hidden;
+}
+.overview-footer .overview-info {
+  min-width: 44px;
+  width: 44px;
+  padding: 4px;
+  flex: none;
+  margin-left: 0;
+}
+@media (max-height: 520px) and (min-width: 621px) {
+  .title-content.returning .lumi-portrait {
+    width: 60px;
+    height: 60px;
+  }
+}
+.journey-overview .lantern-stop {
+  top: clamp(54px, var(--y), calc(100% - 8px));
+}
+@media (max-aspect-ratio: 1/1) {
+  .journey-overview .lantern-stop {
+    top: var(--py);
+  }
+}
+@media (orientation: landscape) and (max-width: 620px) {
+  .overview-heading {
+    flex-wrap: nowrap;
+    padding: 5px 10px;
+  }
+  .overview-heading h2 {
+    font-size: 16px;
+  }
+  .overview-heading label {
+    order: 0;
+    flex: 1;
+    width: auto;
+    min-width: 0;
+  }
+  .overview-heading select {
+    width: 100%;
+  }
+  .overview-heading > button {
+    font-size: 0;
+    min-width: 44px;
+    padding: 4px;
+  }
+  .overview-heading > button::after {
+    content: '←';
+    font-size: 20px;
+  }
+  .overview-footer {
+    padding: 4px 10px;
+  }
+}
+.episode-preview::backdrop {
+  backdrop-filter: none;
+}
+@media (max-width: 900px) and (min-aspect-ratio: 1/1) {
+  .journey-overview .lantern-stop {
+    width: 44px;
+  }
+}

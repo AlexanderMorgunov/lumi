@@ -1,0 +1,11 @@
+node_modules
+dist
+coverage
+test-results
+playwright-report
+artifacts
+vendor
+.agents/skills/vercel-react-best-practices
+.agents/skills/vitest
+.agents/skills/phaser-core
+package-lock.json

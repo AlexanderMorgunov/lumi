@@ -1,0 +1,1752 @@
+{
+  "patches": [
+    {
+      "clip": {
+        "id": "chapter-02-01-marta-task-01",
+        "speaker": "marta",
+        "sourceText": "Я Марта, мастер фонарей. Помоги мне подписать мою бирку.",
+        "spokenText": "Я Марта, мастер фонарей. Помоги мне подписать мою бирку.",
+        "voiceId": "XrExE9yKIg1WjnnlVkGX",
+        "file": "audio/station/marta/chapter-02-01-marta-task-01-3e2b6c2b1e49.mp3",
+        "requestHash": "3e2b6c2b1e49f0b28227fbdc9fcf7bd18f797e5600aecf1c995a93aa386d4ab7",
+        "audioSha256": "a75a5efdb31bc04c197e8d9b50f0fa9d24eaa3562cf6ac3aeb094ef63f67d675",
+        "sourceAudioSha256": "e49c629a149dc65a84fa3342be13db332110c7dcd6744f27a22ba9505287ce4d",
+        "gainDb": -2.1799999999999997,
+        "duration": 4.091625
+      },
+      "assembly": {
+        "segments": [
+          {
+            "id": "marta-intro-short",
+            "rawText": "Я Марта, мастер фонарей. Помоги мне подписать мою бирку.",
+            "text": "Я Марта, мастер фонарей. Помоги мне подписать мою бирку.",
+            "languageCode": "ru",
+            "gapMs": 0,
+            "requestHash": "2a157010be316af938db603fda72be978cf2efc2f0685f04fa1a5f60096fce6a"
+          }
+        ],
+        "requests": [
+          {
+            "id": "station-repair-marta-intro-short-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "Я Марта, мастер фонарей. Помоги мне подписать мою бирку.",
+            "voiceId": "XrExE9yKIg1WjnnlVkGX"
+          }
+        ],
+        "trim": "outer-silence-48dB-keep40ms",
+        "sampleRate": 24000,
+        "gapAfterLastMs": 100
+      },
+      "review": "generated-awaiting-listening"
+    },
+    {
+      "clip": {
+        "id": "chapter-02-01-success-01",
+        "speaker": "lumi",
+        "sourceText": "I am Lumi. Я Люми. Это моё имя — его и запишем на бирке!",
+        "spokenText": "I am Lumi. Я Люми. Это моё имя — его и запишем на бирке!",
+        "voiceId": "zvm1P65eFt40xSwMli2k",
+        "file": "audio/station/lumi/chapter-02-01-success-01-94cad035bc65.mp3",
+        "requestHash": "94cad035bc65eb0112f7329bbb0bd9d8e0ddd53c10860c03ca43f5afc7093562",
+        "audioSha256": "0ab92fdd206934237e5915ff323f725811ee93ffa8af25e982f1fc446f74d58e",
+        "sourceAudioSha256": "c2cc5c25af917bb8f2d7701d5d9d90ab9a37640e8d90468d6dbfe74948efc96b",
+        "gainDb": -4.34,
+        "duration": 4.682458
+      },
+      "assembly": {
+        "segments": [
+          {
+            "id": "lumi-garry-en",
+            "rawText": "I am Lumi. ",
+            "text": "I am Lumi.",
+            "languageCode": "en",
+            "gapMs": 180,
+            "requestHash": "0ce369ccf2d56ee373c62a932a52a4fb5772894b0d43f0908e9bf7f891c335bf"
+          },
+          {
+            "id": "lumi-garry-ru",
+            "rawText": "Я Люми. Это моё имя — его и запишем на бирке!",
+            "text": "Я Люми. Это моё имя — его и запишем на бирке!",
+            "languageCode": "ru",
+            "gapMs": 0,
+            "requestHash": "a39d6dee5e895c11d580e82ba4b310160480bd88d32570a0336b446ee30d6532"
+          }
+        ],
+        "requests": [
+          {
+            "id": "station-repair-lumi-garry-en-01",
+            "kind": "speech",
+            "languageCode": "en",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "I am Lumi.",
+            "voiceId": "zvm1P65eFt40xSwMli2k"
+          },
+          {
+            "id": "station-repair-lumi-garry-ru-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "Я Люми. Это моё имя — его и запишем на бирке!",
+            "voiceId": "zvm1P65eFt40xSwMli2k"
+          }
+        ],
+        "trim": "outer-silence-48dB-keep40ms",
+        "sampleRate": 24000,
+        "gapAfterLastMs": 100
+      },
+      "review": "generated-awaiting-listening"
+    },
+    {
+      "clip": {
+        "id": "chapter-02-02-tik-feedback-identity-stranger",
+        "speaker": "tik",
+        "sourceText": "Марта уже знает обоих. Здесь a помогает назвать вид: фонарь или робот. Знакомство с собеседником не отменяет артикль в таком описании.",
+        "spokenText": "Марта уже знает обоих. Здесь a помогает назвать вид: фонарь или робот. Знакомство с собеседником не отменяет артикль в таком описании.",
+        "voiceId": "bIHbv24MWmeRgasZH58o",
+        "file": "audio/station/tik/chapter-02-02-tik-feedback-identity-stranger-9dd22316811d.mp3",
+        "requestHash": "9dd22316811d1ffaaa7d664756225dee244c65b73e1c69cd7179c64300889847",
+        "audioSha256": "c14fbc45a733cb0c5601ad004757406da10fdf9a822b5f800e6a5bd71e54b55f",
+        "sourceAudioSha256": "e26c27fd6d2b769ad151c8b65b028ce3fc4cca239ed4371b64f7a16f62f53e80",
+        "gainDb": -3.8200000000000003,
+        "duration": 10.26475
+      },
+      "assembly": {
+        "segments": [
+          {
+            "id": "shared-b35b6122aa0da2fc",
+            "rawText": "Марта уже знает обоих. Здесь ",
+            "text": "Марта уже знает обоих. Здесь",
+            "languageCode": "ru",
+            "gapMs": 100,
+            "requestHash": "755ea96044424ee4cc3eac63c5b05501d4db03bd4a07d776d9f1e35cf82f3476"
+          },
+          {
+            "id": "shared-762843e248dcc5cb",
+            "rawText": "a",
+            "text": "a lantern.",
+            "languageCode": "en",
+            "extractPrefix": "a",
+            "gapMs": 100,
+            "requestHash": "9aa475b789dbed762969c9c669c6dcbc5d0e18249d525a284fb5a3b796540fd5",
+            "extraction": {
+              "start": 0,
+              "end": 0.1,
+              "alignmentSha256": "3a4897d55700cb4597d074f98a617c2cbcf605ff931111d79ae7bc733f2f8024"
+            }
+          },
+          {
+            "id": "shared-18193a42b1d69c06",
+            "rawText": " помогает назвать вид: фонарь или робот. Знакомство с собеседником не отменяет артикль в таком описании.",
+            "text": "помогает назвать вид: фонарь или робот. Знакомство с собеседником не отменяет артикль в таком описании.",
+            "languageCode": "ru",
+            "gapMs": 0,
+            "requestHash": "6f914a0448f0e327d2bad439c37aa58101a251339c58e9ceaea59434090235c1"
+          }
+        ],
+        "requests": [
+          {
+            "id": "station-repair-shared-b35b6122aa0da2fc-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "Марта уже знает обоих. Здесь",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-shared-762843e248dcc5cb-01",
+            "kind": "speech",
+            "languageCode": "en",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "a lantern.",
+            "voiceId": "bIHbv24MWmeRgasZH58o",
+            "withTimestamps": true
+          },
+          {
+            "id": "station-repair-shared-18193a42b1d69c06-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "помогает назвать вид: фонарь или робот. Знакомство с собеседником не отменяет артикль в таком описании.",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          }
+        ],
+        "trim": "outer-silence-48dB-keep40ms",
+        "sampleRate": 24000,
+        "gapAfterLastMs": 100
+      },
+      "review": "generated-awaiting-listening"
+    },
+    {
+      "clip": {
+        "id": "chapter-02-02-tik-feedback-identity-after-am",
+        "speaker": "tik",
+        "sourceText": "Не всегда. В I am Lumi после am стоит имя без артикля. В I am a lantern слово lantern называет один предмет — здесь нужен a.",
+        "spokenText": "Не всегда. В I am Lumi после am стоит имя без артикля. В I am a lantern слово lantern называет один предмет — здесь нужен a.",
+        "voiceId": "bIHbv24MWmeRgasZH58o",
+        "file": "audio/station/tik/chapter-02-02-tik-feedback-identity-after-am-a723025e0cad.mp3",
+        "requestHash": "a723025e0cadf0efde724420b5aa7994e700421b1c5f93dccffdb68325591dec",
+        "audioSha256": "e056dc950a2802567846a7d7ec2553bf9a94e6024ec3a591fa1ebfa2a66e22bb",
+        "sourceAudioSha256": "00a1d7a4570747530a15eb0ed3af1d22c7e783bfc6e3b6cf420e5596474ba1a9",
+        "gainDb": -3.3999999999999986,
+        "duration": 13.611417
+      },
+      "assembly": {
+        "segments": [
+          {
+            "id": "shared-d8d5ce69b973d424",
+            "rawText": "Не всегда. В ",
+            "text": "Не всегда. В",
+            "languageCode": "ru",
+            "gapMs": 100,
+            "requestHash": "5283d8683839440e72600decd26ada03da40bd5e3b36fc2a824e340da5b969ff"
+          },
+          {
+            "id": "shared-3212d4159fee9654",
+            "rawText": "I am Lumi",
+            "text": "I am Lumi.",
+            "languageCode": "en",
+            "gapMs": 100,
+            "requestHash": "ca328a2b220b58dfaa0c65d263bc96a170855f323eb9c704e1de3923f6aa11db"
+          },
+          {
+            "id": "shared-a83736f41dab4e9b",
+            "rawText": " после ",
+            "text": "после",
+            "languageCode": "ru",
+            "gapMs": 100,
+            "requestHash": "3ee657faeed693d34ec82d5459de2ee3e0bf38b02d1d1964d728f6b0f8a17fd4"
+          },
+          {
+            "id": "shared-f096e589f81f3d4d",
+            "rawText": "am",
+            "text": "am.",
+            "languageCode": "en",
+            "gapMs": 100,
+            "requestHash": "beee4d059a19dfe4cebfac0d8db8faff54e890c38f19fc05feaa1fad6f2de5cc"
+          },
+          {
+            "id": "shared-3e43400c7024d4ad",
+            "rawText": " стоит имя без артикля. В ",
+            "text": "стоит имя без артикля. В",
+            "languageCode": "ru",
+            "gapMs": 100,
+            "requestHash": "e997ac0a4f43afd3bfc1c9b18fafe88efdcf14ffc6341583ebf696e2b966ec8e"
+          },
+          {
+            "id": "shared-21b0848b481d8ae7",
+            "rawText": "I am a lantern",
+            "text": "I am a lantern.",
+            "languageCode": "en",
+            "gapMs": 100,
+            "requestHash": "e7c88cafccd7719a45c91ba6dde6876e0ec27b534688759106c378afd17cba9c"
+          },
+          {
+            "id": "shared-ea0d345d524faff6",
+            "rawText": " слово ",
+            "text": "слово",
+            "languageCode": "ru",
+            "gapMs": 100,
+            "requestHash": "560369db960c235ec0f194355d11a6759a4db5d0de9d21f54af4a706b544fad6"
+          },
+          {
+            "id": "shared-bae680c7c4519327",
+            "rawText": "lantern",
+            "text": "lantern.",
+            "languageCode": "en",
+            "gapMs": 100,
+            "requestHash": "dd70c37d26021faee8e1e1e8daa2180151ad9eb3d2e119fac022659c540e262f"
+          },
+          {
+            "id": "shared-7747d03913ad5d46",
+            "rawText": " называет один предмет — здесь нужен ",
+            "text": "называет один предмет — здесь нужен",
+            "languageCode": "ru",
+            "gapMs": 100,
+            "requestHash": "8c0a9a394c0fde0214dcb05277953e6f75684f637dd7b76edc822303c1af94e5"
+          },
+          {
+            "id": "shared-762843e248dcc5cb",
+            "rawText": "a.",
+            "text": "a lantern.",
+            "languageCode": "en",
+            "extractPrefix": "a",
+            "gapMs": 0,
+            "requestHash": "9aa475b789dbed762969c9c669c6dcbc5d0e18249d525a284fb5a3b796540fd5",
+            "extraction": {
+              "start": 0,
+              "end": 0.1,
+              "alignmentSha256": "3a4897d55700cb4597d074f98a617c2cbcf605ff931111d79ae7bc733f2f8024"
+            }
+          }
+        ],
+        "requests": [
+          {
+            "id": "station-repair-shared-d8d5ce69b973d424-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "Не всегда. В",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-shared-3212d4159fee9654-01",
+            "kind": "speech",
+            "languageCode": "en",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "I am Lumi.",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-shared-a83736f41dab4e9b-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "после",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-shared-f096e589f81f3d4d-01",
+            "kind": "speech",
+            "languageCode": "en",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "am.",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-shared-3e43400c7024d4ad-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "стоит имя без артикля. В",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-shared-21b0848b481d8ae7-01",
+            "kind": "speech",
+            "languageCode": "en",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "I am a lantern.",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-shared-ea0d345d524faff6-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "слово",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-shared-bae680c7c4519327-01",
+            "kind": "speech",
+            "languageCode": "en",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "lantern.",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-shared-7747d03913ad5d46-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "называет один предмет — здесь нужен",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-shared-762843e248dcc5cb-01",
+            "kind": "speech",
+            "languageCode": "en",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "a lantern.",
+            "voiceId": "bIHbv24MWmeRgasZH58o",
+            "withTimestamps": true
+          }
+        ],
+        "trim": "outer-silence-48dB-keep40ms",
+        "sampleRate": 24000,
+        "gapAfterLastMs": 100
+      },
+      "review": "generated-awaiting-listening"
+    },
+    {
+      "clip": {
+        "id": "chapter-02-01-task-02",
+        "speaker": "tik",
+        "sourceText": "I — личное местоимение. Оно значит «я» и обозначает того, кто говорит. В сообщении, которое мы собираем, Люми говорит о себе. I всегда пишется с большой буквы.",
+        "spokenText": "I — личное местоимение. Оно значит «я» и обозначает того, кто говорит. В сообщении, которое мы собираем, Люми говорит о себе. I всегда пишется с большой буквы.",
+        "voiceId": "bIHbv24MWmeRgasZH58o",
+        "file": "audio/station/tik/chapter-02-01-task-02-a8fe9222952a.mp3",
+        "requestHash": "a8fe9222952a2d8cf6093575905bf933eb9633527e5b891ee938b68c33656137",
+        "audioSha256": "d0e957c0a1dc91379f8501363db46542c909065a8b06f241404a75d163838803",
+        "sourceAudioSha256": "0d137e74466bd1145b5e25fe029a3d0e1bf902de50bebf0cba786d66997d12c1",
+        "gainDb": -3.3999999999999986,
+        "duration": 13.580583
+      },
+      "assembly": {
+        "segments": [
+          {
+            "id": "tik-i-tail-en-v2",
+            "rawText": "I",
+            "text": "The English pronoun is... I.",
+            "languageCode": "en",
+            "gapMs": 140,
+            "requestHash": "e5d1805ac29b4c69e511986e522c6827b05ccf8b5400836d99240356604d18d3",
+            "extractSuffix": "I",
+            "extraction": {
+              "start": 2.2,
+              "end": 3.2,
+              "audioSha256": "726b177b0637c963945f3ea3d84e878b9952172c72376f03cd8cd5b0c7f5084f",
+              "alignmentSha256": "ec48cdbe137eeae478afe91e86a8fed05e79fd8c5dbaf82429d0a736c62e06c0",
+              "boundaryPeakDb": -80.76657360480111,
+              "method": "quiet-gap-to-end-no-silence-trimming"
+            }
+          },
+          {
+            "id": "tik-i-rule-ru",
+            "rawText": " — личное местоимение. Оно значит «я» и обозначает того, кто говорит. В сообщении, которое мы собираем, Люми говорит о себе. ",
+            "text": "личное местоимение. Оно значит «я» и обозначает того, кто говорит. В сообщении, которое мы собираем, Люми говорит о себе. ",
+            "languageCode": "ru",
+            "gapMs": 240,
+            "requestHash": "8636d936b797f4612d159c4e76bca147997dd00dfc30e2e1c687b92fe52d0ab3"
+          },
+          {
+            "id": "tik-i-tail-en-v2",
+            "rawText": "I",
+            "text": "The English pronoun is... I.",
+            "languageCode": "en",
+            "gapMs": 100,
+            "requestHash": "e5d1805ac29b4c69e511986e522c6827b05ccf8b5400836d99240356604d18d3",
+            "extractSuffix": "I",
+            "extraction": {
+              "start": 2.2,
+              "end": 3.2,
+              "audioSha256": "726b177b0637c963945f3ea3d84e878b9952172c72376f03cd8cd5b0c7f5084f",
+              "alignmentSha256": "ec48cdbe137eeae478afe91e86a8fed05e79fd8c5dbaf82429d0a736c62e06c0",
+              "boundaryPeakDb": -80.76657360480111,
+              "method": "quiet-gap-to-end-no-silence-trimming"
+            }
+          },
+          {
+            "id": "tik-i-capital-ru",
+            "rawText": " всегда пишется с большой буквы.",
+            "text": "всегда пишется с большой буквы.",
+            "languageCode": "ru",
+            "gapMs": 0,
+            "requestHash": "8178db7dafe4508bb6f38b835ac7a75254d800610c6dd7427d39d07100bffba9"
+          }
+        ],
+        "requests": [
+          {
+            "id": "station-repair-tik-i-tail-en-v2-01",
+            "kind": "speech",
+            "languageCode": "en",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "The English pronoun is... I.",
+            "voiceId": "bIHbv24MWmeRgasZH58o",
+            "withTimestamps": true
+          },
+          {
+            "id": "station-repair-tik-i-rule-ru-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "личное местоимение. Оно значит «я» и обозначает того, кто говорит. В сообщении, которое мы собираем, Люми говорит о себе. ",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-tik-i-tail-en-v2-01",
+            "kind": "speech",
+            "languageCode": "en",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "The English pronoun is... I.",
+            "voiceId": "bIHbv24MWmeRgasZH58o",
+            "withTimestamps": true
+          },
+          {
+            "id": "station-repair-tik-i-capital-ru-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "всегда пишется с большой буквы.",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          }
+        ],
+        "trim": "suffix:quiet-gap-to-end;others:outer-silence-48dB-keep40ms",
+        "sampleRate": 24000,
+        "gapAfterLastMs": 100
+      },
+      "review": "generated-awaiting-listening"
+    },
+    {
+      "clip": {
+        "id": "chapter-02-02-task-03",
+        "speaker": "marta",
+        "sourceText": "Lantern можно посчитать: один фонарь, два фонаря. Когда говорим, что ты один из фонарей, перед этим словом нужен неопределённый артикль. Здесь a: lantern начинается с согласного звука.",
+        "spokenText": "Lantern можно посчитать: один фонарь, два фонаря. Когда говорим, что ты один из фонарей, перед этим словом нужен неопределённый артикль. Здесь a: lantern начинается с согласного звука.",
+        "voiceId": "XrExE9yKIg1WjnnlVkGX",
+        "file": "audio/station/marta/chapter-02-02-task-03-40da6b7e02e8.mp3",
+        "requestHash": "40da6b7e02e8f4ba87019df88868e3d177b001f3080fd560b0a05039baadc657",
+        "audioSha256": "68835cf303f3613244bc0b65879cef04346698b11d327bad4ee20362ff7c6e41",
+        "sourceAudioSha256": "da9dd82bc184b69de7e4b5071da8310919612626540e9e55fbcacb6107b1fa29",
+        "gainDb": -1.7699999999999996,
+        "duration": 14.641958
+      },
+      "assembly": {
+        "segments": [
+          {
+            "id": "marta-lantern-en",
+            "rawText": "Lantern",
+            "text": "Lantern.",
+            "languageCode": "en",
+            "gapMs": 80,
+            "requestHash": "243a96537dbccd9f5fd654fd88769107e989d384789ebbad5b53b72427a69d68"
+          },
+          {
+            "id": "marta-a-rule-ru",
+            "rawText": " можно посчитать: один фонарь, два фонаря. Когда говорим, что ты один из фонарей, перед этим словом нужен неопределённый артикль. Здесь ",
+            "text": "можно посчитать: один фонарь, два фонаря. Когда говорим, что ты один из фонарей, перед этим словом нужен неопределённый артикль. Здесь",
+            "languageCode": "ru",
+            "gapMs": 80,
+            "requestHash": "daa69594d143d3a165ebbeb0fe351b3ac8f800cfe4ce669dae372066475ccaa3"
+          },
+          {
+            "id": "marta-a-context-en",
+            "rawText": "a: lantern",
+            "text": "a lantern.",
+            "languageCode": "en",
+            "gapMs": 80,
+            "requestHash": "031aaa728e664b5c99e6f20ad31c4b1f9559c3f5677eca77cad1f167d1a9301c",
+            "withTimestamps": true
+          },
+          {
+            "id": "marta-a-sound-ru",
+            "rawText": " начинается с согласного звука.",
+            "text": "начинается с согласного звука.",
+            "languageCode": "ru",
+            "gapMs": 0,
+            "requestHash": "dacd5c5dafc3b7607dfb8cfecb707c9aee80055a21ebb5fd50613162553bcbfa"
+          }
+        ],
+        "requests": [
+          {
+            "id": "station-repair-marta-lantern-en-01",
+            "kind": "speech",
+            "languageCode": "en",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "Lantern.",
+            "voiceId": "XrExE9yKIg1WjnnlVkGX"
+          },
+          {
+            "id": "station-repair-marta-a-rule-ru-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "можно посчитать: один фонарь, два фонаря. Когда говорим, что ты один из фонарей, перед этим словом нужен неопределённый артикль. Здесь",
+            "voiceId": "XrExE9yKIg1WjnnlVkGX"
+          },
+          {
+            "id": "station-repair-marta-a-context-en-01",
+            "kind": "speech",
+            "languageCode": "en",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "a lantern.",
+            "voiceId": "XrExE9yKIg1WjnnlVkGX",
+            "withTimestamps": true
+          },
+          {
+            "id": "station-repair-marta-a-sound-ru-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "начинается с согласного звука.",
+            "voiceId": "XrExE9yKIg1WjnnlVkGX"
+          }
+        ],
+        "trim": "outer-silence-48dB-keep40ms",
+        "sampleRate": 24000,
+        "gapAfterLastMs": 100
+      },
+      "review": "generated-awaiting-listening"
+    },
+    {
+      "clip": {
+        "id": "chapter-02-01-task-04",
+        "speaker": "tik",
+        "sourceText": "Be может описывать состояние, а не только действие. В названии темы пишут to be, но в нашем предложении нужна форма am. Подлежащее — тот, о ком сообщаем; здесь это I.",
+        "spokenText": "Be может описывать состояние, а не только действие. В названии темы пишут to be, но в нашем предложении нужна форма am. Подлежащее — тот, о ком сообщаем; здесь это I.",
+        "voiceId": "bIHbv24MWmeRgasZH58o",
+        "file": "audio/station/tik/chapter-02-01-task-04-2d20e05571f6.mp3",
+        "requestHash": "2d20e05571f69d4087b6d3c3efe313ff2c3f4b88d7cf3b308e5475f645716e8a",
+        "audioSha256": "34d069dd61ff78694e58ecd5e6e89811fca10e08f48d89079b3f7816dfe5dfcc",
+        "sourceAudioSha256": "78dd4fdae7e3bc77745635c45c78e72ae36335cb73e65fa9c6446594c39dd030",
+        "gainDb": -3.09,
+        "duration": 14.948583
+      },
+      "assembly": {
+        "segments": [
+          {
+            "id": "shared-962e984611cad7d7",
+            "rawText": "Be",
+            "text": "Be.",
+            "languageCode": "en",
+            "gapMs": 100,
+            "requestHash": "865f595269e64cbe131ff4a4edc19f1022e4a5652ecd03aca9c2fa441e8d84ee"
+          },
+          {
+            "id": "shared-95340c2f3ba74c45",
+            "rawText": " может описывать состояние, а не только действие. В названии темы пишут ",
+            "text": "может описывать состояние, а не только действие. В названии темы пишут",
+            "languageCode": "ru",
+            "gapMs": 100,
+            "requestHash": "653164a14b402f45a54d974401405c8965f88c54df2f056f64235f78eaf877ed"
+          },
+          {
+            "id": "shared-3cfbb9d533809bdf",
+            "rawText": "to be,",
+            "text": "to be.",
+            "languageCode": "en",
+            "gapMs": 100,
+            "requestHash": "2e2ebefabde1a4876e3d53c39ce2c551d717c04ce0b33abc1f29e1107067411e"
+          },
+          {
+            "id": "shared-366b1f7e0f4d80a8",
+            "rawText": " но в нашем предложении нужна форма ",
+            "text": "но в нашем предложении нужна форма",
+            "languageCode": "ru",
+            "gapMs": 100,
+            "requestHash": "5cfc7d6153260842429bb21f1effa1c71a9c3967eb674c4b17d58f18dde2632a"
+          },
+          {
+            "id": "shared-f096e589f81f3d4d",
+            "rawText": "am.",
+            "text": "am.",
+            "languageCode": "en",
+            "gapMs": 100,
+            "requestHash": "beee4d059a19dfe4cebfac0d8db8faff54e890c38f19fc05feaa1fad6f2de5cc"
+          },
+          {
+            "id": "shared-0cf42b371d9191be",
+            "rawText": " Подлежащее — тот, о ком сообщаем; здесь это ",
+            "text": "Подлежащее — тот, о ком сообщаем; здесь это",
+            "languageCode": "ru",
+            "gapMs": 100,
+            "requestHash": "c190aa95143c1112c87921140533a8bb42470f01e6f56cec33fbe643968f5392"
+          },
+          {
+            "id": "tik-i-tail-en-v2",
+            "rawText": "I.",
+            "text": "The English pronoun is... I.",
+            "languageCode": "en",
+            "gapMs": 0,
+            "requestHash": "e5d1805ac29b4c69e511986e522c6827b05ccf8b5400836d99240356604d18d3",
+            "extractSuffix": "I",
+            "extraction": {
+              "start": 2.2,
+              "end": 3.2,
+              "audioSha256": "726b177b0637c963945f3ea3d84e878b9952172c72376f03cd8cd5b0c7f5084f",
+              "alignmentSha256": "ec48cdbe137eeae478afe91e86a8fed05e79fd8c5dbaf82429d0a736c62e06c0",
+              "boundaryPeakDb": -80.76657360480111,
+              "method": "quiet-gap-to-end-no-silence-trimming"
+            }
+          }
+        ],
+        "requests": [
+          {
+            "id": "station-repair-shared-962e984611cad7d7-01",
+            "kind": "speech",
+            "languageCode": "en",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "Be.",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-shared-95340c2f3ba74c45-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "может описывать состояние, а не только действие. В названии темы пишут",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-shared-3cfbb9d533809bdf-01",
+            "kind": "speech",
+            "languageCode": "en",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "to be.",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-shared-366b1f7e0f4d80a8-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "но в нашем предложении нужна форма",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-shared-f096e589f81f3d4d-01",
+            "kind": "speech",
+            "languageCode": "en",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "am.",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-shared-0cf42b371d9191be-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "Подлежащее — тот, о ком сообщаем; здесь это",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-tik-i-tail-en-v2-01",
+            "kind": "speech",
+            "languageCode": "en",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "The English pronoun is... I.",
+            "voiceId": "bIHbv24MWmeRgasZH58o",
+            "withTimestamps": true
+          }
+        ],
+        "trim": "suffix:quiet-gap-to-end;others:outer-silence-48dB-keep40ms",
+        "sampleRate": 24000,
+        "gapAfterLastMs": 100
+      },
+      "review": "generated-awaiting-listening"
+    },
+    {
+      "clip": {
+        "id": "chapter-02-01-marta-task-02",
+        "speaker": "marta",
+        "sourceText": "Сейчас я говорю о себе, а ты слушаешь. Поэтому I в моём сообщении означает меня — Марту. Ты по-прежнему двигаешь таблички, но собираешь мои слова.",
+        "spokenText": "Сейчас я говорю о себе, а ты слушаешь. Поэтому I в моём сообщении означает меня — Марту. Ты по-прежнему двигаешь таблички, но собираешь мои слова.",
+        "voiceId": "XrExE9yKIg1WjnnlVkGX",
+        "file": "audio/station/marta/chapter-02-01-marta-task-02-fe3bfb7c1835.mp3",
+        "requestHash": "fe3bfb7c18358a260ce7fe36a71cabb08f14a635e14b34fdcdd993742c7d4b65",
+        "audioSha256": "25ac687da61919248606959d339510485a3a2f1667325495b32aad17c0de3985",
+        "sourceAudioSha256": "53db40e56f5ff64a30f7fe98f7638ae8e333b9ec8687352589f67a2ef1094191",
+        "gainDb": -2.5199999999999996,
+        "duration": 11.909417
+      },
+      "assembly": {
+        "segments": [
+          {
+            "id": "shared-4cdd704c5eb09f56",
+            "rawText": "Сейчас я говорю о себе, а ты слушаешь. Поэтому ",
+            "text": "Сейчас я говорю о себе, а ты слушаешь. Поэтому",
+            "languageCode": "ru",
+            "gapMs": 100,
+            "requestHash": "fb7d4f8c8566e9bbb99d53b5e9af1edfbb17fa36815e55c87345af6886dc3c21"
+          },
+          {
+            "id": "marta-i-tail-en-v2",
+            "rawText": "I",
+            "text": "The English pronoun is... I.",
+            "languageCode": "en",
+            "gapMs": 100,
+            "requestHash": "997037a1f70c5749d57b8ada8631a9e98c3f5bc2f190eec2d486c93bb492ba85",
+            "extractSuffix": "I",
+            "extraction": {
+              "start": 2.35,
+              "end": 2.96,
+              "audioSha256": "7241df935b355001a80807b5446cdcf5c8133d7682e95300eda526eb070f8b23",
+              "alignmentSha256": "0e47eefff3f6b098a1d1bfcdd79b62c84106845c7eed6b26871dfd4f72bdac95",
+              "boundaryPeakDb": -45.959319814916235,
+              "method": "quiet-gap-to-end-no-silence-trimming"
+            }
+          },
+          {
+            "id": "shared-476931640bbe8b84",
+            "rawText": " в моём сообщении означает меня — Марту. Ты по-прежнему двигаешь таблички, но собираешь мои слова.",
+            "text": "в моём сообщении означает меня — Марту. Ты по-прежнему двигаешь таблички, но собираешь мои слова.",
+            "languageCode": "ru",
+            "gapMs": 0,
+            "requestHash": "eaaeb5525245a77f07fb8d9d872de5a778a2f4c2520cd95e950e6451d29d1e74"
+          }
+        ],
+        "requests": [
+          {
+            "id": "station-repair-shared-4cdd704c5eb09f56-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "Сейчас я говорю о себе, а ты слушаешь. Поэтому",
+            "voiceId": "XrExE9yKIg1WjnnlVkGX"
+          },
+          {
+            "id": "station-repair-marta-i-tail-en-v2-01",
+            "kind": "speech",
+            "languageCode": "en",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "The English pronoun is... I.",
+            "voiceId": "XrExE9yKIg1WjnnlVkGX",
+            "withTimestamps": true
+          },
+          {
+            "id": "station-repair-shared-476931640bbe8b84-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "в моём сообщении означает меня — Марту. Ты по-прежнему двигаешь таблички, но собираешь мои слова.",
+            "voiceId": "XrExE9yKIg1WjnnlVkGX"
+          }
+        ],
+        "trim": "suffix:quiet-gap-to-end;others:outer-silence-48dB-keep40ms",
+        "sampleRate": 24000,
+        "gapAfterLastMs": 100
+      },
+      "review": "generated-awaiting-listening"
+    },
+    {
+      "clip": {
+        "id": "chapter-02-02-tik-success-02",
+        "speaker": "tik",
+        "sourceText": "На бирках стоят Lumi и Tik. А в описаниях появились a lantern и a robot. Почему перед lantern и robot нужен a, а перед нашими именами его нет?",
+        "spokenText": "На бирках стоят Lumi и Tik. А в описаниях появились a lantern и a robot. Почему перед lantern и robot нужен неопределённый артикль, а перед нашими именами его нет?",
+        "voiceId": "bIHbv24MWmeRgasZH58o",
+        "file": "audio/station/tik/chapter-02-02-tik-success-02-9c25f3955dda.mp3",
+        "requestHash": "9c25f3955dda0d815fa0308e79411180515ee6c185302a3764f7f47ebbd1f3aa",
+        "audioSha256": "60c0a5c6414516b3b0e288ac86419f321f548371b7ad6e3b16d34ac6ff21cd15",
+        "sourceAudioSha256": "4c3b26cdcbe4260d589d90b131cacdf47a8c3e9293bbed2a6ea92df96b94ee1e",
+        "gainDb": -4.050000000000001,
+        "duration": 12.961958
+      },
+      "assembly": {
+        "segments": [
+          {
+            "id": "shared-8b797711e1ab749d",
+            "rawText": "На бирках стоят ",
+            "text": "На бирках стоят",
+            "languageCode": "ru",
+            "gapMs": 100,
+            "requestHash": "dfbf9ecf759a17116a4948c408542a10bf065736d8ad721a0bf479c071b21b52"
+          },
+          {
+            "id": "shared-e2eee857565e20ce",
+            "rawText": "Lumi",
+            "text": "Lumi.",
+            "languageCode": "en",
+            "gapMs": 100,
+            "requestHash": "031fd86b47ca6b2bf462be2cf77d7e2e9b810e29022546cfd8e7fdf9634f6dbd"
+          },
+          {
+            "id": "shared-178e6f38bb0b202f",
+            "rawText": " и ",
+            "text": "и",
+            "languageCode": "ru",
+            "gapMs": 100,
+            "requestHash": "44e045fab3fcb017b1dbba8e978b4461b978d69c641807ff4244b0d9c229aee4"
+          },
+          {
+            "id": "shared-bf50a2a7d1336a92",
+            "rawText": "Tik.",
+            "text": "Tik.",
+            "languageCode": "en",
+            "gapMs": 100,
+            "requestHash": "2639175491c4f89986a708cac8fe62271d5ee7bf10e193c2cca3b3a29925b61f"
+          },
+          {
+            "id": "shared-5bb108432ade8bf4",
+            "rawText": " А в описаниях появились ",
+            "text": "А в описаниях появились",
+            "languageCode": "ru",
+            "gapMs": 100,
+            "requestHash": "c1930a039bffbae2c445eced3dedf2e4a53b99f959426ab3328307f10fd90be8"
+          },
+          {
+            "id": "shared-9b7b824227ceefbc",
+            "rawText": "a lantern",
+            "text": "a lantern.",
+            "languageCode": "en",
+            "gapMs": 100,
+            "requestHash": "b0bd972373e72dd321b7e6f6628a7a539c19a22d89bab276f1292b78d88e03c6"
+          },
+          {
+            "id": "shared-178e6f38bb0b202f",
+            "rawText": " и ",
+            "text": "и",
+            "languageCode": "ru",
+            "gapMs": 100,
+            "requestHash": "44e045fab3fcb017b1dbba8e978b4461b978d69c641807ff4244b0d9c229aee4"
+          },
+          {
+            "id": "shared-ac804db9b98647d9",
+            "rawText": "a robot.",
+            "text": "a robot.",
+            "languageCode": "en",
+            "gapMs": 100,
+            "requestHash": "d852e85b1cc2536d2901bf0d466bd4d228aae1484385c9b391770d6fcdd50337"
+          },
+          {
+            "id": "tik-question-continuous-v2",
+            "rawText": " Почему перед lantern и robot нужен a, а перед нашими именами его нет?",
+            "text": "Почему перед lantern и robot нужен неопределённый артикль, а перед нашими именами его нет?",
+            "gapMs": 0,
+            "requestHash": "106f2efa94eac7da75468b915b28ea8caf1832a000e724d3733f45adf3818933"
+          }
+        ],
+        "requests": [
+          {
+            "id": "station-repair-shared-8b797711e1ab749d-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "На бирках стоят",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-shared-e2eee857565e20ce-01",
+            "kind": "speech",
+            "languageCode": "en",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "Lumi.",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-shared-178e6f38bb0b202f-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "и",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-shared-bf50a2a7d1336a92-01",
+            "kind": "speech",
+            "languageCode": "en",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "Tik.",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-shared-5bb108432ade8bf4-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "А в описаниях появились",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-shared-9b7b824227ceefbc-01",
+            "kind": "speech",
+            "languageCode": "en",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "a lantern.",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-shared-178e6f38bb0b202f-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "и",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-shared-ac804db9b98647d9-01",
+            "kind": "speech",
+            "languageCode": "en",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "a robot.",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-tik-question-continuous-v2-01",
+            "kind": "speech",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "Почему перед lantern и robot нужен неопределённый артикль, а перед нашими именами его нет?",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          }
+        ],
+        "trim": "outer-silence-48dB-keep40ms",
+        "sampleRate": 24000,
+        "gapAfterLastMs": 100
+      },
+      "review": "generated-awaiting-listening"
+    },
+    {
+      "clip": {
+        "id": "chapter-02-01-marta-feedback-speaker-marta",
+        "speaker": "tik",
+        "sourceText": "Верно. I указывает на автора сообщения. В I am Marta говорит Марта, хотя таблички двигает Люми. Первый эпизод станции завершён; остальные встречи ещё впереди.",
+        "spokenText": "Верно. I указывает на автора сообщения. В предложении I am Marta говорит Марта, хотя таблички двигает Люми. Первый эпизод станции завершён; остальные встречи ещё впереди.",
+        "voiceId": "bIHbv24MWmeRgasZH58o",
+        "file": "audio/station/tik/chapter-02-01-marta-feedback-speaker-marta-641be8fc5e57.mp3",
+        "requestHash": "641be8fc5e572689eec61920757174361a05d92685e55525ca4b0c93b85e9d44",
+        "audioSha256": "e3fea9aa0ec015ce642df0917315ab3591f23b26fad85186aff38c5293a814d6",
+        "sourceAudioSha256": "70741377c09d6c77fc129dd8c72ff1b67001225dccb292bb4226ec4d49011fe6",
+        "gainDb": -3.5,
+        "duration": 14.089958
+      },
+      "assembly": {
+        "segments": [
+          {
+            "id": "tik-feedback-yes-ru",
+            "rawText": "Верно. ",
+            "text": "Верно.",
+            "languageCode": "ru",
+            "gapMs": 120,
+            "requestHash": "4b37e79f7acef351f1b8a2a3775f19ff47ce115de7a6a56e23720660c8ea30f6"
+          },
+          {
+            "id": "tik-i-tail-en-v2",
+            "rawText": "I",
+            "text": "The English pronoun is... I.",
+            "languageCode": "en",
+            "gapMs": 80,
+            "requestHash": "e5d1805ac29b4c69e511986e522c6827b05ccf8b5400836d99240356604d18d3",
+            "extractSuffix": "I",
+            "extraction": {
+              "start": 2.2,
+              "end": 3.2,
+              "audioSha256": "726b177b0637c963945f3ea3d84e878b9952172c72376f03cd8cd5b0c7f5084f",
+              "alignmentSha256": "ec48cdbe137eeae478afe91e86a8fed05e79fd8c5dbaf82429d0a736c62e06c0",
+              "boundaryPeakDb": -80.76657360480111,
+              "method": "quiet-gap-to-end-no-silence-trimming"
+            }
+          },
+          {
+            "id": "tik-feedback-author-phrase-ru-v2",
+            "rawText": " указывает на автора сообщения. В ",
+            "text": "указывает на автора сообщения. В предложении",
+            "languageCode": "ru",
+            "gapMs": 100,
+            "requestHash": "6767f1f580d1a6d86f21b571073bec5d61265e1e644c1ca6bb3948c3283fc892"
+          },
+          {
+            "id": "tik-feedback-marta-en",
+            "rawText": "I am Marta",
+            "text": "I am Marta.",
+            "languageCode": "en",
+            "gapMs": 100,
+            "requestHash": "25e73ac0356a470ae79e47581dcc24bf6089f42f327be7adf76001651a2e6149"
+          },
+          {
+            "id": "tik-feedback-finish-ru",
+            "rawText": " говорит Марта, хотя таблички двигает Люми. Первый эпизод станции завершён; остальные встречи ещё впереди.",
+            "text": "говорит Марта, хотя таблички двигает Люми. Первый эпизод станции завершён; остальные встречи ещё впереди.",
+            "languageCode": "ru",
+            "gapMs": 0,
+            "requestHash": "eb082262d7dc711bf641f3e55a32ea494d89879a61d3404d8e9b99700ad84132"
+          }
+        ],
+        "requests": [
+          {
+            "id": "station-repair-tik-feedback-yes-ru-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "Верно.",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-tik-i-tail-en-v2-01",
+            "kind": "speech",
+            "languageCode": "en",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "The English pronoun is... I.",
+            "voiceId": "bIHbv24MWmeRgasZH58o",
+            "withTimestamps": true
+          },
+          {
+            "id": "station-repair-tik-feedback-author-phrase-ru-v2-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "указывает на автора сообщения. В предложении",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-tik-feedback-marta-en-01",
+            "kind": "speech",
+            "languageCode": "en",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "I am Marta.",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-tik-feedback-finish-ru-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "говорит Марта, хотя таблички двигает Люми. Первый эпизод станции завершён; остальные встречи ещё впереди.",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          }
+        ],
+        "trim": "suffix:quiet-gap-to-end;others:outer-silence-48dB-keep40ms",
+        "sampleRate": 24000,
+        "gapAfterLastMs": 100
+      },
+      "review": "generated-awaiting-listening"
+    },
+    {
+      "clip": {
+        "id": "chapter-02-01-marta-success-02",
+        "speaker": "tik",
+        "sourceText": "Обе бирки готовы — Lumi и Marta. Можно зажечь фонарь! В первом сообщении I означало Люми, во втором — Марту. Почему значение изменилось?",
+        "spokenText": "Обе бирки готовы — Lumi и Marta. Можно зажечь фонарь! В первом сообщении I означало Люми, во втором — Марту. Почему значение изменилось?",
+        "voiceId": "bIHbv24MWmeRgasZH58o",
+        "file": "audio/station/tik/chapter-02-01-marta-success-02-2ef11b7edfbf.mp3",
+        "requestHash": "2ef11b7edfbfc0d957b88e4192005f7a8733562309c534585b09e9a1be77bc3d",
+        "audioSha256": "4850df59fd00ba690c594604c363ef810fa7c538b5fc28cd8fa24e52db862b7d",
+        "sourceAudioSha256": "3193838a797dc371422585c84fd6fb49ed38e8527335bb83cf2a9c0fd62c8145",
+        "gainDb": -4.050000000000001,
+        "duration": 12.133375
+      },
+      "assembly": {
+        "segments": [
+          {
+            "id": "shared-27effdfc11ce9a78",
+            "rawText": "Обе бирки готовы — ",
+            "text": "Обе бирки готовы —",
+            "languageCode": "ru",
+            "gapMs": 100,
+            "requestHash": "68dd2eaf8912854380bc991c5d8b108f56c315b33a6187b18a2396ea544698be"
+          },
+          {
+            "id": "shared-e2eee857565e20ce",
+            "rawText": "Lumi",
+            "text": "Lumi.",
+            "languageCode": "en",
+            "gapMs": 100,
+            "requestHash": "031fd86b47ca6b2bf462be2cf77d7e2e9b810e29022546cfd8e7fdf9634f6dbd"
+          },
+          {
+            "id": "shared-178e6f38bb0b202f",
+            "rawText": " и ",
+            "text": "и",
+            "languageCode": "ru",
+            "gapMs": 100,
+            "requestHash": "44e045fab3fcb017b1dbba8e978b4461b978d69c641807ff4244b0d9c229aee4"
+          },
+          {
+            "id": "shared-81c84431bc2a1956",
+            "rawText": "Marta.",
+            "text": "Marta.",
+            "languageCode": "en",
+            "gapMs": 100,
+            "requestHash": "d9f87f364915c405e1edabfce93d0ffec83acad75e58f4faec8dc56939cec07f"
+          },
+          {
+            "id": "shared-9ebf8b70187d2805",
+            "rawText": " Можно зажечь фонарь! В первом сообщении ",
+            "text": "Можно зажечь фонарь! В первом сообщении",
+            "languageCode": "ru",
+            "gapMs": 100,
+            "requestHash": "5a3a59aa43b9435760dfae04f852ef1b2ca7783aed2e7f5cdeffaef7cbfaef7e"
+          },
+          {
+            "id": "tik-i-tail-en-v2",
+            "rawText": "I",
+            "text": "The English pronoun is... I.",
+            "languageCode": "en",
+            "gapMs": 100,
+            "requestHash": "e5d1805ac29b4c69e511986e522c6827b05ccf8b5400836d99240356604d18d3",
+            "extractSuffix": "I",
+            "extraction": {
+              "start": 2.2,
+              "end": 3.2,
+              "audioSha256": "726b177b0637c963945f3ea3d84e878b9952172c72376f03cd8cd5b0c7f5084f",
+              "alignmentSha256": "ec48cdbe137eeae478afe91e86a8fed05e79fd8c5dbaf82429d0a736c62e06c0",
+              "boundaryPeakDb": -80.76657360480111,
+              "method": "quiet-gap-to-end-no-silence-trimming"
+            }
+          },
+          {
+            "id": "shared-1e6719f9d58a1403",
+            "rawText": " означало Люми, во втором — Марту. Почему значение изменилось?",
+            "text": "означало Люми, во втором — Марту. Почему значение изменилось?",
+            "languageCode": "ru",
+            "gapMs": 0,
+            "requestHash": "e204589fa2348f27194f0780d7b49ed44fead8afcda66ecec20f09aa997f8468"
+          }
+        ],
+        "requests": [
+          {
+            "id": "station-repair-shared-27effdfc11ce9a78-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "Обе бирки готовы —",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-shared-e2eee857565e20ce-01",
+            "kind": "speech",
+            "languageCode": "en",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "Lumi.",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-shared-178e6f38bb0b202f-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "и",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-shared-81c84431bc2a1956-01",
+            "kind": "speech",
+            "languageCode": "en",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "Marta.",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-shared-9ebf8b70187d2805-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "Можно зажечь фонарь! В первом сообщении",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-tik-i-tail-en-v2-01",
+            "kind": "speech",
+            "languageCode": "en",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "The English pronoun is... I.",
+            "voiceId": "bIHbv24MWmeRgasZH58o",
+            "withTimestamps": true
+          },
+          {
+            "id": "station-repair-shared-1e6719f9d58a1403-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "означало Люми, во втором — Марту. Почему значение изменилось?",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          }
+        ],
+        "trim": "suffix:quiet-gap-to-end;others:outer-silence-48dB-keep40ms",
+        "sampleRate": 24000,
+        "gapAfterLastMs": 100
+      },
+      "review": "generated-awaiting-listening"
+    },
+    {
+      "clip": {
+        "id": "chapter-02-01-marta-feedback-speaker-lumi",
+        "speaker": "tik",
+        "sourceText": "Управление героем и автор сообщения — разные вещи. Сейчас представляется Марта, поэтому I означает её.",
+        "spokenText": "Управление героем и автор сообщения — разные вещи. Сейчас представляется Марта, поэтому I означает её.",
+        "voiceId": "bIHbv24MWmeRgasZH58o",
+        "file": "audio/station/tik/chapter-02-01-marta-feedback-speaker-lumi-cc18b134a53c.mp3",
+        "requestHash": "cc18b134a53c3c86ecedbf98a74eae9d1982d576beb7da1adf06644ff806e093",
+        "audioSha256": "81f7423450c290dcfbde9f41313e3eadc01163ebac48ce4546bbcb47cbe95cf4",
+        "sourceAudioSha256": "c909a15287a5bb6affc8148b256a23d6360a91776753a4e702055695996f4b40",
+        "gainDb": -3.8599999999999994,
+        "duration": 9.253625
+      },
+      "assembly": {
+        "segments": [
+          {
+            "id": "shared-d12d887127f576ab",
+            "rawText": "Управление героем и автор сообщения — разные вещи. Сейчас представляется Марта, поэтому ",
+            "text": "Управление героем и автор сообщения — разные вещи. Сейчас представляется Марта, поэтому",
+            "languageCode": "ru",
+            "gapMs": 100,
+            "requestHash": "f1565301a2bad25e561b5ae149e4f1ac3a2a8e12ab1bb20431b2d6bea1c55b36"
+          },
+          {
+            "id": "tik-i-tail-en-v2",
+            "rawText": "I",
+            "text": "The English pronoun is... I.",
+            "languageCode": "en",
+            "gapMs": 100,
+            "requestHash": "e5d1805ac29b4c69e511986e522c6827b05ccf8b5400836d99240356604d18d3",
+            "extractSuffix": "I",
+            "extraction": {
+              "start": 2.2,
+              "end": 3.2,
+              "audioSha256": "726b177b0637c963945f3ea3d84e878b9952172c72376f03cd8cd5b0c7f5084f",
+              "alignmentSha256": "ec48cdbe137eeae478afe91e86a8fed05e79fd8c5dbaf82429d0a736c62e06c0",
+              "boundaryPeakDb": -80.76657360480111,
+              "method": "quiet-gap-to-end-no-silence-trimming"
+            }
+          },
+          {
+            "id": "shared-7624d075baa6a072",
+            "rawText": " означает её.",
+            "text": "означает её.",
+            "languageCode": "ru",
+            "gapMs": 0,
+            "requestHash": "c59bd4c8bab1dcae4eaf8c3826afe0c7d749a5e6c7b44618711f79bfe9d87681"
+          }
+        ],
+        "requests": [
+          {
+            "id": "station-repair-shared-d12d887127f576ab-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "Управление героем и автор сообщения — разные вещи. Сейчас представляется Марта, поэтому",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-tik-i-tail-en-v2-01",
+            "kind": "speech",
+            "languageCode": "en",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "The English pronoun is... I.",
+            "voiceId": "bIHbv24MWmeRgasZH58o",
+            "withTimestamps": true
+          },
+          {
+            "id": "station-repair-shared-7624d075baa6a072-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "означает её.",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          }
+        ],
+        "trim": "suffix:quiet-gap-to-end;others:outer-silence-48dB-keep40ms",
+        "sampleRate": 24000,
+        "gapAfterLastMs": 100
+      },
+      "review": "generated-awaiting-listening"
+    },
+    {
+      "clip": {
+        "id": "chapter-02-01-marta-feedback-speaker-listener",
+        "speaker": "tik",
+        "sourceText": "I — «я», то есть говорящий. В этой части слушает Люми, а о себе говорит Марта.",
+        "spokenText": "I — «я», то есть говорящий. В этой части слушает Люми, а о себе говорит Марта.",
+        "voiceId": "bIHbv24MWmeRgasZH58o",
+        "file": "audio/station/tik/chapter-02-01-marta-feedback-speaker-listener-88952a6d7a50.mp3",
+        "requestHash": "88952a6d7a5038d74dd05266209c6f9c71c29b7a2b6b169b53f0804266067d1a",
+        "audioSha256": "9bf7a2a80742dfa1db7814cc03b6be5197d9d7f5a0a406fad772ad2e8d7a12cf",
+        "sourceAudioSha256": "c2341c66a2b5c51397f0a60bdec3310f0562fe49f80d77f5686750b682ae2b09",
+        "gainDb": -4.079999999999998,
+        "duration": 7.329875
+      },
+      "assembly": {
+        "segments": [
+          {
+            "id": "tik-i-tail-en-v2",
+            "rawText": "I",
+            "text": "The English pronoun is... I.",
+            "languageCode": "en",
+            "gapMs": 100,
+            "requestHash": "e5d1805ac29b4c69e511986e522c6827b05ccf8b5400836d99240356604d18d3",
+            "extractSuffix": "I",
+            "extraction": {
+              "start": 2.2,
+              "end": 3.2,
+              "audioSha256": "726b177b0637c963945f3ea3d84e878b9952172c72376f03cd8cd5b0c7f5084f",
+              "alignmentSha256": "ec48cdbe137eeae478afe91e86a8fed05e79fd8c5dbaf82429d0a736c62e06c0",
+              "boundaryPeakDb": -80.76657360480111,
+              "method": "quiet-gap-to-end-no-silence-trimming"
+            }
+          },
+          {
+            "id": "shared-e8ced33924551cb6",
+            "rawText": " — «я», то есть говорящий. В этой части слушает Люми, а о себе говорит Марта.",
+            "text": "— «я», то есть говорящий. В этой части слушает Люми, а о себе говорит Марта.",
+            "languageCode": "ru",
+            "gapMs": 0,
+            "requestHash": "b32e2495977186c09ed363fd74ccfedf52a723087f934571d1ea8e9db41056f2"
+          }
+        ],
+        "requests": [
+          {
+            "id": "station-repair-tik-i-tail-en-v2-01",
+            "kind": "speech",
+            "languageCode": "en",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "The English pronoun is... I.",
+            "voiceId": "bIHbv24MWmeRgasZH58o",
+            "withTimestamps": true
+          },
+          {
+            "id": "station-repair-shared-e8ced33924551cb6-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "— «я», то есть говорящий. В этой части слушает Люми, а о себе говорит Марта.",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          }
+        ],
+        "trim": "suffix:quiet-gap-to-end;others:outer-silence-48dB-keep40ms",
+        "sampleRate": 24000,
+        "gapAfterLastMs": 100
+      },
+      "review": "generated-awaiting-listening"
+    },
+    {
+      "clip": {
+        "id": "chapter-02-02-tik-task-02",
+        "speaker": "tik",
+        "sourceText": "Теперь я говорю Марте о себе. Помоги мне составить сообщение «Я робот». Имя уже записано; сейчас назовём, кто я. Ты двигаешь слова, а I в этом сообщении означает меня.",
+        "spokenText": "Теперь я говорю Марте о себе. Помоги мне составить сообщение «Я робот». Имя уже записано; сейчас назовём, кто я. Ты двигаешь слова, а I в этом сообщении означает меня.",
+        "voiceId": "bIHbv24MWmeRgasZH58o",
+        "file": "audio/station/tik/chapter-02-02-tik-task-02-05924859870f.mp3",
+        "requestHash": "05924859870f1a3b81e171a323dc753df8eeeed90658470a484d24cab9efda2c",
+        "audioSha256": "bd9626e55d85aa96b9bf6dae1643636326467786120fa1b15c64f2c2ec0d6b8d",
+        "sourceAudioSha256": "54a924c979f911f1725366d21cc2e3728e6019abe808135609ea881b8bd89e97",
+        "gainDb": -3.4899999999999984,
+        "duration": 14.057125
+      },
+      "assembly": {
+        "segments": [
+          {
+            "id": "shared-6d70778a36ca30c2",
+            "rawText": "Теперь я говорю Марте о себе. Помоги мне составить сообщение «Я робот». Имя уже записано; сейчас назовём, кто я. Ты двигаешь слова, а ",
+            "text": "Теперь я говорю Марте о себе. Помоги мне составить сообщение «Я робот». Имя уже записано; сейчас назовём, кто я. Ты двигаешь слова, а",
+            "languageCode": "ru",
+            "gapMs": 100,
+            "requestHash": "523625ba8d044c7bc6422c01828e10628e8944f750725117229eab3b78b3042d"
+          },
+          {
+            "id": "tik-i-tail-en-v2",
+            "rawText": "I",
+            "text": "The English pronoun is... I.",
+            "languageCode": "en",
+            "gapMs": 100,
+            "requestHash": "e5d1805ac29b4c69e511986e522c6827b05ccf8b5400836d99240356604d18d3",
+            "extractSuffix": "I",
+            "extraction": {
+              "start": 2.2,
+              "end": 3.2,
+              "audioSha256": "726b177b0637c963945f3ea3d84e878b9952172c72376f03cd8cd5b0c7f5084f",
+              "alignmentSha256": "ec48cdbe137eeae478afe91e86a8fed05e79fd8c5dbaf82429d0a736c62e06c0",
+              "boundaryPeakDb": -80.76657360480111,
+              "method": "quiet-gap-to-end-no-silence-trimming"
+            }
+          },
+          {
+            "id": "shared-66bc3525fe2c5ea9",
+            "rawText": " в этом сообщении означает меня.",
+            "text": "в этом сообщении означает меня.",
+            "languageCode": "ru",
+            "gapMs": 0,
+            "requestHash": "79eddab456c8151d713efcf29708b9be5a6383e052b27ecd5341f95fa1fdc7d5"
+          }
+        ],
+        "requests": [
+          {
+            "id": "station-repair-shared-6d70778a36ca30c2-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "Теперь я говорю Марте о себе. Помоги мне составить сообщение «Я робот». Имя уже записано; сейчас назовём, кто я. Ты двигаешь слова, а",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-tik-i-tail-en-v2-01",
+            "kind": "speech",
+            "languageCode": "en",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "The English pronoun is... I.",
+            "voiceId": "bIHbv24MWmeRgasZH58o",
+            "withTimestamps": true
+          },
+          {
+            "id": "station-repair-shared-66bc3525fe2c5ea9-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "в этом сообщении означает меня.",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          }
+        ],
+        "trim": "suffix:quiet-gap-to-end;others:outer-silence-48dB-keep40ms",
+        "sampleRate": 24000,
+        "gapAfterLastMs": 100
+      },
+      "review": "generated-awaiting-listening"
+    },
+    {
+      "clip": {
+        "id": "chapter-02-03-tik-feedback-address-lumi",
+        "speaker": "tik",
+        "sourceText": "Люми двигал слова и был автором сообщения, но обращался к Тику. Говорящего обозначает I, а его собеседника — you.",
+        "spokenText": "Люми двигал слова и был автором сообщения, но обращался к Тику. Говорящего обозначает I, а его собеседника — you.",
+        "voiceId": "bIHbv24MWmeRgasZH58o",
+        "file": "audio/station/tik/chapter-02-03-tik-feedback-address-lumi-52e0733f28fd.mp3",
+        "requestHash": "52e0733f28fd9d159c9012279dfc5218b7b1fb7a08a0f9f75ca0996bbbae7b81",
+        "audioSha256": "dace5f52c88d15ab172686204b5b0b9e07c3460b712e2c97fc1769761f9f5388",
+        "sourceAudioSha256": "6efaecc16f546bb8a6d97852efbaedae178b959d11cb1c4159c25f014c704449",
+        "gainDb": -3.9800000000000004,
+        "duration": 9.022
+      },
+      "assembly": {
+        "segments": [
+          {
+            "id": "shared-647256ad3f8e90f3",
+            "rawText": "Люми двигал слова и был автором сообщения, но обращался к Тику. Говорящего обозначает ",
+            "text": "Люми двигал слова и был автором сообщения, но обращался к Тику. Говорящего обозначает",
+            "languageCode": "ru",
+            "gapMs": 100,
+            "requestHash": "6a0246d30857120c73f425fb7348fa8f14c2244ce24ee91f677383980cf26970"
+          },
+          {
+            "id": "tik-i-tail-en-v2",
+            "rawText": "I,",
+            "text": "The English pronoun is... I.",
+            "languageCode": "en",
+            "gapMs": 100,
+            "requestHash": "e5d1805ac29b4c69e511986e522c6827b05ccf8b5400836d99240356604d18d3",
+            "extractSuffix": "I",
+            "extraction": {
+              "start": 2.2,
+              "end": 3.2,
+              "audioSha256": "726b177b0637c963945f3ea3d84e878b9952172c72376f03cd8cd5b0c7f5084f",
+              "alignmentSha256": "ec48cdbe137eeae478afe91e86a8fed05e79fd8c5dbaf82429d0a736c62e06c0",
+              "boundaryPeakDb": -80.76657360480111,
+              "method": "quiet-gap-to-end-no-silence-trimming"
+            }
+          },
+          {
+            "id": "shared-701dbd5cfd0dd613",
+            "rawText": " а его собеседника — ",
+            "text": "а его собеседника —",
+            "languageCode": "ru",
+            "gapMs": 100,
+            "requestHash": "6c276544cb920b445d01fb6cb564808076b7a87814ab2868b221781f0f4c5629"
+          },
+          {
+            "id": "shared-239b047d50617588",
+            "rawText": "you.",
+            "text": "you.",
+            "languageCode": "en",
+            "gapMs": 0,
+            "requestHash": "7b2eef3a84af4248180b38f6a7c1fdeb61340ca69f9036896d1ba78c37891db5"
+          }
+        ],
+        "requests": [
+          {
+            "id": "station-repair-shared-647256ad3f8e90f3-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "Люми двигал слова и был автором сообщения, но обращался к Тику. Говорящего обозначает",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-tik-i-tail-en-v2-01",
+            "kind": "speech",
+            "languageCode": "en",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "The English pronoun is... I.",
+            "voiceId": "bIHbv24MWmeRgasZH58o",
+            "withTimestamps": true
+          },
+          {
+            "id": "station-repair-shared-701dbd5cfd0dd613-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "а его собеседника —",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-shared-239b047d50617588-01",
+            "kind": "speech",
+            "languageCode": "en",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "you.",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          }
+        ],
+        "trim": "suffix:quiet-gap-to-end;others:outer-silence-48dB-keep40ms",
+        "sampleRate": 24000,
+        "gapAfterLastMs": 100
+      },
+      "review": "generated-awaiting-listening"
+    },
+    {
+      "clip": {
+        "id": "chapter-02-04-transfer-feedback-third-speaker",
+        "speaker": "tik",
+        "sourceText": "Того, кто говорит о себе, обозначает I. Здесь авторы менялись, а he указывало на Тика — героя, о котором они рассказывали.",
+        "spokenText": "Того, кто говорит о себе, обозначает I. Здесь авторы менялись, а he указывало на Тика — героя, о котором они рассказывали.",
+        "voiceId": "bIHbv24MWmeRgasZH58o",
+        "file": "audio/station/tik/chapter-02-04-transfer-feedback-third-speaker-af4f572fc23e.mp3",
+        "requestHash": "af4f572fc23e6ba093b5f0e90b7e7ef82a8cd0a3961a558f4e0c2718ea163e1f",
+        "audioSha256": "2abac160fb869c2fe975ec3895e7e6cc94a49cc039265f4ba6279c9a847109af",
+        "sourceAudioSha256": "8b1485909439b50383a6c3bb5335f23d7b825896a075f5e18f4f28985caaf775",
+        "gainDb": -4.109999999999999,
+        "duration": 9.537125
+      },
+      "assembly": {
+        "segments": [
+          {
+            "id": "shared-b9d8cf4f7ea1117a",
+            "rawText": "Того, кто говорит о себе, обозначает ",
+            "text": "Того, кто говорит о себе, обозначает",
+            "languageCode": "ru",
+            "gapMs": 100,
+            "requestHash": "ca06c969be962374200cb23cc5759f6b91a0e1c0ebfcb19f56a9772205874f33"
+          },
+          {
+            "id": "tik-i-tail-en-v2",
+            "rawText": "I.",
+            "text": "The English pronoun is... I.",
+            "languageCode": "en",
+            "gapMs": 100,
+            "requestHash": "e5d1805ac29b4c69e511986e522c6827b05ccf8b5400836d99240356604d18d3",
+            "extractSuffix": "I",
+            "extraction": {
+              "start": 2.2,
+              "end": 3.2,
+              "audioSha256": "726b177b0637c963945f3ea3d84e878b9952172c72376f03cd8cd5b0c7f5084f",
+              "alignmentSha256": "ec48cdbe137eeae478afe91e86a8fed05e79fd8c5dbaf82429d0a736c62e06c0",
+              "boundaryPeakDb": -80.76657360480111,
+              "method": "quiet-gap-to-end-no-silence-trimming"
+            }
+          },
+          {
+            "id": "shared-7f869d3a273fbe9c",
+            "rawText": " Здесь авторы менялись, а ",
+            "text": "Здесь авторы менялись, а",
+            "languageCode": "ru",
+            "gapMs": 100,
+            "requestHash": "0997380171f13828918d1798377a53563f8e4affc4e4ad32880b4c314e0557ce"
+          },
+          {
+            "id": "shared-b1e6a76d77133dc1",
+            "rawText": "he",
+            "text": "he.",
+            "languageCode": "en",
+            "gapMs": 100,
+            "requestHash": "cbb5a59b818cdd66519bf2a07df7d431730a066f3cb012489432c58b06d561e5"
+          },
+          {
+            "id": "shared-a252f863615104c1",
+            "rawText": " указывало на Тика — героя, о котором они рассказывали.",
+            "text": "указывало на Тика — героя, о котором они рассказывали.",
+            "languageCode": "ru",
+            "gapMs": 0,
+            "requestHash": "1805dd0a5437d03883fe9fcc1c2ed53e77d11577fb822a16d1d2f5dcd5c7073c"
+          }
+        ],
+        "requests": [
+          {
+            "id": "station-repair-shared-b9d8cf4f7ea1117a-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "Того, кто говорит о себе, обозначает",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-tik-i-tail-en-v2-01",
+            "kind": "speech",
+            "languageCode": "en",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "The English pronoun is... I.",
+            "voiceId": "bIHbv24MWmeRgasZH58o",
+            "withTimestamps": true
+          },
+          {
+            "id": "station-repair-shared-7f869d3a273fbe9c-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "Здесь авторы менялись, а",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-shared-b1e6a76d77133dc1-01",
+            "kind": "speech",
+            "languageCode": "en",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "he.",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          },
+          {
+            "id": "station-repair-shared-a252f863615104c1-01",
+            "kind": "speech",
+            "languageCode": "ru",
+            "modelId": "eleven_v3",
+            "seed": 42,
+            "text": "указывало на Тика — героя, о котором они рассказывали.",
+            "voiceId": "bIHbv24MWmeRgasZH58o"
+          }
+        ],
+        "trim": "suffix:quiet-gap-to-end;others:outer-silence-48dB-keep40ms",
+        "sampleRate": 24000,
+        "gapAfterLastMs": 100
+      },
+      "review": "generated-awaiting-listening"
+    }
+  ]
+}

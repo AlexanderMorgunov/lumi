@@ -1,0 +1,11 @@
+{
+  "ui": "audio/game-sfx/ui-v1.wav",
+  "page": "audio/game-sfx/page-v1.wav",
+  "step0": "audio/game-sfx/step0-v1.wav",
+  "step1": "audio/game-sfx/step1-v1.wav",
+  "push": "audio/game-sfx/push-v1.wav",
+  "blocked": "audio/game-sfx/blocked-v1.wav",
+  "undo": "audio/game-sfx/undo-v1.wav",
+  "assembled": "audio/game-sfx/assembled-v1.wav",
+  "success": "audio/game-sfx/success-v1.wav"
+}

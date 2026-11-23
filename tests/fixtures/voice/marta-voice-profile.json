@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "character": "marta",
+  "voiceProfileId": "marta-grounded-v1",
+  "label": "Спокойная мастерица",
+  "status": "owner-selected-reference",
+  "selectedOn": "2026-11-18",
+  "sourceJobId": "marta-grounded-01",
+  "referenceAudio": "references/marta-grounded-v1.wav",
+  "referenceAudioSha256": "ab512a661308f5bb5907555e7c70a47e58174478b8bc2872a4f0754beaa7334d",
+  "referenceText": "Здравствуй, Люми. Я Марта. Сегодня мы отправимся к старой станции. Не бойся: я буду рядом.",
+  "referenceDurationSeconds": 7.52,
+  "sourceModel": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+  "sourceModelRevision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+  "sourceRuntime": "audio.cpp v0.9.5 portable (61c7838b)",
+  "sourceInstruct": "A native Russian-speaking mature woman with a slightly low-pitched, velvety voice and a very light natural huskiness. Calm, capable and kind, like an experienced craftswoman who always knows what to do. Speak intimately but with a fully voiced sound, steady relaxed rhythm, understated warmth and dry good humor. Natural conversational phrasing, not a narrator. No whispering, no breathy seduction, no theatrical drama, no singing.",
+  "sourceSeed": 42,
+  "continuityMethod": "reference-audio-cloning",
+  "cloningModel": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+  "cloningStatus": "owner-approved-russian-icl-and-english-speaker",
+  "englishExamplesReviewed": true,
+  "integrated": false,
+  "episodeAudioStatus": "archived-replaced-by-elevenlabs-v3",
+  "cloningModelRevision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+  "cloningProbeIds": [
+    "marta-clone-story-01",
+    "marta-clone-mixed-01",
+    "marta-clone-english-01"
+  ],
+  "englishExamplesApproved": true,
+  "ownerFeedback": {
+    "date": "2026-11-18",
+    "characterPreserved": true,
+    "pronunciationIssueSample": "marta-clone-english-01",
+    "pronunciationIssueText": "I am here",
+    "pronunciationIssue": "Owner reports awkward articulation; pronunciation requires another listening check.",
+    "resolution": "Owner approved marta-english-speaker-02. Use speaker-only conditioning for English; keep ICL for Russian."
+  },
+  "cloneConditioningByLanguage": {
+    "Russian": "icl",
+    "English": "speaker",
+    "Auto": "icl"
+  },
+  "approvedEnglishSample": {
+    "sourceJobId": "marta-english-speaker-02",
+    "audio": "references/marta-english-approved-v1.wav",
+    "sha256": "b77d0b5bb87cf73ced66259ad11c98922db652c92b8e751898b5917cf01a9146",
+    "approvedOn": "2026-11-18",
+    "conditioning": "speaker"
+  },
+  "supersededOn": "2026-11-19",
+  "supersededBy": {
+    "provider": "elevenlabs",
+    "modelId": "eleven_v3",
+    "name": "Matilda",
+    "voiceId": "XrExE9yKIg1WjnnlVkGX"
+  }
+}

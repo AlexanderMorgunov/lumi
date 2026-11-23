@@ -1,0 +1,13 @@
+{
+  "term": "he",
+  "provider": "elevenlabs",
+  "modelId": "eleven_v3",
+  "voiceId": "XrExE9yKIg1WjnnlVkGX",
+  "file": "audio/en-US/elevenlabs-marta-v1/he.mp3",
+  "requestHash": "9074d29d982370e1009a83329da62988e20c8987426398aa05ed9f4b248653f7",
+  "audioSha256": "b4f4def578944520fdfbaf4938939bb9ec4f79a718a335d70cdb2e41b84147cd",
+  "sourceAudioSha256": "f0f5c9331025ae37753a34ac34564cf4493bfeacb7e4bc675f2c0cb0e5a098f3",
+  "gainDb": -1.5199999999999996,
+  "duration": 0.64,
+  "review": "generated-awaiting-listening"
+}

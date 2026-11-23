@@ -1,0 +1,13 @@
+{
+  "term": "you",
+  "provider": "elevenlabs",
+  "modelId": "eleven_v3",
+  "voiceId": "XrExE9yKIg1WjnnlVkGX",
+  "file": "audio/en-US/elevenlabs-marta-v1/you.mp3",
+  "requestHash": "4e9fe2ad2b972d1f7408b3ca937ddbc1bc4b52715e096258dc068daa94f13718",
+  "audioSha256": "b3417747af44ec37ff8059839afc7324661b5bf2a71d41ef38c8a0d5f8032bbe",
+  "sourceAudioSha256": "aa485b5dc9aebe77133018b4f85caed8038cbd2bbd7460b54333bdddf0b63a6b",
+  "gainDb": -2.039999999999999,
+  "duration": 0.96,
+  "review": "generated-awaiting-listening"
+}

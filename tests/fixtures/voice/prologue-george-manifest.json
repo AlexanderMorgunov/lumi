@@ -1,0 +1,68 @@
+{
+  "provider": "elevenlabs",
+  "modelId": "eleven_v3",
+  "review": "approved-by-owner",
+  "clips": [
+    {
+      "id": "road",
+      "voice": "George",
+      "voiceId": "JBFqnCBsd6RMkjVDRZzb",
+      "sourceText": "В Долине огней письма путешествовали от станции к станции. Даже ночью почтальоны находили дорогу по свету фонарей.",
+      "spokenText": "[storytelling] В Долине огней письма путешествовали от станции к станции. Даже ночью почтальоны находили дорогу по свету фонарей.",
+      "file": "audio/prologue/george-road-66731385ec26.mp3",
+      "duration": 8,
+      "requestHash": "66731385ec266a19769d8477b2166bdb95d712a361b62350f58236b46ee3b3d8",
+      "audioSha256": "75c040e9343bb8a85a21e7de33578a9afcee360f9f077234b02a115869970a51",
+      "alignmentFile": "docs/voice/prologue-alignments/george-road-66731385ec26.json"
+    },
+    {
+      "id": "storm",
+      "voice": "George",
+      "voiceId": "JBFqnCBsd6RMkjVDRZzb",
+      "sourceText": "Но однажды над долиной разразилась буря. Один за другим дорожные огни погасли.",
+      "spokenText": "[serious] Но однажды над долиной разразилась буря. Один за другим дорожные огни погасли.",
+      "file": "audio/prologue/george-storm-d0ab4a5c27a5.mp3",
+      "duration": 5.44,
+      "requestHash": "d0ab4a5c27a5a0d12dd158fd7c16669df4b081e37755a2ef6846c238c30ac193",
+      "audioSha256": "d3578660e0a2f5e7bed4ba9b1617fda54f6c743302edfae5d24e1bcf877d0eb2",
+      "alignmentFile": "docs/voice/prologue-alignments/george-storm-d0ab4a5c27a5.json"
+    },
+    {
+      "id": "silence",
+      "voice": "George",
+      "voiceId": "JBFqnCBsd6RMkjVDRZzb",
+      "sourceText": "На станциях копились письма. А по ту сторону леса кто-то всё ещё ждал весточку из дома.",
+      "spokenText": "[softly] На станциях копились письма. А по ту сторону леса кто-то всё ещё ждал весточку из дома.",
+      "file": "audio/prologue/george-silence-7edda4cd97ad.mp3",
+      "duration": 5.84,
+      "requestHash": "7edda4cd97adb97390b844a4956572fae286b7a366fad06dae5fbee1f522854d",
+      "audioSha256": "e73424064c3509d06e53c3deac4d209c261589158d076487ea0374bf0e64faf3",
+      "alignmentFile": "docs/voice/prologue-alignments/george-silence-7edda4cd97ad.json"
+    },
+    {
+      "id": "lumi",
+      "voice": "George",
+      "voiceId": "JBFqnCBsd6RMkjVDRZzb",
+      "sourceText": "В мастерской Марты проснулся Люми — маленький почтовый фонарь. За его стеклом хранилось письмо для смотрителя далёкого маяка.",
+      "spokenText": "[warmly] В мастерской Марты проснулся Люми — маленький почтовый фонарь. За его стеклом хранилось письмо для смотрителя далёкого маяка.",
+      "file": "audio/prologue/george-lumi-02b90e6ccaf0.mp3",
+      "duration": 8.48,
+      "requestHash": "02b90e6ccaf00907e1a844a17f199a08720d2f034dab3d9f547bc77230254109",
+      "audioSha256": "92b114e3adfb8e4fa00430f7899afb0fd35b7fe3812eefeebafb4c55bbe6a5eb",
+      "alignmentFile": "docs/voice/prologue-alignments/george-lumi-02b90e6ccaf0.json"
+    },
+    {
+      "id": "journey",
+      "voice": "George",
+      "voiceId": "JBFqnCBsd6RMkjVDRZzb",
+      "sourceText": "Чтобы доставить его, Люми предстояло пройти всю долину. Помочь тем, кого встретит, и снова зажечь дорогу огней. Его путешествие начиналось здесь, в мастерской.",
+      "spokenText": "[hopeful] Чтобы доставить его, Люми предстояло пройти всю долину. Помочь тем, кого встретит, и снова зажечь дорогу огней. Его путешествие начиналось здесь, в мастерской.",
+      "file": "audio/prologue/george-journey-ccc08919c059.mp3",
+      "duration": 10.96,
+      "requestHash": "ccc08919c05913b5f4f6b12019cb4068cd2c389bef5195b42e2aa6899ef6ad89",
+      "audioSha256": "230270529bcf698b0baf5ad61ecbd62ada54a0baffd1d81691e0d96bf423b0b5",
+      "alignmentFile": "docs/voice/prologue-alignments/george-journey-ccc08919c059.json"
+    }
+  ],
+  "reviewedAt": "2026-11-17"
+}

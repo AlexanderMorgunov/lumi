@@ -1,0 +1,11 @@
+{
+  "gameId": "lumi-road-of-lights",
+  "title": "Люми и дорога огней",
+  "hostOrigin": "https://dayenglish.ru",
+  "gameOrigin": "https://lumi.games.dayenglish.ru",
+  "bucket": "dayenglish-games",
+  "resources": [
+    { "id": "chapter-1", "access": "public" },
+    { "id": "chapter-2", "access": "public" }
+  ]
+}

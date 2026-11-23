@@ -1,0 +1,56 @@
+{
+  "name": "dayenglish-grammar-game",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "engines": {
+    "node": "^22.13.0 || ^24.0.0 || >=26.0.0"
+  },
+  "scripts": {
+    "release": "node scripts/release.mjs",
+    "release:test": "node --test scripts/release.test.mjs",
+    "release:browser": "node scripts/release-browser-check.mjs",
+    "dev": "vite --host localhost --port 5189 --strictPort",
+    "dev:host": "vite --host localhost --port 5188 --strictPort",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host localhost --port 5189 --strictPort",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "skills:check": "node scripts/check-skills.mjs",
+    "check": "npm run skills:check && npm run lint && npm run format:check && npm run release:test && npm test && npm run build"
+  },
+  "dependencies": {
+    "@dayenglish/game-sdk": "file:vendor/dayenglish-game-sdk-0.2.0.tgz",
+    "phaser": "4.2.1",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@aws-sdk/client-s3": "^3.1125.0",
+    "@eslint/js": "10.0.1",
+    "@playwright/test": "1.65.1",
+    "@types/node": "24.19.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.3.0",
+    "eslint": "10.15.0",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "eslint-plugin-react-refresh": "0.5.7",
+    "globals": "17.14.0",
+    "prettier": "3.10.1",
+    "typescript": "6.0.3",
+    "typescript-eslint": "8.72.2",
+    "vite": "8.3.8",
+    "vitest": "5.1.0"
+  },
+  "overrides": {
+    "@typescript-eslint/typescript-estree": {
+      "minimatch": "11.0.8"
+    }
+  }
+}

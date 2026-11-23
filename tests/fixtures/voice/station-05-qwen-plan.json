@@ -1,0 +1,1000 @@
+{
+  "schemaVersion": 1,
+  "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+  "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+  "review": "voices-selected-lines-await-listening",
+  "lines": [
+    {
+      "id": "chapter-02-05-task-01",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "sourceText": "Кто-то оставил зонт у стойки. Хозяин пока не вернулся — запишем находку. Я говорю тебе, Люми, об обычном зонте под указателем.",
+      "segments": [
+        {
+          "rawText": "Кто-то оставил зонт у стойки. Хозяин пока не вернулся — запишем находку. Я говорю тебе, Люми, об обычном зонте под указателем.",
+          "language": "Russian",
+          "spokenText": "Кто-то оставил зонт у стойки. Хозяин пока не вернулся — запишем находку. Я говорю тебе, Люми, об обычном зонте под указателем.",
+          "jobId": "tik-ru-876c430d94364341"
+        }
+      ]
+    },
+    {
+      "id": "chapter-02-05-task-02",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "sourceText": "It — личное местоимение. Здесь оно обозначает один обычный предмет, о котором мы говорим. Должно быть понятно, какой именно: сейчас я показал зонт.",
+      "segments": [
+        {
+          "rawText": "It",
+          "language": "English",
+          "spokenText": "It.",
+          "jobId": "tik-en-e6ea5211d881324f"
+        },
+        {
+          "rawText": " — личное местоимение. Здесь оно обозначает один обычный предмет, о котором мы говорим. Должно быть понятно, какой именно: сейчас я показал зонт.",
+          "language": "Russian",
+          "spokenText": "личное местоимение. Здесь оно обозначает один обычный предмет, о котором мы говорим. Должно быть понятно, какой именно: сейчас я показал зонт.",
+          "jobId": "tik-ru-08f263c8c03dd200"
+        }
+      ]
+    },
+    {
+      "id": "chapter-02-05-task-03",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "sourceText": "С этим местоимением нужна форма is. It is an umbrella — «Это зонт». В этой фразе мы сообщаем, что перед нами за предмет.",
+      "segments": [
+        {
+          "rawText": "С этим местоимением нужна форма ",
+          "language": "Russian",
+          "spokenText": "С этим местоимением нужна форма",
+          "jobId": "tik-ru-ab20f52ee3451f6e"
+        },
+        {
+          "rawText": "is",
+          "language": "English",
+          "spokenText": "is.",
+          "jobId": "tik-en-47138fd7037a36ac"
+        },
+        {
+          "rawText": ". ",
+          "jobId": null
+        },
+        {
+          "rawText": "It is an umbrella",
+          "language": "English",
+          "spokenText": "It is an umbrella.",
+          "jobId": "tik-en-49a00c4403db64a4"
+        },
+        {
+          "rawText": " — «Это зонт». В этой фразе мы сообщаем, что перед нами за предмет.",
+          "language": "Russian",
+          "spokenText": "Это зонт». В этой фразе мы сообщаем, что перед нами за предмет.",
+          "jobId": "tik-ru-2cfc35fd8390aa92"
+        }
+      ]
+    },
+    {
+      "id": "chapter-02-05-task-04",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "sourceText": "Umbrella начинается с гласного звука, поэтому an umbrella. Указатель помогает понять, о чём речь, но не отменяет an, когда мы называем вид предмета.",
+      "segments": [
+        {
+          "rawText": "Umbrella",
+          "language": "English",
+          "spokenText": "Umbrella.",
+          "jobId": "tik-en-4896ef11aa0afc52"
+        },
+        {
+          "rawText": " начинается с гласного звука, поэтому ",
+          "language": "Russian",
+          "spokenText": "начинается с гласного звука, поэтому",
+          "jobId": "tik-ru-63d7449f2daa3a78"
+        },
+        {
+          "rawText": "an umbrella",
+          "language": "English",
+          "spokenText": "an umbrella.",
+          "jobId": "tik-en-161e9bba401b16a4"
+        },
+        {
+          "rawText": ". Указатель помогает понять, о чём речь, но не отменяет ",
+          "language": "Russian",
+          "spokenText": "Указатель помогает понять, о чём речь, но не отменяет",
+          "jobId": "tik-ru-bfb2c7c3577b4c64"
+        },
+        {
+          "rawText": "an",
+          "language": "English",
+          "spokenText": "an.",
+          "jobId": "tik-en-999e92f9d683c5fa"
+        },
+        {
+          "rawText": ", когда мы называем вид предмета.",
+          "language": "Russian",
+          "spokenText": "когда мы называем вид предмета.",
+          "jobId": "tik-ru-cb2108e0f331c43a"
+        }
+      ]
+    },
+    {
+      "id": "chapter-02-05-task-05",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "sourceText": "По-русски зонт — «он», но здесь не нужен he: перед нами обычная вещь, не живой герой. Соберём It is an umbrella. Первые два слова уже в рамке.",
+      "segments": [
+        {
+          "rawText": "По-русски зонт — «он», но здесь не нужен ",
+          "language": "Russian",
+          "spokenText": "По-русски зонт — «он», но здесь не нужен",
+          "jobId": "tik-ru-88c0a1cbf9252bf1"
+        },
+        {
+          "rawText": "he",
+          "language": "English",
+          "spokenText": "he.",
+          "jobId": "tik-en-c4f6409ce6b70c7b"
+        },
+        {
+          "rawText": ": перед нами обычная вещь, не живой герой. Соберём ",
+          "language": "Russian",
+          "spokenText": "перед нами обычная вещь, не живой герой. Соберём",
+          "jobId": "tik-ru-1a3069bf9380a27d"
+        },
+        {
+          "rawText": "It is an umbrella",
+          "language": "English",
+          "spokenText": "It is an umbrella.",
+          "jobId": "tik-en-49a00c4403db64a4"
+        },
+        {
+          "rawText": ". Первые два слова уже в рамке.",
+          "language": "Russian",
+          "spokenText": "Первые два слова уже в рамке.",
+          "jobId": "tik-ru-b67f27e325bd8f6f"
+        }
+      ]
+    },
+    {
+      "id": "chapter-02-05-success-01",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "sourceText": "It is an umbrella. Это зонт. Описание находки записано; сам зонт никуда не исчез и не превратился в другой предмет.",
+      "segments": [
+        {
+          "rawText": "It is an umbrella",
+          "language": "English",
+          "spokenText": "It is an umbrella.",
+          "jobId": "tik-en-49a00c4403db64a4"
+        },
+        {
+          "rawText": ". Это зонт. Описание находки записано; сам зонт никуда не исчез и не превратился в другой предмет.",
+          "language": "Russian",
+          "spokenText": "Это зонт. Описание находки записано; сам зонт никуда не исчез и не превратился в другой предмет.",
+          "jobId": "tik-ru-3b485afaa24e4062"
+        }
+      ]
+    },
+    {
+      "id": "chapter-02-05-success-02",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "sourceText": "Теперь Марта проверит рисунок на соседней карточке. Посмотри, куда переместится указатель.",
+      "segments": [
+        {
+          "rawText": "Теперь Марта проверит рисунок на соседней карточке. Посмотри, куда переместится указатель.",
+          "language": "Russian",
+          "spokenText": "Теперь Марта проверит рисунок на соседней карточке. Посмотри, куда переместится указатель.",
+          "jobId": "tik-ru-c572e38bb0f6d527"
+        }
+      ]
+    },
+    {
+      "id": "chapter-02-05-egg-task-01",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "sourceText": "Рядом лежит карточка с рисунком. Я расскажу Тику, что на ней изображено. Видишь яйцо под указателем? По-английски яйцо — egg. Люми, помоги мне составить сообщение.",
+      "segments": [
+        {
+          "rawText": "Рядом лежит карточка с рисунком. Я расскажу Тику, что на ней изображено. Видишь яйцо под указателем? По-английски яйцо — ",
+          "language": "Russian",
+          "spokenText": "Рядом лежит карточка с рисунком. Я расскажу Тику, что на ней изображено. Видишь яйцо под указателем? По-английски яйцо",
+          "jobId": "marta-ru-5ffbe60bd3a11040"
+        },
+        {
+          "rawText": "egg",
+          "language": "English",
+          "spokenText": "egg.",
+          "jobId": "marta-en-7791d36c091b9281"
+        },
+        {
+          "rawText": ". Люми, помоги мне составить сообщение.",
+          "language": "Russian",
+          "spokenText": "Люми, помоги мне составить сообщение.",
+          "jobId": "marta-ru-c612e37cef812710"
+        }
+      ]
+    },
+    {
+      "id": "chapter-02-05-egg-task-02",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "sourceText": "Собери моё сообщение: «Это яйцо». Мы описываем яйцо на рисунке, а не бумажную карточку. Подбери местоимение, форму глагола, артикль и название предмета.",
+      "segments": [
+        {
+          "rawText": "Собери моё сообщение: «Это яйцо». Мы описываем яйцо на рисунке, а не бумажную карточку. Подбери местоимение, форму глагола, артикль и название предмета.",
+          "language": "Russian",
+          "spokenText": "Собери моё сообщение: «Это яйцо». Мы описываем яйцо на рисунке, а не бумажную карточку. Подбери местоимение, форму глагола, артикль и название предмета.",
+          "jobId": "marta-ru-5643cb07bd4902b0"
+        }
+      ]
+    },
+    {
+      "id": "chapter-02-05-egg-success-01",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "sourceText": "It is an egg. Это яйцо. Верно: мы назвали то, что изображено на карточке. Зонт остался на своём месте, рисунок тоже не изменился.",
+      "segments": [
+        {
+          "rawText": "It is an egg",
+          "language": "English",
+          "spokenText": "It is an egg.",
+          "jobId": "marta-en-f4c505bfbe5db3eb"
+        },
+        {
+          "rawText": ". Это яйцо. Верно: мы назвали то, что изображено на карточке. Зонт остался на своём месте, рисунок тоже не изменился.",
+          "language": "Russian",
+          "spokenText": "Это яйцо. Верно: мы назвали то, что изображено на карточке. Зонт остался на своём месте, рисунок тоже не изменился.",
+          "jobId": "marta-ru-321c724834e301eb"
+        }
+      ]
+    },
+    {
+      "id": "chapter-02-05-egg-success-02",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "sourceText": "Сначала речь шла о зонте, потом — о яйце на рисунке. Почему в обоих сообщениях подошло it?",
+      "segments": [
+        {
+          "rawText": "Сначала речь шла о зонте, потом — о яйце на рисунке. Почему в обоих сообщениях подошло ",
+          "language": "Russian",
+          "spokenText": "Сначала речь шла о зонте, потом — о яйце на рисунке. Почему в обоих сообщениях подошло",
+          "jobId": "tik-ru-340fbb9a352245f6"
+        },
+        {
+          "rawText": "it",
+          "language": "English",
+          "spokenText": "it.",
+          "jobId": "tik-en-f6f93e58a05ed932"
+        },
+        {
+          "rawText": "?",
+          "jobId": null
+        }
+      ]
+    },
+    {
+      "id": "chapter-02-05-egg-feedback-object-ordinary",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "sourceText": "Верно. Мы описывали обычный зонт и яйцо на рисунке. В каждом сообщении it относилось к понятному нам предмету, а не к говорящему или слушателю.",
+      "segments": [
+        {
+          "rawText": "Верно. Мы описывали обычный зонт и яйцо на рисунке. В каждом сообщении ",
+          "language": "Russian",
+          "spokenText": "Верно. Мы описывали обычный зонт и яйцо на рисунке. В каждом сообщении",
+          "jobId": "tik-ru-df41a23a05f3c9f7"
+        },
+        {
+          "rawText": "it",
+          "language": "English",
+          "spokenText": "it.",
+          "jobId": "tik-en-f6f93e58a05ed932"
+        },
+        {
+          "rawText": " относилось к понятному нам предмету, а не к говорящему или слушателю.",
+          "language": "Russian",
+          "spokenText": "относилось к понятному нам предмету, а не к говорящему или слушателю.",
+          "jobId": "tik-ru-68581ef4eb65211a"
+        }
+      ]
+    },
+    {
+      "id": "chapter-02-05-egg-feedback-object-russian",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "sourceText": "Нет. По-русски зонт — «он», а яйцо — «оно». Но в этих английских сообщениях оба предмета обозначаем it. Род русского слова не определяет выбор.",
+      "segments": [
+        {
+          "rawText": "Нет. По-русски зонт — «он», а яйцо — «оно». Но в этих английских сообщениях оба предмета обозначаем ",
+          "language": "Russian",
+          "spokenText": "Нет. По-русски зонт — «он», а яйцо — «оно». Но в этих английских сообщениях оба предмета обозначаем",
+          "jobId": "tik-ru-ff8e7965b2fa0cce"
+        },
+        {
+          "rawText": "it",
+          "language": "English",
+          "spokenText": "it.",
+          "jobId": "tik-en-f6f93e58a05ed932"
+        },
+        {
+          "rawText": ". Род русского слова не определяет выбор.",
+          "language": "Russian",
+          "spokenText": "Род русского слова не определяет выбор.",
+          "jobId": "tik-ru-cb514118e87d7f5c"
+        }
+      ]
+    },
+    {
+      "id": "chapter-02-05-egg-feedback-object-listener",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "sourceText": "Собеседника обозначает you. Здесь it относилось к предмету под указателем: сначала к зонту, затем к яйцу на рисунке.",
+      "segments": [
+        {
+          "rawText": "Собеседника обозначает ",
+          "language": "Russian",
+          "spokenText": "Собеседника обозначает",
+          "jobId": "tik-ru-11bf616bcbc2babf"
+        },
+        {
+          "rawText": "you",
+          "language": "English",
+          "spokenText": "you.",
+          "jobId": "tik-en-fea052f932a815e1"
+        },
+        {
+          "rawText": ". Здесь ",
+          "language": "Russian",
+          "spokenText": "Здесь",
+          "jobId": "tik-ru-3e09ee8c64f01a64"
+        },
+        {
+          "rawText": "it",
+          "language": "English",
+          "spokenText": "it.",
+          "jobId": "tik-en-f6f93e58a05ed932"
+        },
+        {
+          "rawText": " относилось к предмету под указателем: сначала к зонту, затем к яйцу на рисунке.",
+          "language": "Russian",
+          "spokenText": "относилось к предмету под указателем: сначала к зонту, затем к яйцу на рисунке.",
+          "jobId": "tik-ru-ed6d294b500bdd00"
+        }
+      ]
+    }
+  ],
+  "jobs": [
+    {
+      "id": "tik-ru-876c430d94364341",
+      "requestHash": "876c430d943643417b89056f56aeb5ac793d92c63f90376cfd2b81e0ce49a492",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "Кто-то оставил зонт у стойки. Хозяин пока не вернулся — запишем находку. Я говорю тебе, Люми, об обычном зонте под указателем.",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-en-e6ea5211d881324f",
+      "requestHash": "e6ea5211d881324fe6afba6b2171c83f59ff9fc8f92d02d7c20c33eb732deae2",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "It.",
+      "language": "English",
+      "conditioning": "speaker",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-ru-08f263c8c03dd200",
+      "requestHash": "08f263c8c03dd2005f01724dad11277f8f04ae7b70b14c5f458faea893f787b2",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "личное местоимение. Здесь оно обозначает один обычный предмет, о котором мы говорим. Должно быть понятно, какой именно: сейчас я показал зонт.",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-ru-ab20f52ee3451f6e",
+      "requestHash": "ab20f52ee3451f6e03ca2ee00ec773e6d88a7e752c4433ac0898c44ecf87b48f",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "С этим местоимением нужна форма",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-en-47138fd7037a36ac",
+      "requestHash": "47138fd7037a36aca66443487d8156a6e99520006434cd3ead498783c5b75a0c",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "is.",
+      "language": "English",
+      "conditioning": "speaker",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-en-49a00c4403db64a4",
+      "requestHash": "49a00c4403db64a4905ed840cbe76ff54dab004a6608043f0ef71b0c21fbe30f",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "It is an umbrella.",
+      "language": "English",
+      "conditioning": "speaker",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-ru-2cfc35fd8390aa92",
+      "requestHash": "2cfc35fd8390aa925fb4d9047f35fb67fea4a2447317dc88f5e6193f3121b8f7",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "Это зонт». В этой фразе мы сообщаем, что перед нами за предмет.",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-en-4896ef11aa0afc52",
+      "requestHash": "4896ef11aa0afc52c1c1621a0849c8313a4123391e46b259ed61fca0a224cd94",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "Umbrella.",
+      "language": "English",
+      "conditioning": "speaker",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-ru-63d7449f2daa3a78",
+      "requestHash": "63d7449f2daa3a7839891bcedd724b9ec4eea305672c90a3087b66b011e96279",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "начинается с гласного звука, поэтому",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-en-161e9bba401b16a4",
+      "requestHash": "161e9bba401b16a4036be024c6544736c129faf464c45df5f4a97ff7dd881622",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "an umbrella.",
+      "language": "English",
+      "conditioning": "speaker",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-ru-bfb2c7c3577b4c64",
+      "requestHash": "bfb2c7c3577b4c64baad48cac581219ec0a3d9d6fabb4693b6379494d34005a8",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "Указатель помогает понять, о чём речь, но не отменяет",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-en-999e92f9d683c5fa",
+      "requestHash": "999e92f9d683c5fa369b10399196cabd6636ced23320d0490227cb2cc5a7b118",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "an.",
+      "language": "English",
+      "conditioning": "speaker",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-ru-cb2108e0f331c43a",
+      "requestHash": "cb2108e0f331c43a7999f1f1b2d512a3c0184a84618e055605ca71f8a1263b61",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "когда мы называем вид предмета.",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-ru-88c0a1cbf9252bf1",
+      "requestHash": "88c0a1cbf9252bf1a9833868ec35c4bdff0c8400a682a1336942b0b11bd841dd",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "По-русски зонт — «он», но здесь не нужен",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-en-c4f6409ce6b70c7b",
+      "requestHash": "c4f6409ce6b70c7b1a157b0d1698b71699a44dd7920957ca8e2a7e9682324045",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "he.",
+      "language": "English",
+      "conditioning": "speaker",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-ru-1a3069bf9380a27d",
+      "requestHash": "1a3069bf9380a27dcd852ab90a867a75c0529b251e867f67c821f259d78d028e",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "перед нами обычная вещь, не живой герой. Соберём",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-ru-b67f27e325bd8f6f",
+      "requestHash": "b67f27e325bd8f6fac7bce893e1e641784ccac7f9ce4b8fa0d5ba3f5e98c0049",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "Первые два слова уже в рамке.",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-ru-3b485afaa24e4062",
+      "requestHash": "3b485afaa24e40621c87708bcc9ca8a8734596e49eceab09ec36fb02ffaa6522",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "Это зонт. Описание находки записано; сам зонт никуда не исчез и не превратился в другой предмет.",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-ru-c572e38bb0f6d527",
+      "requestHash": "c572e38bb0f6d52718e5b04eb69cfda3ed47a11eb7dbfe22cebf05c68a9b5c38",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "Теперь Марта проверит рисунок на соседней карточке. Посмотри, куда переместится указатель.",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "marta-ru-5ffbe60bd3a11040",
+      "requestHash": "5ffbe60bd3a11040f5e0424672282c25a299e210b757c499bdde690559bdbc9b",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "referenceAudioSha256": "ab512a661308f5bb5907555e7c70a47e58174478b8bc2872a4f0754beaa7334d",
+      "referenceText": "Здравствуй, Люми. Я Марта. Сегодня мы отправимся к старой станции. Не бойся: я буду рядом.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "Рядом лежит карточка с рисунком. Я расскажу Тику, что на ней изображено. Видишь яйцо под указателем? По-английски яйцо",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "marta-en-7791d36c091b9281",
+      "requestHash": "7791d36c091b9281913dd91287d405ca813351a4d4054fa999eb3074fbced440",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "referenceAudioSha256": "ab512a661308f5bb5907555e7c70a47e58174478b8bc2872a4f0754beaa7334d",
+      "referenceText": "Здравствуй, Люми. Я Марта. Сегодня мы отправимся к старой станции. Не бойся: я буду рядом.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "egg.",
+      "language": "English",
+      "conditioning": "speaker",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "marta-ru-c612e37cef812710",
+      "requestHash": "c612e37cef8127106a68a7291822bddc81823d4d315248514987d452cc8c5131",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "referenceAudioSha256": "ab512a661308f5bb5907555e7c70a47e58174478b8bc2872a4f0754beaa7334d",
+      "referenceText": "Здравствуй, Люми. Я Марта. Сегодня мы отправимся к старой станции. Не бойся: я буду рядом.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "Люми, помоги мне составить сообщение.",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "marta-ru-5643cb07bd4902b0",
+      "requestHash": "5643cb07bd4902b020ff0218142accc922e1e468b705b080133bc55e40a67d49",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "referenceAudioSha256": "ab512a661308f5bb5907555e7c70a47e58174478b8bc2872a4f0754beaa7334d",
+      "referenceText": "Здравствуй, Люми. Я Марта. Сегодня мы отправимся к старой станции. Не бойся: я буду рядом.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "Собери моё сообщение: «Это яйцо». Мы описываем яйцо на рисунке, а не бумажную карточку. Подбери местоимение, форму глагола, артикль и название предмета.",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "marta-en-f4c505bfbe5db3eb",
+      "requestHash": "f4c505bfbe5db3ebdc5f5c80e889b7205c22ee5f4eecd26c00705011b4b687b0",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "referenceAudioSha256": "ab512a661308f5bb5907555e7c70a47e58174478b8bc2872a4f0754beaa7334d",
+      "referenceText": "Здравствуй, Люми. Я Марта. Сегодня мы отправимся к старой станции. Не бойся: я буду рядом.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "It is an egg.",
+      "language": "English",
+      "conditioning": "speaker",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "marta-ru-321c724834e301eb",
+      "requestHash": "321c724834e301ebb777916918bfb259b07c102425d635e08790afb495a21c4f",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "referenceAudioSha256": "ab512a661308f5bb5907555e7c70a47e58174478b8bc2872a4f0754beaa7334d",
+      "referenceText": "Здравствуй, Люми. Я Марта. Сегодня мы отправимся к старой станции. Не бойся: я буду рядом.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "Это яйцо. Верно: мы назвали то, что изображено на карточке. Зонт остался на своём месте, рисунок тоже не изменился.",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-ru-340fbb9a352245f6",
+      "requestHash": "340fbb9a352245f645fbcb5fbb8544e7fac49154921f519e6345c1f1c4675560",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "Сначала речь шла о зонте, потом — о яйце на рисунке. Почему в обоих сообщениях подошло",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-en-f6f93e58a05ed932",
+      "requestHash": "f6f93e58a05ed9329c6e6d5a8edf28ad995ddcc857c185c9433f65a8b88c2457",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "it.",
+      "language": "English",
+      "conditioning": "speaker",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-ru-df41a23a05f3c9f7",
+      "requestHash": "df41a23a05f3c9f71fde70f8740ce13f9cc08657f48f8ca6999b0c9d392f8bae",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "Верно. Мы описывали обычный зонт и яйцо на рисунке. В каждом сообщении",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-ru-68581ef4eb65211a",
+      "requestHash": "68581ef4eb65211aed940e6db00221d172de2e3eeaa9f9d89faa29b5e64cfb38",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "относилось к понятному нам предмету, а не к говорящему или слушателю.",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-ru-ff8e7965b2fa0cce",
+      "requestHash": "ff8e7965b2fa0cce284cbcdfe33cb31096b8e326ddb4e27950af2d23f2c23259",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "Нет. По-русски зонт — «он», а яйцо — «оно». Но в этих английских сообщениях оба предмета обозначаем",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-ru-cb514118e87d7f5c",
+      "requestHash": "cb514118e87d7f5cbe22e3f279be2e946ae5bc3bb01c295d4b72a697c6d9ff79",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "Род русского слова не определяет выбор.",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-ru-11bf616bcbc2babf",
+      "requestHash": "11bf616bcbc2babfa6c6c99c27bdddacbe43417bfebc28826d83894b15fca448",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "Собеседника обозначает",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-en-fea052f932a815e1",
+      "requestHash": "fea052f932a815e19fb6fa2098a7e2d78e0a3ef90259d2d4ed59ca13adaf42a1",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "you.",
+      "language": "English",
+      "conditioning": "speaker",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-ru-3e09ee8c64f01a64",
+      "requestHash": "3e09ee8c64f01a64a2824a67e0e9db5773bd38fbd2513796e7532915fad90f09",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "Здесь",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-ru-ed6d294b500bdd00",
+      "requestHash": "ed6d294b500bdd007a9a6d674dae35f1844222c4c4a2ab2c7a0df00857e05a64",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "относилось к предмету под указателем: сначала к зонту, затем к яйцу на рисунке.",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    }
+  ]
+}

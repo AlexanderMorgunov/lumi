@@ -1,0 +1,13 @@
+{
+  "provider": "elevenlabs",
+  "modelId": "eleven_v3",
+  "selectedOn": "2026-11-19",
+  "status": "owner-selected",
+  "seed": 42,
+  "spokenTextPolicy": "exact-source-no-emotion-tags-as-approved-pilot",
+  "voices": {
+    "tik": { "name": "Will", "voiceId": "bIHbv24MWmeRgasZH58o" },
+    "marta": { "name": "Matilda", "voiceId": "XrExE9yKIg1WjnnlVkGX" },
+    "lumi": { "name": "Garry", "voiceId": "zvm1P65eFt40xSwMli2k" }
+  }
+}

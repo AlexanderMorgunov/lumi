@@ -1,0 +1,1312 @@
+{
+  "provider": "elevenlabs",
+  "modelId": "eleven_v3",
+  "characters": 9016,
+  "dialogueLines": 74,
+  "wordRecordings": 7,
+  "entries": [
+    {
+      "id": "chapter-02-01-task-01",
+      "speaker": "tik",
+      "sourceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов. Начни ты, Люми, — представься Марте.",
+      "spokenText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов. Начни ты, Люми, — представься Марте.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-01-task-01-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов. Начни ты, Люми, — представься Марте.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "0d3595ea4485631f140d8452a2b2f5fb5ee751af940008f14fac25f132273a3e"
+    },
+    {
+      "id": "chapter-02-01-task-02",
+      "speaker": "tik",
+      "sourceText": "I — личное местоимение. Оно значит «я» и обозначает того, кто говорит. В сообщении, которое мы собираем, Люми говорит о себе. I всегда пишется с большой буквы.",
+      "spokenText": "I — личное местоимение. Оно значит «я» и обозначает того, кто говорит. В сообщении, которое мы собираем, Люми говорит о себе. I всегда пишется с большой буквы.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-01-task-02-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "I — личное местоимение. Оно значит «я» и обозначает того, кто говорит. В сообщении, которое мы собираем, Люми говорит о себе. I всегда пишется с большой буквы.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "cceb3703edd6c296e89b1afb36c39f63158f11fe5f293ba250eb8fc86df5a0b7"
+    },
+    {
+      "id": "chapter-02-01-task-03",
+      "speaker": "tik",
+      "sourceText": "Am — форма глагола be, «быть». По-русски говорим «Я Люми», а по-английски — I am Lumi. Здесь am связывает «я» с именем. Перед именем Lumi артикль не нужен.",
+      "spokenText": "Am — форма глагола be, «быть». По-русски говорим «Я Люми», а по-английски — I am Lumi. Здесь am связывает «я» с именем. Перед именем Lumi артикль не нужен.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-01-task-03-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Am — форма глагола be, «быть». По-русски говорим «Я Люми», а по-английски — I am Lumi. Здесь am связывает «я» с именем. Перед именем Lumi артикль не нужен.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "1c8797f96495949f66fd3fa3e8a30eb5ffd7d1bc871478c394b7fd4e0c973e66"
+    },
+    {
+      "id": "chapter-02-01-task-04",
+      "speaker": "tik",
+      "sourceText": "Be может описывать состояние, а не только действие. В названии темы пишут to be, но в нашем предложении нужна форма am. Подлежащее — тот, о ком сообщаем; здесь это I.",
+      "spokenText": "Be может описывать состояние, а не только действие. В названии темы пишут to be, но в нашем предложении нужна форма am. Подлежащее — тот, о ком сообщаем; здесь это I.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-01-task-04-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Be может описывать состояние, а не только действие. В названии темы пишут to be, но в нашем предложении нужна форма am. Подлежащее — тот, о ком сообщаем; здесь это I.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "615da35d1511a4476ab29d81b01a0a936498aac88d95d975457e6729ab30e803"
+    },
+    {
+      "id": "chapter-02-01-task-05",
+      "speaker": "tik",
+      "sourceText": "В рамке уже стоят I am. Толкни Lumi вверх и передай сообщение. Сначала попробуем вместе, затем ты поможешь представиться Марте.",
+      "spokenText": "В рамке уже стоят I am. Толкни Lumi вверх и передай сообщение. Сначала попробуем вместе, затем ты поможешь представиться Марте.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-01-task-05-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "В рамке уже стоят I am. Толкни Lumi вверх и передай сообщение. Сначала попробуем вместе, затем ты поможешь представиться Марте.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "6b3023b1fbace6a384cb550c5e6c363629bb8d13b60afd26e6bf37f91635e990"
+    },
+    {
+      "id": "chapter-02-01-success-01",
+      "speaker": "lumi",
+      "sourceText": "I am Lumi. Я Люми. Это моё имя — его и запишем на бирке!",
+      "spokenText": "I am Lumi. Я Люми. Это моё имя — его и запишем на бирке!",
+      "voiceId": "zvm1P65eFt40xSwMli2k",
+      "request": {
+        "id": "chapter-02-01-success-01-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "I am Lumi. Я Люми. Это моё имя — его и запишем на бирке!",
+        "voiceId": "zvm1P65eFt40xSwMli2k"
+      },
+      "requestHash": "913a01e0ab699982955ea3ea6a3474385fa44f9806a34dcf1a05235feaeaf948"
+    },
+    {
+      "id": "chapter-02-01-success-02",
+      "speaker": "marta",
+      "sourceText": "Привет, Люми! Тик уже подписал твою бирку. Теперь моя очередь: я буду говорить о себе, а ты — слушать.",
+      "spokenText": "Привет, Люми! Тик уже подписал твою бирку. Теперь моя очередь: я буду говорить о себе, а ты — слушать.",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "request": {
+        "id": "chapter-02-01-success-02-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Привет, Люми! Тик уже подписал твою бирку. Теперь моя очередь: я буду говорить о себе, а ты — слушать.",
+        "voiceId": "XrExE9yKIg1WjnnlVkGX"
+      },
+      "requestHash": "9846ab48c9a6deba6f36f5045bf1d3dcb045870c747aa4f8283baa23252265fa"
+    },
+    {
+      "id": "chapter-02-01-marta-task-01",
+      "speaker": "marta",
+      "sourceText": "Я Марта, мастер фонарей. Помоги мне подписать мою бирку.",
+      "spokenText": "Я Марта, мастер фонарей. Помоги мне подписать мою бирку.",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "request": {
+        "id": "chapter-02-01-marta-task-01-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Я Марта, мастер фонарей. Помоги мне подписать мою бирку.",
+        "voiceId": "XrExE9yKIg1WjnnlVkGX"
+      },
+      "requestHash": "3486884daaf10244f433f51ae33bf9b3f81ca23c90e6b1feea2837a3523abc00"
+    },
+    {
+      "id": "chapter-02-01-marta-task-02",
+      "speaker": "marta",
+      "sourceText": "Сейчас я говорю о себе, а ты слушаешь. Поэтому I в моём сообщении означает меня — Марту. Ты по-прежнему двигаешь таблички, но собираешь мои слова.",
+      "spokenText": "Сейчас я говорю о себе, а ты слушаешь. Поэтому I в моём сообщении означает меня — Марту. Ты по-прежнему двигаешь таблички, но собираешь мои слова.",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "request": {
+        "id": "chapter-02-01-marta-task-02-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Сейчас я говорю о себе, а ты слушаешь. Поэтому I в моём сообщении означает меня — Марту. Ты по-прежнему двигаешь таблички, но собираешь мои слова.",
+        "voiceId": "XrExE9yKIg1WjnnlVkGX"
+      },
+      "requestHash": "b488b8ea31e2caf9be108a2bc488bf18b7125653323027f61de244212e270658"
+    },
+    {
+      "id": "chapter-02-01-marta-task-03",
+      "speaker": "marta",
+      "sourceText": "Собери моё сообщение: «Я Марта». На поле два имени и две формы be. Выбери нужные и поставь их в рамку.",
+      "spokenText": "Собери моё сообщение: «Я Марта». На поле два имени и две формы be. Выбери нужные и поставь их в рамку.",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "request": {
+        "id": "chapter-02-01-marta-task-03-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Собери моё сообщение: «Я Марта». На поле два имени и две формы be. Выбери нужные и поставь их в рамку.",
+        "voiceId": "XrExE9yKIg1WjnnlVkGX"
+      },
+      "requestHash": "fcf746b451b5a2c084d78ae1cdbe6c3922db04c41be60cff0a42a2490785369b"
+    },
+    {
+      "id": "chapter-02-01-marta-success-01",
+      "speaker": "marta",
+      "sourceText": "I am Marta. Я Марта. Спасибо, Люми! Вот теперь моя бирка подписана правильно.",
+      "spokenText": "I am Marta. Я Марта. Спасибо, Люми! Вот теперь моя бирка подписана правильно.",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "request": {
+        "id": "chapter-02-01-marta-success-01-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "I am Marta. Я Марта. Спасибо, Люми! Вот теперь моя бирка подписана правильно.",
+        "voiceId": "XrExE9yKIg1WjnnlVkGX"
+      },
+      "requestHash": "d85116948e6cd3d2f0f4b772104f4f41a80e27c5f0c2648a018e321d95d2fb6e"
+    },
+    {
+      "id": "chapter-02-01-marta-success-02",
+      "speaker": "tik",
+      "sourceText": "Обе бирки готовы — Lumi и Marta. Можно зажечь фонарь! В первом сообщении I означало Люми, во втором — Марту. Почему значение изменилось?",
+      "spokenText": "Обе бирки готовы — Lumi и Marta. Можно зажечь фонарь! В первом сообщении I означало Люми, во втором — Марту. Почему значение изменилось?",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-01-marta-success-02-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Обе бирки готовы — Lumi и Marta. Можно зажечь фонарь! В первом сообщении I означало Люми, во втором — Марту. Почему значение изменилось?",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "b46550f15b3423d8d8514c9c0d53719832ab13fea7dff538b2267e59dd0c3ff5"
+    },
+    {
+      "id": "chapter-02-01-marta-feedback-speaker-marta",
+      "speaker": "tik",
+      "sourceText": "Верно. I указывает на автора сообщения. В I am Marta говорит Марта, хотя таблички двигает Люми. Первый эпизод станции завершён; остальные встречи ещё впереди.",
+      "spokenText": "Верно. I указывает на автора сообщения. В I am Marta говорит Марта, хотя таблички двигает Люми. Первый эпизод станции завершён; остальные встречи ещё впереди.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-01-marta-feedback-speaker-marta-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Верно. I указывает на автора сообщения. В I am Marta говорит Марта, хотя таблички двигает Люми. Первый эпизод станции завершён; остальные встречи ещё впереди.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "5c61d07c08e2ef7d481aae137c172da9ef5be07d39f8104e7b5ba9e6eb68fbaf"
+    },
+    {
+      "id": "chapter-02-01-marta-feedback-speaker-lumi",
+      "speaker": "tik",
+      "sourceText": "Управление героем и автор сообщения — разные вещи. Сейчас представляется Марта, поэтому I означает её.",
+      "spokenText": "Управление героем и автор сообщения — разные вещи. Сейчас представляется Марта, поэтому I означает её.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-01-marta-feedback-speaker-lumi-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Управление героем и автор сообщения — разные вещи. Сейчас представляется Марта, поэтому I означает её.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "26ba11a553e4338bc3ff94ca099288363b97f811466fec1af29bc4f9df83d0e1"
+    },
+    {
+      "id": "chapter-02-01-marta-feedback-speaker-listener",
+      "speaker": "tik",
+      "sourceText": "I — «я», то есть говорящий. В этой части слушает Люми, а о себе говорит Марта.",
+      "spokenText": "I — «я», то есть говорящий. В этой части слушает Люми, а о себе говорит Марта.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-01-marta-feedback-speaker-listener-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "I — «я», то есть говорящий. В этой части слушает Люми, а о себе говорит Марта.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "fe8f9c1780898cbd9a5ea13c214f5746ac84a84ccd1c257b171fe0f3639cdb78"
+    },
+    {
+      "id": "chapter-02-02-task-01",
+      "speaker": "marta",
+      "sourceText": "Имена на месте. Добавим к биркам короткие описания. Люми, ты живой фонарь. По-английски фонарь — lantern. Так называют и тебя, и обычный фонарь под крышей.",
+      "spokenText": "Имена на месте. Добавим к биркам короткие описания. Люми, ты живой фонарь. По-английски фонарь — lantern. Так называют и тебя, и обычный фонарь под крышей.",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "request": {
+        "id": "chapter-02-02-task-01-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Имена на месте. Добавим к биркам короткие описания. Люми, ты живой фонарь. По-английски фонарь — lantern. Так называют и тебя, и обычный фонарь под крышей.",
+        "voiceId": "XrExE9yKIg1WjnnlVkGX"
+      },
+      "requestHash": "4421ee5113ac1c64907b3d59c76da3af2d6d574482cc39f7de854c922f8e5037"
+    },
+    {
+      "id": "chapter-02-02-task-02",
+      "speaker": "marta",
+      "sourceText": "Lumi — твоё имя, а lantern — название предмета. Сравни: I am Lumi — «Я Люми». I am a lantern — «Я фонарь».",
+      "spokenText": "Lumi — твоё имя, а lantern — название предмета. Сравни: I am Lumi — «Я Люми». I am a lantern — «Я фонарь».",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "request": {
+        "id": "chapter-02-02-task-02-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Lumi — твоё имя, а lantern — название предмета. Сравни: I am Lumi — «Я Люми». I am a lantern — «Я фонарь».",
+        "voiceId": "XrExE9yKIg1WjnnlVkGX"
+      },
+      "requestHash": "fb521fcf2eeeb1cb6243909c7226b18d53a65eef018e3d0f7aa509508f16c0cc"
+    },
+    {
+      "id": "chapter-02-02-task-03",
+      "speaker": "marta",
+      "sourceText": "Lantern можно посчитать: один фонарь, два фонаря. Когда говорим, что ты один из фонарей, перед этим словом нужен неопределённый артикль. Здесь a: lantern начинается с согласного звука.",
+      "spokenText": "Lantern можно посчитать: один фонарь, два фонаря. Когда говорим, что ты один из фонарей, перед этим словом нужен неопределённый артикль. Здесь a: lantern начинается с согласного звука.",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "request": {
+        "id": "chapter-02-02-task-03-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Lantern можно посчитать: один фонарь, два фонаря. Когда говорим, что ты один из фонарей, перед этим словом нужен неопределённый артикль. Здесь a: lantern начинается с согласного звука.",
+        "voiceId": "XrExE9yKIg1WjnnlVkGX"
+      },
+      "requestHash": "1fd021a6ec86c66762091f57e7207acdc20e743d5637f37caa83ff308eb85aa2"
+    },
+    {
+      "id": "chapter-02-02-task-04",
+      "speaker": "marta",
+      "sourceText": "Я давно тебя знаю, но в описании всё равно будет a lantern. Мы говорим, кто ты, а не выбираем, какой именно фонарь нужен. Ты остаёшься Люми — слова никого не превращают.",
+      "spokenText": "Я давно тебя знаю, но в описании всё равно будет a lantern. Мы говорим, кто ты, а не выбираем, какой именно фонарь нужен. Ты остаёшься Люми — слова никого не превращают.",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "request": {
+        "id": "chapter-02-02-task-04-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Я давно тебя знаю, но в описании всё равно будет a lantern. Мы говорим, кто ты, а не выбираем, какой именно фонарь нужен. Ты остаёшься Люми — слова никого не превращают.",
+        "voiceId": "XrExE9yKIg1WjnnlVkGX"
+      },
+      "requestHash": "3892e11573013b18b311e65f16531344d72ffd2d7239199bb6bc6437d4407c78"
+    },
+    {
+      "id": "chapter-02-02-task-05",
+      "speaker": "marta",
+      "sourceText": "Попробуем вместе: собери I am a lantern. Первые два слова уже в рамке. Потом ты поможешь Тику составить такое сообщение самому.",
+      "spokenText": "Попробуем вместе: собери I am a lantern. Первые два слова уже в рамке. Потом ты поможешь Тику составить такое сообщение самому.",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "request": {
+        "id": "chapter-02-02-task-05-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Попробуем вместе: собери I am a lantern. Первые два слова уже в рамке. Потом ты поможешь Тику составить такое сообщение самому.",
+        "voiceId": "XrExE9yKIg1WjnnlVkGX"
+      },
+      "requestHash": "b7e1b3696b4ffc2f5a0c5c3b9cc82f56aa22b36fb0c56a0e84ee3f895c28246d"
+    },
+    {
+      "id": "chapter-02-02-success-01",
+      "speaker": "marta",
+      "sourceText": "Верно: I am a lantern — «Я фонарь». Имя Люми осталось прежним. Теперь рядом с ним есть описание.",
+      "spokenText": "Верно: I am a lantern — «Я фонарь». Имя Люми осталось прежним. Теперь рядом с ним есть описание.",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "request": {
+        "id": "chapter-02-02-success-01-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Верно: I am a lantern — «Я фонарь». Имя Люми осталось прежним. Теперь рядом с ним есть описание.",
+        "voiceId": "XrExE9yKIg1WjnnlVkGX"
+      },
+      "requestHash": "62e1ac8f949121070fc1a4c2a095e78f4dde542c2f8ee129d84b39cee191555c"
+    },
+    {
+      "id": "chapter-02-02-success-02",
+      "speaker": "marta",
+      "sourceText": "Люми рассказал о себе. Теперь передадим слово Тику — его бирке тоже нужно описание.",
+      "spokenText": "Люми рассказал о себе. Теперь передадим слово Тику — его бирке тоже нужно описание.",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "request": {
+        "id": "chapter-02-02-success-02-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Люми рассказал о себе. Теперь передадим слово Тику — его бирке тоже нужно описание.",
+        "voiceId": "XrExE9yKIg1WjnnlVkGX"
+      },
+      "requestHash": "630d15ee747fff4ad3593ecb6efb1f48253b659ba3c40c081cdbf8aa4c47aa27"
+    },
+    {
+      "id": "chapter-02-02-tik-task-01",
+      "speaker": "tik",
+      "sourceText": "Мою бирку тоже дополним. Я Тик, почтовый робот. Слово robot тебе уже знакомо: оно значит «робот».",
+      "spokenText": "Мою бирку тоже дополним. Я Тик, почтовый робот. Слово robot тебе уже знакомо: оно значит «робот».",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-02-tik-task-01-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Мою бирку тоже дополним. Я Тик, почтовый робот. Слово robot тебе уже знакомо: оно значит «робот».",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "ed43d43ec95d5023f346c7f15385b64b0d24147b69680de2d744009abe053ffc"
+    },
+    {
+      "id": "chapter-02-02-tik-task-02",
+      "speaker": "tik",
+      "sourceText": "Теперь я говорю Марте о себе. Помоги мне составить сообщение «Я робот». Имя уже записано; сейчас назовём, кто я. Ты двигаешь слова, а I в этом сообщении означает меня.",
+      "spokenText": "Теперь я говорю Марте о себе. Помоги мне составить сообщение «Я робот». Имя уже записано; сейчас назовём, кто я. Ты двигаешь слова, а I в этом сообщении означает меня.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-02-tik-task-02-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Теперь я говорю Марте о себе. Помоги мне составить сообщение «Я робот». Имя уже записано; сейчас назовём, кто я. Ты двигаешь слова, а I в этом сообщении означает меня.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "2078826eb7c45bc24533d870771fcce5059f345eef59ac015d60223b001e4901"
+    },
+    {
+      "id": "chapter-02-02-tik-success-01",
+      "speaker": "tik",
+      "sourceText": "I am a robot. Я робот. Теперь на моей бирке есть и имя, и описание. Можно разносить письма!",
+      "spokenText": "I am a robot. Я робот. Теперь на моей бирке есть и имя, и описание. Можно разносить письма!",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-02-tik-success-01-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "I am a robot. Я робот. Теперь на моей бирке есть и имя, и описание. Можно разносить письма!",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "75e90cc8474c03effd5acf0732d289d0524fd413e6ca01b5a550d8bbb3af0d6a"
+    },
+    {
+      "id": "chapter-02-02-tik-success-02",
+      "speaker": "tik",
+      "sourceText": "На бирках стоят Lumi и Tik. А в описаниях появились a lantern и a robot. Почему перед lantern и robot нужен a, а перед нашими именами его нет?",
+      "spokenText": "На бирках стоят Lumi и Tik. А в описаниях появились a lantern и a robot. Почему перед lantern и robot нужен a, а перед нашими именами его нет?",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-02-tik-success-02-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "На бирках стоят Lumi и Tik. А в описаниях появились a lantern и a robot. Почему перед lantern и robot нужен a, а перед нашими именами его нет?",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "12386ab3b098e128bff5cc6dd966887e54b52071ff415972f62a98da877a1780"
+    },
+    {
+      "id": "chapter-02-02-tik-feedback-identity-kind",
+      "speaker": "tik",
+      "sourceText": "Да. В описании называем вид: один фонарь или один робот. Поэтому a lantern и a robot. В обычном представлении перед именем артикль не нужен.",
+      "spokenText": "Да. В описании называем вид: один фонарь или один робот. Поэтому a lantern и a robot. В обычном представлении перед именем артикль не нужен.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-02-tik-feedback-identity-kind-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Да. В описании называем вид: один фонарь или один робот. Поэтому a lantern и a robot. В обычном представлении перед именем артикль не нужен.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "90d2e689efb42de1086cba8761f3a8dcf75570b3d52912d7f1a9fa1481f667fd"
+    },
+    {
+      "id": "chapter-02-02-tik-feedback-identity-stranger",
+      "speaker": "tik",
+      "sourceText": "Марта уже знает обоих. Здесь a помогает назвать вид: фонарь или робот. Знакомство с собеседником не отменяет артикль в таком описании.",
+      "spokenText": "Марта уже знает обоих. Здесь a помогает назвать вид: фонарь или робот. Знакомство с собеседником не отменяет артикль в таком описании.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-02-tik-feedback-identity-stranger-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Марта уже знает обоих. Здесь a помогает назвать вид: фонарь или робот. Знакомство с собеседником не отменяет артикль в таком описании.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "f5fea8cddd10cd570ff7fbd97251ba47cf4bb3b42f2d3e2d83af845d916ed0ca"
+    },
+    {
+      "id": "chapter-02-02-tik-feedback-identity-after-am",
+      "speaker": "tik",
+      "sourceText": "Не всегда. В I am Lumi после am стоит имя без артикля. В I am a lantern слово lantern называет один предмет — здесь нужен a.",
+      "spokenText": "Не всегда. В I am Lumi после am стоит имя без артикля. В I am a lantern слово lantern называет один предмет — здесь нужен a.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-02-tik-feedback-identity-after-am-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Не всегда. В I am Lumi после am стоит имя без артикля. В I am a lantern слово lantern называет один предмет — здесь нужен a.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "55765874891178561664c2949a39b4586618625520f98704a8e800675d22bfba"
+    },
+    {
+      "id": "chapter-02-03-task-01",
+      "speaker": "marta",
+      "sourceText": "Бирки готовы. Перед отправлением проверим, кому передаём сообщение. Люми, посмотри на меня: сейчас я обращаюсь к тебе.",
+      "spokenText": "Бирки готовы. Перед отправлением проверим, кому передаём сообщение. Люми, посмотри на меня: сейчас я обращаюсь к тебе.",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "request": {
+        "id": "chapter-02-03-task-01-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Бирки готовы. Перед отправлением проверим, кому передаём сообщение. Люми, посмотри на меня: сейчас я обращаюсь к тебе.",
+        "voiceId": "XrExE9yKIg1WjnnlVkGX"
+      },
+      "requestHash": "66243b36ed4a37ec1c934b7c53dff12d2334d48d646c4e2e91afeae0831af60c"
+    },
+    {
+      "id": "chapter-02-03-task-02",
+      "speaker": "marta",
+      "sourceText": "You — личное местоимение. Оно значит «ты» или «вы» и обозначает того, к кому обращаются. Здесь я говорю с тобой одним.",
+      "spokenText": "You — личное местоимение. Оно значит «ты» или «вы» и обозначает того, к кому обращаются. Здесь я говорю с тобой одним.",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "request": {
+        "id": "chapter-02-03-task-02-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "You — личное местоимение. Оно значит «ты» или «вы» и обозначает того, к кому обращаются. Здесь я говорю с тобой одним.",
+        "voiceId": "XrExE9yKIg1WjnnlVkGX"
+      },
+      "requestHash": "5e589bd232c1a979f25741ef0315d5c857995cbec3b34d6f2431c0fceea376c9"
+    },
+    {
+      "id": "chapter-02-03-task-03",
+      "speaker": "marta",
+      "sourceText": "С этим местоимением нужна форма are. Это форма глагола be. Даже когда собеседник один, говорим you are.",
+      "spokenText": "С этим местоимением нужна форма are. Это форма глагола be. Даже когда собеседник один, говорим you are.",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "request": {
+        "id": "chapter-02-03-task-03-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "С этим местоимением нужна форма are. Это форма глагола be. Даже когда собеседник один, говорим you are.",
+        "voiceId": "XrExE9yKIg1WjnnlVkGX"
+      },
+      "requestHash": "41ce038f8ef3610322aaa43576c2f44fc71951e0f79c1acefbb419b387ba4204"
+    },
+    {
+      "id": "chapter-02-03-task-04",
+      "speaker": "marta",
+      "sourceText": "Сравни: I am Marta — «Я Марта». А тебе я говорю: You are Lumi — «Ты Люми». В первой фразе речь обо мне, во второй — о тебе.",
+      "spokenText": "Сравни: I am Marta — «Я Марта». А тебе я говорю: You are Lumi — «Ты Люми». В первой фразе речь обо мне, во второй — о тебе.",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "request": {
+        "id": "chapter-02-03-task-04-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Сравни: I am Marta — «Я Марта». А тебе я говорю: You are Lumi — «Ты Люми». В первой фразе речь обо мне, во второй — о тебе.",
+        "voiceId": "XrExE9yKIg1WjnnlVkGX"
+      },
+      "requestHash": "84aa9849396c5d0de24dcc658f0ca313b2970b68d7b0d6c550b446ee59743ecc"
+    },
+    {
+      "id": "chapter-02-03-task-05",
+      "speaker": "marta",
+      "sourceText": "Соберём моё обращение вместе: You are Lumi. Местоимение уже в рамке. Добавь форму глагола и своё имя. Перед именем артикль не нужен.",
+      "spokenText": "Соберём моё обращение вместе: You are Lumi. Местоимение уже в рамке. Добавь форму глагола и своё имя. Перед именем артикль не нужен.",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "request": {
+        "id": "chapter-02-03-task-05-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Соберём моё обращение вместе: You are Lumi. Местоимение уже в рамке. Добавь форму глагола и своё имя. Перед именем артикль не нужен.",
+        "voiceId": "XrExE9yKIg1WjnnlVkGX"
+      },
+      "requestHash": "6112f156c4017f7e13c1f31878a7f0db7dab2e9c1fa93d1a058bf37d66b785bd"
+    },
+    {
+      "id": "chapter-02-03-success-01",
+      "speaker": "marta",
+      "sourceText": "You are Lumi. Верно, ты Люми. Я говорила, ты слушал — поэтому в моём сообщении you обозначает тебя.",
+      "spokenText": "You are Lumi. Верно, ты Люми. Я говорила, ты слушал — поэтому в моём сообщении you обозначает тебя.",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "request": {
+        "id": "chapter-02-03-success-01-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "You are Lumi. Верно, ты Люми. Я говорила, ты слушал — поэтому в моём сообщении you обозначает тебя.",
+        "voiceId": "XrExE9yKIg1WjnnlVkGX"
+      },
+      "requestHash": "78f525ceb5900238581ca89cee65285b944a3089ea965b3524078ddb6baf4628"
+    },
+    {
+      "id": "chapter-02-03-success-02",
+      "speaker": "marta",
+      "sourceText": "А теперь обратись к Тику. Ты станешь автором сообщения, а он — твоим собеседником.",
+      "spokenText": "А теперь обратись к Тику. Ты станешь автором сообщения, а он — твоим собеседником.",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "request": {
+        "id": "chapter-02-03-success-02-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "А теперь обратись к Тику. Ты станешь автором сообщения, а он — твоим собеседником.",
+        "voiceId": "XrExE9yKIg1WjnnlVkGX"
+      },
+      "requestHash": "bc036f23565d61d087aa4c4849e6599ecdc245e3891a6373b4e63d8524b6591a"
+    },
+    {
+      "id": "chapter-02-03-tik-task-01",
+      "speaker": "tik",
+      "sourceText": "Люми, теперь твоя очередь. Скажи мне: «Ты робот». Слово robot ты уже знаешь. На этот раз ты говоришь, а я слушаю.",
+      "spokenText": "Люми, теперь твоя очередь. Скажи мне: «Ты робот». Слово robot ты уже знаешь. На этот раз ты говоришь, а я слушаю.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-03-tik-task-01-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Люми, теперь твоя очередь. Скажи мне: «Ты робот». Слово robot ты уже знаешь. На этот раз ты говоришь, а я слушаю.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "7df77b19d93a627cb96e9b63e453c6997e54eb3d89e6f08271993c62a61f7f2b"
+    },
+    {
+      "id": "chapter-02-03-tik-task-02",
+      "speaker": "tik",
+      "sourceText": "Выбери местоимение и форму глагола для обращения ко мне. Не забудь артикль перед названием одного робота. Я подожду у стойки.",
+      "spokenText": "Выбери местоимение и форму глагола для обращения ко мне. Не забудь артикль перед названием одного робота. Я подожду у стойки.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-03-tik-task-02-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Выбери местоимение и форму глагола для обращения ко мне. Не забудь артикль перед названием одного робота. Я подожду у стойки.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "c98f0e96eed9f94ad1740357a06caa56c88e0174f939061f9c16157211c18499"
+    },
+    {
+      "id": "chapter-02-03-tik-success-01",
+      "speaker": "tik",
+      "sourceText": "You are a robot. Ты робот. Всё верно, Люми, ты обратился ко мне. Я один, но после you всё равно нужна форма are.",
+      "spokenText": "You are a robot. Ты робот. Всё верно, Люми, ты обратился ко мне. Я один, но после you всё равно нужна форма are.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-03-tik-success-01-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "You are a robot. Ты робот. Всё верно, Люми, ты обратился ко мне. Я один, но после you всё равно нужна форма are.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "cd0161bcc6240c6832605b55fab2d32b6be354fbbd0a2c3438d37ec311d1e586"
+    },
+    {
+      "id": "chapter-02-03-tik-success-02",
+      "speaker": "tik",
+      "sourceText": "Сначала Марта обращалась к Люми, потом Люми — ко мне. Кого обозначало you во втором сообщении?",
+      "spokenText": "Сначала Марта обращалась к Люми, потом Люми — ко мне. Кого обозначало you во втором сообщении?",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-03-tik-success-02-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Сначала Марта обращалась к Люми, потом Люми — ко мне. Кого обозначало you во втором сообщении?",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "886ae364566faeb805b5ce3581ee85e81fb807a927407df2106639a24f161764"
+    },
+    {
+      "id": "chapter-02-03-tik-feedback-address-tik",
+      "speaker": "tik",
+      "sourceText": "Верно. Во втором сообщении Люми говорил, а Тик слушал. Поэтому you обозначало Тика. С одним собеседником тоже используем are.",
+      "spokenText": "Верно. Во втором сообщении Люми говорил, а Тик слушал. Поэтому you обозначало Тика. С одним собеседником тоже используем are.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-03-tik-feedback-address-tik-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Верно. Во втором сообщении Люми говорил, а Тик слушал. Поэтому you обозначало Тика. С одним собеседником тоже используем are.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "cad33a37f0135d3cffcd3cdbbdfe97956c1ae44e4f073fb7e16dc6d07546f6d3"
+    },
+    {
+      "id": "chapter-02-03-tik-feedback-address-lumi",
+      "speaker": "tik",
+      "sourceText": "Люми двигал слова и был автором сообщения, но обращался к Тику. Говорящего обозначает I, а его собеседника — you.",
+      "spokenText": "Люми двигал слова и был автором сообщения, но обращался к Тику. Говорящего обозначает I, а его собеседника — you.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-03-tik-feedback-address-lumi-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Люми двигал слова и был автором сообщения, но обращался к Тику. Говорящего обозначает I, а его собеседника — you.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "c1e36832508de314c136456c888bce0c52ba60a3cc64ce567a8f92870f9b9f0f"
+    },
+    {
+      "id": "chapter-02-03-tik-feedback-address-group",
+      "speaker": "tik",
+      "sourceText": "Форма are не означает, что собеседников несколько. С местоимением you она нужна и при обращении к одному. Здесь Люми говорил только с Тиком.",
+      "spokenText": "Форма are не означает, что собеседников несколько. С местоимением you она нужна и при обращении к одному. Здесь Люми говорил только с Тиком.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-03-tik-feedback-address-group-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Форма are не означает, что собеседников несколько. С местоимением you она нужна и при обращении к одному. Здесь Люми говорил только с Тиком.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "6c222480e58df3be01f2a705c04adef418262728b7141585eed58f54ccc9359c"
+    },
+    {
+      "id": "chapter-02-04-task-01",
+      "speaker": "tik",
+      "sourceText": "Люми, осталось сверить записи о спутниках. Я говорю с тобой, а расскажу о Марте. Она стоит рядом со стойкой.",
+      "spokenText": "Люми, осталось сверить записи о спутниках. Я говорю с тобой, а расскажу о Марте. Она стоит рядом со стойкой.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-04-task-01-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Люми, осталось сверить записи о спутниках. Я говорю с тобой, а расскажу о Марте. Она стоит рядом со стойкой.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "f2a503c26b3264967d5226446cb329cfbb198a27054a795da7389e934992e185"
+    },
+    {
+      "id": "chapter-02-04-task-02",
+      "speaker": "tik",
+      "sourceText": "She — личное местоимение «она». Им можно заменить имя Марты, когда нам обоим понятно, о ком речь. О мужчине обычно говорим he — «он».",
+      "spokenText": "She — личное местоимение «она». Им можно заменить имя Марты, когда нам обоим понятно, о ком речь. О мужчине обычно говорим he — «он».",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-04-task-02-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "She — личное местоимение «она». Им можно заменить имя Марты, когда нам обоим понятно, о ком речь. О мужчине обычно говорим he — «он».",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "421d6baf13fb93a7be3c3d5dbb229e8ab4a5b9453c1041b819e57bf05a63fa03"
+    },
+    {
+      "id": "chapter-02-04-task-03",
+      "speaker": "tik",
+      "sourceText": "С этими местоимениями нужна форма is. Это форма глагола be. Сравни: ты обращаешься к собеседнику, а сейчас я рассказываю тебе о другом герое.",
+      "spokenText": "С этими местоимениями нужна форма is. Это форма глагола be. Сравни: ты обращаешься к собеседнику, а сейчас я рассказываю тебе о другом герое.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-04-task-03-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "С этими местоимениями нужна форма is. Это форма глагола be. Сравни: ты обращаешься к собеседнику, а сейчас я рассказываю тебе о другом герое.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "038bff8555a94f9747fad7566e3ed68bd6a9d74777f29e194284ee84bb910737"
+    },
+    {
+      "id": "chapter-02-04-task-04",
+      "speaker": "tik",
+      "sourceText": "She is Marta — «Она Марта». Здесь я говорю, ты слушаешь, а слово she обозначает Марту. Перед её именем артикль не нужен.",
+      "spokenText": "She is Marta — «Она Марта». Здесь я говорю, ты слушаешь, а слово she обозначает Марту. Перед её именем артикль не нужен.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-04-task-04-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "She is Marta — «Она Марта». Здесь я говорю, ты слушаешь, а слово she обозначает Марту. Перед её именем артикль не нужен.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "36dc51fa5b8a861f0f599992391293472e5d57a7c786174dfd6e564370833ccb"
+    },
+    {
+      "id": "chapter-02-04-task-05",
+      "speaker": "tik",
+      "sourceText": "Соберём She is Marta. Местоимение уже в рамке: добавь форму глагола и имя героини, о которой мы говорим.",
+      "spokenText": "Соберём She is Marta. Местоимение уже в рамке: добавь форму глагола и имя героини, о которой мы говорим.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-04-task-05-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Соберём She is Marta. Местоимение уже в рамке: добавь форму глагола и имя героини, о которой мы говорим.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "6610acd8fee43c230db409efb8ef79ebd3faaf781a9bd369ac1f75c6bab65df4"
+    },
+    {
+      "id": "chapter-02-04-success-01",
+      "speaker": "tik",
+      "sourceText": "She is Marta. Верно: сообщение о Марте записано. Она не стала собеседником только потому, что мы назвали её имя.",
+      "spokenText": "She is Marta. Верно: сообщение о Марте записано. Она не стала собеседником только потому, что мы назвали её имя.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-04-success-01-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "She is Marta. Верно: сообщение о Марте записано. Она не стала собеседником только потому, что мы назвали её имя.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "036c29ea2f12797189ededd98e4d9ea0df393072c42171ad69b468955741df4c"
+    },
+    {
+      "id": "chapter-02-04-success-02",
+      "speaker": "tik",
+      "sourceText": "Теперь Марта расскажет тебе о другом спутнике. Послушай, о ком будет речь.",
+      "spokenText": "Теперь Марта расскажет тебе о другом спутнике. Послушай, о ком будет речь.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-04-success-02-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Теперь Марта расскажет тебе о другом спутнике. Послушай, о ком будет речь.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "678e4c8509a9d94317938620bf8a674cd14148848b69dab95b35d5d25bd93e8e"
+    },
+    {
+      "id": "chapter-02-04-tik-task-01",
+      "speaker": "marta",
+      "sourceText": "Люми, теперь я расскажу тебе о Тике. О нём в нашей истории говорим he — «он». Это живой герой со своим характером; не каждый робот в английском обязательно he.",
+      "spokenText": "Люми, теперь я расскажу тебе о Тике. О нём в нашей истории говорим he — «он». Это живой герой со своим характером; не каждый робот в английском обязательно he.",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "request": {
+        "id": "chapter-02-04-tik-task-01-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Люми, теперь я расскажу тебе о Тике. О нём в нашей истории говорим he — «он». Это живой герой со своим характером; не каждый робот в английском обязательно he.",
+        "voiceId": "XrExE9yKIg1WjnnlVkGX"
+      },
+      "requestHash": "9dc295d29c78c364c72a9c7ac7241b6c389d48d5f8b02f3d09fc609212aa664c"
+    },
+    {
+      "id": "chapter-02-04-tik-task-02",
+      "speaker": "marta",
+      "sourceText": "Составь моё сообщение: «Он робот». Я говорю с тобой, но описываю Тика. Выбери местоимение, форму глагола и артикль.",
+      "spokenText": "Составь моё сообщение: «Он робот». Я говорю с тобой, но описываю Тика. Выбери местоимение, форму глагола и артикль.",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "request": {
+        "id": "chapter-02-04-tik-task-02-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Составь моё сообщение: «Он робот». Я говорю с тобой, но описываю Тика. Выбери местоимение, форму глагола и артикль.",
+        "voiceId": "XrExE9yKIg1WjnnlVkGX"
+      },
+      "requestHash": "8a0fb98665fea2ec02c977755d22423a104c21d9cce3de31fa55c56c38aa059e"
+    },
+    {
+      "id": "chapter-02-04-tik-success-01",
+      "speaker": "marta",
+      "sourceText": "He is a robot. Он робот. Верно: я говорю тебе о Тике. Слово he обозначает его, а не меня и не тебя.",
+      "spokenText": "He is a robot. Он робот. Верно: я говорю тебе о Тике. Слово he обозначает его, а не меня и не тебя.",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "request": {
+        "id": "chapter-02-04-tik-success-01-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "He is a robot. Он робот. Верно: я говорю тебе о Тике. Слово he обозначает его, а не меня и не тебя.",
+        "voiceId": "XrExE9yKIg1WjnnlVkGX"
+      },
+      "requestHash": "34973f6d01ee0b11ae90469512138bd0e5c0bd325785b85f1f550e2122ea63ad"
+    },
+    {
+      "id": "chapter-02-04-tik-success-02",
+      "speaker": "marta",
+      "sourceText": "Теперь поменяемся ролями: ты расскажешь мне о том же Тике. Посмотрим, изменится ли местоимение.",
+      "spokenText": "Теперь поменяемся ролями: ты расскажешь мне о том же Тике. Посмотрим, изменится ли местоимение.",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "request": {
+        "id": "chapter-02-04-tik-success-02-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Теперь поменяемся ролями: ты расскажешь мне о том же Тике. Посмотрим, изменится ли местоимение.",
+        "voiceId": "XrExE9yKIg1WjnnlVkGX"
+      },
+      "requestHash": "66687527e86c9a2471df327004ab2bb7d4ce512635be923b4d57b030dd35c31e"
+    },
+    {
+      "id": "chapter-02-04-transfer-task-01",
+      "speaker": "tik",
+      "sourceText": "Люми, теперь расскажи Марте обо мне: «Он робот». Ты говоришь, Марта слушает, а речь всё ещё о Тике. Собери сообщение без готового примера.",
+      "spokenText": "Люми, теперь расскажи Марте обо мне: «Он робот». Ты говоришь, Марта слушает, а речь всё ещё о Тике. Собери сообщение без готового примера.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-04-transfer-task-01-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Люми, теперь расскажи Марте обо мне: «Он робот». Ты говоришь, Марта слушает, а речь всё ещё о Тике. Собери сообщение без готового примера.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "43d7e39b6591530686cec030d0fa31e7c7dc780eeb78f599416a4856eff1ee33"
+    },
+    {
+      "id": "chapter-02-04-transfer-success-01",
+      "speaker": "tik",
+      "sourceText": "He is a robot. Автор сообщения сменился, но речь по-прежнему обо мне. Поэтому местоимение осталось тем же.",
+      "spokenText": "He is a robot. Автор сообщения сменился, но речь по-прежнему обо мне. Поэтому местоимение осталось тем же.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-04-transfer-success-01-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "He is a robot. Автор сообщения сменился, но речь по-прежнему обо мне. Поэтому местоимение осталось тем же.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "11ff436127f602a3046302623f017a8aa2c9d47776ca11805d1136894bc25658"
+    },
+    {
+      "id": "chapter-02-04-transfer-success-02",
+      "speaker": "tik",
+      "sourceText": "Сначала обо мне говорила Марта, затем Люми. Почему в обоих сообщениях осталось he?",
+      "spokenText": "Сначала обо мне говорила Марта, затем Люми. Почему в обоих сообщениях осталось he?",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-04-transfer-success-02-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Сначала обо мне говорила Марта, затем Люми. Почему в обоих сообщениях осталось he?",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "c1e45a17b4736da54d5833366e8065c0d64c0dace87ce67fc68f69d61b46dd3b"
+    },
+    {
+      "id": "chapter-02-04-transfer-feedback-third-subject",
+      "speaker": "tik",
+      "sourceText": "Верно. Марта и Люми по очереди говорили о Тике. Поэтому he в обоих сообщениях обозначает Тика. Форма глагола тоже осталась прежней.",
+      "spokenText": "Верно. Марта и Люми по очереди говорили о Тике. Поэтому he в обоих сообщениях обозначает Тика. Форма глагола тоже осталась прежней.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-04-transfer-feedback-third-subject-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Верно. Марта и Люми по очереди говорили о Тике. Поэтому he в обоих сообщениях обозначает Тика. Форма глагола тоже осталась прежней.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "b4156ca0d6b344497146c8afc4099a1ddc94e7500674f2385d798898241373fa"
+    },
+    {
+      "id": "chapter-02-04-transfer-feedback-third-speaker",
+      "speaker": "tik",
+      "sourceText": "Того, кто говорит о себе, обозначает I. Здесь авторы менялись, а he указывало на Тика — героя, о котором они рассказывали.",
+      "spokenText": "Того, кто говорит о себе, обозначает I. Здесь авторы менялись, а he указывало на Тика — героя, о котором они рассказывали.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-04-transfer-feedback-third-speaker-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Того, кто говорит о себе, обозначает I. Здесь авторы менялись, а he указывало на Тика — героя, о котором они рассказывали.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "c378c99e0996ccb95728bce59f885b63e1894def25b8a6b50e5e01b6252785c0"
+    },
+    {
+      "id": "chapter-02-04-transfer-feedback-third-listener",
+      "speaker": "tik",
+      "sourceText": "You обозначает того, к кому обращаются. В последних двух сообщениях собеседники были разными, но речь шла о Тике. Здесь he обозначает именно его.",
+      "spokenText": "You обозначает того, к кому обращаются. В последних двух сообщениях собеседники были разными, но речь шла о Тике. Здесь he обозначает именно его.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-04-transfer-feedback-third-listener-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "You обозначает того, к кому обращаются. В последних двух сообщениях собеседники были разными, но речь шла о Тике. Здесь he обозначает именно его.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "929392d8e118273cab0542558b629ce2c73ac2985c8ef07c1912a570e322077a"
+    },
+    {
+      "id": "chapter-02-05-task-01",
+      "speaker": "tik",
+      "sourceText": "Кто-то оставил зонт у стойки. Хозяин пока не вернулся — запишем находку. Я говорю тебе, Люми, об обычном зонте под указателем.",
+      "spokenText": "Кто-то оставил зонт у стойки. Хозяин пока не вернулся — запишем находку. Я говорю тебе, Люми, об обычном зонте под указателем.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-05-task-01-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Кто-то оставил зонт у стойки. Хозяин пока не вернулся — запишем находку. Я говорю тебе, Люми, об обычном зонте под указателем.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "3e5214b20d737c3fc8106a5c69392941aae8faa940c258ff809b91113fb725ad"
+    },
+    {
+      "id": "chapter-02-05-task-02",
+      "speaker": "tik",
+      "sourceText": "It — личное местоимение. Здесь оно обозначает один обычный предмет, о котором мы говорим. Должно быть понятно, какой именно: сейчас я показал зонт.",
+      "spokenText": "It — личное местоимение. Здесь оно обозначает один обычный предмет, о котором мы говорим. Должно быть понятно, какой именно: сейчас я показал зонт.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-05-task-02-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "It — личное местоимение. Здесь оно обозначает один обычный предмет, о котором мы говорим. Должно быть понятно, какой именно: сейчас я показал зонт.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "0f8c1140fe842171ae975da4563ef53ba84ce0f69182c47f5d3f028c922395a6"
+    },
+    {
+      "id": "chapter-02-05-task-03",
+      "speaker": "tik",
+      "sourceText": "С этим местоимением нужна форма is. It is an umbrella — «Это зонт». В этой фразе мы сообщаем, что перед нами за предмет.",
+      "spokenText": "С этим местоимением нужна форма is. It is an umbrella — «Это зонт». В этой фразе мы сообщаем, что перед нами за предмет.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-05-task-03-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "С этим местоимением нужна форма is. It is an umbrella — «Это зонт». В этой фразе мы сообщаем, что перед нами за предмет.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "4a608c580126138ad6f2c78be790965d292644b2f2f010b605ae589e4084263b"
+    },
+    {
+      "id": "chapter-02-05-task-04",
+      "speaker": "tik",
+      "sourceText": "Umbrella начинается с гласного звука, поэтому an umbrella. Указатель помогает понять, о чём речь, но не отменяет an, когда мы называем вид предмета.",
+      "spokenText": "Umbrella начинается с гласного звука, поэтому an umbrella. Указатель помогает понять, о чём речь, но не отменяет an, когда мы называем вид предмета.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-05-task-04-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Umbrella начинается с гласного звука, поэтому an umbrella. Указатель помогает понять, о чём речь, но не отменяет an, когда мы называем вид предмета.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "aec8180be450536120c4ddf06b790ffe1aa64cea87cef679bc78ef98970bd181"
+    },
+    {
+      "id": "chapter-02-05-task-05",
+      "speaker": "tik",
+      "sourceText": "По-русски зонт — «он», но здесь не нужен he: перед нами обычная вещь, не живой герой. Соберём It is an umbrella. Первые два слова уже в рамке.",
+      "spokenText": "По-русски зонт — «он», но здесь не нужен he: перед нами обычная вещь, не живой герой. Соберём It is an umbrella. Первые два слова уже в рамке.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-05-task-05-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "По-русски зонт — «он», но здесь не нужен he: перед нами обычная вещь, не живой герой. Соберём It is an umbrella. Первые два слова уже в рамке.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "26c461715fac53d5828569b0c82b230fd5abd35015ff7df2c46fe8d865765106"
+    },
+    {
+      "id": "chapter-02-05-success-01",
+      "speaker": "tik",
+      "sourceText": "It is an umbrella. Это зонт. Описание находки записано; сам зонт никуда не исчез и не превратился в другой предмет.",
+      "spokenText": "It is an umbrella. Это зонт. Описание находки записано; сам зонт никуда не исчез и не превратился в другой предмет.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-05-success-01-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "It is an umbrella. Это зонт. Описание находки записано; сам зонт никуда не исчез и не превратился в другой предмет.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "d4b16536870e245b3a1a03e3d0f726ff45fab7c17d59c0c28e1142447b632f79"
+    },
+    {
+      "id": "chapter-02-05-success-02",
+      "speaker": "tik",
+      "sourceText": "Теперь Марта проверит рисунок на соседней карточке. Посмотри, куда переместится указатель.",
+      "spokenText": "Теперь Марта проверит рисунок на соседней карточке. Посмотри, куда переместится указатель.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-05-success-02-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Теперь Марта проверит рисунок на соседней карточке. Посмотри, куда переместится указатель.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "613b9ec305f7e717fa7ff1c9edc2b072eb500bb60ebe9de638926e4a62af56f0"
+    },
+    {
+      "id": "chapter-02-05-egg-task-01",
+      "speaker": "marta",
+      "sourceText": "Рядом лежит карточка с рисунком. Я расскажу Тику, что на ней изображено. Видишь яйцо под указателем? По-английски яйцо — egg. Люми, помоги мне составить сообщение.",
+      "spokenText": "Рядом лежит карточка с рисунком. Я расскажу Тику, что на ней изображено. Видишь яйцо под указателем? По-английски яйцо — egg. Люми, помоги мне составить сообщение.",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "request": {
+        "id": "chapter-02-05-egg-task-01-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Рядом лежит карточка с рисунком. Я расскажу Тику, что на ней изображено. Видишь яйцо под указателем? По-английски яйцо — egg. Люми, помоги мне составить сообщение.",
+        "voiceId": "XrExE9yKIg1WjnnlVkGX"
+      },
+      "requestHash": "5f8963d5ca5a26e1e555b24cba102ce671ca464adda278d00b78b65c9e99b812"
+    },
+    {
+      "id": "chapter-02-05-egg-task-02",
+      "speaker": "marta",
+      "sourceText": "Собери моё сообщение: «Это яйцо». Мы описываем яйцо на рисунке, а не бумажную карточку. Подбери местоимение, форму глагола, артикль и название предмета.",
+      "spokenText": "Собери моё сообщение: «Это яйцо». Мы описываем яйцо на рисунке, а не бумажную карточку. Подбери местоимение, форму глагола, артикль и название предмета.",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "request": {
+        "id": "chapter-02-05-egg-task-02-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Собери моё сообщение: «Это яйцо». Мы описываем яйцо на рисунке, а не бумажную карточку. Подбери местоимение, форму глагола, артикль и название предмета.",
+        "voiceId": "XrExE9yKIg1WjnnlVkGX"
+      },
+      "requestHash": "cab45e090356aae46405b2d22ea6c6723133d42953e00bf3914e4533f7b4eb0c"
+    },
+    {
+      "id": "chapter-02-05-egg-success-01",
+      "speaker": "marta",
+      "sourceText": "It is an egg. Это яйцо. Верно: мы назвали то, что изображено на карточке. Зонт остался на своём месте, рисунок тоже не изменился.",
+      "spokenText": "It is an egg. Это яйцо. Верно: мы назвали то, что изображено на карточке. Зонт остался на своём месте, рисунок тоже не изменился.",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "request": {
+        "id": "chapter-02-05-egg-success-01-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "It is an egg. Это яйцо. Верно: мы назвали то, что изображено на карточке. Зонт остался на своём месте, рисунок тоже не изменился.",
+        "voiceId": "XrExE9yKIg1WjnnlVkGX"
+      },
+      "requestHash": "7eef1438e1887348f85e141c8149497e8210aceec8cc4c14c6abd7320bc9ae75"
+    },
+    {
+      "id": "chapter-02-05-egg-success-02",
+      "speaker": "tik",
+      "sourceText": "Сначала речь шла о зонте, потом — о яйце на рисунке. Почему в обоих сообщениях подошло it?",
+      "spokenText": "Сначала речь шла о зонте, потом — о яйце на рисунке. Почему в обоих сообщениях подошло it?",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-05-egg-success-02-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Сначала речь шла о зонте, потом — о яйце на рисунке. Почему в обоих сообщениях подошло it?",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "d9b7d3596c2a645a1b00bccda41fa537bc9bd8a3e626281d1db0b59fcc8da67b"
+    },
+    {
+      "id": "chapter-02-05-egg-feedback-object-ordinary",
+      "speaker": "tik",
+      "sourceText": "Верно. Мы описывали обычный зонт и яйцо на рисунке. В каждом сообщении it относилось к понятному нам предмету, а не к говорящему или слушателю.",
+      "spokenText": "Верно. Мы описывали обычный зонт и яйцо на рисунке. В каждом сообщении it относилось к понятному нам предмету, а не к говорящему или слушателю.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-05-egg-feedback-object-ordinary-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Верно. Мы описывали обычный зонт и яйцо на рисунке. В каждом сообщении it относилось к понятному нам предмету, а не к говорящему или слушателю.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "719c343a1624bf9408b835edd1da4074715c40808f044850d40ea112d5dd5c77"
+    },
+    {
+      "id": "chapter-02-05-egg-feedback-object-russian",
+      "speaker": "tik",
+      "sourceText": "Нет. По-русски зонт — «он», а яйцо — «оно». Но в этих английских сообщениях оба предмета обозначаем it. Род русского слова не определяет выбор.",
+      "spokenText": "Нет. По-русски зонт — «он», а яйцо — «оно». Но в этих английских сообщениях оба предмета обозначаем it. Род русского слова не определяет выбор.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-05-egg-feedback-object-russian-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Нет. По-русски зонт — «он», а яйцо — «оно». Но в этих английских сообщениях оба предмета обозначаем it. Род русского слова не определяет выбор.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "a176488daceb8dadcaf9b809b59016474f86dc194a0ea820f6220505ea495519"
+    },
+    {
+      "id": "chapter-02-05-egg-feedback-object-listener",
+      "speaker": "tik",
+      "sourceText": "Собеседника обозначает you. Здесь it относилось к предмету под указателем: сначала к зонту, затем к яйцу на рисунке.",
+      "spokenText": "Собеседника обозначает you. Здесь it относилось к предмету под указателем: сначала к зонту, затем к яйцу на рисунке.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "chapter-02-05-egg-feedback-object-listener-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "Собеседника обозначает you. Здесь it относилось к предмету под указателем: сначала к зонту, затем к яйцу на рисунке.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "8f23c366c06e1fc4d76435c907822363c86d040687646c48d6d9abf3f218b814"
+    },
+    {
+      "id": "word-lantern",
+      "speaker": "marta",
+      "term": "lantern",
+      "sourceText": "lantern.",
+      "spokenText": "lantern.",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "request": {
+        "id": "word-lantern-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "lantern.",
+        "voiceId": "XrExE9yKIg1WjnnlVkGX"
+      },
+      "requestHash": "753144f17b079579f99d5c1c9d5643508dfda9df81311f1b4484cb296b94be14"
+    },
+    {
+      "id": "word-you",
+      "speaker": "marta",
+      "term": "you",
+      "sourceText": "you.",
+      "spokenText": "you.",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "request": {
+        "id": "word-you-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "you.",
+        "voiceId": "XrExE9yKIg1WjnnlVkGX"
+      },
+      "requestHash": "4e9fe2ad2b972d1f7408b3ca937ddbc1bc4b52715e096258dc068daa94f13718"
+    },
+    {
+      "id": "word-are",
+      "speaker": "marta",
+      "term": "are",
+      "sourceText": "are.",
+      "spokenText": "are.",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "request": {
+        "id": "word-are-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "are.",
+        "voiceId": "XrExE9yKIg1WjnnlVkGX"
+      },
+      "requestHash": "fd47c2ebf1f28b05bfdb747cdfe9967781bf44d45cf15c6f0e500033c40f8f0c"
+    },
+    {
+      "id": "word-he",
+      "speaker": "marta",
+      "term": "he",
+      "sourceText": "he.",
+      "spokenText": "he.",
+      "voiceId": "XrExE9yKIg1WjnnlVkGX",
+      "request": {
+        "id": "word-he-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "he.",
+        "voiceId": "XrExE9yKIg1WjnnlVkGX"
+      },
+      "requestHash": "9074d29d982370e1009a83329da62988e20c8987426398aa05ed9f4b248653f7"
+    },
+    {
+      "id": "word-she",
+      "speaker": "tik",
+      "term": "she",
+      "sourceText": "she.",
+      "spokenText": "she.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "word-she-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "she.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "10e855f4f78cf1fcff0465c8c45cfad73beb67ad5b5abb6833d6a27d86b98558"
+    },
+    {
+      "id": "word-is",
+      "speaker": "tik",
+      "term": "is",
+      "sourceText": "is.",
+      "spokenText": "is.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "word-is-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "is.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "0ea362714daaeb7ea7b5bf566939c476712ba9587c188c0edc3346c4c811ff9f"
+    },
+    {
+      "id": "word-it",
+      "speaker": "tik",
+      "term": "it",
+      "sourceText": "it.",
+      "spokenText": "it.",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "request": {
+        "id": "word-it-elv3-v1",
+        "kind": "speech",
+        "modelId": "eleven_v3",
+        "seed": 42,
+        "text": "it.",
+        "voiceId": "bIHbv24MWmeRgasZH58o"
+      },
+      "requestHash": "c57813a6c75c4b3cd2c1f488b3dc841d3c4e48b9c66099257aa2bc6618e61ab8"
+    }
+  ]
+}

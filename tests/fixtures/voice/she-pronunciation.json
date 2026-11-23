@@ -1,0 +1,13 @@
+{
+  "term": "she",
+  "provider": "elevenlabs",
+  "modelId": "eleven_v3",
+  "voiceId": "bIHbv24MWmeRgasZH58o",
+  "file": "audio/en-US/elevenlabs-tik-v1/she.mp3",
+  "requestHash": "10e855f4f78cf1fcff0465c8c45cfad73beb67ad5b5abb6833d6a27d86b98558",
+  "audioSha256": "9c6ca7e4af8e02b9baecf2ec5f7c49351e3ab5e2750c1adf5efe3c21b36edfaf",
+  "sourceAudioSha256": "44406befa502a2e854659e314c4d2e861cae998b84ca1debcfe1ee81baf964c7",
+  "gainDb": -3.710000000000001,
+  "duration": 1.52,
+  "review": "generated-awaiting-listening"
+}

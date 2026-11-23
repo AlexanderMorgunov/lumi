@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Local SDK host fixture</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      iframe {
+        width: 100vw;
+        height: 90vh;
+        border: 0;
+      }
+      #confirmation {
+        position: fixed;
+        top: 10px;
+        background: white;
+        padding: 20px;
+        z-index: 5;
+      }
+      pre {
+        font-size: 10px;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe title="Test game" src="./hosted-game.html"></iframe>
+    <div id="confirmation" hidden>
+      Локальная имитация подтверждения, реальный словарь не изменяется.
+      <button data-result="saved">Сохранить</button
+      ><button data-result="existing">Уже есть</button
+      ><button data-result="cancelled">Отмена</button
+      ><button data-result="error">Ошибка</button
+      ><button data-result="closed">Закрыть сессию</button>
+    </div>
+    <pre id="requests">[]</pre>
+    <script type="module">
+      const iframe = document.querySelector('iframe'),
+        confirmation = document.querySelector('#confirmation');
+      const requests = [];
+      let pending;
+      const send = (data) =>
+        iframe.contentWindow.postMessage(
+          {
+            channel: 'dayenglish.game',
+            version: 1,
+            launchId: 'fixture-launch',
+            ...data,
+          },
+          location.origin,
+        );
+      const initTimer = setInterval(() => send({ type: 'init' }), 100);
+      iframe.addEventListener('load', () => send({ type: 'init' }));
+      window.addEventListener('message', (event) => {
+        if (
+          event.origin !== location.origin ||
+          event.source !== iframe.contentWindow
+        )
+          return;
+        const data = event.data;
+        if (data?.channel !== 'dayenglish.game' || data.version !== 1) return;
+        if (data.type === 'hello') {
+          clearInterval(initTimer);
+          send({
+            type: 'ready',
+            context: {
+              gameId: 'integration-test',
+              releaseId: '1.0.0',
+              locale: 'ru',
+              reducedMotion: true,
+              capabilities: location.search.includes('no-capability')
+                ? []
+                : ['vocabulary.capture.v1'],
+            },
+          });
+        }
+        if (data.type === 'request') {
+          requests.push({ method: data.method, payload: data.payload });
+          document.querySelector('#requests').textContent =
+            JSON.stringify(requests);
+          pending = data.requestId;
+          confirmation.hidden = false;
+          send({ type: 'event', event: { type: 'paused' } });
+        }
+      });
+      document.querySelectorAll('[data-result]').forEach((button) =>
+        button.addEventListener('click', () => {
+          const status = button.dataset.result;
+          confirmation.hidden = true;
+          if (status === 'closed')
+            send({ type: 'event', event: { type: 'closed' } });
+          else {
+            send({
+              type: 'response',
+              requestId: pending,
+              ...(status === 'error'
+                ? { error: { code: 'network_error' } }
+                : { result: { status } }),
+            });
+            send({ type: 'event', event: { type: 'resumed' } });
+          }
+        }),
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,1107 @@
+{
+  "provider": "elevenlabs",
+  "voice": "Callum",
+  "voiceId": "N2lVS1w4EtoT3dr4eOWO",
+  "modelId": "eleven_v3",
+  "seed": 42,
+  "lines": [
+    {
+      "id": "chapter-01-02-task-01",
+      "episode": "key",
+      "levelId": "chapter-01-02",
+      "conversation": "task",
+      "index": 0,
+      "sourceText": "Следующее слово — key, ключ от замка. Послушай: /kiː/. Первый звук /k/ — согласный. Key называет один ключ.",
+      "spokenText": "[reassuring] Следующее слово — key, ключ от замка. Послушай: key. Первый звук — согласный. Key называет один ключ."
+    },
+    {
+      "id": "chapter-01-02-task-02",
+      "episode": "key",
+      "levelId": "chapter-01-02",
+      "conversation": "task",
+      "index": 1,
+      "sourceText": "На столе три запасных ключа от дорожной сумки. Все подходят — возьмём один. Попробуй сам собрать просьбу в рамке. Если забудешь правило, загляни в журнал.",
+      "spokenText": "[reassuring] На столе три запасных ключа от дорожной сумки. Все подходят — возьмём один. Попробуй сам собрать просьбу в рамке. Если забудешь правило, загляни в журнал."
+    },
+    {
+      "id": "chapter-01-02-success-01",
+      "episode": "key",
+      "levelId": "chapter-01-02",
+      "conversation": "success",
+      "index": 0,
+      "sourceText": "Ключ в сумке. Два других оставим здесь.",
+      "spokenText": "[pleased] Ключ в сумке. Два других оставим здесь."
+    },
+    {
+      "id": "chapter-01-02-success-02",
+      "episode": "key",
+      "levelId": "chapter-01-02",
+      "conversation": "success",
+      "index": 1,
+      "sourceText": "Что означает a key в нашей просьбе?",
+      "spokenText": "[reassuring] Что означает a key в нашей просьбе?"
+    },
+    {
+      "id": "chapter-01-02-feedback-any",
+      "episode": "key",
+      "levelId": "chapter-01-02",
+      "conversation": "feedback",
+      "choice": "any",
+      "sourceText": "Верно. Мы попросили один ключ, и подошёл любой из трёх. Перед согласным /k/ в key используем a.",
+      "spokenText": "[reassuring] Верно. Мы попросили один ключ, и подошёл любой из трёх. Перед согласным звуком в key используем a."
+    },
+    {
+      "id": "chapter-01-02-feedback-several",
+      "episode": "key",
+      "levelId": "chapter-01-02",
+      "conversation": "feedback",
+      "choice": "several",
+      "sourceText": "Вспомни: a/an используется с единственным числом. key здесь означает один ключ. Для нескольких ключей нужна другая конструкция. Попробуй ещё раз.",
+      "spokenText": "[reassuring] Вспомни: a и an используется с единственным числом. key здесь означает один ключ. Для нескольких ключей нужна другая конструкция. Попробуй ещё раз."
+    },
+    {
+      "id": "chapter-01-02-feedback-specific",
+      "episode": "key",
+      "levelId": "chapter-01-02",
+      "conversation": "feedback",
+      "choice": "specific",
+      "sourceText": "Нам подходит любой из трёх ключей, поэтому a key. Просьбу о конкретном ключе позже разберём с the.",
+      "spokenText": "[reassuring] Нам подходит любой из трёх ключей, поэтому a key. Просьбу о конкретном ключе позже разберём с the."
+    },
+    {
+      "id": "chapter-01-03-task-01",
+      "episode": "apple",
+      "levelId": "chapter-01-03",
+      "conversation": "task",
+      "index": 0,
+      "sourceText": "Ключ взяли. Теперь перекус: до первого фонаря идти далеко. На столе три яблока, возьмём одно. Яблоко по-английски — apple.",
+      "spokenText": "[reassuring] Ключ взяли. Теперь перекус: до первого фонаря идти далеко. На столе три яблока, возьмём одно. Яблоко по-английски — apple."
+    },
+    {
+      "id": "chapter-01-03-task-02",
+      "episode": "apple",
+      "levelId": "chapter-01-03",
+      "conversation": "task",
+      "index": 1,
+      "sourceText": "Нажми apple и послушай: /ˈæp.əl/. Первый звук /æ/ — гласный. Apple называет одно яблоко; его можно посчитать. Значит, это исчисляемое существительное в единственном числе.",
+      "spokenText": "[reassuring] Нажми apple и послушай произношение. Первый звук — гласный. Apple называет одно яблоко; его можно посчитать. Значит, это исчисляемое существительное в единственном числе."
+    },
+    {
+      "id": "chapter-01-03-task-03",
+      "episode": "apple",
+      "levelId": "chapter-01-03",
+      "conversation": "task",
+      "index": 2,
+      "sourceText": "A и an — две формы одного неопределённого артикля. В обеих просьбах подходит один любой предмет. Но key начинается с согласного звука — a key, а apple с гласного — an apple.",
+      "spokenText": "[reassuring] A и an — две формы одного неопределённого артикля. В обеих просьбах подходит один любой предмет. Но key начинается с согласного звука — a key, а apple с гласного — an apple."
+    },
+    {
+      "id": "chapter-01-03-task-04",
+      "episode": "apple",
+      "levelId": "chapter-01-03",
+      "conversation": "task",
+      "index": 3,
+      "sourceText": "Выбираем по первому звуку следующего слова, а не по букве или виду предмета. В apple это гласный /æ/, поэтому an apple, а не a apple. Форма an не означает несколько предметов: с множественным числом apples её не ставим.",
+      "spokenText": "[reassuring] Выбираем по первому звуку следующего слова, а не по букве или виду предмета. В apple это гласный звук, поэтому an apple, а не a apple. Форма an не означает несколько предметов: с множественным числом apples её не ставим."
+    },
+    {
+      "id": "chapter-01-03-task-05",
+      "episode": "apple",
+      "levelId": "chapter-01-03",
+      "conversation": "task",
+      "index": 4,
+      "sourceText": "An уже стоит в рамке. Толкни apple вверх, на клетку справа от an, и передай просьбу. Я возьму одно яблоко со стола и положу в сумку.",
+      "spokenText": "[reassuring] An уже стоит в рамке. Толкни apple вверх, на клетку справа от an, и передай просьбу. Я возьму одно яблоко со стола и положу в сумку."
+    },
+    {
+      "id": "chapter-01-03-success-01",
+      "episode": "apple",
+      "levelId": "chapter-01-03",
+      "conversation": "success",
+      "index": 0,
+      "sourceText": "Яблоко в сумке. Марта сможет перекусить у первого огня.",
+      "spokenText": "[pleased] Яблоко в сумке. Марта сможет перекусить у первого огня."
+    },
+    {
+      "id": "chapter-01-03-success-02",
+      "episode": "apple",
+      "levelId": "chapter-01-03",
+      "conversation": "success",
+      "index": 1,
+      "sourceText": "Почему в просьбе an apple используется an, а не a?",
+      "spokenText": "[reassuring] Почему в просьбе an apple используется an, а не a?"
+    },
+    {
+      "id": "chapter-01-03-feedback-fruit",
+      "episode": "apple",
+      "levelId": "chapter-01-03",
+      "conversation": "feedback",
+      "choice": "fruit",
+      "sourceText": "Вид предмета не определяет форму артикля. Мы смотрим на первый звук следующего слова. В apple это гласный /æ/, поэтому an. Попробуй ещё раз.",
+      "spokenText": "[reassuring] Вид предмета не определяет форму артикля. Мы смотрим на первый звук следующего слова. В apple это гласный звук, поэтому an. Попробуй ещё раз."
+    },
+    {
+      "id": "chapter-01-03-feedback-vowel",
+      "episode": "apple",
+      "levelId": "chapter-01-03",
+      "conversation": "feedback",
+      "choice": "vowel",
+      "sourceText": "Верно: apple начинается с гласного /æ/, поэтому an apple. Мы просим одно любое подходящее яблоко. a и an передают тот же смысл; форма зависит от следующего звука.",
+      "spokenText": "[reassuring] Верно: apple начинается с гласного звука, поэтому an apple. Мы просим одно любое подходящее яблоко. a и an передают тот же смысл; форма зависит от следующего звука."
+    },
+    {
+      "id": "chapter-01-03-feedback-many",
+      "episode": "apple",
+      "levelId": "chapter-01-03",
+      "conversation": "feedback",
+      "choice": "many",
+      "sourceText": "На столе их три, но в просьбе названо одно яблоко. a/an употребляется с исчисляемым существительным в единственном числе. Здесь an выбрано из-за гласного звука /æ/. Попробуй ещё раз.",
+      "spokenText": "[reassuring] На столе их три, но в просьбе названо одно яблоко. a и an употребляется с исчисляемым существительным в единственном числе. Здесь an выбрано из-за гласного звука. Попробуй ещё раз."
+    },
+    {
+      "id": "chapter-01-04-task-01",
+      "episode": "egg",
+      "levelId": "chapter-01-04",
+      "conversation": "task",
+      "index": 0,
+      "sourceText": "Яблоко взяли. Добавим яйцо на привал — Марта как раз сварила три. Подойдёт любое одно. По-английски яйцо — egg.",
+      "spokenText": "[reassuring] Яблоко взяли. Добавим яйцо на привал — Марта как раз сварила три. Подойдёт любое одно. По-английски яйцо — egg."
+    },
+    {
+      "id": "chapter-01-04-task-02",
+      "episode": "egg",
+      "levelId": "chapter-01-04",
+      "conversation": "task",
+      "index": 1,
+      "sourceText": "Нажми egg и послушай: /eɡ/. Первый звук /e/ — гласный. Выбери между a и an, как в просьбе с яблоком.",
+      "spokenText": "[reassuring] Нажми egg и послушай произношение. Первый звук — гласный. Выбери между a и an, как в просьбе с яблоком."
+    },
+    {
+      "id": "chapter-01-04-task-03",
+      "episode": "egg",
+      "levelId": "chapter-01-04",
+      "conversation": "task",
+      "index": 2,
+      "sourceText": "Теперь на поле три слова: a, an и egg. Выбери подходящий артикль и собери просьбу в золотой рамке. Лишнее слово оставь за рамкой. Вспомни правило из просьбы с яблоком; объяснение и подсказка доступны в журнале.",
+      "spokenText": "[reassuring] Теперь на поле три слова: a, an и egg. Выбери подходящий артикль и собери просьбу в золотой рамке. Лишнее слово оставь за рамкой. Вспомни правило из просьбы с яблоком; объяснение и подсказка доступны в журнале."
+    },
+    {
+      "id": "chapter-01-04-success-01",
+      "episode": "egg",
+      "levelId": "chapter-01-04",
+      "conversation": "success",
+      "index": 0,
+      "sourceText": "Яйцо в сумке — на привале будет чем перекусить. Два других оставим здесь.",
+      "spokenText": "[pleased] Яйцо в сумке — на привале будет чем перекусить. Два других оставим здесь."
+    },
+    {
+      "id": "chapter-01-04-success-02",
+      "episode": "egg",
+      "levelId": "chapter-01-04",
+      "conversation": "success",
+      "index": 1,
+      "sourceText": "Как объяснить просьбу an egg в этой ситуации?",
+      "spokenText": "[reassuring] Как объяснить просьбу an egg в этой ситуации?"
+    },
+    {
+      "id": "chapter-01-04-feedback-egg-specific",
+      "episode": "egg",
+      "levelId": "chapter-01-04",
+      "conversation": "feedback",
+      "choice": "egg-specific",
+      "sourceText": "Нам подходит любое яйцо из трёх. An здесь называет одно яйцо, без выбора конкретного; форма an нужна перед гласным /e/.",
+      "spokenText": "[reassuring] Нам подходит любое яйцо из трёх. An здесь называет одно яйцо, без выбора конкретного; форма an нужна перед гласным звуком."
+    },
+    {
+      "id": "chapter-01-04-feedback-egg-many",
+      "episode": "egg",
+      "levelId": "chapter-01-04",
+      "conversation": "feedback",
+      "choice": "egg-many",
+      "sourceText": "На столе три яйца, но egg в просьбе — единственное число. a/an не используется с множественным числом eggs. Мы берём только одно; an выбрано перед гласным звуком /e/. Попробуй ещё раз.",
+      "spokenText": "[reassuring] На столе три яйца, но egg в просьбе — единственное число. a и an не используется с множественным числом eggs. Мы берём только одно; an выбрано перед гласным звуком. Попробуй ещё раз."
+    },
+    {
+      "id": "chapter-01-04-feedback-egg-any",
+      "episode": "egg",
+      "levelId": "chapter-01-04",
+      "conversation": "feedback",
+      "choice": "egg-any",
+      "sourceText": "Верно: нужно одно яйцо, подходит любое. Перед гласным /e/ ставим an. С яблоком работало то же правило — дело не в том, фрукт это или нет.",
+      "spokenText": "[reassuring] Верно: нужно одно яйцо, подходит любое. Перед гласным звуком ставим an. С яблоком работало то же правило — дело не в том, фрукт это или нет."
+    },
+    {
+      "id": "chapter-01-05-key-task-01",
+      "episode": "choiceKey",
+      "levelId": "chapter-01-05-key",
+      "conversation": "task",
+      "index": 0,
+      "sourceText": "У первого огня Марту встретит помощник. Соберём сумку и для него. Сначала возьмём запасной ключ — любой из трёх на столе.",
+      "spokenText": "[reassuring] У первого огня Марту встретит помощник. Соберём сумку и для него. Сначала возьмём запасной ключ — любой из трёх на столе."
+    },
+    {
+      "id": "chapter-01-05-key-task-02",
+      "episode": "choiceKey",
+      "levelId": "chapter-01-05-key",
+      "conversation": "task",
+      "index": 1,
+      "sourceText": "Key — ключ, первый звук /k/ — согласный. На поле есть a и an. Выбери подходящую форму; лишнюю табличку оставь за рамкой.",
+      "spokenText": "[reassuring] Key — ключ, первый звук — согласный. На поле есть a и an. Выбери подходящую форму; лишнюю табличку оставь за рамкой."
+    },
+    {
+      "id": "chapter-01-05-key-success-01",
+      "episode": "choiceKey",
+      "levelId": "chapter-01-05-key",
+      "conversation": "success",
+      "index": 0,
+      "sourceText": "Один ключ уже во второй сумке, два остались на столе. Следом возьмём яблоко. Сначала объясним выбор: почему здесь a key?",
+      "spokenText": "[pleased] Один ключ уже во второй сумке, два остались на столе. Следом возьмём яблоко. Сначала объясним выбор: почему здесь a key?"
+    },
+    {
+      "id": "chapter-01-05-key-feedback-choice-position",
+      "episode": "choiceKey",
+      "levelId": "chapter-01-05-key",
+      "conversation": "feedback",
+      "choice": "choice-position",
+      "sourceText": "Положение таблички не определяет артикль. Вспомни звучание key и выбери объяснение ещё раз.",
+      "spokenText": "[reassuring] Положение таблички не определяет артикль. Вспомни звучание key и выбери объяснение ещё раз."
+    },
+    {
+      "id": "chapter-01-05-key-feedback-choice-consonant",
+      "episode": "choiceKey",
+      "levelId": "chapter-01-05-key",
+      "conversation": "feedback",
+      "choice": "choice-consonant",
+      "sourceText": "Верно. Нужен один любой подходящий ключ. key начинается с согласного /k/, поэтому a key. В прошлой просьбе было an egg: форма меняется по звуку следующего слова.",
+      "spokenText": "[reassuring] Верно. Нужен один любой подходящий ключ. key начинается с согласного звука, поэтому a key. В прошлой просьбе было an egg: форма меняется по звуку следующего слова."
+    },
+    {
+      "id": "chapter-01-05-key-feedback-choice-previous",
+      "episode": "choiceKey",
+      "levelId": "chapter-01-05-key",
+      "conversation": "feedback",
+      "choice": "choice-previous",
+      "sourceText": "В прошлой просьбе было an egg. Сейчас слово key начинается с согласного /k/: нужна форма a. Смысл «один любой подходящий» остаётся тем же. Попробуй ещё раз.",
+      "spokenText": "[reassuring] В прошлой просьбе было an egg. Сейчас слово key начинается с согласного звука: нужна форма a. Смысл «один любой подходящий» остаётся тем же. Попробуй ещё раз."
+    },
+    {
+      "id": "chapter-01-05-apple-task-01",
+      "episode": "choiceApple",
+      "levelId": "chapter-01-05-apple",
+      "conversation": "task",
+      "index": 0,
+      "sourceText": "Ключ уже в сумке помощника. Добавим яблоко на перекус — любое из трёх.",
+      "spokenText": "[reassuring] Ключ уже в сумке помощника. Добавим яблоко на перекус — любое из трёх."
+    },
+    {
+      "id": "chapter-01-05-apple-task-02",
+      "episode": "choiceApple",
+      "levelId": "chapter-01-05-apple",
+      "conversation": "task",
+      "index": 1,
+      "sourceText": "Apple — яблоко. Можно нажать на слово и послушать его. Выбери a или an по первому звуку; расположение табличек не подсказывает ответ.",
+      "spokenText": "[reassuring] Apple — яблоко. Можно нажать на слово и послушать его. Выбери a или an по первому звуку; расположение табличек не подсказывает ответ."
+    },
+    {
+      "id": "chapter-01-05-apple-success-01",
+      "episode": "choiceApple",
+      "levelId": "chapter-01-05-apple",
+      "conversation": "success",
+      "index": 0,
+      "sourceText": "Яблоко и ключ уже в сумке помощника. С припасами закончили; дальше понадобится конкретный ключ — от двери мастерской.",
+      "spokenText": "[pleased] Яблоко и ключ уже в сумке помощника. С припасами закончили; дальше понадобится конкретный ключ — от двери мастерской."
+    },
+    {
+      "id": "chapter-01-05-apple-success-02",
+      "episode": "choiceApple",
+      "levelId": "chapter-01-05-apple",
+      "conversation": "success",
+      "index": 1,
+      "sourceText": "В одной просьбе мы собрали a key, в другой — an apple. Почему во второй просьбе форма артикля изменилась?",
+      "spokenText": "[reassuring] В одной просьбе мы собрали a key, в другой — an apple. Почему во второй просьбе форма артикля изменилась?"
+    },
+    {
+      "id": "chapter-01-05-apple-feedback-choice-vowel",
+      "episode": "choiceApple",
+      "levelId": "chapter-01-05-apple",
+      "conversation": "feedback",
+      "choice": "choice-vowel",
+      "sourceText": "Верно. Мы просим одно любое яблоко. Перед гласным /æ/ в apple выбираем an, а перед согласным /k/ в key — a. Это две формы одного неопределённого артикля.",
+      "spokenText": "[reassuring] Верно. Мы просим одно любое яблоко. Перед гласным звуком в apple выбираем an, а перед согласным звуком в key — a. Это две формы одного неопределённого артикля."
+    },
+    {
+      "id": "chapter-01-05-apple-feedback-choice-previous",
+      "episode": "choiceApple",
+      "levelId": "chapter-01-05-apple",
+      "conversation": "feedback",
+      "choice": "choice-previous",
+      "sourceText": "Смысл просьбы остался прежним, но начальный звук изменился: apple начинается с гласного /æ/. Поэтому an apple. Попробуй ещё раз.",
+      "spokenText": "[reassuring] Смысл просьбы остался прежним, но начальный звук изменился: apple начинается с гласного звука. Поэтому an apple. Попробуй ещё раз."
+    },
+    {
+      "id": "chapter-01-05-apple-feedback-choice-position",
+      "episode": "choiceApple",
+      "levelId": "chapter-01-05-apple",
+      "conversation": "feedback",
+      "choice": "choice-position",
+      "sourceText": "В другой комнате она может оказаться справа. Выбираем по первому звуку следующего слова; у apple это гласный /æ/. Попробуй ещё раз.",
+      "spokenText": "[reassuring] В другой комнате она может оказаться справа. Выбираем по первому звуку следующего слова; у apple это гласный звук. Попробуй ещё раз."
+    },
+    {
+      "id": "chapter-01-06-task-01",
+      "episode": "theKey",
+      "levelId": "chapter-01-06",
+      "conversation": "task",
+      "index": 0,
+      "sourceText": "Припасы собраны. Возьмём ключ от двери мастерской — вот он, посередине. Два других не подойдут: они от шкафа и сундука.",
+      "spokenText": "[reassuring] Припасы собраны. Возьмём ключ от двери мастерской — вот он, посередине. Два других не подойдут: они от шкафа и сундука."
+    },
+    {
+      "id": "chapter-01-06-task-02",
+      "episode": "theKey",
+      "levelId": "chapter-01-06",
+      "conversation": "task",
+      "index": 1,
+      "sourceText": "The — определённый артикль. Его используем, когда собеседнику понятно, о каком предмете речь. Я показал ключ от двери, ты его видишь — теперь можно попросить the key. Отдельного перевода у the обычно нет.",
+      "spokenText": "[reassuring] The — определённый артикль. Его используем, когда собеседнику понятно, о каком предмете речь. Я показал ключ от двери, ты его видишь — теперь можно попросить the key. Отдельного перевода у the обычно нет."
+    },
+    {
+      "id": "chapter-01-06-task-03",
+      "episode": "theKey",
+      "levelId": "chapter-01-06",
+      "conversation": "task",
+      "index": 2,
+      "sourceText": "Раньше нам подходил любой запасной ключ: a key. Сейчас нужен ключ от двери: the key. Его можно так назвать сразу, даже если раньше о нём не говорили, — ведь я уже показал, какой нужен. Сам по себе повтор слова key ничего не меняет.",
+      "spokenText": "[reassuring] Раньше нам подходил любой запасной ключ: a key. Сейчас нужен ключ от двери: the key. Его можно так назвать сразу, даже если раньше о нём не говорили, — ведь я уже показал, какой нужен. Сам по себе повтор слова key ничего не меняет."
+    },
+    {
+      "id": "chapter-01-06-task-04",
+      "episode": "theKey",
+      "levelId": "chapter-01-06",
+      "conversation": "task",
+      "index": 3,
+      "sourceText": "A или an выбираем по следующему звуку. С the это правило не работает: пишем и the key, и the apple. Сейчас просим один предмет; в конце главы попробуем the с несколькими.",
+      "spokenText": "[reassuring] A или an выбираем по следующему звуку. С the это правило не работает: пишем и the key, и the apple. Сейчас просим один предмет; в конце главы попробуем the с несколькими."
+    },
+    {
+      "id": "chapter-01-06-task-05",
+      "episode": "theKey",
+      "levelId": "chapter-01-06",
+      "conversation": "task",
+      "index": 4,
+      "sourceText": "Собери the key: the слева, key справа. Табличку a оставь за рамкой. Я положу в сумку тот ключ, на который указал. Это всё ещё словосочетание — короткая просьба, понятная нам из ситуации.",
+      "spokenText": "[reassuring] Собери the key: the слева, key справа. Табличку a оставь за рамкой. Я положу в сумку тот ключ, на который указал. Это всё ещё словосочетание — короткая просьба, понятная нам из ситуации."
+    },
+    {
+      "id": "chapter-01-06-success-01",
+      "episode": "theKey",
+      "levelId": "chapter-01-06",
+      "conversation": "success",
+      "index": 0,
+      "sourceText": "Вот ключ от двери. Марта закроет мастерскую, а ключи от шкафа и сундука оставит дома.",
+      "spokenText": "[pleased] Вот ключ от двери. Марта закроет мастерскую, а ключи от шкафа и сундука оставит дома."
+    },
+    {
+      "id": "chapter-01-06-success-02",
+      "episode": "theKey",
+      "levelId": "chapter-01-06",
+      "conversation": "success",
+      "index": 1,
+      "sourceText": "Почему в этой просьбе нужен the, а не a?",
+      "spokenText": "[reassuring] Почему в этой просьбе нужен the, а не a?"
+    },
+    {
+      "id": "chapter-01-06-feedback-the-repeat",
+      "episode": "theKey",
+      "levelId": "chapter-01-06",
+      "conversation": "feedback",
+      "choice": "the-repeat",
+      "sourceText": "Повторения слова недостаточно: раньше мы брали другие ключи. Здесь кот явно указал на ключ от двери, и обоим понятно, какой именно нужен. Попробуй ещё раз.",
+      "spokenText": "[reassuring] Повторения слова недостаточно: раньше мы брали другие ключи. Здесь кот явно указал на ключ от двери, и обоим понятно, какой именно нужен. Попробуй ещё раз."
+    },
+    {
+      "id": "chapter-01-06-feedback-the-sound",
+      "episode": "theKey",
+      "levelId": "chapter-01-06",
+      "conversation": "feedback",
+      "choice": "the-sound",
+      "sourceText": "Согласный звук объясняет a вместо an, но не выбор the. The показывает, что предмет однозначно понятен собеседникам. Попробуй ещё раз.",
+      "spokenText": "[reassuring] Согласный звук объясняет a вместо an, но не выбор the. The показывает, что предмет однозначно понятен собеседникам. Попробуй ещё раз."
+    },
+    {
+      "id": "chapter-01-06-feedback-the-shared",
+      "episode": "theKey",
+      "levelId": "chapter-01-06",
+      "conversation": "feedback",
+      "choice": "the-shared",
+      "sourceText": "Верно. Кот показал ключ от двери — Люми его узнал. Поэтому the key можно сказать сразу, даже если этот ключ ещё не обсуждали.",
+      "spokenText": "[reassuring] Верно. Кот показал ключ от двери — Люми его узнал. Поэтому the key можно сказать сразу, даже если этот ключ ещё не обсуждали."
+    },
+    {
+      "id": "chapter-01-07-task-01",
+      "episode": "theApple",
+      "levelId": "chapter-01-07",
+      "conversation": "task",
+      "index": 0,
+      "sourceText": "Марта выбрала подарок смотрителю — зелёное яблоко слева. Видишь его рядом с двумя красными? Попроси именно зелёное, а остальные оставим дома.",
+      "spokenText": "[reassuring] Марта выбрала подарок смотрителю — зелёное яблоко слева. Видишь его рядом с двумя красными? Попроси именно зелёное, а остальные оставим дома."
+    },
+    {
+      "id": "chapter-01-07-task-02",
+      "episode": "theApple",
+      "levelId": "chapter-01-07",
+      "conversation": "task",
+      "index": 1,
+      "sourceText": "Apple — яблоко, первый звук /æ/ — гласный. Но теперь выбираем не только между a и an: на поле есть и the. Подумай, нужна просьба о любом яблоке или о том, которое я показал.",
+      "spokenText": "[reassuring] Apple — яблоко, первый звук — гласный. Но теперь выбираем не только между a и an: на поле есть и the. Подумай, нужна просьба о любом яблоке или о том, которое я показал."
+    },
+    {
+      "id": "chapter-01-07-success-01",
+      "episode": "theApple",
+      "levelId": "chapter-01-07",
+      "conversation": "success",
+      "index": 0,
+      "sourceText": "Зелёное яблоко в сумке — подарок смотрителю готов. Два красных оставим Марте.",
+      "spokenText": "[pleased] Зелёное яблоко в сумке — подарок смотрителю готов. Два красных оставим Марте."
+    },
+    {
+      "id": "chapter-01-07-success-02",
+      "episode": "theApple",
+      "levelId": "chapter-01-07",
+      "conversation": "success",
+      "index": 1,
+      "sourceText": "Почему здесь the apple, хотя apple начинается с гласного звука?",
+      "spokenText": "[reassuring] Почему здесь the apple, хотя apple начинается с гласного звука?"
+    },
+    {
+      "id": "chapter-01-07-feedback-apple-always-an",
+      "episode": "theApple",
+      "levelId": "chapter-01-07",
+      "conversation": "feedback",
+      "choice": "apple-always-an",
+      "sourceText": "Гласный звук определяет an вместо a, когда нужен неопределённый артикль. Здесь предмет уже понятен обоим: используем the apple. Попробуй ещё раз.",
+      "spokenText": "[reassuring] Гласный звук определяет an вместо a, когда нужен неопределённый артикль. Здесь предмет уже понятен обоим: используем the apple. Попробуй ещё раз."
+    },
+    {
+      "id": "chapter-01-07-feedback-apple-shared",
+      "episode": "theApple",
+      "levelId": "chapter-01-07",
+      "conversation": "feedback",
+      "choice": "apple-shared",
+      "sourceText": "Верно. Кот показал яблоко, и Люми понял, какое нужно. Поэтому the apple. Для просьбы о любом одном подошло бы an apple.",
+      "spokenText": "[reassuring] Верно. Кот показал яблоко, и Люми понял, какое нужно. Поэтому the apple. Для просьбы о любом одном подошло бы an apple."
+    },
+    {
+      "id": "chapter-01-07-feedback-apple-repeat",
+      "episode": "theApple",
+      "levelId": "chapter-01-07",
+      "conversation": "feedback",
+      "choice": "apple-repeat",
+      "sourceText": "Знать слово apple недостаточно: нужно понимать, какой предмет имеется в виду. Кот показал левое яблоко для смотрителя. Если бы подходило любое одно, мы попросили бы an apple. Попробуй ещё раз.",
+      "spokenText": "[reassuring] Знать слово apple недостаточно: нужно понимать, какой предмет имеется в виду. Кот показал левое яблоко для смотрителя. Если бы подходило любое одно, мы попросили бы an apple. Попробуй ещё раз."
+    },
+    {
+      "id": "chapter-01-8-1-task-01",
+      "episode": "keyChain",
+      "levelId": "chapter-01-8-1",
+      "conversation": "task",
+      "index": 0,
+      "sourceText": "Возьмём запасной ключ. Любой из трёх подойдёт, но в сумку его пока не кладём: попроси меня отложить a key.",
+      "spokenText": "[reassuring] Возьмём запасной ключ. Любой из трёх подойдёт, но в сумку его пока не кладём: попроси меня отложить a key."
+    },
+    {
+      "id": "chapter-01-8-1-task-02",
+      "episode": "keyChain",
+      "levelId": "chapter-01-8-1",
+      "conversation": "task",
+      "index": 1,
+      "sourceText": "После этого попроси тот же ключ: the key. Ты будешь видеть, какой я выбрал. The появится потому, что речь пойдёт о конкретном ключе, а не просто из-за повтора слова.",
+      "spokenText": "[reassuring] После этого попроси тот же ключ: the key. Ты будешь видеть, какой я выбрал. The появится потому, что речь пойдёт о конкретном ключе, а не просто из-за повтора слова."
+    },
+    {
+      "id": "chapter-01-8-1-success-01",
+      "episode": "keyChain",
+      "levelId": "chapter-01-8-1",
+      "conversation": "success",
+      "index": 0,
+      "sourceText": "Вот выбранный ключ. Он пока лежит отдельно; теперь попроси положить его в сумку.",
+      "spokenText": "[pleased] Вот выбранный ключ. Он пока лежит отдельно; теперь попроси положить его в сумку."
+    },
+    {
+      "id": "chapter-01-8-2-task-01",
+      "episode": "keyChain",
+      "levelId": "chapter-01-8-2",
+      "conversation": "task",
+      "index": 0,
+      "sourceText": "Вот выбранный ключ — я отложил его отдельно. Два других пока оставим здесь.",
+      "spokenText": "[reassuring] Вот выбранный ключ — я отложил его отдельно. Два других пока оставим здесь."
+    },
+    {
+      "id": "chapter-01-8-2-task-02",
+      "episode": "keyChain",
+      "levelId": "chapter-01-8-2",
+      "conversation": "task",
+      "index": 1,
+      "sourceText": "Попроси положить в сумку этот ключ. Мы уже выбрали его вместе, теперь нужен the key.",
+      "spokenText": "[reassuring] Попроси положить в сумку этот ключ. Мы уже выбрали его вместе, теперь нужен the key."
+    },
+    {
+      "id": "chapter-01-8-2-success-01",
+      "episode": "keyChain",
+      "levelId": "chapter-01-8-2",
+      "conversation": "success",
+      "index": 0,
+      "sourceText": "В сумку отправился именно отложенный ключ. Два других не тронуты.",
+      "spokenText": "[pleased] В сумку отправился именно отложенный ключ. Два других не тронуты."
+    },
+    {
+      "id": "chapter-01-8-2-success-02",
+      "episode": "keyChain",
+      "levelId": "chapter-01-8-2",
+      "conversation": "success",
+      "index": 1,
+      "sourceText": "Почему первая просьба была a key, а следующая — the key?",
+      "spokenText": "[reassuring] Почему первая просьба была a key, а следующая — the key?"
+    },
+    {
+      "id": "chapter-01-8-2-feedback-chain-known",
+      "episode": "keyChain",
+      "levelId": "chapter-01-8-2",
+      "conversation": "feedback",
+      "choice": "chain-known",
+      "sourceText": "Верно. Сначала подходил любой один ключ; затем кот отложил один на виду. The key относилось к этому ключу. Причина — понятный обоим предмет, а не сам номер упоминания.",
+      "spokenText": "[reassuring] Верно. Сначала подходил любой один ключ; затем кот отложил один на виду. The key относилось к этому ключу. Причина — понятный обоим предмет, а не сам номер упоминания."
+    },
+    {
+      "id": "chapter-01-8-2-feedback-chain-repeat",
+      "episode": "keyChain",
+      "levelId": "chapter-01-8-2",
+      "conversation": "feedback",
+      "choice": "chain-repeat",
+      "sourceText": "Повторять слово недостаточно. Если во второй просьбе нужен другой любой ключ, возможно a key. Здесь the относится к одному ключу, выбранному на глазах у обоих.",
+      "spokenText": "[reassuring] Повторять слово недостаточно. Если во второй просьбе нужен другой любой ключ, возможно a key. Здесь the относится к одному ключу, выбранному на глазах у обоих."
+    },
+    {
+      "id": "chapter-01-9-1-task-01",
+      "episode": "appleChain",
+      "levelId": "chapter-01-9-1",
+      "conversation": "task",
+      "index": 0,
+      "sourceText": "Так же выберем яблоко. Все три хорошие — подойдёт любое.",
+      "spokenText": "[reassuring] Так же выберем яблоко. Все три хорошие — подойдёт любое."
+    },
+    {
+      "id": "chapter-01-9-1-task-02",
+      "episode": "appleChain",
+      "levelId": "chapter-01-9-1",
+      "conversation": "task",
+      "index": 1,
+      "sourceText": "apple — яблоко, /ˈæp.əl/. Начинается с гласного /æ/. Попроси одно любое яблоко и запомни, какое яблоко я отложу.",
+      "spokenText": "[reassuring] Apple — яблоко. Начинается с гласного звука. Попроси одно любое яблоко и запомни, какое яблоко я отложу."
+    },
+    {
+      "id": "chapter-01-9-1-success-01",
+      "episode": "appleChain",
+      "levelId": "chapter-01-9-1",
+      "conversation": "success",
+      "index": 0,
+      "sourceText": "Вот выбранное яблоко. Следующая просьба будет о нём.",
+      "spokenText": "[pleased] Вот выбранное яблоко. Следующая просьба будет о нём."
+    },
+    {
+      "id": "chapter-01-9-2-task-01",
+      "episode": "appleChain",
+      "levelId": "chapter-01-9-2",
+      "conversation": "task",
+      "index": 0,
+      "sourceText": "Вот яблоко, которое я только что отложил.",
+      "spokenText": "[reassuring] Вот яблоко, которое я только что отложил."
+    },
+    {
+      "id": "chapter-01-9-2-task-02",
+      "episode": "appleChain",
+      "levelId": "chapter-01-9-2",
+      "conversation": "task",
+      "index": 1,
+      "sourceText": "Передай просьбу о том же яблоке. Не нужно выбирать новый плод.",
+      "spokenText": "[reassuring] Передай просьбу о том же яблоке. Не нужно выбирать новый плод."
+    },
+    {
+      "id": "chapter-01-9-2-success-01",
+      "episode": "appleChain",
+      "levelId": "chapter-01-9-2",
+      "conversation": "success",
+      "index": 0,
+      "sourceText": "Отложенное яблоко в сумке. Два других остались на столе.",
+      "spokenText": "[pleased] Отложенное яблоко в сумке. Два других остались на столе."
+    },
+    {
+      "id": "chapter-01-9-2-success-02",
+      "episode": "appleChain",
+      "levelId": "chapter-01-9-2",
+      "conversation": "success",
+      "index": 1,
+      "sourceText": "Почему теперь the apple, а не an apple?",
+      "spokenText": "[reassuring] Почему теперь the apple, а не an apple?"
+    },
+    {
+      "id": "chapter-01-9-2-feedback-chain-sound",
+      "episode": "appleChain",
+      "levelId": "chapter-01-9-2",
+      "conversation": "feedback",
+      "choice": "chain-sound",
+      "sourceText": "Звук /æ/ не изменился. Изменилась ситуация: одно яблоко стало известно обоим. Поэтому the apple вместо просьбы о любом плоде.",
+      "spokenText": "[reassuring] Первый звук в apple не изменился. Изменилась ситуация: одно яблоко стало известно обоим. Поэтому the apple вместо просьбы о любом плоде."
+    },
+    {
+      "id": "chapter-01-9-2-feedback-chain-known",
+      "episode": "appleChain",
+      "levelId": "chapter-01-9-2",
+      "conversation": "feedback",
+      "choice": "chain-known",
+      "sourceText": "Верно. Мы видели, какое яблоко кот отложил, и попросили именно его: the apple. Гласный звук этого не меняет.",
+      "spokenText": "[reassuring] Верно. Мы видели, какое яблоко кот отложил, и попросили именно его: the apple. Гласный звук этого не меняет."
+    },
+    {
+      "id": "chapter-01-10-1-task-01",
+      "episode": "mixedRequests",
+      "levelId": "chapter-01-10-1",
+      "conversation": "task",
+      "index": 0,
+      "sourceText": "book — книга, /bʊk/. Первый звук /b/ — согласный. Книги можно посчитать; здесь book означает одну книгу.",
+      "spokenText": "[reassuring] Book — книга. Первый звук — согласный. Книги можно посчитать; здесь book означает одну книгу."
+    },
+    {
+      "id": "chapter-01-10-1-task-02",
+      "episode": "mixedRequests",
+      "levelId": "chapter-01-10-1",
+      "conversation": "task",
+      "index": 1,
+      "sourceText": "В библиотеке станции ждут книги. Возьмём одну из этих трёх — подойдёт любая.",
+      "spokenText": "[reassuring] В библиотеке станции ждут книги. Возьмём одну из этих трёх — подойдёт любая."
+    },
+    {
+      "id": "chapter-01-10-1-success-01",
+      "episode": "mixedRequests",
+      "levelId": "chapter-01-10-1",
+      "conversation": "success",
+      "index": 0,
+      "sourceText": "Одна книга отправилась в сумку. Следующая просьба — о перекусе.",
+      "spokenText": "[pleased] Одна книга отправилась в сумку. Следующая просьба — о перекусе."
+    },
+    {
+      "id": "chapter-01-10-2-task-01",
+      "episode": "mixedRequests",
+      "levelId": "chapter-01-10-2",
+      "conversation": "task",
+      "index": 0,
+      "sourceText": "Orange — апельсин. Здесь речь о фрукте, не о цвете. Первый звук гласный: an orange.",
+      "spokenText": "[reassuring] Orange — апельсин. Здесь речь о фрукте, не о цвете. Первый звук гласный: an orange."
+    },
+    {
+      "id": "chapter-01-10-2-task-02",
+      "episode": "mixedRequests",
+      "levelId": "chapter-01-10-2",
+      "conversation": "task",
+      "index": 1,
+      "sourceText": "На столе три апельсина. Возьмём один — любой.",
+      "spokenText": "[reassuring] На столе три апельсина. Возьмём один — любой."
+    },
+    {
+      "id": "chapter-01-10-2-success-01",
+      "episode": "mixedRequests",
+      "levelId": "chapter-01-10-2",
+      "conversation": "success",
+      "index": 0,
+      "sourceText": "Один апельсин положен в сумку. Осталось выполнить просьбу о ключе.",
+      "spokenText": "[pleased] Один апельсин положен в сумку. Осталось выполнить просьбу о ключе."
+    },
+    {
+      "id": "chapter-01-10-3-task-01",
+      "episode": "mixedRequests",
+      "levelId": "chapter-01-10-3",
+      "conversation": "task",
+      "index": 0,
+      "sourceText": "Видишь средний ключ? Он от почтового ящика у станции. Остальные ключи от других замков. Возьмём именно этот.",
+      "spokenText": "[reassuring] Видишь средний ключ? Он от почтового ящика у станции. Остальные ключи от других замков. Возьмём именно этот."
+    },
+    {
+      "id": "chapter-01-10-3-task-02",
+      "episode": "mixedRequests",
+      "levelId": "chapter-01-10-3",
+      "conversation": "task",
+      "index": 1,
+      "sourceText": "Какой артикль нужен, если мы просим именно этот ключ?",
+      "spokenText": "[reassuring] Какой артикль нужен, если мы просим именно этот ключ?"
+    },
+    {
+      "id": "chapter-01-10-3-success-01",
+      "episode": "mixedRequests",
+      "levelId": "chapter-01-10-3",
+      "conversation": "success",
+      "index": 0,
+      "sourceText": "Ключ тоже в сумке. Теперь есть и книга для станции, и перекус.",
+      "spokenText": "[pleased] Ключ тоже в сумке. Теперь есть и книга для станции, и перекус."
+    },
+    {
+      "id": "chapter-01-10-3-success-02",
+      "episode": "mixedRequests",
+      "levelId": "chapter-01-10-3",
+      "conversation": "success",
+      "index": 1,
+      "sourceText": "Что определяло выбор артиклей в этих трёх просьбах?",
+      "spokenText": "[reassuring] Что определяло выбор артиклей в этих трёх просьбах?"
+    },
+    {
+      "id": "chapter-01-10-3-feedback-mixed-sound",
+      "episode": "mixedRequests",
+      "levelId": "chapter-01-10-3",
+      "conversation": "feedback",
+      "choice": "mixed-sound",
+      "sourceText": "Сначала решаем, нужен любой предмет или конкретный. Звук помогает выбрать между a и an, но не между ними и the.",
+      "spokenText": "[reassuring] Сначала решаем, нужен любой предмет или конкретный. Звук помогает выбрать между a и an, но не между ними и the."
+    },
+    {
+      "id": "chapter-01-10-3-feedback-mixed-context",
+      "episode": "mixedRequests",
+      "levelId": "chapter-01-10-3",
+      "conversation": "feedback",
+      "choice": "mixed-context",
+      "sourceText": "Верно: любая книга — a book, любой апельсин — an orange, указанный ключ — the key. Ситуация определяет a/an или the, звук определяет a или an.",
+      "spokenText": "[reassuring] Верно: любая книга — a book, любой апельсин — an orange, указанный ключ — the key. Ситуация определяет a и an или the, звук определяет a или an."
+    },
+    {
+      "id": "chapter-01-11-1-task-01",
+      "episode": "newWords",
+      "levelId": "chapter-01-11-1",
+      "conversation": "task",
+      "index": 0,
+      "sourceText": "robot — робот, /ˈrəʊ.bɒt/ в британском варианте. Первый звук /r/ — согласный. Роботов можно посчитать; robot здесь — один робот.",
+      "spokenText": "[reassuring] Robot — робот. Первый звук — согласный. Роботов можно посчитать; robot здесь — один робот."
+    },
+    {
+      "id": "chapter-01-11-1-task-02",
+      "episode": "newWords",
+      "levelId": "chapter-01-11-1",
+      "conversation": "task",
+      "index": 1,
+      "sourceText": "У мастерской ждут три робота-почтальона. Любой сможет помочь Люми. Сначала позови одного к стойке; после выбора отправим именно его к двери.",
+      "spokenText": "[reassuring] У мастерской ждут три робота-почтальона. Любой сможет помочь Люми. Сначала позови одного к стойке; после выбора отправим именно его к двери."
+    },
+    {
+      "id": "chapter-01-11-1-success-01",
+      "episode": "newWords",
+      "levelId": "chapter-01-11-1",
+      "conversation": "success",
+      "index": 0,
+      "sourceText": "Один робот подошёл к отдельному месту у стойки. Теперь мы оба знаем, кто пойдёт с тобой.",
+      "spokenText": "[pleased] Один робот подошёл к отдельному месту у стойки. Теперь мы оба знаем, кто пойдёт с тобой."
+    },
+    {
+      "id": "chapter-01-11-2-task-01",
+      "episode": "newWords",
+      "levelId": "chapter-01-11-2",
+      "conversation": "task",
+      "index": 0,
+      "sourceText": "Помощник уже подошёл к стойке. Теперь позови его к двери.",
+      "spokenText": "[reassuring] Помощник уже подошёл к стойке. Теперь позови его к двери."
+    },
+    {
+      "id": "chapter-01-11-2-task-02",
+      "episode": "newWords",
+      "levelId": "chapter-01-11-2",
+      "conversation": "task",
+      "index": 1,
+      "sourceText": "Нужен тот же робот, которого мы только что выбрали. Он пойдёт рядом с Люми.",
+      "spokenText": "[reassuring] Нужен тот же робот, которого мы только что выбрали. Он пойдёт рядом с Люми."
+    },
+    {
+      "id": "chapter-01-11-2-success-01",
+      "episode": "newWords",
+      "levelId": "chapter-01-11-2",
+      "conversation": "success",
+      "index": 0,
+      "sourceText": "Помощник ждёт у двери. Возьмём зонт — дождь всё не кончается.",
+      "spokenText": "[pleased] Помощник ждёт у двери. Возьмём зонт — дождь всё не кончается."
+    },
+    {
+      "id": "chapter-01-11-3-task-01",
+      "episode": "newWords",
+      "levelId": "chapter-01-11-3",
+      "conversation": "task",
+      "index": 0,
+      "sourceText": "Umbrella — зонт, /ʌmˈbrel.ə/. Первый звук /ʌ/ — гласный: an umbrella. Выбираем по звуку, а не по букве u.",
+      "spokenText": "[reassuring] Umbrella — зонт. Первый звук — гласный: an umbrella. Выбираем по звуку, а не по букве u."
+    },
+    {
+      "id": "chapter-01-11-3-task-02",
+      "episode": "newWords",
+      "levelId": "chapter-01-11-3",
+      "conversation": "task",
+      "index": 1,
+      "sourceText": "У двери три зонта, все целые. Для дороги подойдёт любой.",
+      "spokenText": "[reassuring] У двери три зонта, все целые. Для дороги подойдёт любой."
+    },
+    {
+      "id": "chapter-01-11-3-success-01",
+      "episode": "newWords",
+      "levelId": "chapter-01-11-3",
+      "conversation": "success",
+      "index": 0,
+      "sourceText": "Зонт у нас. Помощник ждёт у двери; осталось закончить сборы.",
+      "spokenText": "[pleased] Зонт у нас. Помощник ждёт у двери; осталось закончить сборы."
+    },
+    {
+      "id": "chapter-01-11-3-success-02",
+      "episode": "newWords",
+      "levelId": "chapter-01-11-3",
+      "conversation": "success",
+      "index": 1,
+      "sourceText": "Как правильно выбирать между a, an и the?",
+      "spokenText": "[reassuring] Как правильно выбирать между a, an и the?"
+    },
+    {
+      "id": "chapter-01-11-3-feedback-mixed-context",
+      "episode": "newWords",
+      "levelId": "chapter-01-11-3",
+      "conversation": "feedback",
+      "choice": "mixed-context",
+      "sourceText": "Верно: один любой робот — a robot, выбранный помощник — the robot, один любой зонт — an umbrella. Значение предмета и ситуация важнее расположения таблички.",
+      "spokenText": "[reassuring] Верно: один любой робот — a robot, выбранный помощник — the robot, один любой зонт — an umbrella. Значение предмета и ситуация важнее расположения таблички."
+    },
+    {
+      "id": "chapter-01-11-3-feedback-mixed-sound",
+      "episode": "newWords",
+      "levelId": "chapter-01-11-3",
+      "conversation": "feedback",
+      "choice": "mixed-sound",
+      "sourceText": "Такого правила нет. Робот, ключ и яблоко могут быть понятны обоим и получать the. Для одного любого зонта an выбирается из-за гласного звука /ʌ/.",
+      "spokenText": "[reassuring] Такого правила нет. Робот, ключ и яблоко могут быть понятны обоим и получать the. Для одного любого зонта an выбирается из-за гласного звука."
+    },
+    {
+      "id": "chapter-01-12-plural-1-task-01",
+      "episode": "chapterFinale",
+      "levelId": "chapter-01-12-plural-1",
+      "conversation": "task",
+      "index": 0,
+      "sourceText": "Чуть не забыли перекус для попутчиков! Им нужны яблоки. Какие именно — не важно.",
+      "spokenText": "[reassuring] Чуть не забыли перекус для попутчиков! Им нужны яблоки. Какие именно — не важно."
+    },
+    {
+      "id": "chapter-01-12-plural-1-task-02",
+      "episode": "chapterFinale",
+      "levelId": "chapter-01-12-plural-1",
+      "conversation": "task",
+      "index": 1,
+      "sourceText": "Apple — одно яблоко, apples — яблоки. Окончание -s показывает, что их несколько. A и an с множественным числом не ставим.",
+      "spokenText": "[reassuring] Apple — одно яблоко, apples — яблоки. Окончание -s показывает, что их несколько. A и an с множественным числом не ставим."
+    },
+    {
+      "id": "chapter-01-12-plural-1-task-03",
+      "episode": "chapterFinale",
+      "levelId": "chapter-01-12-plural-1",
+      "conversation": "task",
+      "index": 2,
+      "sourceText": "Здесь можно попросить просто apples. Артикля нет — это называют нулевым артиклем. Он подходит для этой просьбы о любых яблоках; позже мы сравним её с просьбой о конкретных.",
+      "spokenText": "[reassuring] Здесь можно попросить просто apples. Артикля нет — это называют нулевым артиклем. Он подходит для этой просьбы о любых яблоках; позже мы сравним её с просьбой о конкретных."
+    },
+    {
+      "id": "chapter-01-12-plural-1-task-04",
+      "episode": "chapterFinale",
+      "levelId": "chapter-01-12-plural-1",
+      "conversation": "task",
+      "index": 3,
+      "sourceText": "Поставь apples в правую клетку рамки. Левую можно оставить пустой: таблички «пусто» не нужно. Я отложу пару яблок.",
+      "spokenText": "[reassuring] Поставь apples в правую клетку рамки. Левую можно оставить пустой: таблички «пусто» не нужно. Я отложу пару яблок."
+    },
+    {
+      "id": "chapter-01-12-plural-1-success-01",
+      "episode": "chapterFinale",
+      "levelId": "chapter-01-12-plural-1",
+      "conversation": "success",
+      "index": 0,
+      "sourceText": "Вот выбранная пара. Теперь попроси положить в сумку именно эти яблоки.",
+      "spokenText": "[pleased] Вот выбранная пара. Теперь попроси положить в сумку именно эти яблоки."
+    },
+    {
+      "id": "chapter-01-12-plural-2-task-01",
+      "episode": "chapterFinale",
+      "levelId": "chapter-01-12-plural-2",
+      "conversation": "task",
+      "index": 0,
+      "sourceText": "Я отложил пару. Ты видел, какие яблоки я выбрал. Теперь попроси положить именно их в сумку.",
+      "spokenText": "[reassuring] Я отложил пару. Ты видел, какие яблоки я выбрал. Теперь попроси положить именно их в сумку."
+    },
+    {
+      "id": "chapter-01-12-plural-2-task-02",
+      "episode": "chapterFinale",
+      "levelId": "chapter-01-12-plural-2",
+      "conversation": "task",
+      "index": 1,
+      "sourceText": "The можно поставить и перед множественным числом: the apples — те яблоки, о которых мы говорим.",
+      "spokenText": "[reassuring] The можно поставить и перед множественным числом: the apples — те яблоки, о которых мы говорим."
+    },
+    {
+      "id": "chapter-01-12-plural-2-success-01",
+      "episode": "chapterFinale",
+      "levelId": "chapter-01-12-plural-2",
+      "conversation": "success",
+      "index": 0,
+      "sourceText": "Отложенные яблоки в сумке. Остальные остались на стойке.",
+      "spokenText": "[pleased] Отложенные яблоки в сумке. Остальные остались на стойке."
+    },
+    {
+      "id": "chapter-01-12-plural-2-success-02",
+      "episode": "chapterFinale",
+      "levelId": "chapter-01-12-plural-2",
+      "conversation": "success",
+      "index": 1,
+      "sourceText": "Теперь попробуем с другим словом.",
+      "spokenText": "[reassuring] Теперь попробуем с другим словом."
+    },
+    {
+      "id": "chapter-01-12-plural-3-task-01",
+      "episode": "chapterFinale",
+      "levelId": "chapter-01-12-plural-3",
+      "conversation": "task",
+      "index": 0,
+      "sourceText": "Яблоки собраны. Ещё отложим яйца для попутчиков — любые из тех, что на стойке.",
+      "spokenText": "[reassuring] Яблоки собраны. Ещё отложим яйца для попутчиков — любые из тех, что на стойке."
+    },
+    {
+      "id": "chapter-01-12-plural-3-task-02",
+      "episode": "chapterFinale",
+      "levelId": "chapter-01-12-plural-3",
+      "conversation": "task",
+      "index": 1,
+      "sourceText": "Egg — одно яйцо, eggs — яйца. Здесь тоже есть окончание -s. Собери просьбу сам: артикль можно поставить слева или оставить это место пустым.",
+      "spokenText": "[reassuring] Egg — одно яйцо, eggs — яйца. Здесь тоже есть окончание -s. Собери просьбу сам: артикль можно поставить слева или оставить это место пустым."
+    },
+    {
+      "id": "chapter-01-12-plural-3-success-01",
+      "episode": "chapterFinale",
+      "levelId": "chapter-01-12-plural-3",
+      "conversation": "success",
+      "index": 0,
+      "sourceText": "Вот выбранная пара. Теперь попроси положить в сумку именно эти яйца.",
+      "spokenText": "[pleased] Вот выбранная пара. Теперь попроси положить в сумку именно эти яйца."
+    },
+    {
+      "id": "chapter-01-12-plural-4-task-01",
+      "episode": "chapterFinale",
+      "levelId": "chapter-01-12-plural-4",
+      "conversation": "task",
+      "index": 0,
+      "sourceText": "Я отложил пару. Ты видел, какие яйца я выбрал. Теперь попроси положить именно их в сумку.",
+      "spokenText": "[reassuring] Я отложил пару. Ты видел, какие яйца я выбрал. Теперь попроси положить именно их в сумку."
+    },
+    {
+      "id": "chapter-01-12-plural-4-success-01",
+      "episode": "chapterFinale",
+      "levelId": "chapter-01-12-plural-4",
+      "conversation": "success",
+      "index": 0,
+      "sourceText": "Отложенные яйца в сумке. Остальные остались на стойке.",
+      "spokenText": "[pleased] Отложенные яйца в сумке. Остальные остались на стойке."
+    },
+    {
+      "id": "chapter-01-12-plural-4-success-02",
+      "episode": "chapterFinale",
+      "levelId": "chapter-01-12-plural-4",
+      "conversation": "success",
+      "index": 1,
+      "sourceText": "С несколькими предметами тоже разобрались. Остались три знакомые просьбы перед выходом.",
+      "spokenText": "[reassuring] С несколькими предметами тоже разобрались. Остались три знакомые просьбы перед выходом."
+    },
+    {
+      "id": "chapter-01-12-1-task-01",
+      "episode": "chapterFinale",
+      "levelId": "chapter-01-12-1",
+      "conversation": "task",
+      "index": 0,
+      "sourceText": "А теперь три знакомые просьбы перед выходом. Попробуй справиться сам. Если понадобится, правило и подсказка есть в журнале.",
+      "spokenText": "[reassuring] А теперь три знакомые просьбы перед выходом. Попробуй справиться сам. Если понадобится, правило и подсказка есть в журнале."
+    },
+    {
+      "id": "chapter-01-12-1-task-02",
+      "episode": "chapterFinale",
+      "levelId": "chapter-01-12-1",
+      "conversation": "task",
+      "index": 1,
+      "sourceText": "Первая просьба: возьми один любой апельсин из трёх для помощника Марты.",
+      "spokenText": "[reassuring] Первая просьба: возьми один любой апельсин из трёх для помощника Марты."
+    },
+    {
+      "id": "chapter-01-12-1-success-01",
+      "episode": "chapterFinale",
+      "levelId": "chapter-01-12-1",
+      "conversation": "success",
+      "index": 0,
+      "sourceText": "Один апельсин собран. Теперь две связанные просьбы о запасном ключе.",
+      "spokenText": "[pleased] Один апельсин собран. Теперь две связанные просьбы о запасном ключе."
+    },
+    {
+      "id": "chapter-01-12-2-task-01",
+      "episode": "chapterFinale",
+      "levelId": "chapter-01-12-2",
+      "conversation": "task",
+      "index": 0,
+      "sourceText": "На стойке три запасных ключа. Попроси меня отложить один — подойдёт любой.",
+      "spokenText": "[reassuring] На стойке три запасных ключа. Попроси меня отложить один — подойдёт любой."
+    },
+    {
+      "id": "chapter-01-12-2-success-01",
+      "episode": "chapterFinale",
+      "levelId": "chapter-01-12-2",
+      "conversation": "success",
+      "index": 0,
+      "sourceText": "Вот выбранный ключ. Теперь попросим положить его в сумку.",
+      "spokenText": "[pleased] Вот выбранный ключ. Теперь попросим положить его в сумку."
+    },
+    {
+      "id": "chapter-01-12-3-task-01",
+      "episode": "chapterFinale",
+      "levelId": "chapter-01-12-3",
+      "conversation": "task",
+      "index": 0,
+      "sourceText": "Вот ключ, который мы выбрали. Передай последнюю просьбу — о том же ключе.",
+      "spokenText": "[reassuring] Вот ключ, который мы выбрали. Передай последнюю просьбу — о том же ключе."
+    },
+    {
+      "id": "chapter-01-12-3-success-01",
+      "episode": "chapterFinale",
+      "levelId": "chapter-01-12-3",
+      "conversation": "success",
+      "index": 0,
+      "sourceText": "Ключ в сумке. Кажется, ничего не забыли. Пора в дорогу, Люми!",
+      "spokenText": "[pleased] Ключ в сумке. Кажется, ничего не забыли. Пора в дорогу, Люми!"
+    },
+    {
+      "id": "chapter-01-12-3-success-02",
+      "episode": "chapterFinale",
+      "levelId": "chapter-01-12-3",
+      "conversation": "success",
+      "index": 1,
+      "sourceText": "Перед выходом вспомним: когда нужен a/an, когда the, а когда в наших просьбах можно обойтись без артикля?",
+      "spokenText": "[reassuring] Перед выходом вспомним: когда нужен a и an, когда the, а когда в наших просьбах можно обойтись без артикля?"
+    },
+    {
+      "id": "chapter-01-12-3-feedback-final-always",
+      "episode": "chapterFinale",
+      "levelId": "chapter-01-12-3",
+      "conversation": "feedback",
+      "choice": "final-always",
+      "sourceText": "Вспомни apples и eggs: когда нам подходили любые, мы просили их без артикля. A/an с множественным числом не ставим. The понадобился, когда мы попросили именно отложенные яблоки или яйца.",
+      "spokenText": "[reassuring] Вспомни apples и eggs: когда нам подходили любые, мы просили их без артикля. Артикли a и an с множественным числом не ставим. The понадобился, когда мы попросили именно отложенные яблоки или яйца."
+    },
+    {
+      "id": "chapter-01-12-3-feedback-final-context",
+      "episode": "chapterFinale",
+      "levelId": "chapter-01-12-3",
+      "conversation": "feedback",
+      "choice": "final-context",
+      "sourceText": "Верно: нужен тот ключ, который мы уже выбрали. С несколькими предметами было так же: apples — любые яблоки, the apples — выбранные. A/an оставляем для одного предмета. Сборы закончены — глава 1 пройдена!",
+      "spokenText": "[reassuring] Верно: нужен тот ключ, который мы уже выбрали. С несколькими предметами было так же: apples — любые яблоки, the apples — выбранные. Артикли a и an оставляем для одного предмета. Сборы закончены — глава 1 пройдена!"
+    }
+  ]
+}

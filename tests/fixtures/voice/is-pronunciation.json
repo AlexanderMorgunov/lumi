@@ -1,0 +1,13 @@
+{
+  "term": "is",
+  "provider": "elevenlabs",
+  "modelId": "eleven_v3",
+  "voiceId": "bIHbv24MWmeRgasZH58o",
+  "file": "audio/en-US/elevenlabs-tik-v1/is.mp3",
+  "requestHash": "0ea362714daaeb7ea7b5bf566939c476712ba9587c188c0edc3346c4c811ff9f",
+  "audioSha256": "359fe5dc89f858026701904088ba5c7263b245f3cceb7600c00c628175f588ff",
+  "sourceAudioSha256": "5d3593adc5c0cad392a041342ccbdb97e65a645297b2cde092d5e7baa7d57688",
+  "gainDb": 2.0100000000000016,
+  "duration": 1.76,
+  "review": "generated-awaiting-listening"
+}

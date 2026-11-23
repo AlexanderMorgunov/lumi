@@ -1,0 +1,40 @@
+# Dependencies and generated output
+node_modules/
+dist/
+coverage/
+test-results/
+playwright-report/
+artifacts/
+*.tsbuildinfo
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.local
+release.config.local.json
+*.log
+.codex/
+.aws/
+.npmrc
+*.pem
+*.key
+
+# Local authoring material, notes and original media
+/docs/
+/skinBagNotes/
+/assets/
+/MASTER_PLAN.md
+/ux-audit-*.md
+/vendor/dayenglish-game-sdk-0.1.0.tgz
+# Superseded pronunciation files; current clips live in versioned subfolders.
+/public/audio/en-US/*.wav
+
+# Editor and OS files
+.idea/
+.vscode/
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+Desktop.ini

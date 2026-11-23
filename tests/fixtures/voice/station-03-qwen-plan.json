@@ -1,0 +1,1122 @@
+{
+  "schemaVersion": 1,
+  "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+  "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+  "review": "voices-selected-lines-await-listening",
+  "lines": [
+    {
+      "id": "chapter-02-03-task-01",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "sourceText": "Бирки готовы. Перед отправлением проверим, кому передаём сообщение. Люми, посмотри на меня: сейчас я обращаюсь к тебе.",
+      "segments": [
+        {
+          "rawText": "Бирки готовы. Перед отправлением проверим, кому передаём сообщение. Люми, посмотри на меня: сейчас я обращаюсь к тебе.",
+          "language": "Russian",
+          "spokenText": "Бирки готовы. Перед отправлением проверим, кому передаём сообщение. Люми, посмотри на меня: сейчас я обращаюсь к тебе.",
+          "jobId": "marta-ru-078691f19f23ee7c"
+        }
+      ]
+    },
+    {
+      "id": "chapter-02-03-task-02",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "sourceText": "You — личное местоимение. Оно значит «ты» или «вы» и обозначает того, к кому обращаются. Здесь я говорю с тобой одним.",
+      "segments": [
+        {
+          "rawText": "You",
+          "language": "English",
+          "spokenText": "You.",
+          "jobId": "marta-en-d3fd8c1b0703a5ea"
+        },
+        {
+          "rawText": " — личное местоимение. Оно значит «ты» или «вы» и обозначает того, к кому обращаются. Здесь я говорю с тобой одним.",
+          "language": "Russian",
+          "spokenText": "личное местоимение. Оно значит «ты» или «вы» и обозначает того, к кому обращаются. Здесь я говорю с тобой одним.",
+          "jobId": "marta-ru-49274eaa74c76afb"
+        }
+      ]
+    },
+    {
+      "id": "chapter-02-03-task-03",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "sourceText": "С этим местоимением нужна форма are. Это форма глагола be. Даже когда собеседник один, говорим you are.",
+      "segments": [
+        {
+          "rawText": "С этим местоимением нужна форма ",
+          "language": "Russian",
+          "spokenText": "С этим местоимением нужна форма",
+          "jobId": "marta-ru-c448f5c17cce6d83"
+        },
+        {
+          "rawText": "are",
+          "language": "English",
+          "spokenText": "are.",
+          "jobId": "marta-en-303a72939a2ca51f"
+        },
+        {
+          "rawText": ". Это форма глагола ",
+          "language": "Russian",
+          "spokenText": "Это форма глагола",
+          "jobId": "marta-ru-9b5e6d124fffd76c"
+        },
+        {
+          "rawText": "be",
+          "language": "English",
+          "spokenText": "be.",
+          "jobId": "marta-en-ec33f3f4050d03ad"
+        },
+        {
+          "rawText": ". Даже когда собеседник один, говорим ",
+          "language": "Russian",
+          "spokenText": "Даже когда собеседник один, говорим",
+          "jobId": "marta-ru-787a3ee94ac15aaa"
+        },
+        {
+          "rawText": "you are",
+          "language": "English",
+          "spokenText": "you are.",
+          "jobId": "marta-en-9dd4d3a634acc4f3"
+        },
+        {
+          "rawText": ".",
+          "jobId": null
+        }
+      ]
+    },
+    {
+      "id": "chapter-02-03-task-04",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "sourceText": "Сравни: I am Marta — «Я Марта». А тебе я говорю: You are Lumi — «Ты Люми». В первой фразе речь обо мне, во второй — о тебе.",
+      "segments": [
+        {
+          "rawText": "Сравни: ",
+          "language": "Russian",
+          "spokenText": "Сравни",
+          "jobId": "marta-ru-709c29df635e90f2"
+        },
+        {
+          "rawText": "I am Marta",
+          "language": "English",
+          "spokenText": "I am Marta.",
+          "jobId": "marta-en-f8fba4fc0b135205"
+        },
+        {
+          "rawText": " — «Я Марта». А тебе я говорю: ",
+          "language": "Russian",
+          "spokenText": "Я Марта». А тебе я говорю",
+          "jobId": "marta-ru-d905b641e80a00c7"
+        },
+        {
+          "rawText": "You are Lumi",
+          "language": "English",
+          "spokenText": "You are Lumi.",
+          "jobId": "marta-en-6fe68a38dfb7cc88"
+        },
+        {
+          "rawText": " — «Ты Люми». В первой фразе речь обо мне, во второй — о тебе.",
+          "language": "Russian",
+          "spokenText": "Ты Люми». В первой фразе речь обо мне, во второй — о тебе.",
+          "jobId": "marta-ru-440aa8bffe7399b6"
+        }
+      ]
+    },
+    {
+      "id": "chapter-02-03-task-05",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "sourceText": "Соберём моё обращение вместе: You are Lumi. Местоимение уже в рамке. Добавь форму глагола и своё имя. Перед именем артикль не нужен.",
+      "segments": [
+        {
+          "rawText": "Соберём моё обращение вместе: ",
+          "language": "Russian",
+          "spokenText": "Соберём моё обращение вместе",
+          "jobId": "marta-ru-6bfe9dcdab885ec2"
+        },
+        {
+          "rawText": "You are Lumi",
+          "language": "English",
+          "spokenText": "You are Lumi.",
+          "jobId": "marta-en-6fe68a38dfb7cc88"
+        },
+        {
+          "rawText": ". Местоимение уже в рамке. Добавь форму глагола и своё имя. Перед именем артикль не нужен.",
+          "language": "Russian",
+          "spokenText": "Местоимение уже в рамке. Добавь форму глагола и своё имя. Перед именем артикль не нужен.",
+          "jobId": "marta-ru-4ad165ab0c2540ba"
+        }
+      ]
+    },
+    {
+      "id": "chapter-02-03-success-01",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "sourceText": "You are Lumi. Верно, ты Люми. Я говорила, ты слушал — поэтому в моём сообщении you обозначает тебя.",
+      "segments": [
+        {
+          "rawText": "You are Lumi",
+          "language": "English",
+          "spokenText": "You are Lumi.",
+          "jobId": "marta-en-6fe68a38dfb7cc88"
+        },
+        {
+          "rawText": ". Верно, ты Люми. Я говорила, ты слушал — поэтому в моём сообщении ",
+          "language": "Russian",
+          "spokenText": "Верно, ты Люми. Я говорила, ты слушал — поэтому в моём сообщении",
+          "jobId": "marta-ru-8c1b91c2f57c667a"
+        },
+        {
+          "rawText": "you",
+          "language": "English",
+          "spokenText": "you.",
+          "jobId": "marta-en-4c874e61e506d631"
+        },
+        {
+          "rawText": " обозначает тебя.",
+          "language": "Russian",
+          "spokenText": "обозначает тебя.",
+          "jobId": "marta-ru-423abff1dfb26089"
+        }
+      ]
+    },
+    {
+      "id": "chapter-02-03-success-02",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "sourceText": "А теперь обратись к Тику. Ты станешь автором сообщения, а он — твоим собеседником.",
+      "segments": [
+        {
+          "rawText": "А теперь обратись к Тику. Ты станешь автором сообщения, а он — твоим собеседником.",
+          "language": "Russian",
+          "spokenText": "А теперь обратись к Тику. Ты станешь автором сообщения, а он — твоим собеседником.",
+          "jobId": "marta-ru-ba0b9be1b5e6f9ed"
+        }
+      ]
+    },
+    {
+      "id": "chapter-02-03-tik-task-01",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "sourceText": "Люми, теперь твоя очередь. Скажи мне: «Ты робот». Слово robot ты уже знаешь. На этот раз ты говоришь, а я слушаю.",
+      "segments": [
+        {
+          "rawText": "Люми, теперь твоя очередь. Скажи мне: «Ты робот». Слово ",
+          "language": "Russian",
+          "spokenText": "Люми, теперь твоя очередь. Скажи мне: «Ты робот». Слово",
+          "jobId": "tik-ru-eb9f5904de121b42"
+        },
+        {
+          "rawText": "robot",
+          "language": "English",
+          "spokenText": "robot.",
+          "jobId": "tik-en-7ba18b828c8ab660"
+        },
+        {
+          "rawText": " ты уже знаешь. На этот раз ты говоришь, а я слушаю.",
+          "language": "Russian",
+          "spokenText": "ты уже знаешь. На этот раз ты говоришь, а я слушаю.",
+          "jobId": "tik-ru-5d310cecd0133db1"
+        }
+      ]
+    },
+    {
+      "id": "chapter-02-03-tik-task-02",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "sourceText": "Выбери местоимение и форму глагола для обращения ко мне. Не забудь артикль перед названием одного робота. Я подожду у стойки.",
+      "segments": [
+        {
+          "rawText": "Выбери местоимение и форму глагола для обращения ко мне. Не забудь артикль перед названием одного робота. Я подожду у стойки.",
+          "language": "Russian",
+          "spokenText": "Выбери местоимение и форму глагола для обращения ко мне. Не забудь артикль перед названием одного робота. Я подожду у стойки.",
+          "jobId": "tik-ru-6d0c39a261e94d5a"
+        }
+      ]
+    },
+    {
+      "id": "chapter-02-03-tik-success-01",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "sourceText": "You are a robot. Ты робот. Всё верно, Люми, ты обратился ко мне. Я один, но после you всё равно нужна форма are.",
+      "segments": [
+        {
+          "rawText": "You are a robot",
+          "language": "English",
+          "spokenText": "You are a robot.",
+          "jobId": "tik-en-08a0de2f0e771a70"
+        },
+        {
+          "rawText": ". Ты робот. Всё верно, Люми, ты обратился ко мне. Я один, но после ",
+          "language": "Russian",
+          "spokenText": "Ты робот. Всё верно, Люми, ты обратился ко мне. Я один, но после",
+          "jobId": "tik-ru-c530227b757ecf26"
+        },
+        {
+          "rawText": "you",
+          "language": "English",
+          "spokenText": "you.",
+          "jobId": "tik-en-fea052f932a815e1"
+        },
+        {
+          "rawText": " всё равно нужна форма ",
+          "language": "Russian",
+          "spokenText": "всё равно нужна форма",
+          "jobId": "tik-ru-2c4a7d2429c32686"
+        },
+        {
+          "rawText": "are",
+          "language": "English",
+          "spokenText": "are.",
+          "jobId": "tik-en-0c452214f3bb4629"
+        },
+        {
+          "rawText": ".",
+          "jobId": null
+        }
+      ]
+    },
+    {
+      "id": "chapter-02-03-tik-success-02",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "sourceText": "Сначала Марта обращалась к Люми, потом Люми — ко мне. Кого обозначало you во втором сообщении?",
+      "segments": [
+        {
+          "rawText": "Сначала Марта обращалась к Люми, потом Люми — ко мне. Кого обозначало ",
+          "language": "Russian",
+          "spokenText": "Сначала Марта обращалась к Люми, потом Люми — ко мне. Кого обозначало",
+          "jobId": "tik-ru-29f2273e8a27555a"
+        },
+        {
+          "rawText": "you",
+          "language": "English",
+          "spokenText": "you.",
+          "jobId": "tik-en-fea052f932a815e1"
+        },
+        {
+          "rawText": " во втором сообщении?",
+          "language": "Russian",
+          "spokenText": "во втором сообщении?",
+          "jobId": "tik-ru-18071b437b581e6d"
+        }
+      ]
+    },
+    {
+      "id": "chapter-02-03-tik-feedback-address-tik",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "sourceText": "Верно. Во втором сообщении Люми говорил, а Тик слушал. Поэтому you обозначало Тика. С одним собеседником тоже используем are.",
+      "segments": [
+        {
+          "rawText": "Верно. Во втором сообщении Люми говорил, а Тик слушал. Поэтому ",
+          "language": "Russian",
+          "spokenText": "Верно. Во втором сообщении Люми говорил, а Тик слушал. Поэтому",
+          "jobId": "tik-ru-5751017532ae93ed"
+        },
+        {
+          "rawText": "you",
+          "language": "English",
+          "spokenText": "you.",
+          "jobId": "tik-en-fea052f932a815e1"
+        },
+        {
+          "rawText": " обозначало Тика. С одним собеседником тоже используем ",
+          "language": "Russian",
+          "spokenText": "обозначало Тика. С одним собеседником тоже используем",
+          "jobId": "tik-ru-7b54d5fe359a15d9"
+        },
+        {
+          "rawText": "are",
+          "language": "English",
+          "spokenText": "are.",
+          "jobId": "tik-en-0c452214f3bb4629"
+        },
+        {
+          "rawText": ".",
+          "jobId": null
+        }
+      ]
+    },
+    {
+      "id": "chapter-02-03-tik-feedback-address-lumi",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "sourceText": "Люми двигал слова и был автором сообщения, но обращался к Тику. Говорящего обозначает I, а его собеседника — you.",
+      "segments": [
+        {
+          "rawText": "Люми двигал слова и был автором сообщения, но обращался к Тику. Говорящего обозначает ",
+          "language": "Russian",
+          "spokenText": "Люми двигал слова и был автором сообщения, но обращался к Тику. Говорящего обозначает",
+          "jobId": "tik-ru-3dcd72406476448f"
+        },
+        {
+          "rawText": "I",
+          "language": "English",
+          "spokenText": "I.",
+          "jobId": "tik-en-ab08699c4e3c8b1e"
+        },
+        {
+          "rawText": ", а его собеседника — ",
+          "language": "Russian",
+          "spokenText": "а его собеседника",
+          "jobId": "tik-ru-bc72f4337757f570"
+        },
+        {
+          "rawText": "you",
+          "language": "English",
+          "spokenText": "you.",
+          "jobId": "tik-en-fea052f932a815e1"
+        },
+        {
+          "rawText": ".",
+          "jobId": null
+        }
+      ]
+    },
+    {
+      "id": "chapter-02-03-tik-feedback-address-group",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "sourceText": "Форма are не означает, что собеседников несколько. С местоимением you она нужна и при обращении к одному. Здесь Люми говорил только с Тиком.",
+      "segments": [
+        {
+          "rawText": "Форма ",
+          "language": "Russian",
+          "spokenText": "Форма",
+          "jobId": "tik-ru-615a1a9a861087de"
+        },
+        {
+          "rawText": "are",
+          "language": "English",
+          "spokenText": "are.",
+          "jobId": "tik-en-0c452214f3bb4629"
+        },
+        {
+          "rawText": " не означает, что собеседников несколько. С местоимением ",
+          "language": "Russian",
+          "spokenText": "не означает, что собеседников несколько. С местоимением",
+          "jobId": "tik-ru-da42d0d7a08696a5"
+        },
+        {
+          "rawText": "you",
+          "language": "English",
+          "spokenText": "you.",
+          "jobId": "tik-en-fea052f932a815e1"
+        },
+        {
+          "rawText": " она нужна и при обращении к одному. Здесь Люми говорил только с Тиком.",
+          "language": "Russian",
+          "spokenText": "она нужна и при обращении к одному. Здесь Люми говорил только с Тиком.",
+          "jobId": "tik-ru-289548d27b0b2200"
+        }
+      ]
+    }
+  ],
+  "jobs": [
+    {
+      "id": "marta-ru-078691f19f23ee7c",
+      "requestHash": "078691f19f23ee7ccf9b600a08f02a8f55fe8c6a2a818a18820fce64e6ba999d",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "referenceAudioSha256": "ab512a661308f5bb5907555e7c70a47e58174478b8bc2872a4f0754beaa7334d",
+      "referenceText": "Здравствуй, Люми. Я Марта. Сегодня мы отправимся к старой станции. Не бойся: я буду рядом.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "Бирки готовы. Перед отправлением проверим, кому передаём сообщение. Люми, посмотри на меня: сейчас я обращаюсь к тебе.",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "marta-en-d3fd8c1b0703a5ea",
+      "requestHash": "d3fd8c1b0703a5ea57d94356f34a7014d72d2f1654b08ad185ebdc98301adeaa",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "referenceAudioSha256": "ab512a661308f5bb5907555e7c70a47e58174478b8bc2872a4f0754beaa7334d",
+      "referenceText": "Здравствуй, Люми. Я Марта. Сегодня мы отправимся к старой станции. Не бойся: я буду рядом.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "You.",
+      "language": "English",
+      "conditioning": "speaker",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "marta-ru-49274eaa74c76afb",
+      "requestHash": "49274eaa74c76afb09b1c9988b13a6983d8e79ac49762e609d420c8e1c31723a",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "referenceAudioSha256": "ab512a661308f5bb5907555e7c70a47e58174478b8bc2872a4f0754beaa7334d",
+      "referenceText": "Здравствуй, Люми. Я Марта. Сегодня мы отправимся к старой станции. Не бойся: я буду рядом.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "личное местоимение. Оно значит «ты» или «вы» и обозначает того, к кому обращаются. Здесь я говорю с тобой одним.",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "marta-ru-c448f5c17cce6d83",
+      "requestHash": "c448f5c17cce6d83910ef843db7837bb7af9dacf07a1d0f075ae573183dfee2d",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "referenceAudioSha256": "ab512a661308f5bb5907555e7c70a47e58174478b8bc2872a4f0754beaa7334d",
+      "referenceText": "Здравствуй, Люми. Я Марта. Сегодня мы отправимся к старой станции. Не бойся: я буду рядом.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "С этим местоимением нужна форма",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "marta-en-303a72939a2ca51f",
+      "requestHash": "303a72939a2ca51ff07e27458e81f1baf464c14881235f6fddb25e2aaf444b9d",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "referenceAudioSha256": "ab512a661308f5bb5907555e7c70a47e58174478b8bc2872a4f0754beaa7334d",
+      "referenceText": "Здравствуй, Люми. Я Марта. Сегодня мы отправимся к старой станции. Не бойся: я буду рядом.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "are.",
+      "language": "English",
+      "conditioning": "speaker",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "marta-ru-9b5e6d124fffd76c",
+      "requestHash": "9b5e6d124fffd76c4e30983eab480c9cbbee2ccb5833a841a8f439a2a148e65f",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "referenceAudioSha256": "ab512a661308f5bb5907555e7c70a47e58174478b8bc2872a4f0754beaa7334d",
+      "referenceText": "Здравствуй, Люми. Я Марта. Сегодня мы отправимся к старой станции. Не бойся: я буду рядом.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "Это форма глагола",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "marta-en-ec33f3f4050d03ad",
+      "requestHash": "ec33f3f4050d03ad7331aebff5b0e953aa6c2f6b402bf3b11746156710deaedf",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "referenceAudioSha256": "ab512a661308f5bb5907555e7c70a47e58174478b8bc2872a4f0754beaa7334d",
+      "referenceText": "Здравствуй, Люми. Я Марта. Сегодня мы отправимся к старой станции. Не бойся: я буду рядом.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "be.",
+      "language": "English",
+      "conditioning": "speaker",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "marta-ru-787a3ee94ac15aaa",
+      "requestHash": "787a3ee94ac15aaa3a4bd7590cd6463d004992bdda4dbf28c4bded6a948d2cbf",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "referenceAudioSha256": "ab512a661308f5bb5907555e7c70a47e58174478b8bc2872a4f0754beaa7334d",
+      "referenceText": "Здравствуй, Люми. Я Марта. Сегодня мы отправимся к старой станции. Не бойся: я буду рядом.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "Даже когда собеседник один, говорим",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "marta-en-9dd4d3a634acc4f3",
+      "requestHash": "9dd4d3a634acc4f3fdbc925d27331ad8c6b367f70353015c2e058e60a6f683b9",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "referenceAudioSha256": "ab512a661308f5bb5907555e7c70a47e58174478b8bc2872a4f0754beaa7334d",
+      "referenceText": "Здравствуй, Люми. Я Марта. Сегодня мы отправимся к старой станции. Не бойся: я буду рядом.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "you are.",
+      "language": "English",
+      "conditioning": "speaker",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "marta-ru-709c29df635e90f2",
+      "requestHash": "709c29df635e90f2b00745664197134c82060bc7540e0a4bcc8aa53560651a7e",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "referenceAudioSha256": "ab512a661308f5bb5907555e7c70a47e58174478b8bc2872a4f0754beaa7334d",
+      "referenceText": "Здравствуй, Люми. Я Марта. Сегодня мы отправимся к старой станции. Не бойся: я буду рядом.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "Сравни",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "marta-en-f8fba4fc0b135205",
+      "requestHash": "f8fba4fc0b1352054f5b911fc1dcf134ccf66c01b526ebf3aca7cc4f250b48cc",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "referenceAudioSha256": "ab512a661308f5bb5907555e7c70a47e58174478b8bc2872a4f0754beaa7334d",
+      "referenceText": "Здравствуй, Люми. Я Марта. Сегодня мы отправимся к старой станции. Не бойся: я буду рядом.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "I am Marta.",
+      "language": "English",
+      "conditioning": "speaker",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "marta-ru-d905b641e80a00c7",
+      "requestHash": "d905b641e80a00c7d3fb9231fea585be6d39c2cf785dd4d97c9022691d29c34f",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "referenceAudioSha256": "ab512a661308f5bb5907555e7c70a47e58174478b8bc2872a4f0754beaa7334d",
+      "referenceText": "Здравствуй, Люми. Я Марта. Сегодня мы отправимся к старой станции. Не бойся: я буду рядом.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "Я Марта». А тебе я говорю",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "marta-en-6fe68a38dfb7cc88",
+      "requestHash": "6fe68a38dfb7cc888f00b17477b8bb94bac4a63eb91a04ded04ab42a3407620e",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "referenceAudioSha256": "ab512a661308f5bb5907555e7c70a47e58174478b8bc2872a4f0754beaa7334d",
+      "referenceText": "Здравствуй, Люми. Я Марта. Сегодня мы отправимся к старой станции. Не бойся: я буду рядом.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "You are Lumi.",
+      "language": "English",
+      "conditioning": "speaker",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "marta-ru-440aa8bffe7399b6",
+      "requestHash": "440aa8bffe7399b68962ccd8b25f0371e67f279b43a11d0b1296ec42aa3549ad",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "referenceAudioSha256": "ab512a661308f5bb5907555e7c70a47e58174478b8bc2872a4f0754beaa7334d",
+      "referenceText": "Здравствуй, Люми. Я Марта. Сегодня мы отправимся к старой станции. Не бойся: я буду рядом.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "Ты Люми». В первой фразе речь обо мне, во второй — о тебе.",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "marta-ru-6bfe9dcdab885ec2",
+      "requestHash": "6bfe9dcdab885ec2a4448759a9d939c8d14cd65c82069f612670f2d99d32d4d6",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "referenceAudioSha256": "ab512a661308f5bb5907555e7c70a47e58174478b8bc2872a4f0754beaa7334d",
+      "referenceText": "Здравствуй, Люми. Я Марта. Сегодня мы отправимся к старой станции. Не бойся: я буду рядом.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "Соберём моё обращение вместе",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "marta-ru-4ad165ab0c2540ba",
+      "requestHash": "4ad165ab0c2540baa4cfff2a9b63e199dc2bcf20fb710aa89ae06bfe453efb1e",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "referenceAudioSha256": "ab512a661308f5bb5907555e7c70a47e58174478b8bc2872a4f0754beaa7334d",
+      "referenceText": "Здравствуй, Люми. Я Марта. Сегодня мы отправимся к старой станции. Не бойся: я буду рядом.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "Местоимение уже в рамке. Добавь форму глагола и своё имя. Перед именем артикль не нужен.",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "marta-ru-8c1b91c2f57c667a",
+      "requestHash": "8c1b91c2f57c667a9e228b8f0cb0b776724ae2d8aea44b0c58e51d0a65f2b778",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "referenceAudioSha256": "ab512a661308f5bb5907555e7c70a47e58174478b8bc2872a4f0754beaa7334d",
+      "referenceText": "Здравствуй, Люми. Я Марта. Сегодня мы отправимся к старой станции. Не бойся: я буду рядом.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "Верно, ты Люми. Я говорила, ты слушал — поэтому в моём сообщении",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "marta-en-4c874e61e506d631",
+      "requestHash": "4c874e61e506d63179a5c4f9d4b4adc538cde1cedd6663d1babe2244af27a53d",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "referenceAudioSha256": "ab512a661308f5bb5907555e7c70a47e58174478b8bc2872a4f0754beaa7334d",
+      "referenceText": "Здравствуй, Люми. Я Марта. Сегодня мы отправимся к старой станции. Не бойся: я буду рядом.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "you.",
+      "language": "English",
+      "conditioning": "speaker",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "marta-ru-423abff1dfb26089",
+      "requestHash": "423abff1dfb26089dad1d31248bb96e510e61f7a84e2e02a9e92b251256cd6a2",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "referenceAudioSha256": "ab512a661308f5bb5907555e7c70a47e58174478b8bc2872a4f0754beaa7334d",
+      "referenceText": "Здравствуй, Люми. Я Марта. Сегодня мы отправимся к старой станции. Не бойся: я буду рядом.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "обозначает тебя.",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "marta-ru-ba0b9be1b5e6f9ed",
+      "requestHash": "ba0b9be1b5e6f9ed91d1b97832e8c2981bd1c7f114c8e63e0b91bc85b1c83c6a",
+      "speaker": "marta",
+      "voiceId": "marta-grounded-v1",
+      "referenceAudioSha256": "ab512a661308f5bb5907555e7c70a47e58174478b8bc2872a4f0754beaa7334d",
+      "referenceText": "Здравствуй, Люми. Я Марта. Сегодня мы отправимся к старой станции. Не бойся: я буду рядом.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "А теперь обратись к Тику. Ты станешь автором сообщения, а он — твоим собеседником.",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-ru-eb9f5904de121b42",
+      "requestHash": "eb9f5904de121b42c7354c0bbc159f4b5ccf6059e7dacdc44bdb85b2affb5240",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "Люми, теперь твоя очередь. Скажи мне: «Ты робот». Слово",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-en-7ba18b828c8ab660",
+      "requestHash": "7ba18b828c8ab660300bb080bb6b35ea9bee9340203504f4e423de986d122ac0",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "robot.",
+      "language": "English",
+      "conditioning": "speaker",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-ru-5d310cecd0133db1",
+      "requestHash": "5d310cecd0133db1bfd4b5216f82bc459e84e36e93c61ac0e8644c81daebb5c3",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "ты уже знаешь. На этот раз ты говоришь, а я слушаю.",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-ru-6d0c39a261e94d5a",
+      "requestHash": "6d0c39a261e94d5aec2a771974c20e39bae246f00df1a112a77f03d2c9993305",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "Выбери местоимение и форму глагола для обращения ко мне. Не забудь артикль перед названием одного робота. Я подожду у стойки.",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-en-08a0de2f0e771a70",
+      "requestHash": "08a0de2f0e771a70881787471a76f3335e1f65eea349da958b7cc9412209d98d",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "You are a robot.",
+      "language": "English",
+      "conditioning": "speaker",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-ru-c530227b757ecf26",
+      "requestHash": "c530227b757ecf2648cf5f584d35066de8e2a2bb2d9863df2844bf63c3d4c8a0",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "Ты робот. Всё верно, Люми, ты обратился ко мне. Я один, но после",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-en-fea052f932a815e1",
+      "requestHash": "fea052f932a815e19fb6fa2098a7e2d78e0a3ef90259d2d4ed59ca13adaf42a1",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "you.",
+      "language": "English",
+      "conditioning": "speaker",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-ru-2c4a7d2429c32686",
+      "requestHash": "2c4a7d2429c326865e834f660391855204d3a47d54d1e092100374d672ab3782",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "всё равно нужна форма",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-en-0c452214f3bb4629",
+      "requestHash": "0c452214f3bb462954981d69e9067b9dc3b29856974e7046ef8e2c656e9fa42c",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "are.",
+      "language": "English",
+      "conditioning": "speaker",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-ru-29f2273e8a27555a",
+      "requestHash": "29f2273e8a27555a213af9ddf1988743efc6bed7aecc1423c7d75498430b25ad",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "Сначала Марта обращалась к Люми, потом Люми — ко мне. Кого обозначало",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-ru-18071b437b581e6d",
+      "requestHash": "18071b437b581e6da4ccb7c6cff6c7d3dc6e3dab818eecd71a96ffe4e874c63c",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "во втором сообщении?",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-ru-5751017532ae93ed",
+      "requestHash": "5751017532ae93ed274f36135d19d2eec895d8cf6c3841ea108300aa386fbb42",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "Верно. Во втором сообщении Люми говорил, а Тик слушал. Поэтому",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-ru-7b54d5fe359a15d9",
+      "requestHash": "7b54d5fe359a15d99eba7d405dbf84ebd2cf60dfd7f9a536b705d798f8388bf6",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "обозначало Тика. С одним собеседником тоже используем",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-ru-3dcd72406476448f",
+      "requestHash": "3dcd72406476448facbd003fcbbdf9adb052d087661e5d0ac381e236a7de556f",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "Люми двигал слова и был автором сообщения, но обращался к Тику. Говорящего обозначает",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-en-ab08699c4e3c8b1e",
+      "requestHash": "ab08699c4e3c8b1e01c260cd7010e2ecbf1686995b8ac7aea633342a4c874b04",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "I.",
+      "language": "English",
+      "conditioning": "speaker",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-ru-bc72f4337757f570",
+      "requestHash": "bc72f4337757f57007f71cc8b101bb4c85493e6947a357001268983f40f106ec",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "а его собеседника",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-ru-615a1a9a861087de",
+      "requestHash": "615a1a9a861087defa8ca364f896cfc38043ae85def5a17f95bdbe228b841871",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "Форма",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-ru-da42d0d7a08696a5",
+      "requestHash": "da42d0d7a08696a56c6249c213e579f5e826a779b16e04fc06b32e2c4ec148b7",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "не означает, что собеседников несколько. С местоимением",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    },
+    {
+      "id": "tik-ru-289548d27b0b2200",
+      "requestHash": "289548d27b0b2200608ed38d2460e3e8f9859f74c1141e5acaf3bad29a88541f",
+      "speaker": "tik",
+      "voiceId": "tik-whimsical-v1",
+      "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+      "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+      "model": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+      "revision": "fd4b254389122332181a7c3db7f27e918eec64e3",
+      "runtime": "audio.cpp v0.9.5 portable (61c7838b)",
+      "text": "она нужна и при обращении к одному. Здесь Люми говорил только с Тиком.",
+      "language": "Russian",
+      "conditioning": "icl",
+      "seed": 42,
+      "maxTokens": 384,
+      "talkerWeights": "q8_0",
+      "kvCache": "f16"
+    }
+  ]
+}

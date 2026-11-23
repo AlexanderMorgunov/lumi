@@ -1,0 +1,13 @@
+{
+  "term": "are",
+  "provider": "elevenlabs",
+  "modelId": "eleven_v3",
+  "voiceId": "XrExE9yKIg1WjnnlVkGX",
+  "file": "audio/en-US/elevenlabs-marta-v1/are.mp3",
+  "requestHash": "fd47c2ebf1f28b05bfdb747cdfe9967781bf44d45cf15c6f0e500033c40f8f0c",
+  "audioSha256": "f53c70b64529f20685d71814e8b0ca4284d8d25d67ed7d093edef7cf24396889",
+  "sourceAudioSha256": "c93841944b2f369e55a59d3a96e40469bccf542a1b3441003d65a3a26771c141",
+  "gainDb": -4.190000000000001,
+  "duration": 1.04,
+  "review": "generated-awaiting-listening"
+}

@@ -1,0 +1,157 @@
+{
+  "date": "2026-11-16",
+  "engine": "Piper (installed OxfordEnglish content-forge authoring binary)",
+  "voice": "en_US-lessac-medium",
+  "sampleRate": 22050,
+  "parameters": {
+    "length_scale": 1,
+    "sentence_silence": 0.12
+  },
+  "binarySha256": "96f3da3811151580073e40bb4dd20eb0fb8115f5f5f76e2fb54282b3edfa5c1f",
+  "modelSha256": "5efe09e69902187827af646e1a6e9d269dee769f9877d17b16b1b46eeaaf019f",
+  "modelCard": "https://huggingface.co/rhasspy/piper-voices/blob/main/en/en_US/lessac/medium/MODEL_CARD",
+  "source": "Same local binary/model used by OxfordEnglish/tools/content-forge/story/build-episode.mjs; no sibling source or model bundled.",
+  "synthetic": true,
+  "assets": [
+    {
+      "word": "a",
+      "text": "a.",
+      "path": "public/audio/en-US/lessac-v1/a.wav",
+      "bytes": 32472,
+      "sha256": "a5cb6c2ef6fa0cc61f228384de269fad5f0d9080a87547c2ecc76ef5eba93738"
+    },
+    {
+      "word": "am",
+      "text": "am.",
+      "path": "public/audio/en-US/lessac-v1/am.wav",
+      "bytes": 23768,
+      "sha256": "087ce192245f46f953eb55ed9343fd9f27bfd535e470e300144590ca73337a05"
+    },
+    {
+      "word": "an",
+      "text": "an.",
+      "path": "public/audio/en-US/lessac-v1/an.wav",
+      "bytes": 26328,
+      "sha256": "5044e64ac9ffcde5b1617b041cd07c5a3115f20b0edc67ae7a3c5f019a3fabb7"
+    },
+    {
+      "word": "apple",
+      "text": "apple.",
+      "path": "public/audio/en-US/lessac-v1/apple.wav",
+      "bytes": 30424,
+      "sha256": "8a8ac3e4070a0d21dbe2df046678627687982d1a73176e524196d65fab4eb4fd"
+    },
+    {
+      "word": "apples",
+      "text": "apples.",
+      "path": "public/audio/en-US/lessac-v1/apples.wav",
+      "bytes": 39128,
+      "sha256": "e9ec13bb6b78f06993d46c04e2452c23bd2291a6dd2e9d53fc21f4ca59f582ea"
+    },
+    {
+      "word": "be",
+      "text": "be.",
+      "path": "public/audio/en-US/lessac-v1/be.wav",
+      "bytes": 30936,
+      "sha256": "cdc4fc3499c67ffdcf42c245360e1894948d391f444cd39b8d7412cd9729d0e6"
+    },
+    {
+      "word": "book",
+      "text": "book.",
+      "path": "public/audio/en-US/lessac-v1/book.wav",
+      "bytes": 27864,
+      "sha256": "ac40d0761efe2daf4eb555faa0200b5d5e361a5dfddb867b23764d4c5a90365b"
+    },
+    {
+      "word": "cat",
+      "text": "cat.",
+      "path": "public/audio/en-US/lessac-v1/cat.wav",
+      "bytes": 28376,
+      "sha256": "3e90198d3fddec7d756b560758e10644a570c6ff48587f0641f6494309a7dc9d"
+    },
+    {
+      "word": "cats",
+      "text": "cats.",
+      "path": "public/audio/en-US/lessac-v1/cats.wav",
+      "bytes": 31960,
+      "sha256": "5d50153561c5a8bcc01ac474d026fde9f835aa8390a06dae07003e1ee69da5f0"
+    },
+    {
+      "word": "egg",
+      "text": "egg.",
+      "path": "public/audio/en-US/lessac-v1/egg.wav",
+      "bytes": 29400,
+      "sha256": "16b7e6dbd58fa4a29e183dcb1edf54453606ae68c50cc29bb8e80d58f4c04476"
+    },
+    {
+      "word": "eggs",
+      "text": "eggs.",
+      "path": "public/audio/en-US/lessac-v1/eggs.wav",
+      "bytes": 32984,
+      "sha256": "9e6d5bf893e50d41f3804ffa60ac9b37b14afb8b2719bf1b4814c20ce34a38ca"
+    },
+    {
+      "word": "i",
+      "text": "I.",
+      "path": "public/audio/en-US/lessac-v1/i.wav",
+      "bytes": 31960,
+      "sha256": "530de47facce3eeb5141aed3dba40a20c0fc1c84ee814c3d9b19d8cdfb266dee"
+    },
+    {
+      "word": "key",
+      "text": "key.",
+      "path": "public/audio/en-US/lessac-v1/key.wav",
+      "bytes": 28376,
+      "sha256": "e1105264bbb980f8c81340bde7bff9695afc4e7efc9b9b77f2cb04979fb560a8"
+    },
+    {
+      "word": "lumi",
+      "text": "Lumi.",
+      "path": "public/audio/en-US/lessac-v1/lumi.wav",
+      "bytes": 35544,
+      "sha256": "337319c89446a8ff7effe57d76199a1782b25c9c57a18d777b06d960e81a6f38"
+    },
+    {
+      "word": "orange",
+      "text": "orange.",
+      "path": "public/audio/en-US/lessac-v1/orange.wav",
+      "bytes": 38104,
+      "sha256": "9e75f94d5bd529fdfbf4c30a5d9030b8b8708e329ef93b3c9308fee890139eca"
+    },
+    {
+      "word": "robot",
+      "text": "robot.",
+      "path": "public/audio/en-US/lessac-v1/robot.wav",
+      "bytes": 31960,
+      "sha256": "53b1cbdf84ee3f7be43af0ac2f5c9e1f350d99dacc08df497e4add58fd3f7f1b"
+    },
+    {
+      "word": "the",
+      "text": "the.",
+      "path": "public/audio/en-US/lessac-v1/the.wav",
+      "bytes": 21720,
+      "sha256": "4b82bdf6765b44df803098fb5a45e457235c72ee6fbd0d529f12057f3035f7ab"
+    },
+    {
+      "word": "to",
+      "text": "to.",
+      "path": "public/audio/en-US/lessac-v1/to.wav",
+      "bytes": 27864,
+      "sha256": "642e39629868375fdd5df357a2fac686ca8f35879dd4a3d0275d7142be4bf2dd"
+    },
+    {
+      "word": "umbrella",
+      "text": "umbrella.",
+      "path": "public/audio/en-US/lessac-v1/umbrella.wav",
+      "bytes": 37080,
+      "sha256": "40af45078f8900759bb583b2def2a2c647cea5aae12e40a0397793011ce5f548"
+    },
+    {
+      "word": "water",
+      "text": "water.",
+      "path": "public/audio/en-US/lessac-v1/water.wav",
+      "bytes": 27864,
+      "sha256": "96559e6c774e784c546fc5c82e6d2746fe268800bdf05cb188c152cf647dc5f6"
+    }
+  ]
+}

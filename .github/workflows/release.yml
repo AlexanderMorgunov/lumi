@@ -1,0 +1,120 @@
+name: Check and publish game
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      deploy:
+        description: Publish the checked game to production storage
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: game-release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    outputs:
+      version: ${{ steps.version.outputs.value }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+      - run: npx playwright install --with-deps chrome
+      - run: npm run test:e2e
+      - name: Choose an immutable release path
+        id: version
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFileSync, appendFileSync } from 'node:fs';
+          const { version } = JSON.parse(readFileSync('package.json', 'utf8'));
+          if (!/^\d+\.\d+\.\d+$/.test(version)) throw Error('package.json needs a stable numeric version');
+          const value = `${version}-ci.${process.env.GITHUB_RUN_ID}.${process.env.GITHUB_RUN_ATTEMPT}`;
+          appendFileSync(process.env.GITHUB_OUTPUT, `value=${value}\n`);
+          NODE
+      - name: Prepare production artifact
+        env:
+          RELEASE_VERSION: ${{ steps.version.outputs.value }}
+        run: npm run release -- prepare --version "$RELEASE_VERSION" --config release.config.example.json
+      - name: Check the compiled game in Chrome
+        env:
+          RELEASE_VERSION: ${{ steps.version.outputs.value }}
+        run: npm run release:browser -- "$RELEASE_VERSION"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: game-${{ steps.version.outputs.value }}
+          path: artifacts/releases/${{ steps.version.outputs.value }}/
+          if-no-files-found: error
+          retention-days: 7
+          compression-level: 0
+      - name: Preserve failed browser checks
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: browser-failure-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            test-results/
+            playwright-report/
+            artifacts/releases/*/browser-results.json
+          retention-days: 7
+          if-no-files-found: ignore
+
+  publish:
+    needs: build
+    if: github.event_name == 'workflow_dispatch' && inputs.deploy == true && github.ref == 'refs/heads/main' && vars.YC_GAME_DEPLOY_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    environment: production
+    env:
+      RELEASE_VERSION: ${{ needs.build.outputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - uses: actions/download-artifact@v4
+        with:
+          name: game-${{ needs.build.outputs.version }}
+          path: artifacts/releases/${{ needs.build.outputs.version }}/
+      - name: Recheck downloaded artifact
+        run: npm run release -- inspect --version "$RELEASE_VERSION"
+      - name: Upload without overwriting existing releases
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.YC_GAME_S3_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.YC_GAME_S3_SECRET }}
+          AWS_EC2_METADATA_DISABLED: 'true'
+        run: |
+          test -n "$AWS_ACCESS_KEY_ID" && test -n "$AWS_SECRET_ACCESS_KEY"
+          npm run release -- upload --version "$RELEASE_VERSION" --execute --confirm-bucket dayenglish-games
+      - name: Verify public HTTPS bytes and headers
+        run: npm run release -- verify --version "$RELEASE_VERSION"
+      - name: Report the release for separate catalogue activation
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFileSync, appendFileSync } from 'node:fs';
+          const directory = `artifacts/releases/${process.env.RELEASE_VERSION}`;
+          const entry = JSON.parse(readFileSync(`${directory}/catalog-entry.json`, 'utf8'));
+          appendFileSync(process.env.GITHUB_STEP_SUMMARY,
+            `## Uploaded and verified\n\nRelease: ${process.env.RELEASE_VERSION}\n\n` +
+            'The DayEnglish catalogue was not changed. Preserve existing catalogue metadata when activating this release.\n\n' +
+            '```json\n' + JSON.stringify(entry, null, 2) + '\n```\n');
+          NODE

@@ -1,0 +1,258 @@
+.chapter-arrival {
+  position: absolute;
+  inset: 0;
+  z-index: 40;
+  overflow-y: auto;
+  display: flex;
+  align-items: center;
+  padding: clamp(24px, 6vw, 100px);
+  background:
+    linear-gradient(90deg, #101f23f5, #101f23bc 48%, #101f2333),
+    url('/art/station/station-v1.png') center / cover;
+}
+.arrival-copy {
+  max-width: 580px;
+}
+.arrival-copy h1 {
+  font-family: 'Lora', Georgia, serif;
+  font-size: clamp(36px, 5vw, 64px);
+  line-height: 1.15;
+  margin: 18px 0 24px;
+  color: #fff0d1;
+}
+.arrival-copy p {
+  font-size: 18px;
+  line-height: 1.65;
+}
+.arrival-topic {
+  color: #dfc18b;
+}
+.arrival-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+.station-speaker-name {
+  display: block;
+  color: #e5c58b;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+.station-portrait {
+  display: block;
+  position: relative;
+  width: 88px;
+  height: 110px;
+  overflow: hidden;
+  border-radius: 40% 40% 24% 24%;
+  background: radial-gradient(ellipse, #52706680, transparent 72%);
+  align-self: center;
+}
+.station-portrait-sheet {
+  display: block;
+  position: absolute;
+  width: 300%;
+  aspect-ratio: 1;
+  background-size: 200% 200%;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  left: 50%;
+  top: -3px;
+  transform: translateX(-50%);
+}
+.station-portrait-tik .station-portrait-sheet {
+  width: 200%;
+}
+.station-portrait-sheet[data-frame='1'] {
+  background-position: 100% 0;
+}
+.station-portrait-sheet[data-frame='3'] {
+  background-position: 100% 100%;
+}
+.cat-dialogue .dialogue-lumi-portrait {
+  width: 88px;
+  height: 88px;
+  align-self: center;
+}
+.message-context {
+  position: absolute;
+  z-index: 12;
+  top: 78px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 16px;
+  max-width: calc(100% - 32px);
+  border-bottom: 1px solid #c6a46a;
+  background: #142626ed;
+  border-radius: 12px;
+  text-align: center;
+  pointer-events: none;
+  color: #f7e5c6;
+}
+.message-context strong {
+  display: block;
+  font-size: 15px;
+}
+.message-context small {
+  color: #ced6cd;
+  font-size: 12px;
+}
+.message-context .exchange-question {
+  display: block;
+  color: #ffe6b1;
+  margin-top: 4px;
+}
+.station-map .lantern-stop {
+  height: clamp(44px, 9cqh, 64px);
+  width: 44px;
+}
+@media (max-width: 900px) and (orientation: landscape) {
+  .journey-overview .station-map .lantern-stop {
+    top: clamp(54px, var(--compact-y), calc(100% - 8px));
+  }
+  .station-map .station-map-title {
+    max-width: 140px;
+  }
+  .station-map .station-map-title h3 {
+    font-size: 16px;
+  }
+}
+.conversing .message-context {
+  left: 24px;
+  transform: none;
+  max-width: calc(60% - 32px);
+}
+.station-map {
+  min-height: 0;
+  position: relative;
+  flex: 1;
+  overflow: hidden;
+  isolation: isolate;
+  container-type: size;
+  background:
+    linear-gradient(0deg, #101e25bb, transparent 70%),
+    url('/art/journey/station-road-rain-v1.png') center 49.383% / 100% 146.286%
+      no-repeat;
+}
+.station-map-title {
+  position: absolute;
+  left: 24px;
+  top: 20px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: #112326e8;
+  max-width: min(290px, calc(100% - 48px));
+  pointer-events: none;
+}
+.station-map-title h3 {
+  font:
+    26px 'Lora',
+    Georgia,
+    serif;
+  margin: 4px 0;
+}
+.station-map-title p {
+  margin: 4px 0;
+  color: #d1d7c9;
+}
+@media (max-height: 520px) and (orientation: landscape) {
+  .chapter-arrival {
+    padding: 20px 36px;
+    align-items: safe center;
+  }
+  .arrival-copy {
+    max-width: 650px;
+  }
+  .arrival-copy h1 {
+    font-size: 34px;
+    margin: 10px 0;
+  }
+  .arrival-copy p {
+    font-size: 15px;
+    line-height: 1.4;
+    margin: 9px 0;
+  }
+  .arrival-actions {
+    margin-top: 14px;
+  }
+  .message-context {
+    top: 59px;
+    padding: 5px 10px;
+    max-width: calc(100% - 304px);
+  }
+  .message-context strong {
+    font-size: 12px;
+  }
+  .message-context small {
+    font-size: 11px;
+  }
+  .conversing .message-context {
+    left: 12px;
+    max-width: calc(100% - 310px);
+  }
+  .station-portrait {
+    width: 54px;
+    height: 70px;
+  }
+  .cat-dialogue .dialogue-lumi-portrait {
+    width: 54px;
+    height: 54px;
+  }
+  .station-map-title {
+    top: 10px;
+    left: 12px;
+    padding: 7px 12px;
+    max-width: 190px;
+  }
+  .station-map-title h3 {
+    font-size: 20px;
+  }
+  .station-map-title p {
+    font-size: 11px;
+  }
+}
+@media (max-width: 599px) and (orientation: portrait) {
+  .station-map {
+    background-image:
+      linear-gradient(0deg, #101e25bb, transparent 70%),
+      url('/art/journey/station-road-portrait-rain-v1.png');
+    background-position: center;
+    background-size: 100% 100%;
+  }
+  .station-map-title {
+    top: 12px;
+    left: 12px;
+    max-width: min(240px, calc(100% - 24px));
+  }
+  .station-map-title p {
+    font-size: 12px;
+  }
+  .chapter-arrival {
+    padding: 28px 22px;
+  }
+  .arrival-copy p {
+    font-size: 16px;
+  }
+  .arrival-actions {
+    flex-direction: column;
+  }
+  .message-context {
+    top: 112px;
+    width: max-content;
+  }
+  .conversing .message-context {
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: calc(100% - 32px);
+  }
+  .station-portrait {
+    width: 60px;
+    height: 78px;
+  }
+  .cat-dialogue .dialogue-lumi-portrait {
+    width: 60px;
+    height: 60px;
+  }
+}

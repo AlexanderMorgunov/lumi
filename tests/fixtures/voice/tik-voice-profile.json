@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "character": "tik",
+  "voiceProfileId": "tik-whimsical-v1",
+  "label": "Чудаковатый — исходный вариант 3",
+  "status": "owner-selected-reference",
+  "selectedOn": "2026-11-18",
+  "sourceJobId": "tik-whimsical-01",
+  "referenceAudio": "references/tik-whimsical-v1.wav",
+  "referenceAudioSha256": "f3575d5dbdd0026e8375f4901b747a93cc6326535eb9b017321ed6d24a64333a",
+  "referenceText": "Марта, Люми, заходите под навес! Ураган сорвал бирки. Давайте подпишем новые, чтобы письма находили адресатов.",
+  "referenceDurationSeconds": 9.76,
+  "sourceModel": "Qwen/Qwen3-TTS-12Hz-1.7B-VoiceDesign",
+  "sourceModelRevision": "5ecdb67327fd37bb2e042aab12ff7391903235d3",
+  "sourceRuntime": "audio.cpp v0.9.5 portable (61c7838b)",
+  "sourceInstruct": "A native Russian-speaking adult man with a bright, nimble mid-range voice and a faint dry grain in the timbre. A charming little clockwork postman in a cozy woodland adventure, gently eccentric, optimistic and welcoming. Subtle playful surprises in intonation while every word stays clear. Speak naturally to two friends standing nearby. No cartoon squeaking, no shouting, no theatrical announcer delivery, no electronic effects, no singing.",
+  "sourceSeed": 42,
+  "referenceProcessing": "volume=2.560dB",
+  "sourceAudioSha256": "756ab14cb5a6c0c494006f4a2fd41d71b619412576aec63615f6caad42a0d6bc",
+  "continuityMethod": "reference-audio-cloning",
+  "cloningModel": "Qwen/Qwen3-TTS-12Hz-1.7B-Base",
+  "cloningStatus": "pilot-generated-english-speaker-approved",
+  "cloneConditioningByLanguage": {
+    "Russian": "icl",
+    "English": "speaker",
+    "Auto": "icl"
+  },
+  "englishExamplesReviewed": true,
+  "englishExamplesApproved": true,
+  "integrated": false,
+  "episodeAudioStatus": "archived-replaced-by-elevenlabs-v3",
+  "rejectedRevisions": ["tik-curious-calm-02", "tik-whimsical-calm-02"],
+  "approvedEnglishSample": {
+    "sourceJobId": "tik-clone-english-speaker-01",
+    "audio": "references/tik-english-approved-v1.wav",
+    "sha256": "e327e8ea632234e6886aae35037b2dfc24c01f68932dc78e38eafe605bc686bd",
+    "approvedOn": "2026-11-18",
+    "conditioning": "speaker"
+  },
+  "supersededOn": "2026-11-19",
+  "supersededBy": {
+    "provider": "elevenlabs",
+    "modelId": "eleven_v3",
+    "name": "Will",
+    "voiceId": "bIHbv24MWmeRgasZH58o"
+  }
+}

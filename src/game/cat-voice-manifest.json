@@ -1,0 +1,1197 @@
+{
+  "provider": "elevenlabs",
+  "voice": "Callum",
+  "voiceId": "N2lVS1w4EtoT3dr4eOWO",
+  "modelId": "eleven_v3",
+  "review": "voice-and-delivery-approved-by-owner; episode-lines-await-listening",
+  "clips": [
+    {
+      "id": "ep01-meet-01",
+      "sourceText": "Проснулся, Люми? Марта тебя уже ждёт. Ты — почтовый фонарь: будешь освещать дорогу и доставлять письма.",
+      "spokenText": "[warmly] Проснулся, Люми? Марта тебя уже ждёт. Ты — почтовый фонарь: будешь освещать дорогу и доставлять письма.",
+      "file": "audio/cat/callum-v1/ep01-meet-01-18eb73a5bc88.mp3",
+      "requestHash": "18eb73a5bc88adc32e9b9daed3cc480b67cd5b2b199f6d1948c524f8bba0cd59",
+      "audioSha256": "67c62fc00ed03ae3b4fc5ac0ed69dd5888f49f6b5fbfa9469815d3a35239e46d",
+      "duration": 8.88
+    },
+    {
+      "id": "ep01-meet-02",
+      "sourceText": "Я живу в мастерской Марты. Пока она собирается в дорогу, освоимся: сделай шаг вправо, к огоньку на полу.",
+      "spokenText": "[reassuring] Я живу в мастерской Марты. Пока она собирается в дорогу, освоимся: сделай шаг вправо, к огоньку на полу.",
+      "file": "audio/cat/callum-v1/ep01-meet-02-0b3cd662e602.mp3",
+      "requestHash": "0b3cd662e6029a07362ee9307dfffee0f3593058d8e9c0bd34146f1c566428ac",
+      "audioSha256": "a5aaeddd7ef980cc757247a7c5c57964dd446b6c6c7400c86acf2c05a8a5b08f",
+      "duration": 8.96
+    },
+    {
+      "id": "ep01-rule-01",
+      "sourceText": "Получилось! Теперь поможем Марте со сборами. В ящике лежат карточки с котами — возьмём любую одну. Попросить её можно с помощью табличек.",
+      "spokenText": "[excited] Получилось! Теперь поможем Марте со сборами. В ящике лежат карточки с котами — возьмём любую одну. Попросить её можно с помощью табличек.",
+      "file": "audio/cat/callum-v1/ep01-rule-01-5ced59413633.mp3",
+      "requestHash": "5ced594136338bcdfc68b50b54bab7235fca1ff68163e834b12037ea509e2fe2",
+      "audioSha256": "bfd8502e20af83e6e4cf55d24da8bf639dfb940d43917ae68f38f68913176e62",
+      "duration": 11.44
+    },
+    {
+      "id": "ep01-rule-02",
+      "sourceText": "a и an — две формы неопределённого артикля. Артикль — короткое служебное слово перед существительным. Оно помогает собеседнику понять, о каком предмете мы говорим. В русском отдельного слова для него обычно нет.",
+      "spokenText": "[reassuring] a и an — две формы неопределённого артикля. Артикль — короткое служебное слово перед существительным. Оно помогает собеседнику понять, о каком предмете мы говорим. В русском отдельного слова для него обычно нет.",
+      "file": "audio/cat/callum-v1/ep01-rule-02-f0e19576fc11.mp3",
+      "requestHash": "f0e19576fc1188f650a76fbb9500303ae1c70a50df1323b9a66077cc1dc383d4",
+      "audioSha256": "9d3ae22cc2f446aa87cdcc4a158bdaebb97c27681928b3fad4a9e187f2948e06",
+      "duration": 18.8
+    },
+    {
+      "id": "ep01-rule-03",
+      "sourceText": "Существительное — слово, которое называет предмет, человека или животное. Например, cat — кот или кошка. Котов можно посчитать: один, два, три. Поэтому cat — исчисляемое существительное. Сейчас речь об одном коте — это единственное число.",
+      "spokenText": "[reassuring] Существительное — слово, которое называет предмет, человека или животное. Например, cat — кот или кошка. Котов можно посчитать: один, два, три. Поэтому cat — исчисляемое существительное. Сейчас речь об одном коте — это единственное число.",
+      "file": "audio/cat/callum-v1/ep01-rule-03-1cc1fd38184e.mp3",
+      "requestHash": "1cc1fd38184e514f39805371d6726ccf46f5c24b921ff27640c066c10f9f176b",
+      "audioSha256": "cbf625ca4c35261fc406fc089ae92557f4aa3006bbce0446763e2261fb4d7ac8",
+      "duration": 22.72
+    },
+    {
+      "id": "ep01-rule-04",
+      "sourceText": "A/an ставим перед исчисляемым существительным в единственном числе. Мы называем один предмет, но не указываем, какой именно. Здесь a cat — какой-нибудь один кот: нам подойдёт любая карточка с котом.",
+      "spokenText": "[reassuring] Артикли a и an ставим перед исчисляемым существительным в единственном числе. Мы называем один предмет, но не указываем, какой именно. Здесь a cat — какой-нибудь один кот: нам подойдёт любая карточка с котом.",
+      "file": "audio/cat/callum-v1/ep01-rule-04-2d864df1a329.mp3",
+      "requestHash": "2d864df1a329109c5ef0836413c671441d5f43fb3dd73f7b643ea5c5bb585bde",
+      "audioSha256": "c578da3ce260b0c2c54b765d92c451c99af917874a3111fbbd8a975d795b5465",
+      "duration": 18.56
+    },
+    {
+      "id": "ep01-rule-05",
+      "sourceText": "Перед согласным звуком следующего слова ставим a: a cat — кот, a book — книга. Перед гласным звуком — an: an apple — яблоко. Важен звук, а не написанная буква. В cat первый звук — «к», поэтому a cat.",
+      "spokenText": "[reassuring] Перед согласным звуком следующего слова ставим a: a cat — кот, a book — книга. Перед гласным звуком — an: an apple — яблоко. Важен звук, а не написанная буква. В cat первый звук — «к», поэтому a cat.",
+      "file": "audio/cat/callum-v1/ep01-rule-05-1681b78cd7aa.mp3",
+      "requestHash": "1681b78cd7aacf4792a0680036c51435e6fe7e3406b898f4f14720850359b2b1",
+      "audioSha256": "09a2df1959f6d1d8d860bbe0f3d43f0a9468657698e1d2482f1b2d9d9d343d4a",
+      "duration": 24.16
+    },
+    {
+      "id": "ep01-rule-06",
+      "sourceText": "A/an не ставим перед множественным числом: cats — коты, а a cats — ошибка. В конце главы попробуем просьбы о нескольких предметах. С water — водой как веществом — a/an тоже не используем; эту тему разберём позже.",
+      "spokenText": "[reassuring] Артикли a и an не ставим перед множественным числом: cats — коты, а a cats — ошибка. В конце главы попробуем просьбы о нескольких предметах. С water — водой как веществом — a и an тоже не используем; эту тему разберём позже.",
+      "file": "audio/cat/callum-v1/ep01-rule-06-0f59f496bb9c.mp3",
+      "requestHash": "0f59f496bb9c17f04b749ef7e98b64c2bf47c58968f8ff2e4c95fbc8fc5ecd46",
+      "audioSha256": "ecfa82fa87c68b15042a952929c3f3276d53e4b9913902e176131ee732b43f05",
+      "duration": 23.36
+    },
+    {
+      "id": "ep01-rule-07",
+      "sourceText": "На карточках разные коты. Выберем любую одну — не мой портрет! Передвинь cat вверх, к a, и передай просьбу. A cat — словосочетание: оно называет предмет. Полные предложения научимся строить позже.",
+      "spokenText": "[reassuring] На карточках разные коты. Выберем любую одну — не мой портрет! Передвинь cat вверх, к a, и передай просьбу. A cat — словосочетание: оно называет предмет. Полные предложения научимся строить позже.",
+      "file": "audio/cat/callum-v1/ep01-rule-07-76b51b9bca4f.mp3",
+      "requestHash": "76b51b9bca4f2249652422d752631fd7490752bba400e19e9c2d46adf9b42c8f",
+      "audioSha256": "0fc00208e6c9a9c9e1f747444121a3d316ddb64fcb7a5f95d2650474886b8ff8",
+      "duration": 18.88
+    },
+    {
+      "id": "ep01-success-01",
+      "sourceText": "Вот карточка, держи. А теперь нужен ключ — попробуешь сам?",
+      "spokenText": "[pleased] Вот карточка, держи. А теперь нужен ключ — попробуешь сам?",
+      "file": "audio/cat/callum-v1/ep01-success-01-7a0792a51773.mp3",
+      "requestHash": "7a0792a51773c32d12546628563c1e8dcba2908910fe8186177ae0316a5e6a69",
+      "audioSha256": "a0fcac648aea30dfa7d4de213614ffa46b8be141946dc1acf79bf9a8db014b91",
+      "duration": 4.88
+    },
+    {
+      "id": "chapter-01-02-task-01",
+      "sourceText": "Следующее слово — key, ключ от замка. Послушай: /kiː/. Первый звук /k/ — согласный. Key называет один ключ.",
+      "spokenText": "[reassuring] Следующее слово — key, ключ от замка. Послушай: key. Первый звук — согласный. Key называет один ключ.",
+      "file": "audio/cat/callum-v1/chapter-01-02-task-01-a8eebb929b78.mp3",
+      "requestHash": "a8eebb929b7828c3950df7e16c0159726d34348b877918dd2fba6662f2c015f7",
+      "audioSha256": "d6dddc29c654403ce87cd45c474f9b60240f197b67306d0cf4bad5e130a6392a",
+      "duration": 12.32
+    },
+    {
+      "id": "chapter-01-02-task-02",
+      "sourceText": "На столе три запасных ключа от дорожной сумки. Все подходят — возьмём один. Попробуй сам собрать просьбу в рамке. Если забудешь правило, загляни в журнал.",
+      "spokenText": "[reassuring] На столе три запасных ключа от дорожной сумки. Все подходят — возьмём один. Попробуй сам собрать просьбу в рамке. Если забудешь правило, загляни в журнал.",
+      "file": "audio/cat/callum-v1/chapter-01-02-task-02-5953a411236b.mp3",
+      "requestHash": "5953a411236b022b789272e86897172172b6033a5c8612c2f7735aa2908b1c6b",
+      "audioSha256": "f16add62dc199a5abf8fbce4771085648239e60dbb832c247effa8dbb677e8ad",
+      "duration": 13.52
+    },
+    {
+      "id": "chapter-01-02-success-01",
+      "sourceText": "Ключ в сумке. Два других оставим здесь.",
+      "spokenText": "[pleased] Ключ в сумке. Два других оставим здесь.",
+      "file": "audio/cat/callum-v1/chapter-01-02-success-01-88ad3cbc6fd6.mp3",
+      "requestHash": "88ad3cbc6fd6e73beebc1598b9d5f098f1c14997e7fac3d55f8254986bf73cb1",
+      "audioSha256": "69d676d63569c399f1c29d9c46a6f2b0559fa7edf4e66fa78c001b0cf9ee9e43",
+      "duration": 3.84
+    },
+    {
+      "id": "chapter-01-02-success-02",
+      "sourceText": "Что означает a key в нашей просьбе?",
+      "spokenText": "[reassuring] Что означает a key в нашей просьбе?",
+      "file": "audio/cat/callum-v1/chapter-01-02-success-02-6e5072d0c871.mp3",
+      "requestHash": "6e5072d0c87183fd16234d88b5e36149a49b9588430a1dde63483744f9ac5c69",
+      "audioSha256": "1c31c4c82431d6a2436e6f263622b39d1ee86caaaef9e3a8a6eabbccab84d658",
+      "duration": 3.36
+    },
+    {
+      "id": "chapter-01-02-feedback-any",
+      "sourceText": "Верно. Мы попросили один ключ, и подошёл любой из трёх. Перед согласным /k/ в key используем a.",
+      "spokenText": "[reassuring] Верно. Мы попросили один ключ, и подошёл любой из трёх. Перед согласным звуком в key используем a.",
+      "file": "audio/cat/callum-v1/chapter-01-02-feedback-any-c3b997b696cf.mp3",
+      "requestHash": "c3b997b696cfc872d1ca786ff675100b69f5e04e740deaa6d371b5a5b86f0942",
+      "audioSha256": "99d8f644f547980036edcd94c7b8345ce1276c7d7f4a1386a19cd21468f435dd",
+      "duration": 9.76
+    },
+    {
+      "id": "chapter-01-02-feedback-several",
+      "sourceText": "Вспомни: a/an используется с единственным числом. key здесь означает один ключ. Для нескольких ключей нужна другая конструкция. Попробуй ещё раз.",
+      "spokenText": "[reassuring] Вспомни: a и an используется с единственным числом. key здесь означает один ключ. Для нескольких ключей нужна другая конструкция. Попробуй ещё раз.",
+      "file": "audio/cat/callum-v1/chapter-01-02-feedback-several-06ae00cc544e.mp3",
+      "requestHash": "06ae00cc544e92e98ae7a26f25318491614fcfb6d7aa48ac0cd99949187fe312",
+      "audioSha256": "185758c30c54b4cbd7bab37ece3b70e36db530127094758fa1267aa5ed831954",
+      "duration": 13.92
+    },
+    {
+      "id": "chapter-01-02-feedback-specific",
+      "sourceText": "Нам подходит любой из трёх ключей, поэтому a key. Просьбу о конкретном ключе позже разберём с the.",
+      "spokenText": "[reassuring] Нам подходит любой из трёх ключей, поэтому a key. Просьбу о конкретном ключе позже разберём с the.",
+      "file": "audio/cat/callum-v1/chapter-01-02-feedback-specific-ed37ef5981a9.mp3",
+      "requestHash": "ed37ef5981a9965fd7c5a9ce6376f28b57d47c45c1486236228f127c40d4c651",
+      "audioSha256": "31e72eb940e286c412b9ddf2754478e40a92c5e122fb57f9fe7d00032470faee",
+      "duration": 8.4
+    },
+    {
+      "id": "chapter-01-03-task-01",
+      "sourceText": "Ключ взяли. Теперь перекус: до первого фонаря идти далеко. На столе три яблока, возьмём одно. Яблоко по-английски — apple.",
+      "spokenText": "[reassuring] Ключ взяли. Теперь перекус: до первого фонаря идти далеко. На столе три яблока, возьмём одно. Яблоко по-английски — apple.",
+      "file": "audio/cat/callum-v1/chapter-01-03-task-01-6619bb45b426.mp3",
+      "requestHash": "6619bb45b426f264f150ed3efcb0ff9ef6d7cead70d68f729e480af29500d94d",
+      "audioSha256": "b43db0a353c94056f0aedd594b1f82cfcd3c0add01d88802f8b55055722fd49b",
+      "duration": 11.76
+    },
+    {
+      "id": "chapter-01-03-task-02",
+      "sourceText": "Нажми apple и послушай: /ˈæp.əl/. Первый звук /æ/ — гласный. Apple называет одно яблоко; его можно посчитать. Значит, это исчисляемое существительное в единственном числе.",
+      "spokenText": "[reassuring] Нажми apple и послушай произношение. Первый звук — гласный. Apple называет одно яблоко; его можно посчитать. Значит, это исчисляемое существительное в единственном числе.",
+      "file": "audio/cat/callum-v1/chapter-01-03-task-02-2803c2a135d3.mp3",
+      "requestHash": "2803c2a135d3644d586dbf0a34f09bdb4a871b1453f152e70af63979e11b2c27",
+      "audioSha256": "757ffdfba13f608cbf5c09c525c57fef55efff37294281c0a6802bc2cd3addfb",
+      "duration": 14.96
+    },
+    {
+      "id": "chapter-01-03-task-03",
+      "sourceText": "A и an — две формы одного неопределённого артикля. В обеих просьбах подходит один любой предмет. Но key начинается с согласного звука — a key, а apple с гласного — an apple.",
+      "spokenText": "[reassuring] A и an — две формы одного неопределённого артикля. В обеих просьбах подходит один любой предмет. Но key начинается с согласного звука — a key, а apple с гласного — an apple.",
+      "file": "audio/cat/callum-v1/chapter-01-03-task-03-98d2d5e47c71.mp3",
+      "requestHash": "98d2d5e47c71fa0724c0d48bdce088f6cb9a6a6ab9046ae86a6a13c20cca0c14",
+      "audioSha256": "005cb840a8ed172465cc0d4246b3c96b9b7970291a0c3da27d849959861fa0a1",
+      "duration": 16.72
+    },
+    {
+      "id": "chapter-01-03-task-04",
+      "sourceText": "Выбираем по первому звуку следующего слова, а не по букве или виду предмета. В apple это гласный /æ/, поэтому an apple, а не a apple. Форма an не означает несколько предметов: с множественным числом apples её не ставим.",
+      "spokenText": "[reassuring] Выбираем по первому звуку следующего слова, а не по букве или виду предмета. В apple это гласный звук, поэтому an apple, а не a apple. Форма an не означает несколько предметов: с множественным числом apples её не ставим.",
+      "file": "audio/cat/callum-v1/chapter-01-03-task-04-9eefc7131806.mp3",
+      "requestHash": "9eefc71318065d0bb16e6848cf8f3e01fdba3d05fc24e2f23398357755cbff9f",
+      "audioSha256": "074a2e1e0355c433714555d96fc60cf7f4f53d77bffdeee9c406d8ac82f9ed6f",
+      "duration": 20.48
+    },
+    {
+      "id": "chapter-01-03-task-05",
+      "sourceText": "An уже стоит в рамке. Толкни apple вверх, на клетку справа от an, и передай просьбу. Я возьму одно яблоко со стола и положу в сумку.",
+      "spokenText": "[reassuring] An уже стоит в рамке. Толкни apple вверх, на клетку справа от an, и передай просьбу. Я возьму одно яблоко со стола и положу в сумку.",
+      "file": "audio/cat/callum-v1/chapter-01-03-task-05-0a2f1be3f19b.mp3",
+      "requestHash": "0a2f1be3f19bd63b2f8a6c71de4f875bd5cb822f7ee2a545e0814b0fe23a14e6",
+      "audioSha256": "add2757030c740971a70c48dd0713c23a96a9cfec2b2c8992d2e521b90c57220",
+      "duration": 10.64
+    },
+    {
+      "id": "chapter-01-03-success-01",
+      "sourceText": "Яблоко в сумке. Марта сможет перекусить у первого огня.",
+      "spokenText": "[pleased] Яблоко в сумке. Марта сможет перекусить у первого огня.",
+      "file": "audio/cat/callum-v1/chapter-01-03-success-01-f85c4fd7ebaa.mp3",
+      "requestHash": "f85c4fd7ebaa17722db60928263679ad67ca349f965869de5d392b45524b90da",
+      "audioSha256": "8165b4358072c61d4b7b0cc62d9adb186f5c700530dd0ede76a45c66693c81aa",
+      "duration": 4.48
+    },
+    {
+      "id": "chapter-01-03-success-02",
+      "sourceText": "Почему в просьбе an apple используется an, а не a?",
+      "spokenText": "[reassuring] Почему в просьбе an apple используется an, а не a?",
+      "file": "audio/cat/callum-v1/chapter-01-03-success-02-c8e275ab5325.mp3",
+      "requestHash": "c8e275ab5325bf2bb7c94e0be9d1113f7f0bff20342c59ebd76549392f955568",
+      "audioSha256": "e50079ce81999437fb0f4497cae6815591d730903a01d7fc268e9ebef1668907",
+      "duration": 5.36
+    },
+    {
+      "id": "chapter-01-03-feedback-fruit",
+      "sourceText": "Вид предмета не определяет форму артикля. Мы смотрим на первый звук следующего слова. В apple это гласный /æ/, поэтому an. Попробуй ещё раз.",
+      "spokenText": "[reassuring] Вид предмета не определяет форму артикля. Мы смотрим на первый звук следующего слова. В apple это гласный звук, поэтому an. Попробуй ещё раз.",
+      "file": "audio/cat/callum-v1/chapter-01-03-feedback-fruit-aa45933a73cb.mp3",
+      "requestHash": "aa45933a73cb29f27d0fb713fd61f00c75b0c41c3c64b627cb979dcbc2beb8ed",
+      "audioSha256": "9540cd419541d3adbb31a4837c1680a54042a0340aaf134250b92cbb0d0d9e1d",
+      "duration": 12.96
+    },
+    {
+      "id": "chapter-01-03-feedback-vowel",
+      "sourceText": "Верно: apple начинается с гласного /æ/, поэтому an apple. Мы просим одно любое подходящее яблоко. a и an передают тот же смысл; форма зависит от следующего звука.",
+      "spokenText": "[reassuring] Верно: apple начинается с гласного звука, поэтому an apple. Мы просим одно любое подходящее яблоко. a и an передают тот же смысл; форма зависит от следующего звука.",
+      "file": "audio/cat/callum-v1/chapter-01-03-feedback-vowel-a01bfcca4ba5.mp3",
+      "requestHash": "a01bfcca4ba51ef6a3689228cf73332b7a5318e74bdfcd34cdfa039b67b124b4",
+      "audioSha256": "801b8eddf70b827101cc9ae4b593ec18de1ca11318b73fc4b6cb3543bfae1fc1",
+      "duration": 17.68
+    },
+    {
+      "id": "chapter-01-03-feedback-many",
+      "sourceText": "На столе их три, но в просьбе названо одно яблоко. a/an употребляется с исчисляемым существительным в единственном числе. Здесь an выбрано из-за гласного звука /æ/. Попробуй ещё раз.",
+      "spokenText": "[reassuring] На столе их три, но в просьбе названо одно яблоко. a и an употребляется с исчисляемым существительным в единственном числе. Здесь an выбрано из-за гласного звука. Попробуй ещё раз.",
+      "file": "audio/cat/callum-v1/chapter-01-03-feedback-many-e933a490cc6f.mp3",
+      "requestHash": "e933a490cc6f5ab469338f1857bf291196baa09b75132a0076db20d6fb593323",
+      "audioSha256": "a2a977b074fb4da15f20d0a1bc7d9c4c3ed74b29b45b315d0ea2dd91ab294800",
+      "duration": 17.44
+    },
+    {
+      "id": "chapter-01-04-task-01",
+      "sourceText": "Яблоко взяли. Добавим яйцо на привал — Марта как раз сварила три. Подойдёт любое одно. По-английски яйцо — egg.",
+      "spokenText": "[reassuring] Яблоко взяли. Добавим яйцо на привал — Марта как раз сварила три. Подойдёт любое одно. По-английски яйцо — egg.",
+      "file": "audio/cat/callum-v1/chapter-01-04-task-01-30d15af9e878.mp3",
+      "requestHash": "30d15af9e8781008caf4f25f6be95cc2f693808d9f3161fecd8eeeb8883bebce",
+      "audioSha256": "7e84ab539183beb8914ec92b165fee4f028770e420ecfb7463d0265ec8b8fe30",
+      "duration": 11.44
+    },
+    {
+      "id": "chapter-01-04-task-02",
+      "sourceText": "Нажми egg и послушай: /eɡ/. Первый звук /e/ — гласный. Выбери между a и an, как в просьбе с яблоком.",
+      "spokenText": "[reassuring] Нажми egg и послушай произношение. Первый звук — гласный. Выбери между a и an, как в просьбе с яблоком.",
+      "file": "audio/cat/callum-v1/chapter-01-04-task-02-ba6dce9ba935.mp3",
+      "requestHash": "ba6dce9ba935a5a99837dabe3c340122b7b601209186b6c87eeeadf806a94d4a",
+      "audioSha256": "532018804f0933bcc76ad7b924e98fcd9e142e49bf5afc80742ef7be30a58039",
+      "duration": 11.12
+    },
+    {
+      "id": "chapter-01-04-task-03",
+      "sourceText": "Теперь на поле три слова: a, an и egg. Выбери подходящий артикль и собери просьбу в золотой рамке. Лишнее слово оставь за рамкой. Вспомни правило из просьбы с яблоком; объяснение и подсказка доступны в журнале.",
+      "spokenText": "[reassuring] Теперь на поле три слова: a, an и egg. Выбери подходящий артикль и собери просьбу в золотой рамке. Лишнее слово оставь за рамкой. Вспомни правило из просьбы с яблоком; объяснение и подсказка доступны в журнале.",
+      "file": "audio/cat/callum-v1/chapter-01-04-task-03-bbb941ca4596.mp3",
+      "requestHash": "bbb941ca4596fd044783ef4848362ec817ab0c70da09813897c284088ae08cec",
+      "audioSha256": "1227568e5f360a391316024594f792c099f378d836f7b46a703699f444736f9f",
+      "duration": 19.04
+    },
+    {
+      "id": "chapter-01-04-success-01",
+      "sourceText": "Яйцо в сумке — на привале будет чем перекусить. Два других оставим здесь.",
+      "spokenText": "[pleased] Яйцо в сумке — на привале будет чем перекусить. Два других оставим здесь.",
+      "file": "audio/cat/callum-v1/chapter-01-04-success-01-80043a9e5b79.mp3",
+      "requestHash": "80043a9e5b79397ab3430ba13f9719a4de53812ae8b38026b38749625407251a",
+      "audioSha256": "96617380f7074d395a197c1117208a54b024a4184d6395fb6d9860c0b3de6844",
+      "duration": 5.92
+    },
+    {
+      "id": "chapter-01-04-success-02",
+      "sourceText": "Как объяснить просьбу an egg в этой ситуации?",
+      "spokenText": "[reassuring] Как объяснить просьбу an egg в этой ситуации?",
+      "file": "audio/cat/callum-v1/chapter-01-04-success-02-e9a95eddd00b.mp3",
+      "requestHash": "e9a95eddd00b402b069219821bba21d69b3ff834c99861f73bc9872033092f73",
+      "audioSha256": "c0139f67f6049d5f4a1c8eab8ba9a2ae4b8675983626cf4c5daa7985c63b26b3",
+      "duration": 4
+    },
+    {
+      "id": "chapter-01-04-feedback-egg-specific",
+      "sourceText": "Нам подходит любое яйцо из трёх. An здесь называет одно яйцо, без выбора конкретного; форма an нужна перед гласным /e/.",
+      "spokenText": "[reassuring] Нам подходит любое яйцо из трёх. An здесь называет одно яйцо, без выбора конкретного; форма an нужна перед гласным звуком.",
+      "file": "audio/cat/callum-v1/chapter-01-04-feedback-egg-specific-f6ae657bf2aa.mp3",
+      "requestHash": "f6ae657bf2aa49e068196d50d7b46c5312772ef980f045975e50da11a35e9056",
+      "audioSha256": "d878b3629c0112fcfeeea9b82826bdfe0d818f257edac685f4a32c7cf6e62633",
+      "duration": 12.72
+    },
+    {
+      "id": "chapter-01-04-feedback-egg-many",
+      "sourceText": "На столе три яйца, но egg в просьбе — единственное число. a/an не используется с множественным числом eggs. Мы берём только одно; an выбрано перед гласным звуком /e/. Попробуй ещё раз.",
+      "spokenText": "[reassuring] На столе три яйца, но egg в просьбе — единственное число. a и an не используется с множественным числом eggs. Мы берём только одно; an выбрано перед гласным звуком. Попробуй ещё раз.",
+      "file": "audio/cat/callum-v1/chapter-01-04-feedback-egg-many-3f382aeccd35.mp3",
+      "requestHash": "3f382aeccd355dd1b311add5d56a60607310052b9936fed3ee1f21202caca490",
+      "audioSha256": "87bd375b06ae72e67ee2a2e883767670866b83a04244f8406524ba348bc4294e",
+      "duration": 18.08
+    },
+    {
+      "id": "chapter-01-04-feedback-egg-any",
+      "sourceText": "Верно: нужно одно яйцо, подходит любое. Перед гласным /e/ ставим an. С яблоком работало то же правило — дело не в том, фрукт это или нет.",
+      "spokenText": "[reassuring] Верно: нужно одно яйцо, подходит любое. Перед гласным звуком ставим an. С яблоком работало то же правило — дело не в том, фрукт это или нет.",
+      "file": "audio/cat/callum-v1/chapter-01-04-feedback-egg-any-54d6528ba572.mp3",
+      "requestHash": "54d6528ba572727608efc2eb6ac11ed0f70c6f178e0999cf016e2b926c337fc7",
+      "audioSha256": "245fce036d21d3b4d10657b084780fce6f7de572ebd3311b59d081b6ff2f2bae",
+      "duration": 13.76
+    },
+    {
+      "id": "chapter-01-05-key-task-01",
+      "sourceText": "У первого огня Марту встретит помощник. Соберём сумку и для него. Сначала возьмём запасной ключ — любой из трёх на столе.",
+      "spokenText": "[reassuring] У первого огня Марту встретит помощник. Соберём сумку и для него. Сначала возьмём запасной ключ — любой из трёх на столе.",
+      "file": "audio/cat/callum-v1/chapter-01-05-key-task-01-856abe5af50e.mp3",
+      "requestHash": "856abe5af50e5ee7c88b0bbdc12a4e05a57c34606138c6cb94def31b0b2cc900",
+      "audioSha256": "9e08c366bb70c4ce475a96dc9fe58c272c28db06944c5e17f26bad00cf242c02",
+      "duration": 10.32
+    },
+    {
+      "id": "chapter-01-05-key-task-02",
+      "sourceText": "Key — ключ, первый звук /k/ — согласный. На поле есть a и an. Выбери подходящую форму; лишнюю табличку оставь за рамкой.",
+      "spokenText": "[reassuring] Key — ключ, первый звук — согласный. На поле есть a и an. Выбери подходящую форму; лишнюю табличку оставь за рамкой.",
+      "file": "audio/cat/callum-v1/chapter-01-05-key-task-02-8f52b22efd65.mp3",
+      "requestHash": "8f52b22efd65b48852f8189f2336a5081433d958ddc955fca086d25d5f60d24d",
+      "audioSha256": "a92cf0809d32ca0f55900375aeb3c7699bd86f085c33fa36249942b52df0d569",
+      "duration": 12.4
+    },
+    {
+      "id": "chapter-01-05-key-success-01",
+      "sourceText": "Один ключ уже во второй сумке, два остались на столе. Следом возьмём яблоко. Сначала объясним выбор: почему здесь a key?",
+      "spokenText": "[pleased] Один ключ уже во второй сумке, два остались на столе. Следом возьмём яблоко. Сначала объясним выбор: почему здесь a key?",
+      "file": "audio/cat/callum-v1/chapter-01-05-key-success-01-0e68d60288fb.mp3",
+      "requestHash": "0e68d60288fb0b8146ad2c14a042bfe6fc3143d3bedd6f87be7fa5860d4568c4",
+      "audioSha256": "fe9ceaa1c5cc5f7c2dd3dc612010375c670f4f39c461a286f0589bd8c35e139d",
+      "duration": 12
+    },
+    {
+      "id": "chapter-01-05-key-feedback-choice-position",
+      "sourceText": "Положение таблички не определяет артикль. Вспомни звучание key и выбери объяснение ещё раз.",
+      "spokenText": "[reassuring] Положение таблички не определяет артикль. Вспомни звучание key и выбери объяснение ещё раз.",
+      "file": "audio/cat/callum-v1/chapter-01-05-key-feedback-choice-position-20e88a7b1ea0.mp3",
+      "requestHash": "20e88a7b1ea06bf194dcddfcb02417ef1dc6671853b172280f0273e47a5dc343",
+      "audioSha256": "1bf16c98b5f33accfdaf0726d9af1eaf628c39ffdd278b869cf5c2916f347919",
+      "duration": 8.96
+    },
+    {
+      "id": "chapter-01-05-key-feedback-choice-consonant",
+      "sourceText": "Верно. Нужен один любой подходящий ключ. key начинается с согласного /k/, поэтому a key. В прошлой просьбе было an egg: форма меняется по звуку следующего слова.",
+      "spokenText": "[reassuring] Верно. Нужен один любой подходящий ключ. key начинается с согласного звука, поэтому a key. В прошлой просьбе было an egg: форма меняется по звуку следующего слова.",
+      "file": "audio/cat/callum-v1/chapter-01-05-key-feedback-choice-consonant-7fca68a02112.mp3",
+      "requestHash": "7fca68a02112ebfe59657176ea7ebf7e08ee8e1fcef430b1e04c275b66d4740f",
+      "audioSha256": "4e47dee3d7e6343ca3fab7790fb0280ffcf0809984a41f5291eb97a491f504bc",
+      "duration": 16.48
+    },
+    {
+      "id": "chapter-01-05-key-feedback-choice-previous",
+      "sourceText": "В прошлой просьбе было an egg. Сейчас слово key начинается с согласного /k/: нужна форма a. Смысл «один любой подходящий» остаётся тем же. Попробуй ещё раз.",
+      "spokenText": "[reassuring] В прошлой просьбе было an egg. Сейчас слово key начинается с согласного звука: нужна форма a. Смысл «один любой подходящий» остаётся тем же. Попробуй ещё раз.",
+      "file": "audio/cat/callum-v1/chapter-01-05-key-feedback-choice-previous-073bd1c9aed4.mp3",
+      "requestHash": "073bd1c9aed4e10b041ed2ee0ae6887c43e626eb82593090114708a4d712c3d6",
+      "audioSha256": "96e2f54776d875408ebb7a8256ee7c15c18594c33bfccc2989b4179e49c1817c",
+      "duration": 15.92
+    },
+    {
+      "id": "chapter-01-05-apple-task-01",
+      "sourceText": "Ключ уже в сумке помощника. Добавим яблоко на перекус — любое из трёх.",
+      "spokenText": "[reassuring] Ключ уже в сумке помощника. Добавим яблоко на перекус — любое из трёх.",
+      "file": "audio/cat/callum-v1/chapter-01-05-apple-task-01-80be43107e6e.mp3",
+      "requestHash": "80be43107e6efc271d86dd658c58876479a1c4042c908f45d6abcaaf3657288f",
+      "audioSha256": "0aa70dba2825564eddef6c795b44d39ab50d9e8862ad0199adefa3efc009bc4b",
+      "duration": 8.48
+    },
+    {
+      "id": "chapter-01-05-apple-task-02",
+      "sourceText": "Apple — яблоко. Можно нажать на слово и послушать его. Выбери a или an по первому звуку; расположение табличек не подсказывает ответ.",
+      "spokenText": "[reassuring] Apple — яблоко. Можно нажать на слово и послушать его. Выбери a или an по первому звуку; расположение табличек не подсказывает ответ.",
+      "file": "audio/cat/callum-v1/chapter-01-05-apple-task-02-7330c33e9699.mp3",
+      "requestHash": "7330c33e969951b64e294c060143d731e3a9707b1ded5e5867b2550b0f568e7f",
+      "audioSha256": "a5a1c7a163714d2367f8d21cb3de59abb2360ca1e2eddcd46a53f2a5b912c730",
+      "duration": 13.04
+    },
+    {
+      "id": "chapter-01-05-apple-success-01",
+      "sourceText": "Яблоко и ключ уже в сумке помощника. С припасами закончили; дальше понадобится конкретный ключ — от двери мастерской.",
+      "spokenText": "[pleased] Яблоко и ключ уже в сумке помощника. С припасами закончили; дальше понадобится конкретный ключ — от двери мастерской.",
+      "file": "audio/cat/callum-v1/chapter-01-05-apple-success-01-7672e5a37d2b.mp3",
+      "requestHash": "7672e5a37d2bcd2f3d298fd169d1bcd2099575cead6cbf3ce4a9ddc6330441b6",
+      "audioSha256": "43c3c09af85c635c762f3ee8253dc68cd3367c8569924b548a11096177d2c6dc",
+      "duration": 9.28
+    },
+    {
+      "id": "chapter-01-05-apple-success-02",
+      "sourceText": "В одной просьбе мы собрали a key, в другой — an apple. Почему во второй просьбе форма артикля изменилась?",
+      "spokenText": "[reassuring] В одной просьбе мы собрали a key, в другой — an apple. Почему во второй просьбе форма артикля изменилась?",
+      "file": "audio/cat/callum-v1/chapter-01-05-apple-success-02-cfd26ccad6d7.mp3",
+      "requestHash": "cfd26ccad6d7a5b054bee8886a157b4b1de3901df1d113f776a0c3866ceb7ac3",
+      "audioSha256": "92b4af171a1167728b4f87747f87932ce3a38be010cfecc988ac25d0ff99d07b",
+      "duration": 9.12
+    },
+    {
+      "id": "chapter-01-05-apple-feedback-choice-vowel",
+      "sourceText": "Верно. Мы просим одно любое яблоко. Перед гласным /æ/ в apple выбираем an, а перед согласным /k/ в key — a. Это две формы одного неопределённого артикля.",
+      "spokenText": "[reassuring] Верно. Мы просим одно любое яблоко. Перед гласным звуком в apple выбираем an, а перед согласным звуком в key — a. Это две формы одного неопределённого артикля.",
+      "file": "audio/cat/callum-v1/chapter-01-05-apple-feedback-choice-vowel-57e7a25b4c7f.mp3",
+      "requestHash": "57e7a25b4c7f38323a3e4cd6533d9285122aba4b5381817066723510c299fb71",
+      "audioSha256": "823073f59245c3b4b22b519432880ca56409d4b70e8b16d2dece27abe1470c55",
+      "duration": 17.04
+    },
+    {
+      "id": "chapter-01-05-apple-feedback-choice-previous",
+      "sourceText": "Смысл просьбы остался прежним, но начальный звук изменился: apple начинается с гласного /æ/. Поэтому an apple. Попробуй ещё раз.",
+      "spokenText": "[reassuring] Смысл просьбы остался прежним, но начальный звук изменился: apple начинается с гласного звука. Поэтому an apple. Попробуй ещё раз.",
+      "file": "audio/cat/callum-v1/chapter-01-05-apple-feedback-choice-previous-b7b8734cfc2b.mp3",
+      "requestHash": "b7b8734cfc2b28bd89de4dcadc477f467589eb507fcf3750e07e966f9c82456b",
+      "audioSha256": "9358b297e11b131049e91a51e6f58b898fc72d9fd6a686a0fb98846cd8e3c88f",
+      "duration": 12.32
+    },
+    {
+      "id": "chapter-01-05-apple-feedback-choice-position",
+      "sourceText": "В другой комнате она может оказаться справа. Выбираем по первому звуку следующего слова; у apple это гласный /æ/. Попробуй ещё раз.",
+      "spokenText": "[reassuring] В другой комнате она может оказаться справа. Выбираем по первому звуку следующего слова; у apple это гласный звук. Попробуй ещё раз.",
+      "file": "audio/cat/callum-v1/chapter-01-05-apple-feedback-choice-position-8b05b8790c22.mp3",
+      "requestHash": "8b05b8790c22565409596ba706aef8a77abf16bdfb41f092fbd190fd41458273",
+      "audioSha256": "c2c4d59cbac969f8f31e1d346019112310bdae144dc9197ba75fd6745344c32e",
+      "duration": 11.68
+    },
+    {
+      "id": "chapter-01-06-task-01",
+      "sourceText": "Припасы собраны. Возьмём ключ от двери мастерской — вот он, посередине. Два других не подойдут: они от шкафа и сундука.",
+      "spokenText": "[reassuring] Припасы собраны. Возьмём ключ от двери мастерской — вот он, посередине. Два других не подойдут: они от шкафа и сундука.",
+      "file": "audio/cat/callum-v1/chapter-01-06-task-01-4d0a97c12101.mp3",
+      "requestHash": "4d0a97c121010759f33c3b5329b3afb02aba970f49b50bcaac8562073380676c",
+      "audioSha256": "87dadc9c66352c12323fae630e30d0f9d3b055dca7f1ffc2f9d16ae1659ed5ec",
+      "duration": 9.2
+    },
+    {
+      "id": "chapter-01-06-task-02",
+      "sourceText": "The — определённый артикль. Его используем, когда собеседнику понятно, о каком предмете речь. Я показал ключ от двери, ты его видишь — теперь можно попросить the key. Отдельного перевода у the обычно нет.",
+      "spokenText": "[reassuring] The — определённый артикль. Его используем, когда собеседнику понятно, о каком предмете речь. Я показал ключ от двери, ты его видишь — теперь можно попросить the key. Отдельного перевода у the обычно нет.",
+      "file": "audio/cat/callum-v1/chapter-01-06-task-02-be0a7f21e12d.mp3",
+      "requestHash": "be0a7f21e12d0b3000b05803b6a0bbb72f22e74edd81295e27f84c1a53dec58f",
+      "audioSha256": "5164ce50772dc7e4da86b059858a223bcd76b54aab8385cb4382f7e6ce3b4c83",
+      "duration": 17.36
+    },
+    {
+      "id": "chapter-01-06-task-03",
+      "sourceText": "Раньше нам подходил любой запасной ключ: a key. Сейчас нужен ключ от двери: the key. Его можно так назвать сразу, даже если раньше о нём не говорили, — ведь я уже показал, какой нужен. Сам по себе повтор слова key ничего не меняет.",
+      "spokenText": "[reassuring] Раньше нам подходил любой запасной ключ: a key. Сейчас нужен ключ от двери: the key. Его можно так назвать сразу, даже если раньше о нём не говорили, — ведь я уже показал, какой нужен. Сам по себе повтор слова key ничего не меняет.",
+      "file": "audio/cat/callum-v1/chapter-01-06-task-03-36bd3c51bc08.mp3",
+      "requestHash": "36bd3c51bc087985b99bf23b0fa74ea09189e43a2f9a058969854d6adee78244",
+      "audioSha256": "d032f844c1fa50343c70a20ee031eb321e0a1f64fbf7c366c72486502f362e95",
+      "duration": 21.2
+    },
+    {
+      "id": "chapter-01-06-task-04",
+      "sourceText": "A или an выбираем по следующему звуку. С the это правило не работает: пишем и the key, и the apple. Сейчас просим один предмет; в конце главы попробуем the с несколькими.",
+      "spokenText": "[reassuring] A или an выбираем по следующему звуку. С the это правило не работает: пишем и the key, и the apple. Сейчас просим один предмет; в конце главы попробуем the с несколькими.",
+      "file": "audio/cat/callum-v1/chapter-01-06-task-04-b28c2aef9ae8.mp3",
+      "requestHash": "b28c2aef9ae85700027871d37b8811facfc6d9ca6c0c7d085ba8aa19b7268451",
+      "audioSha256": "02171ca69d23b0140b328f109f06f6713ad4c0ff813b1b63d8effdf198b3d7e2",
+      "duration": 16.72
+    },
+    {
+      "id": "chapter-01-06-task-05",
+      "sourceText": "Собери the key: the слева, key справа. Табличку a оставь за рамкой. Я положу в сумку тот ключ, на который указал. Это всё ещё словосочетание — короткая просьба, понятная нам из ситуации.",
+      "spokenText": "[reassuring] Собери the key: the слева, key справа. Табличку a оставь за рамкой. Я положу в сумку тот ключ, на который указал. Это всё ещё словосочетание — короткая просьба, понятная нам из ситуации.",
+      "file": "audio/cat/callum-v1/chapter-01-06-task-05-0ca1eb15cc5f.mp3",
+      "requestHash": "0ca1eb15cc5f8374a568ccaf170e92f86cc0205e6a4d07973367f90055d33c05",
+      "audioSha256": "e92af96bfdb0376612c3c89e45401bda3a947578b7f217fbb80a91a64194f144",
+      "duration": 16.8
+    },
+    {
+      "id": "chapter-01-06-success-01",
+      "sourceText": "Вот ключ от двери. Марта закроет мастерскую, а ключи от шкафа и сундука оставит дома.",
+      "spokenText": "[pleased] Вот ключ от двери. Марта закроет мастерскую, а ключи от шкафа и сундука оставит дома.",
+      "file": "audio/cat/callum-v1/chapter-01-06-success-01-0fe19a025826.mp3",
+      "requestHash": "0fe19a0258261b0b2492addb79d097b50aa4afeb0c28479d2e6f4efde0e1067a",
+      "audioSha256": "44b8fc47838ee51596f1c29b98d0cd94a28ae8bc57e45186072b79cc59850464",
+      "duration": 7.2
+    },
+    {
+      "id": "chapter-01-06-success-02",
+      "sourceText": "Почему в этой просьбе нужен the, а не a?",
+      "spokenText": "[reassuring] Почему в этой просьбе нужен the, а не a?",
+      "file": "audio/cat/callum-v1/chapter-01-06-success-02-f22ecaa96677.mp3",
+      "requestHash": "f22ecaa966776c8668067c6bd48746f042bce06eaaef684c9ac3cafcbd3f0fd0",
+      "audioSha256": "edb9287df3d4e2a030e45caf19984ac9dea648ed3a2a006c24a6014c14a6a898",
+      "duration": 3.6
+    },
+    {
+      "id": "chapter-01-06-feedback-the-repeat",
+      "sourceText": "Повторения слова недостаточно: раньше мы брали другие ключи. Здесь кот явно указал на ключ от двери, и обоим понятно, какой именно нужен. Попробуй ещё раз.",
+      "spokenText": "[reassuring] Повторения слова недостаточно: раньше мы брали другие ключи. Здесь кот явно указал на ключ от двери, и обоим понятно, какой именно нужен. Попробуй ещё раз.",
+      "file": "audio/cat/callum-v1/chapter-01-06-feedback-the-repeat-d76cdb35d510.mp3",
+      "requestHash": "d76cdb35d510074b1cfabdf51eb32096fd5d4ed5d02668306b66684edfce7ccf",
+      "audioSha256": "b9ed4af79e08bfc7d22803ac5c74bbe42f554e95eb4e55d1df8c5829b028f6f7",
+      "duration": 12.96
+    },
+    {
+      "id": "chapter-01-06-feedback-the-sound",
+      "sourceText": "Согласный звук объясняет a вместо an, но не выбор the. The показывает, что предмет однозначно понятен собеседникам. Попробуй ещё раз.",
+      "spokenText": "[reassuring] Согласный звук объясняет a вместо an, но не выбор the. The показывает, что предмет однозначно понятен собеседникам. Попробуй ещё раз.",
+      "file": "audio/cat/callum-v1/chapter-01-06-feedback-the-sound-6eeddbbd6a41.mp3",
+      "requestHash": "6eeddbbd6a41bdec6ed22887aff7af679a9380790b44b231367f217377b2f7cb",
+      "audioSha256": "5e9916cbe44c815595bd239ad036aed01b577027e8244c52e3c2be61b6a4bbba",
+      "duration": 12
+    },
+    {
+      "id": "chapter-01-06-feedback-the-shared",
+      "sourceText": "Верно. Кот показал ключ от двери — Люми его узнал. Поэтому the key можно сказать сразу, даже если этот ключ ещё не обсуждали.",
+      "spokenText": "[reassuring] Верно. Кот показал ключ от двери — Люми его узнал. Поэтому the key можно сказать сразу, даже если этот ключ ещё не обсуждали.",
+      "file": "audio/cat/callum-v1/chapter-01-06-feedback-the-shared-53cb271cf072.mp3",
+      "requestHash": "53cb271cf072a938c7fd5d49547b1fd2efe67b63164bdcd74cb4ef368df850da",
+      "audioSha256": "a891c35e38ce9630f93a343abe8e56267420f3a9c5b060a9698d6dc440148676",
+      "duration": 11.04
+    },
+    {
+      "id": "chapter-01-07-task-01",
+      "sourceText": "Марта выбрала подарок смотрителю — зелёное яблоко слева. Видишь его рядом с двумя красными? Попроси именно зелёное, а остальные оставим дома.",
+      "spokenText": "[reassuring] Марта выбрала подарок смотрителю — зелёное яблоко слева. Видишь его рядом с двумя красными? Попроси именно зелёное, а остальные оставим дома.",
+      "file": "audio/cat/callum-v1/chapter-01-07-task-01-9f178881584b.mp3",
+      "requestHash": "9f178881584befcbd995b15a217142c294d4ce213cb9596c18eef30d22f890ae",
+      "audioSha256": "2b15baf5e4ec1f3c51cc1a4342a3cda15454f31d068d0fc03f85352ea2f2c881",
+      "duration": 12.08
+    },
+    {
+      "id": "chapter-01-07-task-02",
+      "sourceText": "Apple — яблоко, первый звук /æ/ — гласный. Но теперь выбираем не только между a и an: на поле есть и the. Подумай, нужна просьба о любом яблоке или о том, которое я показал.",
+      "spokenText": "[reassuring] Apple — яблоко, первый звук — гласный. Но теперь выбираем не только между a и an: на поле есть и the. Подумай, нужна просьба о любом яблоке или о том, которое я показал.",
+      "file": "audio/cat/callum-v1/chapter-01-07-task-02-278d1765fb9d.mp3",
+      "requestHash": "278d1765fb9de77339562e8a348a5bb5e683faee1cb32243b7e88a05d01124b7",
+      "audioSha256": "033d6c6fa2a8e47e8c48a362f3f8cb1813e895606a7085682d3b0647f315dbe9",
+      "duration": 17.36
+    },
+    {
+      "id": "chapter-01-07-success-01",
+      "sourceText": "Зелёное яблоко в сумке — подарок смотрителю готов. Два красных оставим Марте.",
+      "spokenText": "[pleased] Зелёное яблоко в сумке — подарок смотрителю готов. Два красных оставим Марте.",
+      "file": "audio/cat/callum-v1/chapter-01-07-success-01-2d8ce06d6cab.mp3",
+      "requestHash": "2d8ce06d6cab67080a00972b73b9ef06d2c0a959606ef205f80ab94a2ddd1946",
+      "audioSha256": "75512f99eaba5f107a63b18d059f6a33694825cc8d41aac7b44c299f2cc15d37",
+      "duration": 7.12
+    },
+    {
+      "id": "chapter-01-07-success-02",
+      "sourceText": "Почему здесь the apple, хотя apple начинается с гласного звука?",
+      "spokenText": "[reassuring] Почему здесь the apple, хотя apple начинается с гласного звука?",
+      "file": "audio/cat/callum-v1/chapter-01-07-success-02-935399ef8b06.mp3",
+      "requestHash": "935399ef8b067df056c5f09558c2dde1d81bf8a28e3cdc3d4f05a3d0c17f401f",
+      "audioSha256": "4f72331043cf25c0fb9258415f11a28b161b4d94f9d671d30e8e0133483a2bd3",
+      "duration": 5.6
+    },
+    {
+      "id": "chapter-01-07-feedback-apple-always-an",
+      "sourceText": "Гласный звук определяет an вместо a, когда нужен неопределённый артикль. Здесь предмет уже понятен обоим: используем the apple. Попробуй ещё раз.",
+      "spokenText": "[reassuring] Гласный звук определяет an вместо a, когда нужен неопределённый артикль. Здесь предмет уже понятен обоим: используем the apple. Попробуй ещё раз.",
+      "file": "audio/cat/callum-v1/chapter-01-07-feedback-apple-always-an-83ae77cefe46.mp3",
+      "requestHash": "83ae77cefe4608c356dbf241bd5fb82e68fc727657b311663599eae09db0866b",
+      "audioSha256": "f6ba8d969d35d860b9fee7cfb686d04044a5073191458000cbd63801af49c028",
+      "duration": 13.28
+    },
+    {
+      "id": "chapter-01-07-feedback-apple-shared",
+      "sourceText": "Верно. Кот показал яблоко, и Люми понял, какое нужно. Поэтому the apple. Для просьбы о любом одном подошло бы an apple.",
+      "spokenText": "[reassuring] Верно. Кот показал яблоко, и Люми понял, какое нужно. Поэтому the apple. Для просьбы о любом одном подошло бы an apple.",
+      "file": "audio/cat/callum-v1/chapter-01-07-feedback-apple-shared-3cc6aa869cc9.mp3",
+      "requestHash": "3cc6aa869cc9f0b32d4d17ce662555af646f1584286458c02f3c8b3d5c5a7181",
+      "audioSha256": "fa2ca4a13d1d737e1f96287959a56d3ed3b85bbcff6dd5a88eb73fa325596545",
+      "duration": 11.92
+    },
+    {
+      "id": "chapter-01-07-feedback-apple-repeat",
+      "sourceText": "Знать слово apple недостаточно: нужно понимать, какой предмет имеется в виду. Кот показал левое яблоко для смотрителя. Если бы подходило любое одно, мы попросили бы an apple. Попробуй ещё раз.",
+      "spokenText": "[reassuring] Знать слово apple недостаточно: нужно понимать, какой предмет имеется в виду. Кот показал левое яблоко для смотрителя. Если бы подходило любое одно, мы попросили бы an apple. Попробуй ещё раз.",
+      "file": "audio/cat/callum-v1/chapter-01-07-feedback-apple-repeat-166e246ced65.mp3",
+      "requestHash": "166e246ced654047e8a645501e2a0b1987e166ec0d070b0c4d76ffda70b42dd8",
+      "audioSha256": "203676cef7bf584d5e5f5c04c9b934e95bbfb259cb18d246de65a3886cb4276f",
+      "duration": 15.76
+    },
+    {
+      "id": "chapter-01-8-1-task-01",
+      "sourceText": "Возьмём запасной ключ. Любой из трёх подойдёт, но в сумку его пока не кладём: попроси меня отложить a key.",
+      "spokenText": "[reassuring] Возьмём запасной ключ. Любой из трёх подойдёт, но в сумку его пока не кладём: попроси меня отложить a key.",
+      "file": "audio/cat/callum-v1/chapter-01-8-1-task-01-e6bce081456c.mp3",
+      "requestHash": "e6bce081456cc291a4a622ad3ab4a65ecf68ba42c76bf87f2ec478b6e65e4146",
+      "audioSha256": "9bb4f0d975102ef503f7fcb13ecdf3013ce396052a7873ada3210282a649b7e9",
+      "duration": 9.76
+    },
+    {
+      "id": "chapter-01-8-1-task-02",
+      "sourceText": "После этого попроси тот же ключ: the key. Ты будешь видеть, какой я выбрал. The появится потому, что речь пойдёт о конкретном ключе, а не просто из-за повтора слова.",
+      "spokenText": "[reassuring] После этого попроси тот же ключ: the key. Ты будешь видеть, какой я выбрал. The появится потому, что речь пойдёт о конкретном ключе, а не просто из-за повтора слова.",
+      "file": "audio/cat/callum-v1/chapter-01-8-1-task-02-5a16cfba5fb1.mp3",
+      "requestHash": "5a16cfba5fb1f0c61fc94ea7b726ccae5676bd31b9ebe9bf6d5ec81b831ef8c2",
+      "audioSha256": "180c76eb51fa89c136a0fc54c369c433a6820560d11bfcd60310f7150812da2d",
+      "duration": 13.44
+    },
+    {
+      "id": "chapter-01-8-1-success-01",
+      "sourceText": "Вот выбранный ключ. Он пока лежит отдельно; теперь попроси положить его в сумку.",
+      "spokenText": "[pleased] Вот выбранный ключ. Он пока лежит отдельно; теперь попроси положить его в сумку.",
+      "file": "audio/cat/callum-v1/chapter-01-8-1-success-01-a2815b2eda3d.mp3",
+      "requestHash": "a2815b2eda3dd3382f4b89c20f8ac3267a66d85e7704c620dfc744d80be011c8",
+      "audioSha256": "7c265396ed14ed3aa7285793c57be76be142705778521ae72b476f6cc8fe2503",
+      "duration": 6.56
+    },
+    {
+      "id": "chapter-01-8-2-task-01",
+      "sourceText": "Вот выбранный ключ — я отложил его отдельно. Два других пока оставим здесь.",
+      "spokenText": "[reassuring] Вот выбранный ключ — я отложил его отдельно. Два других пока оставим здесь.",
+      "file": "audio/cat/callum-v1/chapter-01-8-2-task-01-cc11506ed602.mp3",
+      "requestHash": "cc11506ed602a0673c37412f2e31275822ddb84b9294657b5ed60d9458fe5957",
+      "audioSha256": "63e953f06a9d7d9996140e463d830ae5d62a657da8bd1b106c3525f4def46abf",
+      "duration": 6.56
+    },
+    {
+      "id": "chapter-01-8-2-task-02",
+      "sourceText": "Попроси положить в сумку этот ключ. Мы уже выбрали его вместе, теперь нужен the key.",
+      "spokenText": "[reassuring] Попроси положить в сумку этот ключ. Мы уже выбрали его вместе, теперь нужен the key.",
+      "file": "audio/cat/callum-v1/chapter-01-8-2-task-02-1a48fb711c09.mp3",
+      "requestHash": "1a48fb711c0933f1399382730ae8a06fcef9bcc1f75592421775dad5407ff327",
+      "audioSha256": "b1d95ce28ea0c463090a6f8b69e751225b9f131cda932b1ffdf7ef7bb710a1c8",
+      "duration": 7.2
+    },
+    {
+      "id": "chapter-01-8-2-success-01",
+      "sourceText": "В сумку отправился именно отложенный ключ. Два других не тронуты.",
+      "spokenText": "[pleased] В сумку отправился именно отложенный ключ. Два других не тронуты.",
+      "file": "audio/cat/callum-v1/chapter-01-8-2-success-01-24795954a189.mp3",
+      "requestHash": "24795954a189158c16fc85702710b88d8f694e7ad7caba360924b7ae6690f510",
+      "audioSha256": "ad7226115d19e4f70efda2b43edd640ecabb678015ae97d6e74c716233f705a0",
+      "duration": 5.2
+    },
+    {
+      "id": "chapter-01-8-2-success-02",
+      "sourceText": "Почему первая просьба была a key, а следующая — the key?",
+      "spokenText": "[reassuring] Почему первая просьба была a key, а следующая — the key?",
+      "file": "audio/cat/callum-v1/chapter-01-8-2-success-02-e727310ffddf.mp3",
+      "requestHash": "e727310ffddfcbed1eaf5a4251386f5945d62d69911caafbb78bd2530d21895a",
+      "audioSha256": "1d599b44498e2f6709c63de447cc15ddb66756489e6e579a673a15d8cc1cceb1",
+      "duration": 5.84
+    },
+    {
+      "id": "chapter-01-8-2-feedback-chain-known",
+      "sourceText": "Верно. Сначала подходил любой один ключ; затем кот отложил один на виду. The key относилось к этому ключу. Причина — понятный обоим предмет, а не сам номер упоминания.",
+      "spokenText": "[reassuring] Верно. Сначала подходил любой один ключ; затем кот отложил один на виду. The key относилось к этому ключу. Причина — понятный обоим предмет, а не сам номер упоминания.",
+      "file": "audio/cat/callum-v1/chapter-01-8-2-feedback-chain-known-aed7f45ca388.mp3",
+      "requestHash": "aed7f45ca388f90535bee62bbeb65a3ab3d2989369cb36f9a1c1d1917d4e4c32",
+      "audioSha256": "6093fbefab994619d40a2c31e97e0fc0e05e660fbe99e4f9ae23c2b02be22aa7",
+      "duration": 14.88
+    },
+    {
+      "id": "chapter-01-8-2-feedback-chain-repeat",
+      "sourceText": "Повторять слово недостаточно. Если во второй просьбе нужен другой любой ключ, возможно a key. Здесь the относится к одному ключу, выбранному на глазах у обоих.",
+      "spokenText": "[reassuring] Повторять слово недостаточно. Если во второй просьбе нужен другой любой ключ, возможно a key. Здесь the относится к одному ключу, выбранному на глазах у обоих.",
+      "file": "audio/cat/callum-v1/chapter-01-8-2-feedback-chain-repeat-961e73d7eac1.mp3",
+      "requestHash": "961e73d7eac13afa7b1f879523f57cbe5be56d921c5c0daedb0acf70950fe7cb",
+      "audioSha256": "39061006aa57b0e3311e40a2cd690e1e443efc39b6988b0664a6176dad855e96",
+      "duration": 14.48
+    },
+    {
+      "id": "chapter-01-9-1-task-01",
+      "sourceText": "Так же выберем яблоко. Все три хорошие — подойдёт любое.",
+      "spokenText": "[reassuring] Так же выберем яблоко. Все три хорошие — подойдёт любое.",
+      "file": "audio/cat/callum-v1/chapter-01-9-1-task-01-52a6b143f7c9.mp3",
+      "requestHash": "52a6b143f7c98ccce10fa27ad74d8e0b3f525f42412e01a6767240d2f926c682",
+      "audioSha256": "25c786216fe25043314b6c4e227c2c26dcae6831e472564d3709b75d4fad9377",
+      "duration": 5.52
+    },
+    {
+      "id": "chapter-01-9-1-task-02",
+      "sourceText": "apple — яблоко, /ˈæp.əl/. Начинается с гласного /æ/. Попроси одно любое яблоко и запомни, какое яблоко я отложу.",
+      "spokenText": "[reassuring] Apple — яблоко. Начинается с гласного звука. Попроси одно любое яблоко и запомни, какое яблоко я отложу.",
+      "file": "audio/cat/callum-v1/chapter-01-9-1-task-02-5f291286994a.mp3",
+      "requestHash": "5f291286994a4e9929826154b10020a8edf97f087c77d8df795dd269516e8a0b",
+      "audioSha256": "74253b5bbe07780da0e2cda065cae67c21d8db39368ac71bf2a706c40caf534e",
+      "duration": 10.96
+    },
+    {
+      "id": "chapter-01-9-1-success-01",
+      "sourceText": "Вот выбранное яблоко. Следующая просьба будет о нём.",
+      "spokenText": "[pleased] Вот выбранное яблоко. Следующая просьба будет о нём.",
+      "file": "audio/cat/callum-v1/chapter-01-9-1-success-01-be23cc317ea1.mp3",
+      "requestHash": "be23cc317ea1a69f708c8a30719003f03aaf2100dbf0a01cefb206cf08808b1f",
+      "audioSha256": "07d6744ddd801f127219f128fa96e0f00d0f85a48efc8726fd03d24350054eaa",
+      "duration": 4.8
+    },
+    {
+      "id": "chapter-01-9-2-task-01",
+      "sourceText": "Вот яблоко, которое я только что отложил.",
+      "spokenText": "[reassuring] Вот яблоко, которое я только что отложил.",
+      "file": "audio/cat/callum-v1/chapter-01-9-2-task-01-f922db52ce07.mp3",
+      "requestHash": "f922db52ce07b034e900ce30d93957e32b420fdc43079807b5491d8201c4a4dd",
+      "audioSha256": "140da3991a75bfcd45ff71015ecc38270d47456e921bbe79903e61a66e848dd8",
+      "duration": 3.36
+    },
+    {
+      "id": "chapter-01-9-2-task-02",
+      "sourceText": "Передай просьбу о том же яблоке. Не нужно выбирать новый плод.",
+      "spokenText": "[reassuring] Передай просьбу о том же яблоке. Не нужно выбирать новый плод.",
+      "file": "audio/cat/callum-v1/chapter-01-9-2-task-02-e0f72cf2750d.mp3",
+      "requestHash": "e0f72cf2750dc24e44639b85a2f861150db636c4b74ab3b5ade08963bd15a230",
+      "audioSha256": "af01e5001464c6fd72b0db7724d2e5746f9ae0aff8affddd5f61f02f63beb566",
+      "duration": 5.04
+    },
+    {
+      "id": "chapter-01-9-2-success-01",
+      "sourceText": "Отложенное яблоко в сумке. Два других остались на столе.",
+      "spokenText": "[pleased] Отложенное яблоко в сумке. Два других остались на столе.",
+      "file": "audio/cat/callum-v1/chapter-01-9-2-success-01-bea87159fd74.mp3",
+      "requestHash": "bea87159fd7421057da0714479b18280d8142653344e0fa103aa8bcefc14da06",
+      "audioSha256": "be3a359f02e24d6b7858d2ce34ef7a330ad83d02bda18b12cbdbfb1175c0b31d",
+      "duration": 5.04
+    },
+    {
+      "id": "chapter-01-9-2-success-02",
+      "sourceText": "Почему теперь the apple, а не an apple?",
+      "spokenText": "[reassuring] Почему теперь the apple, а не an apple?",
+      "file": "audio/cat/callum-v1/chapter-01-9-2-success-02-942a048de506.mp3",
+      "requestHash": "942a048de5065201fc494ac2d9d105fe506d641db9b49cd58011c24835ee9d9c",
+      "audioSha256": "352b9592097a3f45314366e04410cd7ab31aa6de8e89ce463122d0659b9b251f",
+      "duration": 4.56
+    },
+    {
+      "id": "chapter-01-9-2-feedback-chain-sound",
+      "sourceText": "Звук /æ/ не изменился. Изменилась ситуация: одно яблоко стало известно обоим. Поэтому the apple вместо просьбы о любом плоде.",
+      "spokenText": "[reassuring] Первый звук в apple не изменился. Изменилась ситуация: одно яблоко стало известно обоим. Поэтому the apple вместо просьбы о любом плоде.",
+      "file": "audio/cat/callum-v1/chapter-01-9-2-feedback-chain-sound-bb758b316f45.mp3",
+      "requestHash": "bb758b316f45d2cb663dc530363b375f0a4af7a9cf62b009660587566d192ec2",
+      "audioSha256": "897576b794cfcb20b5497135e5a35910b77ff6d5248f4c9edd7a7fdb2764809a",
+      "duration": 11.84
+    },
+    {
+      "id": "chapter-01-9-2-feedback-chain-known",
+      "sourceText": "Верно. Мы видели, какое яблоко кот отложил, и попросили именно его: the apple. Гласный звук этого не меняет.",
+      "spokenText": "[reassuring] Верно. Мы видели, какое яблоко кот отложил, и попросили именно его: the apple. Гласный звук этого не меняет.",
+      "file": "audio/cat/callum-v1/chapter-01-9-2-feedback-chain-known-90570408284e.mp3",
+      "requestHash": "90570408284e841234ea1d249f2079bba128e7cdb8886ce95efe360a7c421cad",
+      "audioSha256": "9dd50c6abf26225355a5b1dd4803618eddf9e47a8cc360f4e3dabe6bf1ae4913",
+      "duration": 10.72
+    },
+    {
+      "id": "chapter-01-10-1-task-01",
+      "sourceText": "book — книга, /bʊk/. Первый звук /b/ — согласный. Книги можно посчитать; здесь book означает одну книгу.",
+      "spokenText": "[reassuring] Book — книга. Первый звук — согласный. Книги можно посчитать; здесь book означает одну книгу.",
+      "file": "audio/cat/callum-v1/chapter-01-10-1-task-01-ac6e714a49c9.mp3",
+      "requestHash": "ac6e714a49c9fa4028f4eb25019ede86619feb32b2900c7590b1d28458aafeb0",
+      "audioSha256": "b5829e68961106d76d19e821bfa88cf6a0bfd27e335ed5925d4f2d44799030ce",
+      "duration": 10.32
+    },
+    {
+      "id": "chapter-01-10-1-task-02",
+      "sourceText": "В библиотеке станции ждут книги. Возьмём одну из этих трёх — подойдёт любая.",
+      "spokenText": "[reassuring] В библиотеке станции ждут книги. Возьмём одну из этих трёх — подойдёт любая.",
+      "file": "audio/cat/callum-v1/chapter-01-10-1-task-02-aae9f12eb97b.mp3",
+      "requestHash": "aae9f12eb97b308f0a54ee493ed6f6fb3adaf91e2462fd02dafec0651bd63ce1",
+      "audioSha256": "6d4098fb22728792e95c6046495ca7d3980810617488aa79cae1ef9bd51759d3",
+      "duration": 6.4
+    },
+    {
+      "id": "chapter-01-10-1-success-01",
+      "sourceText": "Одна книга отправилась в сумку. Следующая просьба — о перекусе.",
+      "spokenText": "[pleased] Одна книга отправилась в сумку. Следующая просьба — о перекусе.",
+      "file": "audio/cat/callum-v1/chapter-01-10-1-success-01-dffa53c9c14f.mp3",
+      "requestHash": "dffa53c9c14fb8876fdb0b161a829002b62a018a3b009beef014600d15ef1629",
+      "audioSha256": "077b8c4c4c79e240f37822dcf00ace2e2778fc936471cff0cc8cedab04cd4398",
+      "duration": 5.44
+    },
+    {
+      "id": "chapter-01-10-2-task-01",
+      "sourceText": "Orange — апельсин. Здесь речь о фрукте, не о цвете. Первый звук гласный: an orange.",
+      "spokenText": "[reassuring] Orange — апельсин. Здесь речь о фрукте, не о цвете. Первый звук гласный: an orange.",
+      "file": "audio/cat/callum-v1/chapter-01-10-2-task-01-cdd256d670f1.mp3",
+      "requestHash": "cdd256d670f14f7faeb20ae78d154e84e31249b7024a9254999e55dc70eac225",
+      "audioSha256": "ae88c654259124905730c511c95427887a04764e72d71aaf562f855f985c92a7",
+      "duration": 8.72
+    },
+    {
+      "id": "chapter-01-10-2-task-02",
+      "sourceText": "На столе три апельсина. Возьмём один — любой.",
+      "spokenText": "[reassuring] На столе три апельсина. Возьмём один — любой.",
+      "file": "audio/cat/callum-v1/chapter-01-10-2-task-02-a4896db1b8b0.mp3",
+      "requestHash": "a4896db1b8b00a5ae0694ac294d8a7829b481a5958a7fd3e397760466c6469ff",
+      "audioSha256": "994cdbf2de6232a8dcb91fb8e635c2f1f5cf444350635dfdff9855787e52b934",
+      "duration": 4.4
+    },
+    {
+      "id": "chapter-01-10-2-success-01",
+      "sourceText": "Один апельсин положен в сумку. Осталось выполнить просьбу о ключе.",
+      "spokenText": "[pleased] Один апельсин положен в сумку. Осталось выполнить просьбу о ключе.",
+      "file": "audio/cat/callum-v1/chapter-01-10-2-success-01-b82113730b9e.mp3",
+      "requestHash": "b82113730b9e16b48c14611d20d151af07cdfb9b3d400a034da22555f1afe115",
+      "audioSha256": "01c93423955c8b9e69db24d93dbe2a789e3e07dc66d69cdca0b7df3ab2706c12",
+      "duration": 5.6
+    },
+    {
+      "id": "chapter-01-10-3-task-01",
+      "sourceText": "Видишь средний ключ? Он от почтового ящика у станции. Остальные ключи от других замков. Возьмём именно этот.",
+      "spokenText": "[reassuring] Видишь средний ключ? Он от почтового ящика у станции. Остальные ключи от других замков. Возьмём именно этот.",
+      "file": "audio/cat/callum-v1/chapter-01-10-3-task-01-282ecef3f5a4.mp3",
+      "requestHash": "282ecef3f5a4b2d180f5bc4f6e11e3475714bb690a56f6c884a63df5b43fa41d",
+      "audioSha256": "8508045221f0073c241256418e7c3e25c2e1ce0a33aabf09a82020281db13580",
+      "duration": 9.68
+    },
+    {
+      "id": "chapter-01-10-3-task-02",
+      "sourceText": "Какой артикль нужен, если мы просим именно этот ключ?",
+      "spokenText": "[reassuring] Какой артикль нужен, если мы просим именно этот ключ?",
+      "file": "audio/cat/callum-v1/chapter-01-10-3-task-02-dba52cf3486f.mp3",
+      "requestHash": "dba52cf3486fef18b49c2ff3aefa0ac62974967b557266ef542ab1c8298f6965",
+      "audioSha256": "ce11c4816fdf1f52db0837b3d9bd89bc574d97cbee5b63b9e796aec5653d84f9",
+      "duration": 4.4
+    },
+    {
+      "id": "chapter-01-10-3-success-01",
+      "sourceText": "Ключ тоже в сумке. Теперь есть и книга для станции, и перекус.",
+      "spokenText": "[pleased] Ключ тоже в сумке. Теперь есть и книга для станции, и перекус.",
+      "file": "audio/cat/callum-v1/chapter-01-10-3-success-01-d8d62039f55e.mp3",
+      "requestHash": "d8d62039f55ed355899b9cf47a7643eeb784a8b138582b81ffe5a218d1b3e36f",
+      "audioSha256": "e5607c5c8c4f87ca6b79fa71be3971ef2bb6e35d5fc7210ae2b5641a4e142e50",
+      "duration": 5.28
+    },
+    {
+      "id": "chapter-01-10-3-success-02",
+      "sourceText": "Что определяло выбор артиклей в этих трёх просьбах?",
+      "spokenText": "[reassuring] Что определяло выбор артиклей в этих трёх просьбах?",
+      "file": "audio/cat/callum-v1/chapter-01-10-3-success-02-df773f40181b.mp3",
+      "requestHash": "df773f40181b5b0ed311f25462cb1c0b03a8f7b41d820a517dec5675a408d641",
+      "audioSha256": "3ad11d6b3bc1daba8dbf798c32e36c33e92753452687c40dabe24defd3aee6e6",
+      "duration": 3.68
+    },
+    {
+      "id": "chapter-01-10-3-feedback-mixed-sound",
+      "sourceText": "Сначала решаем, нужен любой предмет или конкретный. Звук помогает выбрать между a и an, но не между ними и the.",
+      "spokenText": "[reassuring] Сначала решаем, нужен любой предмет или конкретный. Звук помогает выбрать между a и an, но не между ними и the.",
+      "file": "audio/cat/callum-v1/chapter-01-10-3-feedback-mixed-sound-8573e8785f4c.mp3",
+      "requestHash": "8573e8785f4cc6eb1750b9618626a57e10b07e2f0fa0aa6fe544f26750aa2d87",
+      "audioSha256": "cbe6232fc9f28f800103a1ec27253c83a63557f19fd63df6b9614dc497499297",
+      "duration": 10.8
+    },
+    {
+      "id": "chapter-01-10-3-feedback-mixed-context",
+      "sourceText": "Верно: любая книга — a book, любой апельсин — an orange, указанный ключ — the key. Ситуация определяет a/an или the, звук определяет a или an.",
+      "spokenText": "[reassuring] Верно: любая книга — a book, любой апельсин — an orange, указанный ключ — the key. Ситуация определяет a и an или the, звук определяет a или an.",
+      "file": "audio/cat/callum-v1/chapter-01-10-3-feedback-mixed-context-0db54c6787b1.mp3",
+      "requestHash": "0db54c6787b15c5683dc2265d3638eaca6532136b42008581b1d0f74c0e4c766",
+      "audioSha256": "9b12bd342689efdf46877b79c06d8d6a4dc00ca5c17860a6d6efc263ca4f9324",
+      "duration": 17.52
+    },
+    {
+      "id": "chapter-01-11-1-task-01",
+      "sourceText": "robot — робот, /ˈrəʊ.bɒt/ в британском варианте. Первый звук /r/ — согласный. Роботов можно посчитать; robot здесь — один робот.",
+      "spokenText": "[reassuring] Robot — робот. Первый звук — согласный. Роботов можно посчитать; robot здесь — один робот.",
+      "file": "audio/cat/callum-v1/chapter-01-11-1-task-01-d7600a0eb0ee.mp3",
+      "requestHash": "d7600a0eb0ee1315cf0db6648a3a1dba5c216e3cccd73c998078b79a5d443b63",
+      "audioSha256": "d95ec28025fb440081673834d2539b262bc280bfc1e08458b0d51a956c506553",
+      "duration": 10.24
+    },
+    {
+      "id": "chapter-01-11-1-task-02",
+      "sourceText": "У мастерской ждут три робота-почтальона. Любой сможет помочь Люми. Сначала позови одного к стойке; после выбора отправим именно его к двери.",
+      "spokenText": "[reassuring] У мастерской ждут три робота-почтальона. Любой сможет помочь Люми. Сначала позови одного к стойке; после выбора отправим именно его к двери.",
+      "file": "audio/cat/callum-v1/chapter-01-11-1-task-02-c1a62b9e28a9.mp3",
+      "requestHash": "c1a62b9e28a9cb9025c386a39c54c8fbcf262351189da0536d39300298660fcb",
+      "audioSha256": "03f6fa40010642b8c25fd0e2dbd152589d3a24b726699639ecd43e115122124a",
+      "duration": 12.48
+    },
+    {
+      "id": "chapter-01-11-1-success-01",
+      "sourceText": "Один робот подошёл к отдельному месту у стойки. Теперь мы оба знаем, кто пойдёт с тобой.",
+      "spokenText": "[pleased] Один робот подошёл к отдельному месту у стойки. Теперь мы оба знаем, кто пойдёт с тобой.",
+      "file": "audio/cat/callum-v1/chapter-01-11-1-success-01-dcefc4616cf4.mp3",
+      "requestHash": "dcefc4616cf478447829712d8c2fa928320dceb9c6c6f413cc0c7d66edca2d67",
+      "audioSha256": "ecc06b97bcb41569420f3943ec81d6bc570d2b041ec7d1e2231d54542d39654a",
+      "duration": 6.88
+    },
+    {
+      "id": "chapter-01-11-2-task-01",
+      "sourceText": "Помощник уже подошёл к стойке. Теперь позови его к двери.",
+      "spokenText": "[reassuring] Помощник уже подошёл к стойке. Теперь позови его к двери.",
+      "file": "audio/cat/callum-v1/chapter-01-11-2-task-01-d13136657588.mp3",
+      "requestHash": "d131366575888200185987a35b1fb1c469d1c4f772092bba4e4f919d3a47e757",
+      "audioSha256": "a274bb4199c3e02dde0b8cf98b7fada42061bb369eb5a63f5f28ba407fc81ac2",
+      "duration": 4
+    },
+    {
+      "id": "chapter-01-11-2-task-02",
+      "sourceText": "Нужен тот же робот, которого мы только что выбрали. Он пойдёт рядом с Люми.",
+      "spokenText": "[reassuring] Нужен тот же робот, которого мы только что выбрали. Он пойдёт рядом с Люми.",
+      "file": "audio/cat/callum-v1/chapter-01-11-2-task-02-5c61cb50508b.mp3",
+      "requestHash": "5c61cb50508b88307fdec5984647bc3dce4703d0bc813b81310ec6eac543df61",
+      "audioSha256": "1a70a477b8f7c04fd49725f60422001c32dbefb8aed18f7565805f5bd26f53be",
+      "duration": 5.76
+    },
+    {
+      "id": "chapter-01-11-2-success-01",
+      "sourceText": "Помощник ждёт у двери. Возьмём зонт — дождь всё не кончается.",
+      "spokenText": "[pleased] Помощник ждёт у двери. Возьмём зонт — дождь всё не кончается.",
+      "file": "audio/cat/callum-v1/chapter-01-11-2-success-01-e661e2932046.mp3",
+      "requestHash": "e661e293204629727a3c0e038379f9a108036bcbea8679665afd70793c9c937f",
+      "audioSha256": "8f7ad9683e56f60079ecbc9fd4a1f674818b8f82155d87934ae4a5d9b40a5c20",
+      "duration": 5.28
+    },
+    {
+      "id": "chapter-01-11-3-task-01",
+      "sourceText": "Umbrella — зонт, /ʌmˈbrel.ə/. Первый звук /ʌ/ — гласный: an umbrella. Выбираем по звуку, а не по букве u.",
+      "spokenText": "[reassuring] Umbrella — зонт. Первый звук — гласный: an umbrella. Выбираем по звуку, а не по букве u.",
+      "file": "audio/cat/callum-v1/chapter-01-11-3-task-01-47d6c7fb8355.mp3",
+      "requestHash": "47d6c7fb8355e934d82e68eeffa9c2f2e5b2a752f8822d47eef85dc6dbfd5f5e",
+      "audioSha256": "e62a1b2d1d073eafb6a2521e2283502077f1ba2cacff09967a629e4267ec8295",
+      "duration": 9.52
+    },
+    {
+      "id": "chapter-01-11-3-task-02",
+      "sourceText": "У двери три зонта, все целые. Для дороги подойдёт любой.",
+      "spokenText": "[reassuring] У двери три зонта, все целые. Для дороги подойдёт любой.",
+      "file": "audio/cat/callum-v1/chapter-01-11-3-task-02-3883b5bd8834.mp3",
+      "requestHash": "3883b5bd8834ce2f686a83cb84ee2666961fb3ad04a2ddf2d27e9aa747d50a4f",
+      "audioSha256": "3d482339f81da6d51850abd423c3267e7335a531562e72bf51f5c33b075f63a7",
+      "duration": 4.88
+    },
+    {
+      "id": "chapter-01-11-3-success-01",
+      "sourceText": "Зонт у нас. Помощник ждёт у двери; осталось закончить сборы.",
+      "spokenText": "[pleased] Зонт у нас. Помощник ждёт у двери; осталось закончить сборы.",
+      "file": "audio/cat/callum-v1/chapter-01-11-3-success-01-1ab35290bd59.mp3",
+      "requestHash": "1ab35290bd5990572d107967d0e71fabbcb7341cb1da56c4061e00c2e91cc892",
+      "audioSha256": "fefa82eb6cc4dde126f602bf62bd50c9760b0080759fe927b38de3be9a0e98a0",
+      "duration": 6
+    },
+    {
+      "id": "chapter-01-11-3-success-02",
+      "sourceText": "Как правильно выбирать между a, an и the?",
+      "spokenText": "[reassuring] Как правильно выбирать между a, an и the?",
+      "file": "audio/cat/callum-v1/chapter-01-11-3-success-02-3ffff2dea85d.mp3",
+      "requestHash": "3ffff2dea85d9cf98ebf66041e0eadefa4c91977d184fdc5656772d182f370a0",
+      "audioSha256": "e5122310e5f30d07b90e9966146d354fe79d999e49ee212546e46f1e9d9e946e",
+      "duration": 4.32
+    },
+    {
+      "id": "chapter-01-11-3-feedback-mixed-context",
+      "sourceText": "Верно: один любой робот — a robot, выбранный помощник — the robot, один любой зонт — an umbrella. Значение предмета и ситуация важнее расположения таблички.",
+      "spokenText": "[reassuring] Верно: один любой робот — a robot, выбранный помощник — the robot, один любой зонт — an umbrella. Значение предмета и ситуация важнее расположения таблички.",
+      "file": "audio/cat/callum-v1/chapter-01-11-3-feedback-mixed-context-73195d9c7a50.mp3",
+      "requestHash": "73195d9c7a500c7806b5525b87121bf0c6a63f0a4e3b8b8d81014c7a50dac2f5",
+      "audioSha256": "b72b591ef2cc6cb5ed2e54a858121dccb7f1a75daf86bd81e091ad45da448dec",
+      "duration": 16.56
+    },
+    {
+      "id": "chapter-01-11-3-feedback-mixed-sound",
+      "sourceText": "Такого правила нет. Робот, ключ и яблоко могут быть понятны обоим и получать the. Для одного любого зонта an выбирается из-за гласного звука /ʌ/.",
+      "spokenText": "[reassuring] Такого правила нет. Робот, ключ и яблоко могут быть понятны обоим и получать the. Для одного любого зонта an выбирается из-за гласного звука.",
+      "file": "audio/cat/callum-v1/chapter-01-11-3-feedback-mixed-sound-999a185e1da5.mp3",
+      "requestHash": "999a185e1da561247aa4041ab0602631f98b767778ec114c00767c542379a07c",
+      "audioSha256": "397e517cbeb7afe702ef33b0dc2a2cbec98345dba106bd6e5ae95df67d3eb0c7",
+      "duration": 15.44
+    },
+    {
+      "id": "chapter-01-12-plural-1-task-01",
+      "sourceText": "Чуть не забыли перекус для попутчиков! Им нужны яблоки. Какие именно — не важно.",
+      "spokenText": "[reassuring] Чуть не забыли перекус для попутчиков! Им нужны яблоки. Какие именно — не важно.",
+      "file": "audio/cat/callum-v1/chapter-01-12-plural-1-task-01-7c1808e4bba1.mp3",
+      "requestHash": "7c1808e4bba16b01bfb9d4a114a70b47db5f1d73561b218d0f2db167f6b69b07",
+      "audioSha256": "f9982e7bb2aefbf9a87dd6ae78107bb7fc09f9848048dc1a16b77dc249f94d32",
+      "duration": 6.96
+    },
+    {
+      "id": "chapter-01-12-plural-1-task-02",
+      "sourceText": "Apple — одно яблоко, apples — яблоки. Окончание -s показывает, что их несколько. A и an с множественным числом не ставим.",
+      "spokenText": "[reassuring] Apple — одно яблоко, apples — яблоки. Окончание -s показывает, что их несколько. A и an с множественным числом не ставим.",
+      "file": "audio/cat/callum-v1/chapter-01-12-plural-1-task-02-a69a56908abb.mp3",
+      "requestHash": "a69a56908abb1d886e00959954920446fd54593de222392103ca01ab1fc7abbc",
+      "audioSha256": "1c8d496e9b2327de945558ae3420049e24fd0f109a852aea37f61bb9b7a1cccb",
+      "duration": 12.8
+    },
+    {
+      "id": "chapter-01-12-plural-1-task-03",
+      "sourceText": "Здесь можно попросить просто apples. Артикля нет — это называют нулевым артиклем. Он подходит для этой просьбы о любых яблоках; позже мы сравним её с просьбой о конкретных.",
+      "spokenText": "[reassuring] Здесь можно попросить просто apples. Артикля нет — это называют нулевым артиклем. Он подходит для этой просьбы о любых яблоках; позже мы сравним её с просьбой о конкретных.",
+      "file": "audio/cat/callum-v1/chapter-01-12-plural-1-task-03-5cb2962129ae.mp3",
+      "requestHash": "5cb2962129aea242db62290673abcdea9d1bf6d3c8fb12dc9796fe242558f81e",
+      "audioSha256": "9042db4a9769913ada81b104bd58d515e61cc26b43f4f6f3b5a533e2ad3470e4",
+      "duration": 14.8
+    },
+    {
+      "id": "chapter-01-12-plural-1-task-04",
+      "sourceText": "Поставь apples в правую клетку рамки. Левую можно оставить пустой: таблички «пусто» не нужно. Я отложу пару яблок.",
+      "spokenText": "[reassuring] Поставь apples в правую клетку рамки. Левую можно оставить пустой: таблички «пусто» не нужно. Я отложу пару яблок.",
+      "file": "audio/cat/callum-v1/chapter-01-12-plural-1-task-04-63c20c472c1b.mp3",
+      "requestHash": "63c20c472c1ba6405332e850b6f771bbd2cd3d2fedbb1a1c591ea7de8a84e3c6",
+      "audioSha256": "2b30a361ce95b67d92c71b3254a3b46316f34b29b0fdcffe65fd811e1bc36f6d",
+      "duration": 10.64
+    },
+    {
+      "id": "chapter-01-12-plural-1-success-01",
+      "sourceText": "Вот выбранная пара. Теперь попроси положить в сумку именно эти яблоки.",
+      "spokenText": "[pleased] Вот выбранная пара. Теперь попроси положить в сумку именно эти яблоки.",
+      "file": "audio/cat/callum-v1/chapter-01-12-plural-1-success-01-20b68a8c481b.mp3",
+      "requestHash": "20b68a8c481bf205651fa6c6937b1e1c0d8b1cb1b45366f2ddf97d20af1245fc",
+      "audioSha256": "16e98c27e5ae318112ca3511c44e224291b98d51a3dc3a4e5012dec61e6ba57a",
+      "duration": 5.92
+    },
+    {
+      "id": "chapter-01-12-plural-2-task-01",
+      "sourceText": "Я отложил пару. Ты видел, какие яблоки я выбрал. Теперь попроси положить именно их в сумку.",
+      "spokenText": "[reassuring] Я отложил пару. Ты видел, какие яблоки я выбрал. Теперь попроси положить именно их в сумку.",
+      "file": "audio/cat/callum-v1/chapter-01-12-plural-2-task-01-7d7e5163c2bf.mp3",
+      "requestHash": "7d7e5163c2bfe1830539dfa96f78cee2f3de45fc3d7cdf887f281104d86bb770",
+      "audioSha256": "f6750a3a72c1eb4d7bfae7ca0b9bc57a1931f7caf1cc75dc7e2381f976681cb4",
+      "duration": 7.36
+    },
+    {
+      "id": "chapter-01-12-plural-2-task-02",
+      "sourceText": "The можно поставить и перед множественным числом: the apples — те яблоки, о которых мы говорим.",
+      "spokenText": "[reassuring] The можно поставить и перед множественным числом: the apples — те яблоки, о которых мы говорим.",
+      "file": "audio/cat/callum-v1/chapter-01-12-plural-2-task-02-bf5f0d163b44.mp3",
+      "requestHash": "bf5f0d163b447865003980b8970bd599e7b984a5cd0a77acdfc33ed1400194e9",
+      "audioSha256": "587d7517536b8320f026d0d214ec7839d8e6e0cbf17e4392c4245304501d6570",
+      "duration": 7.36
+    },
+    {
+      "id": "chapter-01-12-plural-2-success-01",
+      "sourceText": "Отложенные яблоки в сумке. Остальные остались на стойке.",
+      "spokenText": "[pleased] Отложенные яблоки в сумке. Остальные остались на стойке.",
+      "file": "audio/cat/callum-v1/chapter-01-12-plural-2-success-01-502b06bba3ea.mp3",
+      "requestHash": "502b06bba3ea51591f72b34212e19122919cdf02a04c90a63dfa88cc9faafe22",
+      "audioSha256": "a1e45c80447562cde170ee0b5a4fbb857151b20ecbbf805382e916c7a2751285",
+      "duration": 4.88
+    },
+    {
+      "id": "chapter-01-12-plural-2-success-02",
+      "sourceText": "Теперь попробуем с другим словом.",
+      "spokenText": "[reassuring] Теперь попробуем с другим словом.",
+      "file": "audio/cat/callum-v1/chapter-01-12-plural-2-success-02-e2a58ca44bd3.mp3",
+      "requestHash": "e2a58ca44bd33134fd10811888f6b9c0ec5e42a4b54b2a82f15818e311c29047",
+      "audioSha256": "93dbe3ffe4d0239e69104f19c331cc67616aa3c296a275e1d4ae88be863f009c",
+      "duration": 2.64
+    },
+    {
+      "id": "chapter-01-12-plural-3-task-01",
+      "sourceText": "Яблоки собраны. Ещё отложим яйца для попутчиков — любые из тех, что на стойке.",
+      "spokenText": "[reassuring] Яблоки собраны. Ещё отложим яйца для попутчиков — любые из тех, что на стойке.",
+      "file": "audio/cat/callum-v1/chapter-01-12-plural-3-task-01-230e86908dfe.mp3",
+      "requestHash": "230e86908dfe648adb013a8323b38eb696d3f2d75d388e5dec32ff5fbe950860",
+      "audioSha256": "1f66b81ed366f5484186d299d65b8ae6c2f732757d118198dfa9a37067d125a6",
+      "duration": 6.88
+    },
+    {
+      "id": "chapter-01-12-plural-3-task-02",
+      "sourceText": "Egg — одно яйцо, eggs — яйца. Здесь тоже есть окончание -s. Собери просьбу сам: артикль можно поставить слева или оставить это место пустым.",
+      "spokenText": "[reassuring] Egg — одно яйцо, eggs — яйца. Здесь тоже есть окончание -s. Собери просьбу сам: артикль можно поставить слева или оставить это место пустым.",
+      "file": "audio/cat/callum-v1/chapter-01-12-plural-3-task-02-7febb0db0b9c.mp3",
+      "requestHash": "7febb0db0b9c0119ae12669adc6eb42c706bfe943fc4dbfa42a5a4642d9e406e",
+      "audioSha256": "9bd00b59eea61f2f4c2fb5cb69622771be02235e7137cfa40109bf3940c96de2",
+      "duration": 15.92
+    },
+    {
+      "id": "chapter-01-12-plural-3-success-01",
+      "sourceText": "Вот выбранная пара. Теперь попроси положить в сумку именно эти яйца.",
+      "spokenText": "[pleased] Вот выбранная пара. Теперь попроси положить в сумку именно эти яйца.",
+      "file": "audio/cat/callum-v1/chapter-01-12-plural-3-success-01-31fbec1000d0.mp3",
+      "requestHash": "31fbec1000d03d7d8a6ddf642296e77e49d5188abbd0fa1e3977a5648073c403",
+      "audioSha256": "5695ab6f7300150362cdbf8bfd4b83f28fe3f21c901e03abbc10c82d3ad66ade",
+      "duration": 6.32
+    },
+    {
+      "id": "chapter-01-12-plural-4-task-01",
+      "sourceText": "Я отложил пару. Ты видел, какие яйца я выбрал. Теперь попроси положить именно их в сумку.",
+      "spokenText": "[reassuring] Я отложил пару. Ты видел, какие яйца я выбрал. Теперь попроси положить именно их в сумку.",
+      "file": "audio/cat/callum-v1/chapter-01-12-plural-4-task-01-80afe3bc964e.mp3",
+      "requestHash": "80afe3bc964ede01ee0c313d9d3d67c896900aeb4caed78097e387074c2f4fd7",
+      "audioSha256": "e123befeec508fb3745c98c3c6d98e10b739eba6775d7bd382e64cc672b21993",
+      "duration": 7.52
+    },
+    {
+      "id": "chapter-01-12-plural-4-success-01",
+      "sourceText": "Отложенные яйца в сумке. Остальные остались на стойке.",
+      "spokenText": "[pleased] Отложенные яйца в сумке. Остальные остались на стойке.",
+      "file": "audio/cat/callum-v1/chapter-01-12-plural-4-success-01-4f9ff2848271.mp3",
+      "requestHash": "4f9ff2848271102c5ae8390e60dec5549a080087a86eecabceae70171c3806e3",
+      "audioSha256": "98858ede6ac4edb09311b6202102dbbce3640615eb94af779bb4e772ab187456",
+      "duration": 4.8
+    },
+    {
+      "id": "chapter-01-12-plural-4-success-02",
+      "sourceText": "С несколькими предметами тоже разобрались. Остались три знакомые просьбы перед выходом.",
+      "spokenText": "[reassuring] С несколькими предметами тоже разобрались. Остались три знакомые просьбы перед выходом.",
+      "file": "audio/cat/callum-v1/chapter-01-12-plural-4-success-02-a9150b972f7a.mp3",
+      "requestHash": "a9150b972f7ae34a4c7ae376e12592fbbc52b53351a3dccf0e65a9174f741514",
+      "audioSha256": "1054282371848dc170a7aa1c26c70967c8ca9d24d3dc10f532e4f1ebfa72d3aa",
+      "duration": 6.32
+    },
+    {
+      "id": "chapter-01-12-1-task-01",
+      "sourceText": "А теперь три знакомые просьбы перед выходом. Попробуй справиться сам. Если понадобится, правило и подсказка есть в журнале.",
+      "spokenText": "[reassuring] А теперь три знакомые просьбы перед выходом. Попробуй справиться сам. Если понадобится, правило и подсказка есть в журнале.",
+      "file": "audio/cat/callum-v1/chapter-01-12-1-task-01-73aa0db4e683.mp3",
+      "requestHash": "73aa0db4e683f16d4df5e65743bc1965a41d6afc6da3c5089ddaa26003864ace",
+      "audioSha256": "9d7fe1b3b8d97cc661c1cf5deb2a62d18d4cb0da22dcdcabf8633127b14905e2",
+      "duration": 9.68
+    },
+    {
+      "id": "chapter-01-12-1-task-02",
+      "sourceText": "Первая просьба: возьми один любой апельсин из трёх для помощника Марты.",
+      "spokenText": "[reassuring] Первая просьба: возьми один любой апельсин из трёх для помощника Марты.",
+      "file": "audio/cat/callum-v1/chapter-01-12-1-task-02-e901bc295bee.mp3",
+      "requestHash": "e901bc295bee9f53eb1eea13c66e153d83989a50121bb16af05b25c2ce8ce607",
+      "audioSha256": "f2401a4a1b181dc26094cce1d82cb3230371ffba039ae21141a94a723788b8df",
+      "duration": 5.92
+    },
+    {
+      "id": "chapter-01-12-1-success-01",
+      "sourceText": "Один апельсин собран. Теперь две связанные просьбы о запасном ключе.",
+      "spokenText": "[pleased] Один апельсин собран. Теперь две связанные просьбы о запасном ключе.",
+      "file": "audio/cat/callum-v1/chapter-01-12-1-success-01-640a6f570df3.mp3",
+      "requestHash": "640a6f570df36db6be00d6c74a18b1176a5a4ee197e706f072f577469e915d67",
+      "audioSha256": "6236056b159e5e60d73d5c3e39b27217e990143662f3d5b2be949e8c81ecec2a",
+      "duration": 5.92
+    },
+    {
+      "id": "chapter-01-12-2-task-01",
+      "sourceText": "На стойке три запасных ключа. Попроси меня отложить один — подойдёт любой.",
+      "spokenText": "[reassuring] На стойке три запасных ключа. Попроси меня отложить один — подойдёт любой.",
+      "file": "audio/cat/callum-v1/chapter-01-12-2-task-01-52ea7eb1f42f.mp3",
+      "requestHash": "52ea7eb1f42f0cc7a339912c6723fa194918490281df56ef292e7388b614608d",
+      "audioSha256": "22cdb9705f9f629e0f5d4a2faf6a0531cd63a6c5d3858436f8bf941af89bddd8",
+      "duration": 5.92
+    },
+    {
+      "id": "chapter-01-12-2-success-01",
+      "sourceText": "Вот выбранный ключ. Теперь попросим положить его в сумку.",
+      "spokenText": "[pleased] Вот выбранный ключ. Теперь попросим положить его в сумку.",
+      "file": "audio/cat/callum-v1/chapter-01-12-2-success-01-3ed99e69b26b.mp3",
+      "requestHash": "3ed99e69b26b00f3e27f2c8df5d7c473ee00e805208478da4f42d417b69b6bc6",
+      "audioSha256": "241852802188320284bcc6717d813221d680296aaca745fce1c4d8d2b495f8d8",
+      "duration": 4.16
+    },
+    {
+      "id": "chapter-01-12-3-task-01",
+      "sourceText": "Вот ключ, который мы выбрали. Передай последнюю просьбу — о том же ключе.",
+      "spokenText": "[reassuring] Вот ключ, который мы выбрали. Передай последнюю просьбу — о том же ключе.",
+      "file": "audio/cat/callum-v1/chapter-01-12-3-task-01-e8839eb688eb.mp3",
+      "requestHash": "e8839eb688eb4c804df66f375848a79a8daabd4ed13c0929e049d51d4d6082d3",
+      "audioSha256": "54f6c417a7f168b6843ea39410f9a9822d9b3df48da396a302faec16256eee94",
+      "duration": 6
+    },
+    {
+      "id": "chapter-01-12-3-success-01",
+      "sourceText": "Ключ в сумке. Кажется, ничего не забыли. Пора в дорогу, Люми!",
+      "spokenText": "[pleased] Ключ в сумке. Кажется, ничего не забыли. Пора в дорогу, Люми!",
+      "file": "audio/cat/callum-v1/chapter-01-12-3-success-01-e3948f9cc63d.mp3",
+      "requestHash": "e3948f9cc63d082d84e38ce60df955c128cd8eb57084f2c1bfbdd36ad5772c30",
+      "audioSha256": "ac42837e32a46b5b032d2ec688a155c2ecc3dbcb2190b718c0f7da02841ee77a",
+      "duration": 5.28
+    },
+    {
+      "id": "chapter-01-12-3-success-02",
+      "sourceText": "Перед выходом вспомним: когда нужен a/an, когда the, а когда в наших просьбах можно обойтись без артикля?",
+      "spokenText": "[reassuring] Перед выходом вспомним: когда нужен a и an, когда the, а когда в наших просьбах можно обойтись без артикля?",
+      "file": "audio/cat/callum-v1/chapter-01-12-3-success-02-e06dd3a9b6f9.mp3",
+      "requestHash": "e06dd3a9b6f9dade0e6457df4deab9ce49b2bd9305056058cc8ab67b4df5d2c0",
+      "audioSha256": "45d763daa6b6c7a57111537a881f3a15d6abcf333dc2a95b03153d8f476bd632",
+      "duration": 10.48
+    },
+    {
+      "id": "chapter-01-12-3-feedback-final-always",
+      "sourceText": "Вспомни apples и eggs: когда нам подходили любые, мы просили их без артикля. A/an с множественным числом не ставим. The понадобился, когда мы попросили именно отложенные яблоки или яйца.",
+      "spokenText": "[reassuring] Вспомни apples и eggs: когда нам подходили любые, мы просили их без артикля. Артикли a и an с множественным числом не ставим. The понадобился, когда мы попросили именно отложенные яблоки или яйца.",
+      "file": "audio/cat/callum-v1/chapter-01-12-3-feedback-final-always-93490a9adb0c.mp3",
+      "requestHash": "93490a9adb0c81a60b61d18931a316ef48db3b0b1d1402687fd1c60b4021106f",
+      "audioSha256": "1593f1d30025640ccb9c3e82062c39256aba3047092dda86e392126bdf0ce7ee",
+      "duration": 18.8
+    },
+    {
+      "id": "chapter-01-12-3-feedback-final-context",
+      "sourceText": "Верно: нужен тот ключ, который мы уже выбрали. С несколькими предметами было так же: apples — любые яблоки, the apples — выбранные. A/an оставляем для одного предмета. Сборы закончены — глава 1 пройдена!",
+      "spokenText": "[reassuring] Верно: нужен тот ключ, который мы уже выбрали. С несколькими предметами было так же: apples — любые яблоки, the apples — выбранные. Артикли a и an оставляем для одного предмета. Сборы закончены — глава 1 пройдена!",
+      "file": "audio/cat/callum-v1/chapter-01-12-3-feedback-final-context-9d8b142a344a.mp3",
+      "requestHash": "9d8b142a344a15542b7e218b00777994a211ec5d58fcdfa1caba2dd96b6b6508",
+      "audioSha256": "ee5b19c5c5d2f18a016b32bbac0f79b3ea57472bae13de682587a2e7b8df72ea",
+      "duration": 21.28
+    }
+  ]
+}

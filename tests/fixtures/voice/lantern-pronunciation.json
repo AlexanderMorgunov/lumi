@@ -1,0 +1,13 @@
+{
+  "term": "lantern",
+  "provider": "elevenlabs",
+  "modelId": "eleven_v3",
+  "voiceId": "XrExE9yKIg1WjnnlVkGX",
+  "file": "audio/en-US/elevenlabs-marta-v1/lantern.mp3",
+  "requestHash": "753144f17b079579f99d5c1c9d5643508dfda9df81311f1b4484cb296b94be14",
+  "audioSha256": "464f35ec03b5ecad5f785b9927bca2228b8c476e6945a8b22fa89dae58d089d4",
+  "sourceAudioSha256": "bd235b7022e7af05168b642ff729531c756d07e5d62429c8479c68661d8d1ba4",
+  "gainDb": -1.9699999999999989,
+  "duration": 1.2,
+  "review": "generated-awaiting-listening"
+}
