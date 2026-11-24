@@ -114,6 +114,13 @@ test('plays 16–20 through keyboard/touch; letter authors, optional phrases, ga
         'data-level-id',
         state.definition.id,
       );
+      if (
+        state.definition.reference?.objects.some((o) => o.display === 'record')
+      )
+        await expect(field(page)).toHaveAttribute(
+          'data-record-illustrations',
+          /[a-z]/,
+        );
       const context = state.definition.message!.exchange!;
       await expect
         .poll(() =>
@@ -136,7 +143,12 @@ test('plays 16–20 through keyboard/touch; letter authors, optional phrases, ga
         await expect(page.getByLabel('Автор сообщения')).toContainText(
           context.inquiry!.authorLabel,
         );
-      if (!state.stage || state.definition.id.endsWith('-nora'))
+      if (
+        !state.stage ||
+        ['nora', 'six', 'group-question'].some((suffix) =>
+          state.definition.id.endsWith('-' + suffix),
+        )
+      )
         await page.screenshot({
           path: info.outputPath(`${state.definition.id}-dialogue.png`),
         });

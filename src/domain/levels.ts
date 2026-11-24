@@ -21,8 +21,22 @@ export type ReferenceObject = {
   color?: 'green' | 'red';
   count?: 2;
   display?: 'card' | 'record';
-  // A passenger/cargo record is text, never text baked into artwork.
+  // Captions stay in a separate text layer, never baked into artwork.
   caption?: string;
+  // Illustrations on records are depictions, not people physically at the station.
+  illustration?:
+    | 'lumi'
+    | 'tik'
+    | 'marta'
+    | 'robots'
+    | 'travellers'
+    | 'nora'
+    | 'younger'
+    | 'parcel'
+    | 'key'
+    | 'umbrella'
+    | 'bag'
+    | 'crate';
 };
 export type LevelDefinition = {
   id: string;
@@ -52,7 +66,7 @@ export type LevelDefinition = {
   slots: readonly Position[];
   // Only authored plural-noun lessons may leave the article position empty.
   optionalLeadingArticle?: boolean;
-  // A contracted first tile replaces two words; only the last slot may be empty.
+  // A contracted first tile replaces two words; empty space may remain at either edge.
   allowContractions?: boolean;
   start: Position;
   pieces: readonly Piece[];

@@ -44,7 +44,7 @@ test('he and she identify a third person through three maps, voice, role transfe
   await page
     .getByRole('combobox', { name: 'Глава путешествия' })
     .selectOption('1');
-  await expect(page.locator('.station-map .lantern-stop')).toHaveCount(15);
+  await expect(page.locator('.station-map .lantern-stop')).toHaveCount(20);
   await page.getByRole('button', { name: /^Эпизод 4: О ком.*Закрыт/ }).click();
   await page.getByRole('button', { name: 'DEV · Открыть эпизод' }).click();
   await expect(field(page)).toHaveAttribute('data-scene-state', 'ready', {

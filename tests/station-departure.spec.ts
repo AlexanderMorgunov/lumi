@@ -131,6 +131,13 @@ test('plays 11–15 with real keyboard/touch input, unknown question facts, shor
         'data-level-id',
         state.definition.id,
       );
+      if (
+        state.definition.reference?.objects.some((o) => o.display === 'record')
+      )
+        await expect(field(page)).toHaveAttribute(
+          'data-record-illustrations',
+          /[a-z]/,
+        );
       const context = state.definition.message?.exchange;
       if (context?.act === 'question') {
         await expect(page.getByLabel('Автор сообщения')).toContainText(
@@ -168,7 +175,10 @@ test('plays 11–15 with real keyboard/touch input, unknown question facts, shor
               ),
             );
       const words = variants.at(-1)!;
-      for (const direction of solveStation(state, words)) {
+      const slotOffset = state.definition.message?.exchange
+        ? state.definition.slots.length - words.length
+        : 0;
+      for (const direction of solveStation(state, words, slotOffset)) {
         if (mobile)
           await page
             .getByRole('button', { name: labels[direction], exact: true })

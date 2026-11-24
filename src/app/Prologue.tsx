@@ -38,9 +38,10 @@ function CutsceneMenu({
     const target = scene.current;
     if (!dialog) return;
     dialog.showModal();
-    const first = dialog.querySelector<HTMLButtonElement>(
-      'button:not(:disabled)',
-    );
+    const first =
+      dialog.querySelector<HTMLButtonElement>(
+        '.cutscene-primary:not(:disabled)',
+      ) ?? dialog.querySelector<HTMLButtonElement>('button:not(:disabled)');
     const heading = dialog.querySelector<HTMLHeadingElement>('h1');
     if (heading && (dialog.querySelector('.cutscene-story') || !first)) {
       heading.tabIndex = -1;

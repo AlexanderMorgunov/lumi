@@ -44,7 +44,7 @@ test('you addresses the listener: both maps, roles, voice, word audio, Undo, ref
   await page
     .getByRole('combobox', { name: 'Глава путешествия' })
     .selectOption('1');
-  await expect(page.locator('.station-map .lantern-stop')).toHaveCount(15);
+  await expect(page.locator('.station-map .lantern-stop')).toHaveCount(20);
   await page.getByRole('button', { name: /^Эпизод 3: Теперь.*Закрыт/ }).click();
   await expect(
     page.getByRole('button', { name: 'Начать эпизод', exact: true }),

@@ -67,6 +67,9 @@ type Lesson = {
   rule: string;
   wrong: string;
   card: string;
+  illustration: NonNullable<
+    LevelDefinition['reference']
+  >['objects'][number]['illustration'];
   noun?: string;
   independent?: boolean;
 };
@@ -125,6 +128,7 @@ function lesson(data: Lesson): StationLesson {
           label: data.before,
           display: 'record',
           caption: data.card,
+          illustration: data.illustration,
         },
       ],
       indicatedId: data.suffix,
@@ -134,7 +138,7 @@ function lesson(data: Lesson): StationLesson {
     introduction: data.intro,
     success: data.success,
     rule: data.rule,
-    hint: `Подходящая запись: ${exchangeText(words(data.answer))}${data.ask ? '?' : '.'} Начни с левого края рамки. Если выберешь сокращение, оставь свободные клетки справа пустыми.`,
+    hint: `Подходящая запись: ${exchangeText(words(data.answer))}${data.ask ? '?' : '.'} Поставь слова подряд. Свободные клетки можно оставить с любого края рамки.`,
     independent: data.independent,
   };
 }
@@ -286,6 +290,14 @@ const negative = chain(
         index,
       ): Lesson => ({
         suffix,
+        illustration:
+          suffix === 'we'
+            ? 'travellers'
+            : suffix === 'she'
+              ? 'marta'
+              : suffix === 'they'
+                ? 'robots'
+                : 'tik',
         answer: `No ${subject} ${be} not`,
         other: [`Yes ${subject} ${be}`, `No ${subject} ${be} not ready`],
         tiles: [contraction, ...(negativeBe ? [negativeBe] : [])],
@@ -319,6 +331,7 @@ const negative = chain(
     ),
     {
       suffix: 'it',
+      illustration: 'key',
       answer: 'No It is not',
       other: ['Yes It is'],
       tiles: ["It's", "isn't"],
@@ -349,6 +362,7 @@ const identity = chain(
   [
     {
       suffix: 'who',
+      illustration: 'marta',
       answer: 'Who is She',
       other: ['What is She', 'Who is He'],
       speaker: 'lumi',
@@ -371,6 +385,7 @@ const identity = chain(
     },
     {
       suffix: 'name',
+      illustration: 'marta',
       answer: 'She is Marta',
       other: ['He is Marta', 'She is Lumi'],
       tiles: ["She's"],
@@ -391,6 +406,7 @@ const identity = chain(
     },
     {
       suffix: 'what',
+      illustration: 'parcel',
       answer: 'What is It',
       other: ['Who is It'],
       speaker: 'lumi',
@@ -412,6 +428,7 @@ const identity = chain(
     },
     {
       suffix: 'umbrella',
+      illustration: 'umbrella',
       answer: 'It is an umbrella',
       other: ['It is a key'],
       tiles: ["It's"],
@@ -433,6 +450,7 @@ const identity = chain(
     },
     {
       suffix: 'transfer',
+      illustration: 'tik',
       answer: 'Who is He',
       other: ['Who is She', 'What is He'],
       speaker: 'marta',
@@ -462,6 +480,7 @@ const location = chain(
   [
     {
       suffix: 'where',
+      illustration: 'tik',
       answer: 'Where is He',
       other: ['Who is He'],
       speaker: 'marta',
@@ -483,6 +502,7 @@ const location = chain(
     },
     {
       suffix: 'here',
+      illustration: 'tik',
       answer: 'He is here',
       accepted: ['He is at the station'],
       other: ['She is here'],
@@ -506,6 +526,7 @@ const location = chain(
     },
     {
       suffix: 'group-question',
+      illustration: 'robots',
       answer: 'Where are They',
       other: ['Who are They'],
       speaker: 'lumi',
@@ -527,6 +548,7 @@ const location = chain(
     },
     {
       suffix: 'group-answer',
+      illustration: 'robots',
       answer: 'They are at the station',
       accepted: ['They are here'],
       other: ['We are at the station'],
@@ -557,6 +579,7 @@ const age = chain(
   [
     {
       suffix: 'age-question',
+      illustration: 'nora',
       answer: 'How old are You',
       other: ['How old is She'],
       speaker: 'marta',
@@ -580,6 +603,7 @@ const age = chain(
     },
     {
       suffix: 'nora',
+      illustration: 'nora',
       answer: 'I am eight',
       accepted: ['I am eight years old'],
       other: ['I am six'],
@@ -606,6 +630,7 @@ const age = chain(
     },
     {
       suffix: 'other-age',
+      illustration: 'younger',
       answer: 'How old is She',
       other: ['How old are You'],
       speaker: 'lumi',
@@ -627,6 +652,7 @@ const age = chain(
     },
     {
       suffix: 'six',
+      illustration: 'younger',
       answer: 'She is six',
       accepted: ['She is six years old'],
       other: ['She is eight'],
@@ -659,6 +685,7 @@ const review = chain(
     {
       ...reviewBase,
       suffix: 'self',
+      illustration: 'lumi',
       answer: 'I am Lumi',
       other: ['I am Tik'],
       tiles: ["I'm"],
@@ -677,6 +704,7 @@ const review = chain(
     {
       ...reviewBase,
       suffix: 'friend',
+      illustration: 'tik',
       answer: 'He is a robot',
       other: ['He is a lantern'],
       tiles: ["He's"],
@@ -697,6 +725,7 @@ const review = chain(
     {
       ...reviewBase,
       suffix: 'ask',
+      illustration: 'tik',
       answer: 'are You ready',
       other: ['You are ready'],
       speaker: 'lumi',
@@ -718,6 +747,7 @@ const review = chain(
     {
       ...reviewBase,
       suffix: 'no',
+      illustration: 'tik',
       answer: 'No I am not',
       other: ['Yes I am', 'No I am not ready'],
       tiles: ["I'm"],
@@ -739,6 +769,7 @@ const review = chain(
     {
       ...reviewBase,
       suffix: 'yes',
+      illustration: 'bag',
       answer: 'Yes I am',
       other: ['No I am not'],
       tiles: ["I'm"],
@@ -762,6 +793,7 @@ const review = chain(
     {
       ...reviewBase,
       suffix: 'together',
+      illustration: 'travellers',
       answer: 'We are ready',
       other: ['They are ready'],
       tiles: ["We're", "They're"],

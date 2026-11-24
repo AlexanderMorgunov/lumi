@@ -1,0 +1,12 @@
+{
+  "date": "2026-11-24",
+  "provider": "Codex built-in imagegen",
+  "purpose": "Lantern map; unlit and completed episode states",
+  "sourceDirectory": "assets/art/journey-lamp-v1",
+  "prompts": [
+    "Create a production 2D game sprite on a genuinely transparent background. One single full-height roadside lantern post for a softly hand-painted storybook forest game, Lantern and Moss style. Full object centered, compact broad silhouette, 1:2 width to height ratio, thick weathered warm brown wooden post with a curved short bracket suspending a sizeable antique brass lantern. Lantern glass is UNLIT muted blue-green translucent glass, no flame, no glow. Small moss patches on the post foot and the top cap, brass warm edge highlights, soft brush texture, front three-quarter view, very slightly viewed from above. Readable when rendered at 45x90 pixels. Ground contact at bottom, entire object visible with minimal transparent margin. No scenery, no background, no card or border, no lettering, no extra props, no baked external drop shadow. This is a map marker but drawn as a physical object, not a flat icon. Large lantern body takes upper half; simple sturdy post descends to small foot.",
+    "Edit only the lighting of this lantern sprite. Preserve the exact same shape, framing, full post height, wood, brass, moss and position pixel-aligned with the reference. Light the lantern: glass panes emit rich golden amber light with a small bright cream flame inside, warm soft highlights on adjacent brass. Keep all the surrounding area genuinely transparent, no external opaque halo, no background, no ground, no text, no frame. Do not move, resize, recrop or redesign any part. Output same canvas dimensions and alpha silhouette."
+  ],
+  "runtime": ["road-lantern-unlit-v1.webp", "road-lantern-lit-v1.webp"],
+  "export": "ffmpeg crop=704:1774:96:0,scale=128:322; libwebp quality90; alpha preserved"
+}

@@ -104,19 +104,39 @@
   color: #ffe6b1;
   margin-top: 4px;
 }
-.station-map .lantern-stop {
-  height: clamp(44px, 9cqh, 64px);
+.journey-overview .station-map .lantern-stop {
+  height: clamp(44px, 12cqh, 106px);
   width: 44px;
 }
 @media (max-width: 900px) and (orientation: landscape) {
   .journey-overview .station-map .lantern-stop {
-    top: clamp(54px, var(--compact-y), calc(100% - 8px));
+    height: 44px;
+    top: max(44px, var(--compact-y));
+  }
+  .station-map .road-lamp {
+    height: 56px;
+    max-width: none;
+    position: absolute;
+    bottom: 0;
   }
   .station-map .station-map-title {
-    max-width: 140px;
+    max-width: 120px;
+    padding: 8px;
   }
   .station-map .station-map-title h3 {
     font-size: 16px;
+  }
+  .station-map .station-map-title p {
+    display: none;
+  }
+  .station-map .lantern-stop:nth-last-child(-n + 2) .road-lamp {
+    height: 44px;
+  }
+  .station-map .road-lumi {
+    width: 44px;
+    height: 44px;
+    min-width: 0;
+    min-height: 0;
   }
 }
 .conversing .message-context {
@@ -213,11 +233,19 @@
     font-size: 11px;
   }
 }
-@media (max-width: 599px) and (orientation: portrait) {
+@media (max-aspect-ratio: 1/1) {
+  .journey-overview .station-map .lantern-stop {
+    height: 44px;
+  }
+  .station-map .road-lamp {
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+  }
   .station-map {
     background-image:
       linear-gradient(0deg, #101e25bb, transparent 70%),
-      url('/art/journey/station-road-portrait-rain-v1.png');
+      url('/art/journey/station-road-portrait-rain-v2.webp');
     background-position: center;
     background-size: 100% 100%;
   }

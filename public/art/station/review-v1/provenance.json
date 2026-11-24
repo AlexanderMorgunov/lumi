@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "direction": "Фонарь и мох",
+  "tool": "image_gen",
+  "date": "2026-11-23",
+  "assets": [
+    {
+      "name": "nora",
+      "file": "nora.webp",
+      "sourceFile": "exec-fd59e500-25ac-4f6e-9300-07249421959a.png",
+      "sourceSha256": "dee4d106053cdc552d2ad7c4de4c8faa28c34f9181475a105493c52bbfe52287",
+      "runtimeSha256": "4c06aa303f9e37c12111e7c214f2a4bd7de79174dcb2eb76860c3047301aa7cf",
+      "prompt": "Create a production-ready 2D game character sprite sheet: ONE original eight-year-old girl named Nora, four coherent full-body animation frames in an EXACT evenly divided 2 by 2 grid, transparent background. Each cell contains the same child at exactly the same scale, same boots on the same relative baseline at 94% of each cell, comfortably inside the cell, no borders or labels. Painterly storybook realism matching a cozy rainy forest postal station: softly painted materials, gentle amber light from upper left, cool muted shadows, moss-green wool and weathered leather, no pixel art, no shiny 3D. Nora looks clearly eight years old, natural child proportions (about five heads tall), slim, brown eyes, dark chestnut hair in a single long braid, mustard yellow rain cape over moss-green dress/tunic, dark leggings and brown ankle boots, small leather cross-body satchel. Kind curious expression. Standing three-quarter toward viewer's right. Top left: calm idle, arms resting, eyes open. Top right: IDENTICAL posture with eyes gently closed for one blink. Bottom left: small head inclination listening, arms still resting. Bottom right: small friendly wave with one hand near shoulder. No additional people, props, scenery, floor or text; real alpha transparency. Preserve hair, outfit, age, hand anatomy, silhouette and placement consistently across frames. This is an animation atlas, not four redesigns. Square image, ideally 1024 by 1024.",
+      "age": 8,
+      "frames": ["idle", "blink", "head-tilt", "wave"],
+      "depiction": "Illustrated correspondence/passenger records; not physically present in chapter 2",
+      "atlas": "src/game/station-child-atlas.json"
+    },
+    {
+      "name": "younger",
+      "file": "younger.webp",
+      "sourceFile": "exec-2f872d84-7610-4fa8-877f-b57ddd31e7f7.png",
+      "sourceSha256": "d0e45993b7fc4b09e7d1007a9a25b05757beec1059ffb0c731a317562812c505",
+      "runtimeSha256": "3ba4f0daf9482a052cb28eda4970c4a98eed2488623955b2dc4823df41017679",
+      "prompt": "Production 2D game sprite animation atlas, one original SIX-YEAR-OLD girl, clearly younger/smaller than an eight-year-old. EXACT 2x2 equal grid, four coherent full-body poses of the SAME little girl, no cell borders, no words. Transparent alpha background. Soft painterly storybook style for a warm lamplit rainy forest postal station, tactile wool and worn leather, muted teal/blue clothes, amber upper-left light, cool soft shadows; NOT pixel art, not plastic 3D, not anime. Natural six-year-old proportions, about four and a half heads tall, rounded cheeks, short auburn hair in two small pigtails, a blue-grey wool coat with a small cream scarf, warm grey stockings, simple brown boots, holding a tiny folded envelope with no writing. Distinct silhouette and palette from a taller girl with a long brown braid and yellow cape. Three-quarter facing viewer's left. All four frames at EXACT same scale and foot baseline at 94 percent cell height; whole figure occupies 80 percent cell height, ample transparent margins. Top left idle eyes open with envelope held quietly at waist; top right same pose eyes closed blinking; bottom left small curious head tilt still holding envelope; bottom right shy little wave with right hand while left retains envelope. Preserve anatomy, clothing details, feet placement and scale across frames. No ground plane, scenery, adults, props outside her envelope, text, numbers, panels, shadows outside silhouette. Square ideally1024x1024.",
+      "age": 6,
+      "frames": ["idle", "blink", "head-tilt", "wave"],
+      "depiction": "Illustrated correspondence/passenger records; not physically present in chapter 2",
+      "atlas": "src/game/station-child-atlas.json"
+    },
+    {
+      "name": "cargo-crate",
+      "file": "cargo-crate.webp",
+      "sourceFile": "exec-6d370298-7300-4834-8211-d2966360c332.png",
+      "sourceSha256": "15370815c656b6cd554f57b53ecdff1e3c010a8c4a47661f6a7a3af1ab2fa276",
+      "runtimeSha256": "72b0794e38893ab336ecba1a5e610992cce33f519cd43346a51f2344ca511a5f",
+      "prompt": "One isolated wooden postal cargo crate for a painterly 2D storybook grammar game, transparent background. Warm weathered honey-brown wooden box with brass corner brackets and two dark leather fastening straps, simple large readable shapes, softly painted wood grain, small moss green cloth tucked at an edge. Closed lid, stable squat rectangular crate, front and right side visible in gentle three-quarter view, slight view of top; warm amber lamplight from upper left with cool forest shadow. Fits cozy old woodland postal station, handcrafted fairytale realism, no pixel art, not a shiny 3D render. Entire one crate centered with generous transparent padding, no letters, stamps, numbers, label, floor, scenery or extra objects. Clean alpha cutout, square image."
+    },
+    {
+      "name": "cargo-crate-open",
+      "file": "cargo-crate-open.webp",
+      "sourceFile": "exec-3ee340fc-ae76-44b2-87a0-38b1874c04c3.png",
+      "sourceSha256": "7baa1cc281055105fb5031a35fab4b910fc29836ded67f91cb3ee8057be04dbb",
+      "runtimeSha256": "5e493a31fbf3fd536f00bbcb28a5d1dd54acb907b2dc97c24ff75505f0fbf660",
+      "prompt": "Edit this exact crate into its NOT READY / UNFASTENED state for a 2D game. Preserve the exact wooden box, dimensions, camera, brass corners, moss-green cloth, warm painterly lighting and transparent background. Both leather straps must be visibly UNBUCKLED, with long loose strap ends hanging off to either side and a small gap under the lid; the crate is not ready for departure. Do not add words, text labels, warning symbols, a scene or a background. One coherent isolated crate cutout, no cropping of loose straps, real transparent alpha."
+    },
+    {
+      "name": "storybook",
+      "file": "storybook.webp",
+      "sourceFile": "exec-2ea23bb3-767d-44c2-8c2d-6121170ed263.png",
+      "sourceSha256": "f162a4a95cf1d759b5cc94d5c2c920dac0fda695535a4e9c054647a8ee6a9096",
+      "runtimeSha256": "063205fc67b042cf65cc54ded384b610352838e4f830939721e33cadfe804102",
+      "prompt": "Remove the entire brown blurred backdrop from this book image. Keep the exact open book, leather cover, illustrated pages and green bookmark completely unchanged. Isolate its whole silhouette on genuine transparent alpha, including the exterior corners and the area around the hanging bookmark. Do not replace the background with any solid color or checkerboard. Do not crop, redraw the illustration, add text or add shadows outside the book."
+    },
+    {
+      "name": "travel-bag-open",
+      "file": "travel-bag-open.webp",
+      "sourceFile": "exec-9d202b24-d782-446c-905e-916af7b53e0f.png",
+      "sourceSha256": "a96396d109ace3c045e67d78b8c8bdf497c2cd9468033bc9d8125b0447608040",
+      "runtimeSha256": "8675d8ffaccc5e360b4a7994052899ca7052a9d0738cad09f78ea7ea5eba104e",
+      "prompt": "Edit this exact painterly moss green and brown leather travel bag into an UNPACKED NOT READY state. Keep its identity, warm amber lighting, camera, materials and size. Its top flap is lifted and clasp unfastened, a few cream envelopes and a rolled green cloth sticking out visibly. No letters or writing on envelopes. Clearly open/unpacked, distinct from the closed bag. Whole object cutout with genuine transparent alpha background, no scenery, surface, other bags or words."
+    }
+  ],
+  "export": {
+    "codec": "webp",
+    "quality": 90,
+    "alpha": true,
+    "atlasWidth": 1024,
+    "propWidth": 512
+  },
+  "review": "Integrated and visually checked in desktop and mobile emulation. Four atlas frames inspected; independent animation cycles, pause and reduced motion verified in Playwright. Feet anchored to alpha bounds; different ages and relative heights preserved."
+}

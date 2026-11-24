@@ -1,0 +1,9 @@
+{
+  "date": "2026-11-24",
+  "provider": "Codex built-in imagegen",
+  "source": "assets/art/journey-lamp-v1/station-road-portrait-v2.png",
+  "reference": "station-road-portrait-rain-v1.png",
+  "prompt": "Edit this portrait game map painting. Preserve the hand-painted rainy evening forest style, moss, teal blues, glowing wooden postal workshop and warm windows. The task is to redesign ONLY the winding road layout and move the small workshop to the far upper RIGHT corner, so a game can place 20 lantern markers on the road. Portrait 2:3 composition. Main road must have FOUR very broad clear horizontal hairpin sweeps across most of the canvas, like a mountain switchback trail seen from above: starts bottom LEFT at x15%,y94%, crosses to x84%,y86%, turns at right x90%,y72%, crosses back left through x60%,y70%,x30%,y68%, turns at left x15%,y55%, crosses right through x45%,y53%,x75%,y51%, turns at right x88%,y38%, then crosses LEFT through x60%,y36%,x30%,y34%, then finally goes toward the small workshop at x75%,y20%. Broad wet earthen road, clear edges, smooth organic curves, not sharp geometric grid. Open space at top LEFT for a small overlay title. Workshop must stand away from road bends at top right, no large building in center. Retain forest depth and stream on left edge. No lanterns, no characters, no markings, no text, no UI; a background layer only. No vignette over road.",
+  "export": "ffmpeg scale=768:1152; libwebp quality90",
+  "reason": "More winding road space for 20 independent touch targets; station away from route"
+}

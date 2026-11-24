@@ -6,6 +6,7 @@ import type { CatMouth } from '../game/cat-mouth';
 import { firstLesson } from '../domain/first-lesson';
 import { SpokenText } from './SpokenText';
 import { pronunciationParts } from '../domain/pronunciation';
+import { reflectionOrder } from '../domain/reflection-order';
 import {
   appleLesson,
   theLesson,
@@ -265,15 +266,20 @@ export function CatDialogue({
             role="group"
             aria-label="Смысл просьбы"
           >
-            {reflection?.choices.map((choice) => (
-              <button
-                key={choice.id}
-                aria-pressed={answer === choice.id}
-                onClick={() => onExplain(choice.id)}
-              >
-                {choice.label}
-              </button>
-            ))}
+            {reflection &&
+              reflectionOrder<{ id: MeaningChoice; label: string }>(
+                room.episode,
+                reflection.choices,
+                reflection.correct,
+              ).map((choice) => (
+                <button
+                  key={choice.id}
+                  aria-pressed={answer === choice.id}
+                  onClick={() => onExplain(choice.id)}
+                >
+                  {choice.label}
+                </button>
+              ))}
             {answer && (
               <p ref={answerFeedback} role="status">
                 <SpokenText

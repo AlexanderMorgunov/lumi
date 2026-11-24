@@ -55,7 +55,7 @@
   margin-left: auto;
 }
 .overview-heading select {
-  width: 245px;
+  width: 285px;
   max-width: 100%;
 }
 .overview-scene {
@@ -80,7 +80,7 @@
   left: var(--x);
   top: var(--y);
   width: 56px;
-  height: clamp(52px, 15cqh, 110px);
+  height: clamp(56px, 18cqh, 132px);
   min-width: 44px;
   min-height: 44px;
   padding: 0;
@@ -108,24 +108,10 @@
   display: none;
 }
 .road-lamp {
-  height: calc(100% - 20px);
+  height: 100%;
   width: auto;
-  overflow: visible;
+  pointer-events: none;
   filter: drop-shadow(2px 3px 2px #061a22);
-}
-.road-lamp .glass {
-  fill: #1c3134;
-  stroke: #a59675;
-  stroke-width: 2;
-}
-.road-lamp .flame {
-  opacity: 0;
-}
-.completed .road-lamp .glass {
-  fill: #efbd68;
-}
-.completed .road-lamp .flame {
-  opacity: 1;
 }
 .completed .road-lamp {
   filter: drop-shadow(0 0 12px #ffd57d);
@@ -140,6 +126,8 @@
   pointer-events: none;
 }
 .road-number {
+  position: absolute;
+  bottom: -8px;
   min-width: 29px;
   padding: 1px 6px;
   border-radius: 20px;
@@ -399,7 +387,7 @@
   .journey-overview .lantern-stop {
     left: var(--px);
     top: var(--py);
-    height: clamp(52px, 11cqh, 90px);
+    height: clamp(56px, 13cqh, 104px);
     width: 48px;
   }
   .road-lumi {
@@ -511,7 +499,7 @@
   }
 }
 .journey-overview .lantern-stop {
-  top: clamp(54px, var(--y), calc(100% - 8px));
+  top: clamp(56px, var(--y), calc(100% - 8px));
 }
 @media (max-aspect-ratio: 1/1) {
   .journey-overview .lantern-stop {

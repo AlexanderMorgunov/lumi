@@ -1,0 +1,171 @@
+{
+  "modelId": "eleven_v3",
+  "review": "awaiting-listening",
+  "entries": [
+    {
+      "id": "chapter-02-12-you-task-01",
+      "speaker": "lumi",
+      "voiceId": "zvm1P65eFt40xSwMli2k",
+      "sourceText": "Тик, вы с напарником оба роботы. Отметим это в списке пассажиров.",
+      "sourceTextHash": "9ee1fab16ddb0748b41e4af75dbfa5196324601df6ded9b1314aa6bc392429b5",
+      "spokenText": "Тик, вы с напарником оба роботы. Отметим это в списке пассажиров.",
+      "action": "continuous-take",
+      "job": {
+        "request": {
+          "id": "chapter-02-12-you-task-01-review-v2",
+          "kind": "speech",
+          "modelId": "eleven_v3",
+          "seed": 43,
+          "text": "Тик, вы с напарником оба роботы. Отметим это в списке пассажиров.",
+          "textNormalization": "off",
+          "voiceId": "zvm1P65eFt40xSwMli2k"
+        },
+        "requestHash": "6796bf7740a860900dc1d604d2ec6085c133c90997fc70e66116f944ff15aba3",
+        "textHash": "9ee1fab16ddb0748b41e4af75dbfa5196324601df6ded9b1314aa6bc392429b5",
+        "body": {
+          "text": "Тик, вы с напарником оба роботы. Отметим это в списке пассажиров.",
+          "model_id": "eleven_v3",
+          "seed": 43,
+          "apply_text_normalization": "off"
+        },
+        "url": "https://api.elevenlabs.io/v1/text-to-speech/zvm1P65eFt40xSwMli2k?output_format=mp3_44100_128"
+      },
+      "previousRequest": {
+        "request": {
+          "id": "chapter-02-12-you-task-01-review-v1",
+          "kind": "speech",
+          "modelId": "eleven_v3",
+          "seed": 43,
+          "text": "Тик, вы с напарником оба роботы. Для вас Марта приготовила отдельные места в вагоне.",
+          "textNormalization": "off",
+          "voiceId": "zvm1P65eFt40xSwMli2k"
+        },
+        "requestHash": "122772d5f205e2acd41f1811c97e11d9a2f529ae3712bdb13417b3a54006859e",
+        "textHash": "64a4cbbe52c14ed574c917517899da96b805af9362e9e4f88e78b88bc3d05a1e",
+        "body": {
+          "text": "Тик, вы с напарником оба роботы. Для вас Марта приготовила отдельные места в вагоне.",
+          "model_id": "eleven_v3",
+          "seed": 43,
+          "apply_text_normalization": "off"
+        },
+        "url": "https://api.elevenlabs.io/v1/text-to-speech/zvm1P65eFt40xSwMli2k?output_format=mp3_44100_128"
+      }
+    },
+    {
+      "id": "chapter-02-12-you-task-02",
+      "speaker": "lumi",
+      "voiceId": "zvm1P65eFt40xSwMli2k",
+      "sourceText": "Я обращаюсь к вам обоим: «Вы роботы». Как сказать это по-английски? Можно полной или сокращённой фразой.",
+      "sourceTextHash": "5c0c401df572c2e35dc189fe22836ba8c17102d939d25c2933ead8765ca7cd95",
+      "spokenText": "Я обращаюсь к вам обоим: «Вы роботы». Как сказать это по-английски? Можно полной или сокращённой фразой.",
+      "action": "continuous-take",
+      "job": {
+        "request": {
+          "id": "chapter-02-12-you-task-02-review-v1",
+          "kind": "speech",
+          "modelId": "eleven_v3",
+          "seed": 43,
+          "text": "Я обращаюсь к вам обоим: «Вы роботы». Как сказать это по-английски? Можно полной или сокращённой фразой.",
+          "textNormalization": "off",
+          "voiceId": "zvm1P65eFt40xSwMli2k"
+        },
+        "requestHash": "81ff7c3edc127f2e012a43a7e4d16dd225b0d2851c2b905228a009fdbfa954d1",
+        "textHash": "5c0c401df572c2e35dc189fe22836ba8c17102d939d25c2933ead8765ca7cd95",
+        "body": {
+          "text": "Я обращаюсь к вам обоим: «Вы роботы». Как сказать это по-английски? Можно полной или сокращённой фразой.",
+          "model_id": "eleven_v3",
+          "seed": 43,
+          "apply_text_normalization": "off"
+        },
+        "url": "https://api.elevenlabs.io/v1/text-to-speech/zvm1P65eFt40xSwMli2k?output_format=mp3_44100_128"
+      }
+    },
+    {
+      "id": "chapter-02-14-task-02",
+      "speaker": "lumi",
+      "voiceId": "zvm1P65eFt40xSwMli2k",
+      "sourceText": "Общий вопрос позволяет узнать «да» или «нет». С be меняем порядок: You are ready — «Ты готов», Are you ready? — «Ты готов?»",
+      "sourceTextHash": "f1a5777eae73e36272df8049d17fa86dfec9b0b292446331cffa55dbcc0f6ebb",
+      "spokenText": "Общий вопрос позволяет узнать «да» или «нет». С be меняем порядок: You are ready — «Ты готов», Are you ready? — «Ты готов?»",
+      "action": "continuous-take",
+      "job": {
+        "request": {
+          "id": "chapter-02-14-task-02-review-v1",
+          "kind": "speech",
+          "modelId": "eleven_v3",
+          "seed": 43,
+          "text": "Общий вопрос позволяет узнать «да» или «нет». С be меняем порядок: You are ready — «Ты готов», Are you ready? — «Ты готов?»",
+          "textNormalization": "off",
+          "voiceId": "zvm1P65eFt40xSwMli2k"
+        },
+        "requestHash": "0ce20751be2486d516cf3e1b134be4d3859fbbe1f9a4f1021b20a4f4c1a11eae",
+        "textHash": "f1a5777eae73e36272df8049d17fa86dfec9b0b292446331cffa55dbcc0f6ebb",
+        "body": {
+          "text": "Общий вопрос позволяет узнать «да» или «нет». С be меняем порядок: You are ready — «Ты готов», Are you ready? — «Ты готов?»",
+          "model_id": "eleven_v3",
+          "seed": 43,
+          "apply_text_normalization": "off"
+        },
+        "url": "https://api.elevenlabs.io/v1/text-to-speech/zvm1P65eFt40xSwMli2k?output_format=mp3_44100_128"
+      }
+    },
+    {
+      "id": "chapter-02-09-keys-success-01",
+      "speaker": "tik",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "sourceText": "Two keys. В stories и keys разные окончания.",
+      "sourceTextHash": "eda31100733843faf5e8efff810a7d5647c141bd983494d187de21346c0ce690",
+      "spokenText": "Two keys. В stories и keys разные окончания.",
+      "action": "continuous-take",
+      "job": {
+        "request": {
+          "id": "chapter-02-09-keys-success-01-review-v1",
+          "kind": "speech",
+          "modelId": "eleven_v3",
+          "seed": 43,
+          "text": "Two keys. В stories и keys разные окончания.",
+          "textNormalization": "off",
+          "voiceId": "bIHbv24MWmeRgasZH58o"
+        },
+        "requestHash": "ecb946e4da9282b2db3be5e4d9e16ff5d0a2501aa19f7aa24c8fd4746f3af3b8",
+        "textHash": "eda31100733843faf5e8efff810a7d5647c141bd983494d187de21346c0ce690",
+        "body": {
+          "text": "Two keys. В stories и keys разные окончания.",
+          "model_id": "eleven_v3",
+          "seed": 43,
+          "apply_text_normalization": "off"
+        },
+        "url": "https://api.elevenlabs.io/v1/text-to-speech/bIHbv24MWmeRgasZH58o?output_format=mp3_44100_128"
+      }
+    },
+    {
+      "id": "chapter-02-09-keys-feedback-plural-y-letter",
+      "speaker": "tik",
+      "voiceId": "bIHbv24MWmeRgasZH58o",
+      "sourceText": "Верно. Согласная + y даёт ies, гласная + y — ys. Поэтому stories, но keys. А после x в box добавляем es: boxes.",
+      "sourceTextHash": "ab14e4895423d4f51b55f12cea1cdac694a7551622039986d0d03e793f1bc561",
+      "spokenText": "Верно. Согласная плюс /waɪ/ даёт /aɪ/ /iː/ /ɛs/, гласная плюс /waɪ/ — /waɪ/ /ɛs/. Поэтому stories, но keys. А после /ɛks/ в box добавляем /iː/ /ɛs/: boxes.",
+      "action": "continuous-take",
+      "job": {
+        "request": {
+          "id": "chapter-02-09-keys-feedback-plural-y-letter-review-v1",
+          "kind": "speech",
+          "modelId": "eleven_v3",
+          "seed": 43,
+          "text": "Верно. Согласная плюс /waɪ/ даёт /aɪ/ /iː/ /ɛs/, гласная плюс /waɪ/ — /waɪ/ /ɛs/. Поэтому stories, но keys. А после /ɛks/ в box добавляем /iː/ /ɛs/: boxes.",
+          "textNormalization": "off",
+          "voiceId": "bIHbv24MWmeRgasZH58o"
+        },
+        "requestHash": "235cc6714540ba83cd0fe2add69e40136a0e6d32503adc87f8b3f9bf7141a111",
+        "textHash": "a924bb2001c9509957be72b76dd64e9f0ec5c690562e7e1dc3e6cbadf1a9c404",
+        "body": {
+          "text": "Верно. Согласная плюс /waɪ/ даёт /aɪ/ /iː/ /ɛs/, гласная плюс /waɪ/ — /waɪ/ /ɛs/. Поэтому stories, но keys. А после /ɛks/ в box добавляем /iː/ /ɛs/: boxes.",
+          "model_id": "eleven_v3",
+          "seed": 43,
+          "apply_text_normalization": "off"
+        },
+        "url": "https://api.elevenlabs.io/v1/text-to-speech/bIHbv24MWmeRgasZH58o?output_format=mp3_44100_128"
+      }
+    }
+  ]
+}

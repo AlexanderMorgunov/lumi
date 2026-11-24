@@ -122,6 +122,13 @@ test('plays all 18 parts with recorded voices, checks contractions and meaning w
         state.definition.id,
       );
       await expect(page.getByLabel('Автор сообщения')).toBeVisible();
+      if (
+        state.definition.reference?.objects.some((o) => o.display === 'record')
+      )
+        await expect(field(page)).toHaveAttribute(
+          'data-record-illustrations',
+          /[a-z]/,
+        );
       if (id === 'chapter-02-10')
         await page.screenshot({
           path: info.outputPath(`${state.definition.id}-dialogue.png`),
@@ -136,8 +143,10 @@ test('plays all 18 parts with recorded voices, checks contractions and meaning w
       const words = state.definition.allowContractions
         ? [short[full[0]!]!, ...full.slice(2)]
         : full;
-      if (state.stage === 0)
-        await page.screenshot({ path: info.outputPath(`${id}-board.png`) });
+      if (state.stage === 0 || id === 'chapter-02-09' || id === 'chapter-02-10')
+        await page.screenshot({
+          path: info.outputPath(`${state.definition.id}-board.png`),
+        });
       // The reported layout: [empty, I'm, Lumi], solved through actual pushes.
       const slotOffset = id === 'chapter-02-06' && state.stage === 0 ? 1 : 0;
       for (const direction of solveStation(state, words, slotOffset)) {

@@ -10,6 +10,7 @@ import nextPlan from '../../tests/fixtures/voice/station-06-10-elevenlabs-plan.j
 import departurePlan from '../../tests/fixtures/voice/station-11-15-elevenlabs-plan.json';
 import finalePlan from '../../tests/fixtures/voice/station-16-20-elevenlabs-plan.json';
 import speechRepair from '../../tests/fixtures/voice/station-speech-repair-plan.json';
+import reviewPlan from '../../tests/fixtures/voice/chapter-02-review-plan.json';
 import bilingualPlan from '../../tests/fixtures/voice/chapter-02-bilingual-plan.json';
 import { finaleLevels, finaleReflections } from '../domain/station-finale';
 import {
@@ -75,6 +76,7 @@ const currentLaterEntries = [
   ...finalePlan.entries,
 ].map(
   (entry) =>
+    reviewPlan.entries.find((repair) => repair.id === entry.id) ??
     bilingualPlan.entries.find((repair) => repair.id === entry.id) ??
     speechRepair.entries.find((repair) => repair.id === entry.id) ??
     entry,
@@ -217,6 +219,7 @@ it('covers all chapter-two mixed lines with continuous provenance and keeps the 
   expect(mixed).toHaveLength(239);
   for (const clip of mixed) {
     const current =
+      reviewPlan.entries.find((entry) => entry.id === clip.id) ??
       bilingualPlan.entries.find((entry) => entry.id === clip.id) ??
       speechRepair.entries.find((entry) => entry.id === clip.id && entry.job);
     if (current?.job) {
@@ -403,6 +406,7 @@ it('covers every current 06–20 dialogue and feedback with the selected actor a
       entry.sourceTextHash,
     );
     const repair =
+      reviewPlan.entries.find((item) => item.id === line.id) ??
       bilingualPlan.entries.find((item) => item.id === line.id) ??
       speechRepair.entries.find((item) => item.id === line.id);
     if (repair?.job) {

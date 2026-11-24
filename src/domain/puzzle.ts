@@ -145,7 +145,14 @@ export function readPhrase(state: Room): string[] {
     return piece?.kind === 'word' ? piece.word : '';
   });
   if (state.definition.message?.exchange) {
+    let start = 0;
     let end = words.length;
+    while (
+      start < end &&
+      words[start] === '' &&
+      !state.pieces.some((p) => samePosition(p, state.definition.slots[start]!))
+    )
+      start++;
     while (
       end > 0 &&
       words[end - 1] === '' &&
@@ -154,7 +161,7 @@ export function readPhrase(state: Room): string[] {
       )
     )
       end--;
-    return words.slice(0, end);
+    return words.slice(start, end);
   }
   if (state.definition.allowContractions) {
     // An empty edge is layout, not grammar. Never erase a gap or an object.
@@ -311,7 +318,7 @@ export function evaluatePhrase(state: Room): Evaluation {
             ...evaluation,
             goal: false,
             explanation:
-              'Дети — тоже люди, но в этой записи возраст не указан. Two children добавило бы неподтверждённое уточнение. Здесь достаточно two people.',
+              'На картинке взрослый и ребёнок. Two children означало бы двух детей. Для этой пары подходит two people — два человека.',
           };
         return words[1] === object.noun && quantity === (object.count ?? 1)
           ? { ...evaluation, referentId: object.id }
@@ -705,7 +712,7 @@ export function feedbackText(state: PuzzleState): string {
       return 'Верное сочетание находится вне рамки. Перемести его в рамку чтения, чтобы передать просьбу.';
     case 'incomplete':
       if (state.definition.message?.exchange)
-        return 'Собери запись слева направо без пропусков. Неиспользованные клетки справа оставь пустыми: у полной и сокращённой форм разная длина.';
+        return 'Поставь слова рядом, без пустых клеток между ними. Свободные клетки можно оставить с любого края рамки: у полной и сокращённой форм разная длина.';
       if (state.definition.allowContractions)
         return 'Поставь слова рядом, без пустых клеток между ними. I’m Lumi занимает две клетки, I am Lumi — три. Пустую клетку можно оставить с любого края.';
       if (state.definition.optionalLeadingArticle)

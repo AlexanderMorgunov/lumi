@@ -8,6 +8,12 @@ import emoteAtlas from './emote-atlas.json';
 import { frameFeedback } from './frame-feedback';
 import { stationFrame } from './station-animation';
 import type { CatMouth } from './cat-mouth';
+import {
+  stationArt,
+  stationIllustrations,
+  childFrame,
+} from './station-illustrations';
+import childAtlas from './station-child-atlas.json';
 
 export type SceneLoadState = 'loading' | 'ready' | 'error';
 export type WordTarget = {
@@ -47,6 +53,11 @@ export function createGame(
       super('workshop');
     }
     preload() {
+      for (const name of stationArt)
+        this.load.image(
+          name,
+          `${import.meta.env.BASE_URL}art/station/review-v1/${name}.webp`,
+        );
       this.load.image(
         'station',
         `${import.meta.env.BASE_URL}art/station/station-v1.png`,
@@ -104,6 +115,7 @@ export function createGame(
       if (
         [
           ...backgroundAssets,
+          ...stationArt,
           'station',
           'marta-emotes',
           'tik-emotes',
@@ -139,6 +151,12 @@ export function createGame(
           );
         }
       }
+      for (const name of ['nora', 'younger'] as const)
+        childAtlas[name].forEach((frame, i) =>
+          this.textures
+            .get(name)
+            .add(String(i), 0, frame.x, frame.y, frame.width, frame.height),
+        );
       let field = boardGeometry(level);
       const world = (position: Position) => cellCenter(field, position);
       const texture = this.textures.get('lumi');
@@ -532,6 +550,11 @@ export function createGame(
       const contextSprites = Array.from({ length: 6 }, () =>
         this.add.image(0, 0, 'brass-key').setDepth(34).setVisible(false),
       );
+      const childSprites: {
+        sprite: Phaser.GameObjects.Image;
+        name: 'nora' | 'younger';
+        height: number;
+      }[] = [];
       const contextCards = Array.from({ length: 3 }, () =>
         this.add
           .rectangle(0, 0, 116, 100, 0xe7d19e)
@@ -544,9 +567,11 @@ export function createGame(
           .text(0, 0, '', {
             fontFamily: 'Arial, sans-serif',
             fontSize: '21px',
-            color: '#3c3027',
+            color: '#fff0ce',
+            stroke: '#182b29',
+            strokeThickness: 4,
             align: 'center',
-            wordWrap: { width: 134 },
+            wordWrap: { width: 176 },
           })
           .setOrigin(0.5)
           .setDepth(34)
@@ -562,17 +587,6 @@ export function createGame(
         .setOrigin(0.5, 0.97)
         .setDisplaySize(230, 230)
         .setDepth(34)
-        .setVisible(false);
-      const martaName = this.add
-        .text(830, 183, 'Марта', {
-          fontFamily: 'Georgia',
-          fontSize: '22px',
-          color: '#fff0cc',
-          stroke: '#142626',
-          strokeThickness: 5,
-        })
-        .setOrigin(0.5, 1)
-        .setDepth(35)
         .setVisible(false);
       const nameTags = this.add
         .text(420, 304, '', {
@@ -640,7 +654,7 @@ export function createGame(
         const state = snapshot.room;
         const station = Boolean(state.definition.message);
         marta.setVisible(station);
-        martaName.setVisible(station);
+
         parent.dataset.martaVisible = String(marta.visible);
         backdrop.setTint(station ? 0x244250 : 0xffffff);
         waitingRobot.setPosition(1000, station ? 365 : 260);
@@ -718,6 +732,8 @@ export function createGame(
         const referenceDelivered = indicated?.location === 'bag';
         referenceMarker.setVisible(Boolean(indicated));
         referenceRing.setVisible(indicated?.display !== 'record');
+        referenceLabel.setVisible(indicated?.display !== 'record');
+        referenceArrow.setPosition(0, -31);
         if (reference && indicated) {
           // Object captions sit below the props, clear of the DOM message header.
           referenceLabel.setY(station ? 78 : -76);
@@ -798,8 +814,14 @@ export function createGame(
                 !reference?.objects.some((current) => current.id === object.id),
             ),
         );
-        contextSprites.forEach((sprite) => sprite.setVisible(false));
-        contextCards.forEach((card) => card.setVisible(false));
+        childSprites.length = 0;
+        parent.dataset.recordIllustrations = '';
+        contextSprites.forEach((sprite) =>
+          sprite.setVisible(false).setOrigin(0.5).setAngle(0).clearTint(),
+        );
+        contextCards.forEach((card) =>
+          card.setVisible(false).setFillStyle(0xe7d19e, 1),
+        );
         contextCaptions.forEach((caption) => caption.setVisible(false));
         if (authored && reference) {
           [
@@ -827,30 +849,66 @@ export function createGame(
             if (!sprite) return;
             const pos = objectPosition(index, object.location);
             if (object.display === 'record') {
-              contextCards[index]
-                ?.setSize(152, 92)
-                .setStrokeStyle(
-                  3,
-                  object.id === reference.indicatedId ? 0xffe0a0 : 0x765339,
-                )
-                .setPosition(pos.x, pos.y)
-                .setVisible(true);
+              const exchange = state.definition.message?.exchange;
+              const baggage =
+                object.id === 'departure-baggage' && exchange
+                  ? {
+                      ready: exchange.ready,
+                      unknown: exchange.act === 'question' && !state.completed,
+                    }
+                  : undefined;
+              const pictures = stationIllustrations(object, baggage);
+              pictures.forEach((picture, item) => {
+                const image = contextSprites[index * 2 + item]!;
+                image
+                  .setTexture(picture.texture, picture.frame)
+                  .setOrigin(0.5, 1)
+                  .setPosition(
+                    pos.x +
+                      (pictures.length === 2 ? (item === 0 ? -43 : 43) : 0),
+                    pos.y + 55,
+                  )
+                  .setVisible(true);
+                const frame = image.frame;
+                const height =
+                  pictures.length === 2 && picture.texture !== 'marta-emotes'
+                    ? Math.min(
+                        picture.height,
+                        (82 * frame.height) / frame.width,
+                      )
+                    : Math.min(
+                        picture.height,
+                        (166 * frame.height) / frame.width,
+                      );
+                image.setDisplaySize(
+                  (height * frame.width) / frame.height,
+                  height,
+                );
+                if (picture.child)
+                  childSprites.push({
+                    sprite: image,
+                    name: picture.child,
+                    height,
+                  });
+                if (baggage?.unknown) image.setTint(0x777568);
+              });
               contextCaptions[index]
                 ?.setText(
-                  object.id === 'departure-baggage' &&
-                    state.definition.message?.exchange
-                    ? state.definition.message.exchange.act === 'question' &&
-                      !state.completed
-                      ? 'Ожидаем\nответа'
-                      : state.definition.message.exchange.ready
-                        ? 'Багаж\nсобран'
-                        : 'Багаж\nне собран'
+                  baggage
+                    ? baggage.unknown
+                      ? 'Собран ли багаж?'
+                      : baggage.ready
+                        ? 'Багаж собран'
+                        : 'Багаж не собран'
                     : (object.caption ?? object.label),
                 )
-                .setPosition(pos.x, pos.y)
+                .setPosition(pos.x, pos.y + 79)
+                .setFontSize(18)
                 .setVisible(true);
+              parent.dataset.recordIllustrations +=
+                pictures.map((p) => p.texture).join(',') + ';';
               if (object.id === reference.indicatedId)
-                referenceMarker.setPosition(pos.x, pos.y);
+                referenceMarker.setPosition(pos.x, pos.y - 65);
               return;
             }
             if (object.display === 'card')
@@ -989,6 +1047,16 @@ export function createGame(
           !snapshot.view.reducedMotion &&
           !motion.matches;
         if (animated) clock += Math.min(delta, 100);
+        for (const { sprite, name, height } of childSprites) {
+          const index = childFrame(name, clock, animated);
+          const frame = childAtlas[name][index]!;
+          const cellX = (index % 2) * 512;
+          sprite
+            .setFrame(String(index))
+            .setOrigin((cellX + 256 - frame.x) / frame.width, 1)
+            .setDisplaySize((height * frame.width) / frame.height, height);
+          parent.dataset[name + 'Frame'] = String(index);
+        }
         if (state.definition.message) {
           const speaker = parent.dataset.speaker;
           const mouth = animated ? getMouth() : 'rest';

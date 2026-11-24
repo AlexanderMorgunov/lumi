@@ -46,7 +46,7 @@ test('second station episode: four words, two speakers, progressive vocabulary, 
   await page
     .getByRole('combobox', { name: 'Глава путешествия' })
     .selectOption('1');
-  await expect(page.locator('.station-map .lantern-stop')).toHaveCount(15);
+  await expect(page.locator('.station-map .lantern-stop')).toHaveCount(20);
   await page
     .getByRole('button', { name: /^Эпизод 2: Маленький.*Закрыт/ })
     .click();

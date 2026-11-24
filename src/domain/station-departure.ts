@@ -79,6 +79,7 @@ type ExchangeLesson = {
   predicate?: ExchangeContext['predicate'];
   ready?: boolean;
   evidence: string;
+  baggage?: 'bag' | 'crate';
   question?: string;
   quest?: string;
   introduction: readonly string[];
@@ -121,6 +122,7 @@ function exchange(data: ExchangeLesson): StationLesson {
     {
       id: 'departure-baggage',
       noun: 'bag',
+      illustration: data.baggage ?? 'bag',
       label: 'статус багажа',
       display: 'record',
       caption:
@@ -157,7 +159,7 @@ function exchange(data: ExchangeLesson): StationLesson {
     introduction: data.introduction,
     success: data.success,
     rule: data.rule,
-    hint: `Посмотри вверху экрана, кто говорит, о ком и что уже известно. Подходящая запись: ${data.words.join(' ')}. Начинай с левого края рамки, лишние клетки справа оставь пустыми.`,
+    hint: `Посмотри вверху экрана, кто говорит, о ком и что уже известно. Подходящая запись: ${data.words.join(' ')}. Поставь слова подряд; свободные клетки можно оставить с любого края рамки.`,
   };
 }
 function chain(
@@ -369,8 +371,8 @@ const passengerList = chain(
       evidence: 'Люми обращается к обоим роботам',
       independent: true,
       introduction: [
-        'Тик, теперь я обращаюсь к тебе и твоему напарнику. Помоги мне сказать вам обоим, кто вы.',
-        'Не описывай меня: я фонарь. В этой записи речь о вас.',
+        'Тик, вы с напарником оба роботы. Отметим это в списке пассажиров.',
+        'Я обращаюсь к вам обоим: «Вы роботы». Как сказать это по-английски? Можно полной или сокращённой фразой.',
       ],
       success:
         'You are robots — «Вы роботы». Здесь you — вы оба: Тик и его напарник.',
@@ -482,6 +484,7 @@ const negatives = chain(
       label: 'два робота у стойки',
       ready: false,
       evidence: 'ящик обоих роботов ещё не закреплён',
+      baggage: 'crate',
       introduction: [
         'У роботов у стойки тоже не всё готово: ремень на ящике ещё не затянут. Я сообщаю о них Марте.',
         'They are not ready можно сократить двумя способами: They’re not ready или They aren’t ready. Aren’t = are not; это одна плитка.',
@@ -560,7 +563,7 @@ const questions = chain(
       act: 'question',
       introduction: [
         'Тик получил ещё один свёрток. Я не видел, успел ли он закрепить его, и хочу спросить самого Тика.',
-        'Общий вопрос позволяет узнать «да» или «нет». С be меняем порядок: You are ready — сообщение, Are you ready? — «Ты готов?»',
+        'Общий вопрос позволяет узнать «да» или «нет». С be меняем порядок: You are ready — «Ты готов», Are you ready? — «Ты готов?»',
         'Поставь are перед you. Знак вопроса появится сам. Нам важно узнать ответ Тика — «да» или «нет».',
       ],
       quest: 'Люми не знает, готов ли Тик. Помоги ему спросить об этом Тика.',
@@ -629,6 +632,7 @@ const questions = chain(
       label: 'два робота у стойки',
       ready: false,
       evidence: 'роботы ещё проверяют крепление ящика',
+      baggage: 'crate',
       act: 'question',
       independent: true,
       introduction: [

@@ -46,26 +46,26 @@ const portraitAnchors = [
   [27, 23],
 ] as const;
 const stationAnchors = [
-  [10, 88, 18, 90],
-  [23, 84, 40, 89],
-  [36, 80, 62, 88],
-  [49, 77, 84, 86],
-  [62, 73, 84, 76],
-  [75, 69, 62, 75],
-  [88, 65, 40, 74],
-  [91, 48, 18, 73],
-  [81, 44, 18, 62],
-  [71, 41, 40, 61],
-  [61, 41, 62, 60],
-  [51, 40, 84, 59],
-  [41, 39, 84, 48],
-  [31, 38, 62, 47],
-  [35, 23, 40, 46],
-  [46, 23, 18, 45],
-  [57, 22, 18, 34],
-  [68, 22, 40, 33],
-  [79, 21, 62, 32],
-  [90, 20, 84, 31],
+  [8, 90, 14, 87],
+  [17, 86, 32, 81],
+  [26, 82, 53, 80],
+  [35, 79, 75, 79],
+  [44, 76, 90, 72],
+  [53, 73, 82, 64],
+  [62, 70, 61, 63],
+  [71, 66, 40, 63],
+  [80, 62, 19, 62],
+  [89, 56, 13, 54],
+  [92, 43, 33, 52],
+  [83, 41, 54, 52],
+  [74, 41, 75, 52],
+  [65, 41, 89, 48],
+  [56, 41, 76, 42],
+  [47, 41, 56, 42],
+  [38, 39, 36, 41],
+  [29, 36, 16, 39],
+  [57, 20, 30, 34],
+  [65, 23, 52, 34],
 ] as const;
 const drops = Array.from(
   { length: 42 },
@@ -78,35 +78,14 @@ const drops = Array.from(
     }) as CSSProperties,
 );
 
-function RoadLantern() {
+function RoadLantern({ lit }: { lit: boolean }) {
   return (
-    <svg className="road-lamp" viewBox="0 0 64 110" aria-hidden="true">
-      <path
-        d="M15 108V10Q15 4 23 4H48M44 4V18"
-        fill="none"
-        stroke="#745d40"
-        strokeWidth="7"
-      />
-      <path
-        d="M15 108V10Q15 4 23 4H48"
-        fill="none"
-        stroke="#baa078"
-        strokeWidth="2"
-      />
-      <path className="glass" d="M30 27H58L54 61H34Z" />
-      <path
-        d="M29 26L35 17H53L59 26ZM33 64H55"
-        fill="#756548"
-        stroke="#d3b981"
-        strokeWidth="2"
-      />
-      <path
-        className="flame"
-        d="M44 34Q32 49 44 55Q56 51 44 34"
-        fill="#fff2b1"
-      />
-      <path d="M44 28V60" stroke="#957544" strokeWidth="2" />
-    </svg>
+    <img
+      className="road-lamp"
+      src={`${import.meta.env.BASE_URL}art/journey/road-lantern-${lit ? 'lit' : 'unlit'}-v1.webp`}
+      alt=""
+      draggable={false}
+    />
   );
 }
 
@@ -230,11 +209,6 @@ export function JourneyMap({
             {journeyChapters.map((item, i) => (
               <option key={item.title} value={i}>
                 {i + 1}. {item.title}
-                {i === 1
-                  ? ` · эпизодов: ${chapterTwoStops.length}`
-                  : item.available
-                    ? ''
-                    : ' · готовится'}
               </option>
             ))}
           </select>
@@ -286,10 +260,10 @@ export function JourneyMap({
                     '--y': `${y}%`,
                     '--px': `${px}%`,
                     '--py': `${py}%`,
-                    '--compact-y': `${i < 7 ? 92 - i : i < 14 ? 60 - Math.min(i - 7, 2) : 25}%`,
+                    '--compact-y': `${i === 9 ? 65 : i >= 18 ? 19 : y}%`,
                   } as CSSProperties
                 }
-                data-side={x > 70 ? 'left' : 'right'}
+                data-side={x > 60 || px > 70 ? 'left' : 'right'}
                 aria-label={`Эпизод ${i + 1}: ${item.title}. ${state === 'completed' ? 'Завершён' : state === 'available' ? 'Доступен' : 'Закрыт'}`}
                 aria-current={
                   item.ids.includes(snapshot.room.episode) ? 'step' : undefined
@@ -298,7 +272,7 @@ export function JourneyMap({
                 aria-expanded={selected === i}
                 onClick={() => setSelected(i)}
               >
-                <RoadLantern />
+                <RoadLantern lit={state === 'completed'} />
                 <span className="road-number">
                   {state === 'completed' ? '✓ ' : ''}
                   {i + 1}
@@ -343,7 +317,7 @@ export function JourneyMap({
                 aria-label={`Эпизод ${i + 1}: ${item.title}. ${state === 'completed' ? 'Завершён' : state === 'available' ? 'Доступен' : 'Закрыт'}`}
                 onClick={() => setSelected(i)}
               >
-                <RoadLantern />
+                <RoadLantern lit={state === 'completed'} />
                 <span className="road-number" aria-hidden="true">
                   {state === 'completed' ? '✓ ' : ''}
                   {i + 1}

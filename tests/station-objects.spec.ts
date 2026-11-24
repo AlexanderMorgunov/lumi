@@ -44,7 +44,7 @@ test('it describes a pointed umbrella and a pictured egg with voices, Undo, jour
   await page
     .getByRole('combobox', { name: 'Глава путешествия' })
     .selectOption('1');
-  await expect(page.locator('.station-map .lantern-stop')).toHaveCount(15);
+  await expect(page.locator('.station-map .lantern-stop')).toHaveCount(20);
   await page
     .getByRole('button', { name: /^Эпизод 5: Кто потерял зонт.*Закрыт/ })
     .click();

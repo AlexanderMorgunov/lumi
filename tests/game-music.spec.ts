@@ -145,6 +145,35 @@ test('workshop music ducks under the cat, map switches tracks and prologue stops
   await expect.poll(async () => (await read(page)).playing).toBe(false);
 });
 
+test('station has its own music, returns from map at the saved time and respects mute', async ({
+  page,
+}) => {
+  await observe(page);
+  await page.goto('/');
+  await page.getByRole('button', { name: /Карта фонарей/ }).click();
+  await page
+    .getByRole('combobox', { name: 'Глава путешествия' })
+    .selectOption('1');
+  await playing(page, 'the-road-is-sleeping');
+  await page.getByRole('button', { name: /^Эпизод 15:/ }).click();
+  await page.getByRole('button', { name: 'DEV · Открыть эпизод' }).click();
+  await playing(page, 'letters-in-the-rain');
+  await page.evaluate(() => {
+    window.musicProbe[0]!.player.currentTime = 25;
+  });
+  await page.getByRole('button', { name: 'Меню и пауза' }).click();
+  await page.getByRole('button', { name: /Карта фонарей/ }).click();
+  await playing(page, 'the-road-is-sleeping');
+  await page.getByRole('button', { name: 'Вернуться к игре' }).click();
+  await playing(page, 'letters-in-the-rain');
+  expect((await read(page)).time).toBeGreaterThanOrEqual(25);
+  expect((await read(page)).count).toBe(1);
+  await page.getByRole('button', { name: 'Меню и пауза' }).click();
+  await page.getByRole('button', { name: /^Настройки/ }).click();
+  await page.getByRole('checkbox', { name: 'Музыка меню и главы' }).uncheck();
+  await expect.poll(async () => (await read(page)).playing).toBe(false);
+});
+
 test('host and visibility pauses stop streamed music; closed never restarts', async ({
   page,
 }) => {

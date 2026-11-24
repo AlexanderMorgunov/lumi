@@ -134,12 +134,11 @@ export function App({
     music.setTrack(
       screen === 'prologue'
         ? null
-        : screen === 'title' ||
-            screen === 'station-road' ||
-            panel === 'journey' ||
-            state.room.definition.message
+        : screen === 'title' || panel === 'journey'
           ? 'menu'
-          : 'workshop',
+          : screen === 'station-road' || state.room.definition.message
+            ? 'station'
+            : 'workshop',
     );
   }, [music, screen, panel, state.room.definition.message]);
   useEffect(

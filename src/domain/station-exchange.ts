@@ -102,6 +102,24 @@ export function exchangeForm(
         'В положительном коротком ответе форму be не сокращаем: Yes, I am; Yes, we are; Yes, he is. После неё здесь нет продолжения.',
     };
   const words = expandExchange(raw);
+  for (const answer of level.answers) {
+    const articleIndex = answer.words.findIndex((word) =>
+      ['a', 'an', 'the'].includes(word),
+    );
+    if (articleIndex < 0 || answer.words.length !== words.length + 1) continue;
+    const withoutArticle = answer.words.filter((_, i) => i !== articleIndex);
+    if (!withoutArticle.every((word, i) => word === words[i])) continue;
+    const article = answer.words[articleIndex]!;
+    const noun = answer.words[articleIndex + 1]!;
+    return {
+      ...base,
+      form: 'article',
+      explanation:
+        article === 'the'
+          ? `Перед ${noun} нужен the: речь о том, кого или что оба участника могут определить по ситуации.`
+          : `Перед ${noun} нужен ${article}: здесь называем один предмет или одного человека. A/an ставится перед исчисляемым существительным в единственном числе; выбор зависит от начального звука следующего слова.`,
+    };
+  }
   if (
     level.answers.some(
       (answer) =>

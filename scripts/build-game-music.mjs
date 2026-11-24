@@ -3,12 +3,22 @@ import { execFileSync, spawnSync } from 'node:child_process';
 import { createHash } from 'node:crypto';
 
 await mkdir('public/audio/game-music', { recursive: true });
-const outputs = [];
-const hash = (data) => createHash('sha256').update(data).digest('hex');
-for (const [id, name] of [
+const manifestPath = 'docs/audio/game-music-manifest.json';
+const only = process.argv[2];
+const tracks = [
   ['menu', 'the-road-is-sleeping'],
   ['workshop', 'martas-workshop'],
-]) {
+  ['station', 'letters-in-the-rain'],
+];
+if (only && !tracks.some(([id]) => id === only))
+  throw new Error(`Unknown music track: ${only}`);
+const outputs = only
+  ? JSON.parse(await readFile(manifestPath, 'utf8')).outputs.filter(
+      (item) => item.id !== only,
+    )
+  : [];
+const hash = (data) => createHash('sha256').update(data).digest('hex');
+for (const [id, name] of tracks.filter(([id]) => !only || id === only)) {
   const source = `assets/audio/game-music/source/${name}.mp3`;
   const probe = JSON.parse(
     execFileSync(
@@ -92,7 +102,7 @@ for (const [id, name] of [
     levels,
     sourceSha256: hash(await readFile(source)),
     sha256: hash(await readFile('public/' + file)),
-    provenance: 'Suno track supplied by project owner, 2026-11-17',
+    provenance: 'Suno track supplied by project owner',
     review: 'Technical processing only; listening review pending',
   });
 }
@@ -105,7 +115,11 @@ await writeFile(
   ) + '\n',
 );
 await writeFile(
-  'docs/audio/game-music-manifest.json',
-  JSON.stringify({ date: '2026-11-17', outputs }, null, 2) + '\n',
+  manifestPath,
+  JSON.stringify(
+    { date: new Date().toISOString().slice(0, 10), outputs },
+    null,
+    2,
+  ) + '\n',
 );
-console.log('Prepared two looping music tracks; no generation requests.');
+console.log(`Prepared ${only ?? 'all'} looping music; no generation requests.`);
