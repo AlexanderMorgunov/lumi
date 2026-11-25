@@ -37,7 +37,9 @@ async function start(page: Page) {
 async function reset(page: Page) {
   await page.getByRole('button', { name: 'Меню и пауза' }).click();
   await page.getByRole('button', { name: 'Начать комнату заново' }).click();
-  await page.getByRole('button', { name: 'Начать эпизод заново' }).click();
+  await page
+    .getByRole('button', { name: 'Начать эпизод заново', exact: true })
+    .click();
 }
 
 test('meet Lumi, learn movement, solve and undo without manual focus', async ({
@@ -64,7 +66,9 @@ test('meet Lumi, learn movement, solve and undo without manual focus', async ({
   await expect(
     page.getByRole('heading', { name: 'Первая просьба выполнена' }),
   ).toBeVisible();
-  await page.getByRole('button', { name: 'В мастерскую', exact: true }).click();
+  await page
+    .getByRole('button', { name: 'Вернуться к полю', exact: true })
+    .click();
   await page.screenshot({ path: info.outputPath('workshop-success.png') });
   await page.keyboard.press('KeyZ');
   await expect(
@@ -75,7 +79,10 @@ test('meet Lumi, learn movement, solve and undo without manual focus', async ({
   await reset(page);
   await page.keyboard.press('ArrowUp');
   await page.keyboard.press('Enter');
-  await page.getByRole('button', { name: 'Сыграть ещё раз' }).click();
+  await page.getByRole('button', { name: 'Начать эпизод заново…' }).click();
+  await page
+    .getByRole('button', { name: 'Начать эпизод заново', exact: true })
+    .click();
   await expect(position(page)).toContainText('Ходов: 0');
   await expect(page.locator('canvas')).toHaveCount(1);
   expect(errors).toEqual([]);

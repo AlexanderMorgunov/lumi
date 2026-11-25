@@ -552,34 +552,66 @@ export function App({
                     room.definition.message.recipient
                   ].label}
               </strong>
-              <small>
-                {room.definition.message.exchange
-                  ? exchangeStatus(
-                      room.definition.message.exchange,
-                      room.completed,
-                    )
-                  : room.definition.message.intent === 'label-group'
-                    ? `В записи: ${room.reference?.objects.find((object) => object.id === room.reference?.indicatedId)?.label ?? 'нет выбранной записи'}${room.completed ? ' · подписано' : ''}`
-                    : room.definition.message.intent === 'describe-object'
-                      ? `О чём: ${room.reference?.objects.find((object) => object.id === room.reference?.indicatedId)?.label ?? 'предмет под указателем'}${room.completed ? ' · записано' : ''}`
-                      : room.definition.message.subject
-                        ? `О ком: ${room.definition.message.people[room.definition.message.subject].label}${room.completed ? ' · записано' : ''}`
-                        : room.completed
-                          ? room.definition.message.intent.endsWith(
-                              '-recipient',
-                            )
-                            ? 'Обращение записано'
-                            : room.definition.message.intent === 'describe-self'
-                              ? 'Описание записано'
-                              : 'Имя записано на бирке'
-                          : room.definition.message.intent.endsWith(
+              {(conversation ||
+                !room.reference ||
+                !['label-group', 'describe-object'].includes(
+                  room.definition.message.intent,
+                )) && (
+                <small>
+                  {room.definition.message.exchange
+                    ? exchangeStatus(
+                        room.definition.message.exchange,
+                        room.completed,
+                      )
+                    : room.definition.message.intent === 'label-group'
+                      ? `В записи: ${room.reference?.objects.find((object) => object.id === room.reference?.indicatedId)?.label ?? 'нет выбранной записи'}${room.completed ? ' · подписано' : ''}`
+                      : room.definition.message.intent === 'describe-object'
+                        ? `О чём: ${room.reference?.objects.find((object) => object.id === room.reference?.indicatedId)?.label ?? 'предмет под указателем'}${room.completed ? ' · записано' : ''}`
+                        : room.definition.message.subject
+                          ? `О ком: ${room.definition.message.people[room.definition.message.subject].label}${room.completed ? ' · записано' : ''}`
+                          : room.completed
+                            ? room.definition.message.intent.endsWith(
                                 '-recipient',
                               )
-                            ? 'Обратиться к собеседнику'
-                            : room.definition.message.intent === 'describe-self'
-                              ? 'Назвать вид, а не имя'
-                              : 'Назвать имя автора'}
-              </small>
+                              ? 'Обращение записано'
+                              : room.definition.message.intent ===
+                                  'describe-self'
+                                ? 'Описание записано'
+                                : 'Имя записано на бирке'
+                            : room.definition.message.intent.endsWith(
+                                  '-recipient',
+                                )
+                              ? 'Обратиться к собеседнику'
+                              : room.definition.message.intent ===
+                                  'describe-self'
+                                ? 'Назвать вид, а не имя'
+                                : 'Назвать имя автора'}
+                </small>
+              )}
+              {!conversation && room.reference && (
+                <div
+                  className="reference-captions"
+                  aria-label="Предметы на сцене"
+                >
+                  {room.reference.objects.map((object) => (
+                    <span
+                      key={object.id}
+                      data-selected={object.id === room.reference?.indicatedId}
+                    >
+                      {object.id === room.reference?.indicatedId ? '▶ ' : ''}
+                      {object.id === 'departure-baggage' &&
+                      room.definition.message?.exchange
+                        ? room.definition.message.exchange.act === 'question' &&
+                          !room.completed
+                          ? 'Собран ли багаж?'
+                          : room.definition.message.exchange.ready
+                            ? 'Багаж собран'
+                            : 'Багаж не собран'
+                        : (object.caption ?? object.label).replace(/\n/g, ' ')}
+                    </span>
+                  ))}
+                </div>
+              )}
               {room.definition.message.exchange?.question && (
                 <small className="exchange-question">
                   {room.definition.message.exchange.question}
@@ -733,7 +765,7 @@ export function App({
               index={line}
               onIndex={setLine}
               onFinish={() => setConversation(null)}
-              onRestart={reset}
+              onRestart={() => openPanel('restart')}
               onMenu={() => setPanel('menu')}
               suspended={
                 screen !== 'workshop' ||

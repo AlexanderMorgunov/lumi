@@ -125,7 +125,7 @@ test('the key: shared reference, grammatical alternative, exact object delivery 
   await expect(talk(page).getByRole('status')).toContainText(
     'даже если этот ключ ещё не обсуждали',
   );
-  await talk(page).getByRole('button', { name: 'В мастерскую' }).click();
+  await talk(page).getByRole('button', { name: 'Вернуться к полю' }).click();
   if (mobile) await page.setViewportSize({ width: 844, height: 390 });
   await page.keyboard.press('KeyZ');
   await expect(field(page)).toHaveAttribute('data-reference-location', 'table');
@@ -146,10 +146,12 @@ test('the key: shared reference, grammatical alternative, exact object delivery 
       name: 'Кот и Люми понимают, какой именно ключ нужен',
     }),
   ).toHaveAttribute('aria-pressed', 'true');
-  await talk(page).getByRole('button', { name: 'В мастерскую' }).click();
+  await talk(page).getByRole('button', { name: 'Вернуться к полю' }).click();
   await page.getByRole('button', { name: 'Меню и пауза' }).click();
   await page.getByRole('button', { name: 'Начать комнату заново' }).click();
-  await page.getByRole('button', { name: 'Начать эпизод заново' }).click();
+  await page
+    .getByRole('button', { name: 'Начать эпизод заново', exact: true })
+    .click();
   await expect(field(page)).toHaveAttribute('data-reference-location', 'table');
   await expect(page.getByLabel('Слова в рамке чтения')).toHaveText('… …');
   await page.getByRole('button', { name: 'Журнал', exact: true }).click();

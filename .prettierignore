@@ -9,3 +9,6 @@ vendor
 .agents/skills/vitest
 .agents/skills/phaser-core
 package-lock.json
+
+/ux-audit-*-evidence/
+/opencode.json

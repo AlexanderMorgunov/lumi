@@ -198,7 +198,7 @@ test('plays all 18 parts with recorded voices, checks contractions and meaning w
     await page.screenshot({ path: info.outputPath(`${id}-reflection.png`) });
     await finish(
       page,
-      id === 'chapter-02-10' ? 'На станцию' : 'Следующий эпизод',
+      id === 'chapter-02-10' ? 'Вернуться к полю' : 'Следующий эпизод',
     );
   }
   await page.getByRole('button', { name: 'Слова', exact: true }).click();

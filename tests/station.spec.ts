@@ -182,7 +182,9 @@ test('station: arrival, two authors, touch/keyboard, journal, undo, replay and p
       ),
     ]);
   await page.screenshot({ path: info.outputPath('station-complete.png') });
-  await page.getByRole('button', { name: 'На станцию', exact: true }).click();
+  await page
+    .getByRole('button', { name: 'Вернуться к полю', exact: true })
+    .click();
   await page.getByRole('button', { name: 'Слова', exact: true }).click();
   await expect(
     page.getByRole('button', { name: 'Встреченные · 18' }),

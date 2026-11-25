@@ -95,6 +95,21 @@
   display: block;
   font-size: 15px;
 }
+.reference-captions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 14px;
+  margin-top: 6px;
+  font:
+    14px/1.4 system-ui,
+    sans-serif;
+  color: #d4ddd3;
+}
+.reference-captions [data-selected='true'] {
+  color: #ffe6a8;
+  font-weight: 700;
+}
 .message-context small {
   color: #ced6cd;
   font-size: 12px;

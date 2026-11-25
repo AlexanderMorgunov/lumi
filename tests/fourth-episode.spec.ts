@@ -128,7 +128,7 @@ test('fourth request: independent an transfer, recovery, explanation and navigat
     'фрукт это или нет',
   );
   await page.screenshot({ path: info.outputPath('egg-explained.png') });
-  await talk(page).getByRole('button', { name: 'В мастерскую' }).click();
+  await talk(page).getByRole('button', { name: 'Вернуться к полю' }).click();
   await page.keyboard.press('KeyZ');
   await expect(page.getByLabel('Слова в рамке чтения')).toHaveText('an egg');
   await page.screenshot({ path: info.outputPath('egg-undone.png') });
@@ -137,10 +137,12 @@ test('fourth request: independent an transfer, recovery, explanation and navigat
   await expect(
     page.getByRole('button', { name: 'Любое одно; an перед гласным звуком' }),
   ).toHaveAttribute('aria-pressed', 'true');
-  await talk(page).getByRole('button', { name: 'В мастерскую' }).click();
+  await talk(page).getByRole('button', { name: 'Вернуться к полю' }).click();
   await page.getByRole('button', { name: 'Меню и пауза' }).click();
   await page.getByRole('button', { name: 'Начать комнату заново' }).click();
-  await page.getByRole('button', { name: 'Начать эпизод заново' }).click();
+  await page
+    .getByRole('button', { name: 'Начать эпизод заново', exact: true })
+    .click();
   await expect(page.getByLabel('Слова в рамке чтения')).toHaveText('… …');
   await page.getByRole('button', { name: 'Журнал', exact: true }).click();
   await page.getByRole('button', { name: 'Подсказка', exact: true }).click();

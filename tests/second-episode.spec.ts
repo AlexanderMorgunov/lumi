@@ -102,13 +102,18 @@ test('second request: transfer, explain, undo and replay on the same canvas', as
     'Мы попросили один ключ, и подошёл любой из трёх',
   );
   await page.screenshot({ path: info.outputPath('key-meaning-correct.png') });
-  await talk(page).getByRole('button', { name: 'В мастерскую' }).click();
+  await talk(page).getByRole('button', { name: 'Вернуться к полю' }).click();
   await page.keyboard.press('KeyZ');
   await expect(
     page.getByRole('button', { name: /Передать просьбу/ }),
   ).toBeEnabled();
   await page.keyboard.press('Enter');
-  await talk(page).getByRole('button', { name: 'Сыграть ещё раз' }).click();
+  await talk(page)
+    .getByRole('button', { name: 'Начать эпизод заново…' })
+    .click();
+  await page
+    .getByRole('button', { name: 'Начать эпизод заново', exact: true })
+    .click();
   await expect(page.locator('.sr-only')).toContainText('Ходов: 0');
   await expect(page.locator('.workshop')).toHaveAttribute(
     'data-episode',
@@ -144,7 +149,9 @@ test('key request survives navigation; hint and restart recover a trapped word',
   await expect(page.getByRole('status')).toContainText('a key');
   await page.getByRole('button', { name: 'Меню и пауза' }).click();
   await page.getByRole('button', { name: 'Начать комнату заново' }).click();
-  await page.getByRole('button', { name: 'Начать эпизод заново' }).click();
+  await page
+    .getByRole('button', { name: 'Начать эпизод заново', exact: true })
+    .click();
   await expect(page.locator('.sr-only')).toContainText('Ходов: 0');
   for (const direction of route)
     await page.getByRole('button', { name: direction, exact: true }).click();
