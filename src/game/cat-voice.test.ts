@@ -13,6 +13,7 @@ import restScript from '../../tests/fixtures/voice/chapter-01-rest-script.json';
 class TestAudio {
   static instances: TestAudio[] = [];
   static playResult: () => Promise<void> = () => Promise.resolve();
+  currentTime = 0;
   onended: (() => void) | null = null;
   onerror: (() => void) | null = null;
   pause = vi.fn();
@@ -208,12 +209,14 @@ it('obsolete play rejections and completion cannot clear a newer line', async ()
   dispose();
 });
 
-it('long lessons outlive the word timeout and disposal invalidates callbacks', () => {
+it('long lessons outlive the word timeout and disposal invalidates callbacks', async () => {
   const audio = createGameAudio();
   const dispose = audio.mount();
   audio.playCat(clip);
+  await Promise.resolve();
   vi.advanceTimersByTime(20000);
   expect(audio.getSnapshot().catPlaying).toBe(clip.id);
+  expect(TestAudio.instances).toHaveLength(1);
   const end = TestAudio.instances[0]!.onended!;
   dispose();
   end();
@@ -222,20 +225,65 @@ it('long lessons outlive the word timeout and disposal invalidates callbacks', (
   expect(vi.getTimerCount()).toBe(0);
 });
 
-it('missing audio and autoplay rejection preserve text-first recovery', async () => {
+it('a stalled start retries once and then makes manual repeat available', () => {
+  TestAudio.playResult = () => new Promise(() => {});
   const audio = createGameAudio();
   const dispose = audio.mount();
   audio.playCat(clip);
-  TestAudio.instances[0]!.onerror!();
+  vi.advanceTimersByTime(10000);
+  expect(TestAudio.instances).toHaveLength(2);
+  expect(audio.getSnapshot().catPlaying).toBe(clip.id);
+  vi.advanceTimersByTime(10000);
+  expect(TestAudio.instances).toHaveLength(2);
   expect(audio.getSnapshot()).toMatchObject({
     catPlaying: null,
-    catMessage: expect.stringContaining('Запись недоступна'),
+    catMessage: expect.stringContaining('Не удалось загрузить запись'),
   });
-  expect(TestAudio.instances[0]!.pause).toHaveBeenCalled();
-  TestAudio.playResult = () => Promise.reject(new Error('autoplay denied'));
+  dispose();
+});
+
+it('retries a failed load once and ignores the abandoned player rejection', async () => {
+  let rejectFirst: (error: DOMException) => void = () => {};
+  TestAudio.playResult = () =>
+    new Promise((_resolve, reject) => {
+      rejectFirst = reject;
+    });
+  const audio = createGameAudio();
+  const dispose = audio.mount();
+  audio.playCat(clip);
+  const first = TestAudio.instances[0]!;
+  TestAudio.playResult = () => Promise.resolve();
+  first.onerror!();
+  rejectFirst(new DOMException('Load failed', 'NotSupportedError'));
+  await Promise.resolve();
+  expect(first.pause).toHaveBeenCalled();
+  expect(TestAudio.instances).toHaveLength(2);
+  expect(audio.getSnapshot()).toMatchObject({
+    catPlaying: clip.id,
+    catMessage: '',
+  });
+  TestAudio.instances[1]!.onerror!();
+  expect(TestAudio.instances).toHaveLength(2);
+  expect(audio.getSnapshot()).toMatchObject({
+    catPlaying: null,
+    catMessage: expect.stringContaining('Не удалось загрузить запись'),
+  });
+  dispose();
+});
+
+it('a browser autoplay block waits for the player to repeat the line', async () => {
+  const audio = createGameAudio();
+  const dispose = audio.mount();
+  TestAudio.playResult = () =>
+    Promise.reject(new DOMException('Autoplay denied', 'NotAllowedError'));
   audio.playCat(clip);
   await Promise.resolve();
-  expect(audio.getSnapshot().catMessage).toContain('Повторить реплику');
+  expect(TestAudio.instances).toHaveLength(1);
+  expect(audio.getSnapshot()).toMatchObject({
+    catPlaying: null,
+    catMessage: expect.stringContaining('чтобы включить звук'),
+  });
+  expect(TestAudio.instances[0]!.pause).toHaveBeenCalled();
   TestAudio.playResult = () => Promise.resolve();
   audio.playCat(clip);
   expect(audio.getSnapshot()).toMatchObject({
