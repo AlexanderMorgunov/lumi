@@ -157,7 +157,9 @@ test('it describes a pointed umbrella and a pictured egg with voices, Undo, jour
     .click();
   await voice(page, 'tik', 'chapter-02-05-egg-feedback-object-ordinary');
   await page.screenshot({ path: info.outputPath('objects-complete.png') });
-  await page.getByRole('button', { name: 'На станцию', exact: true }).click();
+  await page
+    .getByRole('button', { name: 'Вернуться к полю', exact: true })
+    .click();
   await page.getByRole('button', { name: 'Журнал', exact: true }).click();
   await expect(page.getByRole('dialog')).toContainText(
     'Тик → Люми (о чём: зонт у стойки): It is an umbrella.',

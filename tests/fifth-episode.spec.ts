@@ -168,7 +168,7 @@ test('episode five: contrasting sounds, both alternatives, corrections and indep
   ).toHaveCount(1);
   if (mobile) await page.setViewportSize({ width: 844, height: 390 });
   await page.screenshot({ path: info.outputPath('choice-finished.png') });
-  await talk(page).getByRole('button', { name: 'В мастерскую' }).click();
+  await talk(page).getByRole('button', { name: 'Вернуться к полю' }).click();
   await page.keyboard.press('KeyZ');
   await expect(page.getByLabel('Слова в рамке чтения')).toHaveText('an apple');
   await page.getByRole('button', { name: 'Меню и пауза' }).click();
@@ -182,7 +182,9 @@ test('episode five: contrasting sounds, both alternatives, corrections and indep
   await expect(page.getByLabel('Слова в рамке чтения')).toHaveText('an apple');
   await page.getByRole('button', { name: 'Меню и пауза' }).click();
   await page.getByRole('button', { name: 'Начать комнату заново' }).click();
-  await page.getByRole('button', { name: 'Начать эпизод заново' }).click();
+  await page
+    .getByRole('button', { name: 'Начать эпизод заново', exact: true })
+    .click();
   await expect(page.getByLabel('Слова в рамке чтения')).toHaveText('… …');
   expect(await canvas!.evaluate((element) => element.isConnected)).toBe(true);
   await expect(page.locator('canvas')).toHaveCount(1);

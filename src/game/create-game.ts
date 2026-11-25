@@ -218,10 +218,22 @@ export function createGame(
             : short
               ? 150
               : 12;
+        const contextBottom = !talking
+          ? parent
+              .closest('.workshop')
+              ?.querySelector('.message-context')
+              ?.getBoundingClientRect().bottom
+          : undefined;
         const top = level.message
           ? portrait
-            ? 174
-            : 112
+            ? Math.max(
+                174,
+                (contextBottom ?? 0) - parent.getBoundingClientRect().top + 12,
+              )
+            : Math.max(
+                112,
+                (contextBottom ?? 0) - parent.getBoundingClientRect().top + 12,
+              )
           : portrait
             ? 116
             : talking
@@ -732,7 +744,7 @@ export function createGame(
         const referenceDelivered = indicated?.location === 'bag';
         referenceMarker.setVisible(Boolean(indicated));
         referenceRing.setVisible(indicated?.display !== 'record');
-        referenceLabel.setVisible(indicated?.display !== 'record');
+        referenceLabel.setVisible(!station && indicated?.display !== 'record');
         referenceArrow.setPosition(0, -31);
         if (reference && indicated) {
           // Object captions sit below the props, clear of the DOM message header.
@@ -904,7 +916,7 @@ export function createGame(
                 )
                 .setPosition(pos.x, pos.y + 79)
                 .setFontSize(18)
-                .setVisible(true);
+                .setVisible(!station);
               parent.dataset.recordIllustrations +=
                 pictures.map((p) => p.texture).join(',') + ';';
               if (object.id === reference.indicatedId)

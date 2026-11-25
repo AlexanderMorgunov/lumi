@@ -83,7 +83,9 @@ test('pause branches preserve puzzle, trap focus and return; reset requires deli
   await page.getByRole('button', { name: 'Закрыть настройки' }).click();
   await page.getByRole('button', { name: 'Меню и пауза' }).click();
   await page.getByRole('button', { name: 'Начать комнату заново' }).click();
-  await page.getByRole('button', { name: 'Начать эпизод заново' }).click();
+  await page
+    .getByRole('button', { name: 'Начать эпизод заново', exact: true })
+    .click();
   await expect(page.locator('.sr-only')).toContainText('Ходов: 0');
   await page.getByRole('button', { name: 'Меню и пауза' }).click();
   await page

@@ -266,14 +266,17 @@ test('completes voiced episodes 8–12 through real controls with linked objects
           if (mobile) {
             await page.setViewportSize({ width: 360, height: 800 });
             await expect(
-              page.getByRole('button', { name: 'В мастерскую', exact: true }),
+              page.getByRole('button', {
+                name: 'Вернуться к полю',
+                exact: true,
+              }),
             ).toBeInViewport();
             await page.screenshot({
               path: info.outputPath('chapter-complete-portrait.png'),
             });
           }
           await page
-            .getByRole('button', { name: 'В мастерскую', exact: true })
+            .getByRole('button', { name: 'Вернуться к полю', exact: true })
             .click();
         }
       }
@@ -311,7 +314,9 @@ test('completes voiced episodes 8–12 through real controls with linked objects
   await expect(field(page)).toHaveAttribute('data-level-id', 'chapter-01-11-3');
   await page.getByRole('button', { name: 'Меню и пауза' }).click();
   await page.getByRole('button', { name: 'Начать комнату заново' }).click();
-  await page.getByRole('button', { name: 'Начать эпизод заново' }).click();
+  await page
+    .getByRole('button', { name: 'Начать эпизод заново', exact: true })
+    .click();
   await expect(field(page)).toHaveAttribute('data-level-id', 'chapter-01-11-1');
   // Chapter transition uses the actually earned unlock, without replaying the prologue.
   await page.getByRole('button', { name: 'Меню и пауза' }).click();

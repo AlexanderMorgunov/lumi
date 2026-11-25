@@ -119,7 +119,7 @@ test('third request: learn an, explain its sound, undo and revisit all episodes'
     'форма зависит от следующего звука',
   );
   await page.screenshot({ path: info.outputPath('apple-explained.png') });
-  await talk(page).getByRole('button', { name: 'В мастерскую' }).click();
+  await talk(page).getByRole('button', { name: 'Вернуться к полю' }).click();
   await page.keyboard.press('KeyZ');
   await expect(page.getByLabel('Слова в рамке чтения')).toHaveText('an apple');
   await page.screenshot({ path: info.outputPath('apple-undone.png') });
@@ -138,10 +138,12 @@ test('third request: learn an, explain its sound, undo and revisit all episodes'
   await expect(
     page.getByRole('button', { name: 'В apple первый звук — гласный' }),
   ).toHaveAttribute('aria-pressed', 'true');
-  await talk(page).getByRole('button', { name: 'В мастерскую' }).click();
+  await talk(page).getByRole('button', { name: 'Вернуться к полю' }).click();
   await page.getByRole('button', { name: 'Меню и пауза' }).click();
   await page.getByRole('button', { name: 'Начать комнату заново' }).click();
-  await page.getByRole('button', { name: 'Начать эпизод заново' }).click();
+  await page
+    .getByRole('button', { name: 'Начать эпизод заново', exact: true })
+    .click();
   await expect(page.getByLabel('Слова в рамке чтения')).toHaveText('an …');
   await page.getByRole('button', { name: 'Журнал', exact: true }).click();
   await page.getByRole('button', { name: 'Подсказка', exact: true }).click();

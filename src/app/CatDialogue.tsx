@@ -301,7 +301,7 @@ export function CatDialogue({
           <button onClick={() => onIndex(index - 1)}>Назад</button>
         )}
         {conversation === 'success' && !meaningCheck && (
-          <button onClick={onRestart}>Сыграть ещё раз</button>
+          <button onClick={onRestart}>Начать эпизод заново…</button>
         )}
         {nextEpisode && (
           <button className="primary" onClick={onNextEpisode}>
@@ -320,7 +320,13 @@ export function CatDialogue({
           disabled={!canContinue && !canRetry}
           onClick={nextEpisode ? onFinish : next}
         >
-          {canRetry ? 'Выбрать другой ответ' : last ? story.action : 'Дальше'}
+          {nextEpisode
+            ? 'Вернуться к полю'
+            : canRetry
+              ? 'Выбрать другой ответ'
+              : last
+                ? story.action
+                : 'Дальше'}
         </button>
       </div>
     </section>

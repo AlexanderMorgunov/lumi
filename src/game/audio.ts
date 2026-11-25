@@ -123,33 +123,54 @@ export function createGameAudio() {
       if (!active || !state.catEnabled) return;
       stop();
       const token = generation;
-      const player = new Audio(`${import.meta.env.BASE_URL}${clip.file}`);
-      recording = player;
-      catFile = clip.file;
-      const finish = (message: string) => {
-        if (token !== generation || !active) return;
-        clearTimeout(timeout);
-        player.onended = null;
-        player.onerror = null;
-        player.pause();
-        player.removeAttribute('src');
-        player.load();
-        recording = null;
-        catFile = null;
-        publish({ catPlaying: null, catMessage: message });
-      };
-      player.onended = () => finish('');
-      player.onerror = () =>
-        finish('Запись недоступна. Можно читать или повторить.');
+      function play(mayRetry: boolean) {
+        const player = new Audio(`${import.meta.env.BASE_URL}${clip.file}`);
+        recording = player;
+        catFile = clip.file;
+        const finish = (message: string, loadFailed = false) => {
+          if (token !== generation || !active || recording !== player) return;
+          const retry = mayRetry && loadFailed && player.currentTime === 0;
+          clearTimeout(timeout);
+          player.onended = null;
+          player.onerror = null;
+          player.pause();
+          player.removeAttribute('src');
+          player.load();
+          recording = null;
+          catFile = null;
+          if (retry) play(false);
+          else publish({ catPlaying: null, catMessage: message });
+        };
+        const unavailable = () =>
+          finish(
+            'Не удалось загрузить запись. Нажми «Повторить реплику».',
+            true,
+          );
+        player.onended = () => finish('');
+        player.onerror = unavailable;
+        timeout = setTimeout(unavailable, 10000);
+        void player.play().then(
+          () => {
+            if (recording !== player) return;
+            clearTimeout(timeout);
+            // Measure the playback limit from the start of playback.
+            timeout = setTimeout(
+              () => finish('Запись остановилась. Попробуй повторить.'),
+              Math.max(30000, (clip.duration + 20) * 1000),
+            );
+          },
+          (error: unknown) => {
+            if (
+              error instanceof DOMException &&
+              error.name === 'NotAllowedError'
+            )
+              finish('Нажми «Повторить реплику», чтобы включить звук.');
+            else unavailable();
+          },
+        );
+      }
+      play(true);
       publish({ catPlaying: clip.id, catMessage: '' });
-      // Lessons can be much longer than the 15-second vocabulary timeout.
-      timeout = setTimeout(
-        () => finish('Запись не ответила. Попробуй повторить.'),
-        Math.max(30000, (clip.duration + 20) * 1000),
-      );
-      void player
-        .play()
-        .catch(() => finish('Нажми «Повторить реплику», чтобы включить звук.'));
     },
     setEffects(value: boolean) {
       publish({ effects: value });

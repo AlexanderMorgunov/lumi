@@ -228,7 +228,7 @@ test('plays 11–15 with real keyboard/touch input, unknown question facts, shor
     await page.screenshot({ path: info.outputPath(`${id}-reflection.png`) });
     await finish(
       page,
-      id === 'chapter-02-15' ? 'На станцию' : 'Следующий эпизод',
+      id === 'chapter-02-15' ? 'Вернуться к полю' : 'Следующий эпизод',
     );
   }
   await page.getByRole('button', { name: 'Журнал', exact: true }).click();

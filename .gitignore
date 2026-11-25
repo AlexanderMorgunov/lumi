@@ -38,3 +38,7 @@ release.config.local.json
 .DS_Store
 Thumbs.db
 Desktop.ini
+
+# Local browser audit evidence and machine-specific OpenCode setup
+/ux-audit-*-evidence/
+/opencode.json
