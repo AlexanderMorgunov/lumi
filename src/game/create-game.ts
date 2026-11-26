@@ -158,6 +158,7 @@ export function createGame(
             .add(String(i), 0, frame.x, frame.y, frame.width, frame.height),
         );
       let field = boardGeometry(level);
+      let framingTop = field.top;
       const world = (position: Position) => cellCenter(field, position);
       const texture = this.textures.get('lumi');
       const source = texture.getSourceImage();
@@ -205,9 +206,9 @@ export function createGame(
           .setDisplaySize((height * frame.width) / frame.height, height);
       };
       setEmote(cat, 'cat-emotes', 0, 220);
-      const layout = () => {
-        const width = this.scale.width,
-          height = this.scale.height;
+      const workshop = parent.closest('.workshop');
+      const boardSpace = workshop?.querySelector('.landscape-board-space');
+      const sceneFraming = (width: number, height: number) => {
         const portrait = width < 600 && height > width;
         const short = height <= 520 && !portrait;
         const talking = parent.dataset.conversation === 'true';
@@ -219,10 +220,8 @@ export function createGame(
               ? 150
               : 12;
         const contextBottom = !talking
-          ? parent
-              .closest('.workshop')
-              ?.querySelector('.message-context')
-              ?.getBoundingClientRect().bottom
+          ? workshop?.querySelector('.message-context')?.getBoundingClientRect()
+              .bottom
           : undefined;
         const top = level.message
           ? portrait
@@ -260,7 +259,7 @@ export function createGame(
           ),
         );
         const centerX = 600 + (right - left) / (2 * zoom);
-        let centerY = (talking ? 400 : 480) + (bottom - top) / (2 * zoom);
+        const centerY = (talking ? 400 : 480) + (bottom - top) / (2 * zoom);
         // Seat the room lower instead of centering its cut-out above the forest.
         // Move the camera, so scenery, pieces and DOM listening targets agree.
         const floorBottom = (800 - centerY) * zoom + height / 2;
@@ -268,7 +267,7 @@ export function createGame(
           0,
           (portrait ? height - bottom : height + 8) - floorBottom,
         );
-        const hud = parent.closest('.workshop')?.querySelector('.hud-bottom');
+        const hud = workshop?.querySelector('.hud-bottom');
         if (!talking && !short && hud) {
           const hudTop =
             hud.getBoundingClientRect().top -
@@ -285,7 +284,32 @@ export function createGame(
         // Listening replaces part of the free floor with a variable-height
         // status panel; retain its original clearance while it is open.
         if (parent.dataset.listening === 'true') drop = 0;
-        centerY -= drop / zoom;
+        return { zoom, centerX, centerY: centerY - drop / zoom };
+      };
+      const fieldFraming = (space: DOMRect, width: number, height: number) => {
+        const viewport = parent.getBoundingClientRect();
+        const boardWidth = field.width * level.columns;
+        const framingHeight =
+          field.top + field.height * level.rows - framingTop;
+        const zoom = Math.min(
+          space.width / boardWidth,
+          space.height / framingHeight,
+        );
+        const x = space.left - viewport.left + space.width / 2;
+        const y = space.top - viewport.top + space.height / 2;
+        return {
+          zoom,
+          centerX: field.left + boardWidth / 2 + (width / 2 - x) / zoom,
+          centerY: framingTop + framingHeight / 2 + (height / 2 - y) / zoom,
+        };
+      };
+      const layout = () => {
+        const { width, height } = this.scale;
+        const space = boardSpace?.getBoundingClientRect();
+        const { zoom, centerX, centerY } =
+          space && space.width > 0 && space.height > 0
+            ? fieldFraming(space, width, height)
+            : sceneFraming(width, height);
         this.cameras.main.setZoom(zoom).centerOn(centerX, centerY);
         const bgWidth = Math.max(width / zoom, (height / zoom) * 1.5);
         backdrop
@@ -310,7 +334,6 @@ export function createGame(
       };
       this.scale.on(Phaser.Scale.Events.RESIZE, layout);
       this.game.events.on('room-layout', layout);
-      layout();
       const grid = this.add.graphics().setDepth(15);
       const frame = this.add.graphics().setDepth(16);
       const frameGlow = this.add.graphics().setDepth(18);
@@ -589,6 +612,16 @@ export function createGame(
           .setDepth(34)
           .setVisible(false),
       );
+      const referenceArt = [
+        referenceMarker,
+        ...keySupplies,
+        ...appleSupplies,
+        deliveredKey,
+        deliveredApple,
+        ...contextSprites,
+        ...contextCards,
+        ...contextCaptions,
+      ];
       const waitingRobot = this.add
         .image(1000, 260, 'robot')
         .setDisplaySize(118, 118)
@@ -724,7 +757,6 @@ export function createGame(
           lastRevision = -1;
           rebuildBoard();
           rebuildPieces();
-          layout();
         }
         grid.setVisible(snapshot.view.grid);
         parent.dataset.levelId = state.definition.id;
@@ -1048,6 +1080,15 @@ export function createGame(
           if (this.sys.isActive()) this.sys.pause();
         } else if (this.sys.isPaused()) this.sys.resume();
         present(0, 0);
+        // Some lessons identify a specific object above the grid.
+        framingTop = reference
+          ? Math.min(
+              field.top,
+              ...referenceArt
+                .filter((object) => object.visible)
+                .map((object) => object.getBounds().top),
+            )
+          : field.top;
         layout();
       };
       const present = (_time: number, delta: number) => {
