@@ -638,6 +638,7 @@ export function App({
                   : 'Просьба Марты · любая карточка с котом'}
             </div>
           )}
+          <div className="landscape-board-space" aria-hidden="true" />
           {!conversation && (
             <div className="hud-bottom">
               <div className="movement-controls">
@@ -651,9 +652,13 @@ export function App({
                       key={direction}
                       aria-label={label}
                       disabled={blocked || room.completed}
+                      onKeyDown={(event) => {
+                        if (event.key === 'Enter' && event.repeat)
+                          event.preventDefault();
+                      }}
                       onClick={() => play({ type: 'move', direction })}
                     >
-                      {icon}
+                      <span aria-hidden="true">{icon}</span>
                     </button>
                   ))}
                 </div>

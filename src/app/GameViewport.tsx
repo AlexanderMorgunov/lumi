@@ -68,11 +68,24 @@ export function GameViewport({
           getMouth,
         );
         relayout.current = () => game.events.emit('room-layout');
-        const resize = new ResizeObserver(() => {
-          game.scale.resize(parent.clientWidth, parent.clientHeight);
-          relayout.current?.();
+        const resize = new ResizeObserver((entries) => {
+          const { clientWidth, clientHeight } = parent;
+          if (entries.some((entry) => entry.target === parent))
+            gesture.current = null;
+          if (
+            clientWidth !== game.scale.width ||
+            clientHeight !== game.scale.height
+          ) {
+            game.scale.resize(clientWidth, clientHeight);
+          } else {
+            relayout.current?.();
+          }
         });
         resize.observe(parent);
+        const boardSpace = parent.parentElement?.querySelector(
+          '.landscape-board-space',
+        );
+        if (boardSpace) resize.observe(boardSpace);
         destroy = () => {
           resize.disconnect();
           relayout.current = undefined;
