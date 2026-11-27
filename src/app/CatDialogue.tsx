@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type RefObject } from 'react';
+import { useEffect, useRef, type RefObject } from 'react';
 import { CatPortrait } from './CatPortrait';
 import { StationPortrait } from './StationPortrait';
 import { LumiPortrait } from './Prologue';
@@ -37,6 +37,8 @@ export type { Conversation } from '../domain/dialogue';
 export function CatDialogue({
   conversation,
   index,
+  sceneShown,
+  onToggleScene,
   onIndex,
   onFinish,
   onRestart,
@@ -54,6 +56,8 @@ export function CatDialogue({
 }: {
   conversation: Conversation;
   index: number;
+  sceneShown: boolean;
+  onToggleScene: () => void;
   onIndex: (index: number) => void;
   onFinish: () => void;
   onRestart: () => void;
@@ -81,7 +85,6 @@ export function CatDialogue({
   const ref = useRef<HTMLElement>(null);
   const answerFeedback = useRef<HTMLParagraphElement>(null);
   const replyArea = useRef<HTMLDivElement>(null);
-  const [sceneShown, setSceneShown] = useState(false);
   const story = dialogueStory(room, conversation);
   const speaker = dialogueSpeaker(room, conversation, index);
   const reflection =
@@ -115,7 +118,6 @@ export function CatDialogue({
     };
   }, [field]);
   function changeLine(nextIndex: number) {
-    setSceneShown(false);
     replyArea.current?.scrollTo({ top: 0 });
     onIndex(nextIndex);
   }
@@ -309,7 +311,7 @@ export function CatDialogue({
           className="cat-scene-toggle"
           aria-controls="game-scene"
           aria-expanded={sceneShown}
-          onClick={() => setSceneShown((shown) => !shown)}
+          onClick={onToggleScene}
         >
           {sceneShown ? 'Скрыть сцену' : 'Показать сцену'}
         </button>
