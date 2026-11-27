@@ -152,7 +152,7 @@
   height: clamp(47px, 14cqh, 100px);
   left: 30px;
   bottom: -4px;
-  background: url('/art/lumi/lumi-v1.png') 0 0 / 400% 400%;
+  background: url('/art/lumi/lumi-v1.webp') 0 0 / 400% 400%;
   filter: drop-shadow(0 0 12px #ffc75e88);
   pointer-events: none;
 }

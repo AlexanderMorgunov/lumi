@@ -263,7 +263,11 @@ export function App({
   useEffect(() => {
     if (screen === 'workshop' && !panel && !conversation)
       field.current?.focus({ preventScroll: true });
-    else if (screen === 'title' && !panel)
+    else if (
+      screen === 'title' &&
+      !panel &&
+      (window.self === window.top || navigator.userActivation.hasBeenActive)
+    )
       titleMapButton.current?.focus({ preventScroll: true });
   }, [screen, panel, conversation]);
   useEffect(() => {
@@ -477,6 +481,9 @@ export function App({
             }
             playing={audioState.playing}
             onSpeak={speakWord}
+            location={room.definition.message ? 'station' : 'workshop'}
+            retryBlocked={state.externallyPaused || state.closed}
+            active={screen === 'workshop'}
           />
           <header className="hud-top">
             <div className="location">

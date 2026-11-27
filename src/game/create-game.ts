@@ -1,6 +1,7 @@
 import Phaser from 'phaser';
 import type { Direction, Position } from '../domain/puzzle';
 import { episodes } from '../domain/episodes';
+import { loadSceneImage, propTexture, roomTextures } from './scene-assets';
 import { boardGeometry, cellCenter } from './board-geometry';
 import type { GameSession } from './session';
 import { lumiBaselines } from './lumi-atlas';
@@ -8,11 +9,7 @@ import emoteAtlas from './emote-atlas.json';
 import { frameFeedback } from './frame-feedback';
 import { stationFrame } from './station-animation';
 import type { CatMouth } from './cat-mouth';
-import {
-  stationArt,
-  stationIllustrations,
-  childFrame,
-} from './station-illustrations';
+import { stationIllustrations, childFrame } from './station-illustrations';
 import childAtlas from './station-child-atlas.json';
 
 export type SceneLoadState = 'loading' | 'ready' | 'error';
@@ -24,21 +21,6 @@ export type WordTarget = {
   width: number;
   height: number;
 };
-const backgroundAssets = ['forest', 'room', 'foreground'] as const;
-const closingAssets = ['book', 'orange', 'robot', 'umbrella'] as const;
-const propTextures: Record<string, string> = {
-  key: 'brass-key',
-  apple: 'apple',
-  apples: 'apple',
-  eggs: 'egg',
-  book: 'book',
-  orange: 'orange',
-  robot: 'robot',
-  robots: 'robot',
-  books: 'book',
-  keys: 'brass-key',
-  umbrella: 'umbrella',
-};
 const rows: Record<Direction, number> = { down: 0, left: 1, right: 2, up: 3 };
 
 export function createGame(
@@ -47,96 +29,113 @@ export function createGame(
   onLoadState: (state: SceneLoadState) => void,
   onWordTargets: (targets: WordTarget[]) => void = () => {},
   getMouth: () => CatMouth = () => 'rest',
+  active = true,
 ) {
+  let retryScene: (() => void) | undefined;
+  let cancelScene: (() => void) | undefined;
+  let syncActivity: (() => void) | undefined;
   class WorkshopScene extends Phaser.Scene {
     constructor() {
       super('workshop');
     }
-    preload() {
-      for (const name of stationArt)
-        this.load.image(
-          name,
-          `${import.meta.env.BASE_URL}art/station/review-v1/${name}.webp`,
-        );
-      this.load.image(
-        'station',
-        `${import.meta.env.BASE_URL}art/station/station-v1.png`,
-      );
-      for (const character of ['marta', 'tik'])
-        this.load.image(
-          `${character}-emotes`,
-          `${import.meta.env.BASE_URL}art/station/${character}-emotes-v1.png`,
-        );
-      for (const name of ['lumi-emotes', 'cat-emotes'])
-        this.load.image(
-          name,
-          `${import.meta.env.BASE_URL}art/lumi/${name}-v1.png`,
-        );
-      for (const name of closingAssets)
-        this.load.image(
-          name,
-          `${import.meta.env.BASE_URL}art/props/${name}-v1.png`,
-        );
-      this.load.on(Phaser.Loader.Events.FILE_LOAD_ERROR, () =>
-        onLoadState('error'),
-      );
-      for (const name of backgroundAssets)
-        this.load.image(
-          name,
-          `${import.meta.env.BASE_URL}art/lantern-and-moss/${name}-v1.png`,
-        );
-      this.load.image(
-        'lumi',
-        `${import.meta.env.BASE_URL}art/lumi/lumi-v1.png`,
-      );
-      this.load.image(
-        'cat-picture',
-        `${import.meta.env.BASE_URL}art/lumi/cat-v1.png`,
-      );
-      this.load.image(
-        'brass-key',
-        `${import.meta.env.BASE_URL}art/lantern-and-moss/key-v1.png`,
-      );
-      this.load.image(
-        'travel-bag',
-        `${import.meta.env.BASE_URL}art/props/travel-bag-v1.png`,
-      );
-      this.load.image(
-        'apple',
-        `${import.meta.env.BASE_URL}art/props/apple-v1.png`,
-      );
-      this.load.image('egg', `${import.meta.env.BASE_URL}art/props/egg-v1.png`);
-      this.load.image(
-        'apple-green',
-        `${import.meta.env.BASE_URL}art/props/apple-green-v1.png`,
-      );
-    }
     create() {
-      if (
-        [
-          ...backgroundAssets,
-          ...stationArt,
-          'station',
-          'marta-emotes',
-          'tik-emotes',
-          ...closingAssets,
-          'lumi',
-          'cat-picture',
-          'brass-key',
-          'travel-bag',
-          'apple',
-          'apple-green',
-          'egg',
-          'lumi-emotes',
-          'cat-emotes',
-        ].some((name) => !this.textures.exists(name))
-      ) {
-        onLoadState('error');
-        return;
-      }
+      let pending: AbortController | undefined;
+      let stopDrawing: (() => void) | undefined;
+      let drawn = false;
+      let restarting = false;
+      let failedRoom:
+        | ReturnType<typeof session.getSnapshot>['room']['definition']
+        | undefined;
+      const missingTextures = () =>
+        [...roomTextures(session.getSnapshot().room)].filter(
+          (key) => !this.textures.exists(key),
+        );
+      const draw = () => {
+        stopDrawing = this.drawRoom(() => !restarting);
+        drawn = true;
+        onLoadState('ready');
+      };
+      const load = (retry = false) => {
+        const { room, closed } = session.getSnapshot();
+        if (!active || pending || drawn || closed) return;
+        if (!retry && failedRoom === room.definition) return;
+        failedRoom = undefined;
+        const missing = missingTextures();
+        if (!missing.length) {
+          draw();
+          return;
+        }
+        const controller = new AbortController();
+        pending = controller;
+        onLoadState('loading');
+        void Promise.allSettled(
+          missing.map(async (key) => {
+            const image = await loadSceneImage(key, controller.signal, retry);
+            controller.signal.throwIfAborted();
+            this.textures.addImage(key, image);
+          }),
+        ).then((results) => {
+          if (controller.signal.aborted) return;
+          pending = undefined;
+          if (results.some((result) => result.status === 'rejected')) {
+            failedRoom = room.definition;
+            onLoadState('error');
+          } else draw();
+        });
+      };
+      const off = session.subscribe(() => {
+        if (session.getSnapshot().closed) {
+          pending?.abort();
+        } else if (drawn && !restarting && missingTextures().length) {
+          // Keep the game's texture cache while recreating the room's sprites.
+          restarting = true;
+          onLoadState('loading');
+          this.scene.restart();
+        }
+      });
+      retryScene = () => load(true);
+      syncActivity = () => {
+        if (active) {
+          load();
+        } else {
+          pending?.abort();
+          pending = undefined;
+        }
+      };
+      const cleanup = () => {
+        this.events.off(Phaser.Scenes.Events.SHUTDOWN, cleanup);
+        this.events.off(Phaser.Scenes.Events.DESTROY, cleanup);
+        restarting = true;
+        off();
+        pending?.abort();
+        stopDrawing?.();
+        retryScene = undefined;
+        cancelScene = undefined;
+        syncActivity = undefined;
+      };
+      cancelScene = cleanup;
+      this.events.once(Phaser.Scenes.Events.SHUTDOWN, cleanup);
+      this.events.once(Phaser.Scenes.Events.DESTROY, cleanup);
+      load();
+    }
+    private drawRoom(canRender: () => boolean) {
+      const textureOrDefault = (name: string) =>
+        this.textures.exists(name) ? name : '__DEFAULT';
+      const addImage = (x: number, y: number, key: string, frame?: string) => {
+        const texture = textureOrDefault(key);
+        return this.add.image(
+          x,
+          y,
+          texture,
+          texture === key ? frame : undefined,
+        );
+      };
       let level = session.getSnapshot().room.definition;
       for (const character of ['marta', 'tik']) {
-        const sheet = this.textures.get(`${character}-emotes`);
+        const key = `${character}-emotes`;
+        if (!this.textures.exists(key)) continue;
+        const sheet = this.textures.get(key);
+        if (sheet.has('0')) continue;
         const source = sheet.getSourceImage();
         for (let i = 0; i < 4; i++) {
           const x = Math.floor(((i % 2) * source.width) / 2);
@@ -151,12 +150,14 @@ export function createGame(
           );
         }
       }
-      for (const name of ['nora', 'younger'] as const)
+      for (const name of ['nora', 'younger'] as const) {
+        if (!this.textures.exists(name)) continue;
+        const sheet = this.textures.get(name);
+        if (sheet.has('0')) continue;
         childAtlas[name].forEach((frame, i) =>
-          this.textures
-            .get(name)
-            .add(String(i), 0, frame.x, frame.y, frame.width, frame.height),
+          sheet.add(String(i), 0, frame.x, frame.y, frame.width, frame.height),
         );
+      }
       let field = boardGeometry(level);
       let framingTop = field.top;
       const world = (position: Position) => cellCenter(field, position);
@@ -166,10 +167,12 @@ export function createGame(
       // computed from the decoded image; no resampling or destructive slicing.
       for (let row = 0; row < 4; row++)
         for (let col = 0; col < 4; col++) {
+          const frame = `${row}-${col}`;
+          if (texture.has(frame)) continue;
           const x = Math.floor((col * source.width) / 4);
           const y = Math.floor((row * source.height) / 4);
           texture.add(
-            `${row}-${col}`,
+            frame,
             0,
             x,
             y,
@@ -181,18 +184,18 @@ export function createGame(
         .image(600, 400, 'forest')
         .setDisplaySize(1200, 800)
         .setDepth(0);
-      const scenery = this.add
-        .image(600, 400, 'room')
+      const scenery = addImage(600, 400, level.message ? 'station' : 'room')
         .setDisplaySize(1200, 800)
         .setDepth(10);
       for (const name of ['lumi-emotes', 'cat-emotes'] as const) {
+        if (!this.textures.exists(name)) continue;
+        const sheet = this.textures.get(name);
+        if (sheet.has('0')) continue;
         emoteAtlas[name].frames.forEach((frame, i) =>
-          this.textures
-            .get(name)
-            .add(String(i), 0, frame.x, frame.y, frame.width, frame.height),
+          sheet.add(String(i), 0, frame.x, frame.y, frame.width, frame.height),
         );
       }
-      const cat = this.add.image(830, 337, 'cat-emotes', '0').setDepth(31);
+      const cat = addImage(830, 337, 'cat-emotes', '0').setDepth(31);
       const setEmote = (
         image: Phaser.GameObjects.Image,
         name: keyof typeof emoteAtlas,
@@ -205,7 +208,6 @@ export function createGame(
           .setOrigin(frame.originX, frame.originY)
           .setDisplaySize((height * frame.width) / frame.height, height);
       };
-      setEmote(cat, 'cat-emotes', 0, 220);
       const workshop = parent.closest('.workshop');
       const boardSpace = workshop?.querySelector('.landscape-board-space');
       const sceneFraming = (width: number, height: number) => {
@@ -304,6 +306,7 @@ export function createGame(
         };
       };
       const layout = () => {
+        if (!canRender()) return;
         const { width, height } = this.scale;
         const space = boardSpace?.getBoundingClientRect();
         const { zoom, centerX, centerY } =
@@ -497,7 +500,7 @@ export function createGame(
             this.add
               .rectangle(0, 0, 60, 64, 0xfff0ce)
               .setStrokeStyle(2, 0xaa7941),
-            this.add.image(0, 0, 'cat-picture').setDisplaySize(54, 54),
+            addImage(0, 0, 'cat-picture').setDisplaySize(54, 54),
           ])
           .setDepth(28 + index),
       );
@@ -506,48 +509,40 @@ export function createGame(
           this.add
             .rectangle(0, 0, 96, 104, 0xfff0ce)
             .setStrokeStyle(5, 0xaa7941),
-          this.add.image(0, 0, 'cat-picture').setDisplaySize(88, 88),
+          addImage(0, 0, 'cat-picture').setDisplaySize(88, 88),
         ])
         .setDepth(30)
         .setVisible(false);
-      const foreground = this.add
-        .image(600, 400, 'foreground')
+      const foreground = addImage(600, 400, 'foreground')
         .setDisplaySize(1200, 800)
         .setDepth(1000);
       const keySupplies = [0, 1, 2].map((i) =>
-        this.add
-          .image(360 + i * 90, 250, 'brass-key')
+        addImage(360 + i * 90, 250, 'brass-key')
           .setDisplaySize(74, 74)
           .setAngle(-40)
           .setDepth(32),
       );
-      const bag = this.add
-        .image(655, 280, 'travel-bag')
+      const bag = addImage(655, 280, 'travel-bag')
         .setOrigin(0.5, 1)
         .setDisplaySize(148, 148)
         .setDepth(30);
       const appleSupplies = [0, 1, 2].map((i) =>
-        this.add
-          .image(360 + i * 90, 250, 'apple')
+        addImage(360 + i * 90, 250, 'apple')
           .setDisplaySize(72, 72)
           .setDepth(32),
       );
-      const deliveredApple = this.add
-        .image(680, 234, 'apple')
+      const deliveredApple = addImage(680, 234, 'apple')
         .setDisplaySize(56, 56)
         .setDepth(33);
       const eggSupplies = [0, 1, 2].map((i) =>
-        this.add
-          .image(360 + i * 90, 250, 'egg')
+        addImage(360 + i * 90, 250, 'egg')
           .setDisplaySize(62, 62)
           .setDepth(32),
       );
-      const deliveredEgg = this.add
-        .image(625, 250, 'egg')
+      const deliveredEgg = addImage(625, 250, 'egg')
         .setDisplaySize(48, 48)
         .setDepth(33);
-      const deliveredKey = this.add
-        .image(655, 238, 'brass-key')
+      const deliveredKey = addImage(655, 238, 'brass-key')
         .setDisplaySize(44, 44)
         .setAngle(-12)
         .setDepth(32);
@@ -583,7 +578,7 @@ export function createGame(
       let lastRevision = -1;
       let lastDefinition = session.getSnapshot().room.definition;
       const contextSprites = Array.from({ length: 6 }, () =>
-        this.add.image(0, 0, 'brass-key').setDepth(34).setVisible(false),
+        this.add.image(0, 0, '__DEFAULT').setDepth(34).setVisible(false),
       );
       const childSprites: {
         sprite: Phaser.GameObjects.Image;
@@ -622,13 +617,11 @@ export function createGame(
         ...contextCards,
         ...contextCaptions,
       ];
-      const waitingRobot = this.add
-        .image(1000, 260, 'robot')
+      const waitingRobot = addImage(1000, 260, 'robot')
         .setDisplaySize(118, 118)
         .setDepth(34)
         .setVisible(false);
-      const marta = this.add
-        .image(830, 418, 'marta-emotes', '0')
+      const marta = addImage(830, 418, 'marta-emotes', '0')
         .setOrigin(0.5, 0.97)
         .setDisplaySize(230, 230)
         .setDepth(34)
@@ -695,6 +688,7 @@ export function createGame(
       };
       motion.addEventListener('change', onMotion);
       const render = () => {
+        if (!canRender()) return;
         const snapshot = session.getSnapshot();
         const state = snapshot.room;
         const station = Boolean(state.definition.message);
@@ -811,9 +805,11 @@ export function createGame(
         appleSupplies.forEach((apple, i) =>
           apple
             .setTexture(
-              reference?.objects[i]?.color === 'green'
-                ? 'apple-green'
-                : 'apple',
+              textureOrDefault(
+                reference?.objects[i]?.color === 'green'
+                  ? 'apple-green'
+                  : 'apple',
+              ),
             )
             .setVisible(
               episodes[state.episode].noun === 'apple' &&
@@ -839,9 +835,11 @@ export function createGame(
         );
         deliveredApple
           .setTexture(
-            indicated?.noun === 'apple' && indicated.color === 'green'
-              ? 'apple-green'
-              : 'apple',
+            textureOrDefault(
+              indicated?.noun === 'apple' && indicated.color === 'green'
+                ? 'apple-green'
+                : 'apple',
+            ),
           )
           .setVisible(
             state.episode === 'egg' ||
@@ -961,27 +959,26 @@ export function createGame(
                 .setStrokeStyle(3, 0x765339)
                 .setPosition(pos.x, pos.y)
                 .setVisible(true);
+            const texture = propTexture(object.noun);
             const size =
-              propTextures[object.noun] === 'robot'
+              texture === 'robot'
                 ? 118
                 : object.noun === 'umbrella'
                   ? 104
-                  : propTextures[object.noun] === 'book'
+                  : texture === 'book'
                     ? 86
                     : 74;
             sprite
-              .setTexture(propTextures[object.noun] ?? object.noun)
+              .setTexture(texture)
               .setDisplaySize(size, size)
               .setPosition(
                 pos.x - (object.count === 2 ? (station ? 36 : 18) : 0),
                 pos.y,
               )
-              .setAngle(propTextures[object.noun] === 'brass-key' ? -40 : 0)
+              .setAngle(texture === 'brass-key' ? -40 : 0)
               .setVisible(true);
             if (object.count === 2)
-              contextSprites[index * 2 + 1]!.setTexture(
-                propTextures[object.noun] ?? object.noun,
-              )
+              contextSprites[index * 2 + 1]!.setTexture(texture)
                 .setDisplaySize(size, size)
                 .setPosition(pos.x + (station ? 36 : 18), pos.y - 5)
                 .setAngle(0)
@@ -1092,6 +1089,7 @@ export function createGame(
         layout();
       };
       const present = (_time: number, delta: number) => {
+        if (!canRender()) return;
         const snapshot = session.getSnapshot(),
           state = snapshot.room;
         const animated =
@@ -1139,7 +1137,7 @@ export function createGame(
           parent.dataset.tikFrame = String(tikFrame);
         } else {
           waitingRobot
-            .setTexture('robot')
+            .setTexture(textureOrDefault('robot'))
             .setOrigin(0.5)
             .setPosition(1000, 260)
             .setDisplaySize(118, 118);
@@ -1255,26 +1253,27 @@ export function createGame(
                     : catTime < 5800
                       ? 3
                       : 0;
-        setEmote(cat, 'cat-emotes', catFrame, 220);
+        if (!state.definition.message)
+          setEmote(cat, 'cat-emotes', catFrame, 220);
         parent.dataset.catFrame = String(catFrame);
         parent.dataset.catMouth = catMouth;
       };
       this.events.on(Phaser.Scenes.Events.UPDATE, present);
       const off = session.subscribe(render);
-      this.events.once(Phaser.Scenes.Events.SHUTDOWN, () => {
+      this.events.once(Phaser.Scenes.Events.CREATE, render);
+      render();
+      return () => {
         this.scale.off(Phaser.Scale.Events.RESIZE, layout);
         this.game.events.off('room-layout', layout);
         off();
         this.events.off(Phaser.Scenes.Events.UPDATE, present);
+        this.events.off(Phaser.Scenes.Events.CREATE, render);
         motion.removeEventListener('change', onMotion);
         animation?.stop();
-      });
-      this.events.once(Phaser.Scenes.Events.CREATE, render);
-      render();
-      onLoadState('ready');
+      };
     }
   }
-  return new Phaser.Game({
+  const game = new Phaser.Game({
     type: Phaser.AUTO,
     parent,
     width: parent.clientWidth,
@@ -1288,4 +1287,16 @@ export function createGame(
     audio: { noAudio: true },
     banner: false,
   });
+  return {
+    game,
+    retry: () => retryScene?.(),
+    setActive: (visible: boolean) => {
+      active = visible;
+      syncActivity?.();
+    },
+    destroy: () => {
+      cancelScene?.();
+      game.destroy(true);
+    },
+  };
 }
