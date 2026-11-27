@@ -125,6 +125,7 @@ export function App({
   const [listening, setListening] = useState(false);
   const [conversation, setConversation] = useState<Conversation | null>(null);
   const [line, setLine] = useState(0);
+  const [dialogueSceneShown, setDialogueSceneShown] = useState(false);
   const [rotationHint, setRotationHint] = useState(true);
   const [fullscreenMessage, setFullscreenMessage] = useState('');
   const [status, setStatus] = useState(settings.status);
@@ -775,6 +776,8 @@ export function App({
               }}
               conversation={conversation}
               index={line}
+              sceneShown={dialogueSceneShown}
+              onToggleScene={() => setDialogueSceneShown((shown) => !shown)}
               onIndex={setLine}
               onFinish={() => setConversation(null)}
               onRestart={() => openPanel('restart')}

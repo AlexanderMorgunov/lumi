@@ -46,8 +46,8 @@ test('phone landscape fits the grid and keeps movement, listening and undo usabl
       const arrow = direction(name);
       await expect(arrow).toBeInViewport({ ratio: 1 });
       const box = (await arrow.boundingBox())!;
-      expect(box.width).toBeGreaterThanOrEqual(44);
-      expect(box.height).toBeGreaterThanOrEqual(44);
+      expect(box.width).toBe(55);
+      expect(box.height).toBe(55);
       await expect(arrow).toHaveCSS('background-color', 'rgba(0, 0, 0, 0)');
     }
     await direction('Влево').focus();
@@ -111,6 +111,10 @@ test('phone landscape fits the grid and keeps movement, listening and undo usabl
     await expect(position).toContainText('столбец 3, ряд 2 · Ходов: 3');
     await expect(undo).toBeInViewport({ ratio: 1 });
     await expect(direction('Вверх')).toBeInViewport({ ratio: 1 });
+    if (viewport === narrowFrame) {
+      await expect(direction('Вверх')).toHaveCSS('width', '55px');
+      await expect(direction('Вверх')).toHaveCSS('height', '55px');
+    }
     await page.screenshot({
       path: info.outputPath(
         `workshop-${viewport.width}x${viewport.height}.png`,

@@ -846,18 +846,6 @@ details p {
     left: 10px;
     right: 10px;
   }
-  .direction-pad {
-    display: grid;
-    grid-template-columns: repeat(3, 46px);
-    grid-template-rows: repeat(3, 46px);
-    gap: 2px;
-  }
-  .direction-pad button {
-    min-width: 46px;
-    min-height: 46px;
-    width: 46px;
-    height: 46px;
-  }
   .action-controls {
     width: 140px;
     display: grid;
@@ -1149,14 +1137,6 @@ details p {
     top: 64px;
     max-width: calc(100% - 32px);
     font-size: 0.7rem;
-  }
-  .direction-pad {
-    grid-template-columns: repeat(3, 44px);
-    grid-template-rows: repeat(2, 46px);
-    gap: 2px;
-  }
-  .direction-pad button {
-    width: 46px;
   }
   .direction-down {
     grid-column: 2;
@@ -1901,6 +1881,8 @@ details p {
     --field-left: max(8px, env(safe-area-inset-left));
     --field-right: max(8px, env(safe-area-inset-right));
     --field-bottom: max(4px, env(safe-area-inset-bottom));
+    --direction-size: 55px;
+    --direction-side-space: calc(3 * var(--direction-size) + 6px);
     display: grid;
     grid-template-rows: auto auto minmax(0, 1fr) auto;
     grid-template-columns: minmax(0, 1fr);
@@ -1955,6 +1937,19 @@ details p {
     grid-area: 4 / 1;
     z-index: 3;
   }
+  .workshop:not(.conversing) .direction-pad {
+    display: grid;
+    grid-template: repeat(2, var(--direction-size)) / repeat(
+        3,
+        var(--direction-size)
+      );
+    gap: 2px;
+  }
+  .workshop:not(.conversing) .direction-pad button {
+    width: var(--direction-size);
+    height: var(--direction-size);
+    font-size: 29px;
+  }
   .workshop:not(.conversing) .listening-bar {
     position: relative;
     inset: auto;
@@ -2003,7 +1998,7 @@ details p {
     max-width: 100%;
   }
   .workshop:not(.conversing) .game-toast {
-    bottom: calc(var(--field-bottom) + 106px);
+    bottom: calc(var(--field-bottom) + 2 * var(--direction-size) + 14px);
     width: max-content;
     max-width: calc(100% - var(--field-left) - var(--field-right));
   }
@@ -2013,7 +2008,7 @@ details p {
   .workshop:not(.conversing) .hud-bottom {
     justify-content: flex-end;
     align-items: center;
-    min-height: 46px;
+    min-height: var(--direction-size);
   }
   .workshop:not(.conversing) .movement-controls {
     position: absolute;
@@ -2022,17 +2017,11 @@ details p {
     left: var(--field-left);
   }
   .workshop:not(.conversing) .direction-pad {
-    display: grid;
-    grid-template: repeat(2, 46px) / repeat(3, 46px);
     gap: 0;
   }
   .workshop:not(.conversing) .direction-pad button {
     display: grid;
     place-items: center;
-    min-width: 46px;
-    min-height: 46px;
-    width: 46px;
-    height: 46px;
     background: transparent;
     border: 0;
     box-shadow: none;
@@ -2048,8 +2037,8 @@ details p {
   .workshop:not(.conversing) .direction-pad button span::after {
     content: '';
     display: block;
-    width: 12px;
-    height: 12px;
+    width: 14px;
+    height: 14px;
     border-top: 3px solid;
     border-right: 3px solid;
     transform: rotate(var(--chevron-angle));
@@ -2066,7 +2055,7 @@ details p {
   }
   .workshop:not(.conversing) .direction-up span {
     /* Keep the glyph below word labels in the bottom row. */
-    transform: translateY(14px);
+    transform: translateY(18px);
   }
   .workshop:not(.conversing) .direction-left {
     --chevron-angle: -135deg;
@@ -2086,7 +2075,7 @@ details p {
   .workshop:not(.conversing) .action-controls {
     display: flex;
     width: auto;
-    max-width: calc(100% - 144px);
+    max-width: calc(100% - var(--direction-side-space));
     gap: 6px;
   }
   .workshop:not(.conversing) .phrase-action {
@@ -2112,11 +2101,11 @@ details p {
     font-size: 1.3rem;
   }
   .workshop:not(.conversing) .listening-bar {
-    max-width: calc(100% - 144px);
+    max-width: calc(100% - var(--direction-side-space));
   }
   .workshop:not(.conversing) .game-toast {
-    bottom: calc(var(--field-bottom) + 54px);
+    bottom: calc(var(--field-bottom) + var(--direction-size) + 8px);
     width: max-content;
-    max-width: calc(100% - 2 * 144px);
+    max-width: calc(100% - 2 * var(--direction-side-space));
   }
 }
