@@ -8,7 +8,7 @@
   padding: clamp(24px, 6vw, 100px);
   background:
     linear-gradient(90deg, #101f23f5, #101f23bc 48%, #101f2333),
-    url('/art/station/station-v1.png') center / cover;
+    url('/art/station/station-v1.webp') center / cover;
 }
 .arrival-copy {
   max-width: 580px;

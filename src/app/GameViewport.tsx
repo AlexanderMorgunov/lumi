@@ -27,6 +27,9 @@ export function GameViewport({
   onSpeak,
   speaker,
   getMouth,
+  location,
+  retryBlocked,
+  active,
 }: {
   session: GameSession;
   container: RefObject<HTMLDivElement | null>;
@@ -39,26 +42,42 @@ export function GameViewport({
   onSpeak: (word: string) => void;
   speaker: string;
   getMouth: () => CatMouth;
+  location: 'workshop' | 'station';
+  retryBlocked: boolean;
+  active: boolean;
 }) {
   const [targets, setTargets] = useState<WordTarget[]>([]);
   const relayout = useRef<(() => void) | undefined>(undefined);
+  const retryScene = useRef<(() => void) | undefined>(undefined);
+  const setSceneActive = useRef<((active: boolean) => void) | undefined>(
+    undefined,
+  );
+  const activeRef = useRef(active);
+  const sceneState = useRef<SceneLoadState>('loading');
   const gesture = useRef<{ id: number; x: number; y: number } | null>(null);
   const [loadState, setLoadState] = useState<SceneLoadState>('loading');
+  const [engineAttempt, setEngineAttempt] = useState(0);
+  useEffect(() => {
+    activeRef.current = active;
+    setSceneActive.current?.(active);
+    session.setPaused('assets', active && sceneState.current !== 'ready');
+  }, [active, session]);
   useEffect(() => {
     const parent = container.current;
     if (!parent) return;
     let cancelled = false;
     let destroy: (() => void) | undefined;
-    session.setPaused('assets', true);
+    session.setPaused('assets', activeRef.current);
     const onLoadState = (state: SceneLoadState) => {
       if (cancelled) return;
+      sceneState.current = state;
       setLoadState(state);
-      session.setPaused('assets', state !== 'ready');
+      session.setPaused('assets', activeRef.current && state !== 'ready');
     };
     void import('../game/create-game')
       .then(({ createGame }) => {
         if (cancelled) return;
-        const game = createGame(
+        const scene = createGame(
           parent,
           session,
           onLoadState,
@@ -66,7 +85,11 @@ export function GameViewport({
             if (!cancelled) setTargets(words);
           },
           getMouth,
+          activeRef.current,
         );
+        const { game } = scene;
+        retryScene.current = scene.retry;
+        setSceneActive.current = scene.setActive;
         relayout.current = () => game.events.emit('room-layout');
         const resize = new ResizeObserver((entries) => {
           const { clientWidth, clientHeight } = parent;
@@ -89,7 +112,9 @@ export function GameViewport({
         destroy = () => {
           resize.disconnect();
           relayout.current = undefined;
-          game.destroy(true);
+          retryScene.current = undefined;
+          setSceneActive.current = undefined;
+          scene.destroy();
         };
       })
       .catch(() => {
@@ -100,29 +125,55 @@ export function GameViewport({
       destroy?.();
       session.setPaused('assets', false);
     };
-  }, [session, container, getMouth]);
+  }, [session, container, getMouth, engineAttempt]);
   useEffect(() => {
     relayout.current?.();
   }, [conversation, listening]);
 
+  function retry() {
+    const { externallyPaused, closed } = session.getSnapshot();
+    if (externallyPaused || closed) return;
+    container.current?.focus({ preventScroll: true });
+    if (retryScene.current) {
+      retryScene.current();
+    } else {
+      sceneState.current = 'loading';
+      setLoadState('loading');
+      setEngineAttempt((attempt) => attempt + 1);
+    }
+  }
+
   return (
     <>
+      <div
+        role={loadState === 'loading' ? 'status' : undefined}
+        aria-live="polite"
+        aria-atomic="true"
+        className="session-message"
+      >
+        {loadState === 'loading' &&
+          (location === 'station'
+            ? 'Загружаем станцию…'
+            : 'Загружаем мастерскую…')}
+      </div>
       {loadState === 'error' && (
-        <p role="alert" className="session-message">
-          Сцена не загрузилась. Перезагрузите страницу, чтобы повторить.
-        </p>
-      )}
-      {loadState === 'loading' && (
-        <p className="session-message">Загружаем сцену…</p>
+        <div className="session-message">
+          <p role="alert">Сцена не загрузилась</p>
+          <button type="button" disabled={retryBlocked} onClick={retry}>
+            Повторить загрузку
+          </button>
+        </div>
       )}
       <div
+        id="game-scene"
         className="viewport"
         ref={container}
         data-scene-state={loadState}
         data-conversation={conversation}
         data-speaker={conversation ? speaker : ''}
         data-listening={listening}
-        tabIndex={0}
+        tabIndex={loadState === 'ready' && !conversation ? 0 : -1}
+        aria-busy={loadState === 'loading'}
         role="group"
         aria-label="Игровое поле. WASD или стрелки — ход и толкание, Z — отмена, Enter — передать фразу, Escape — меню."
         onPointerDown={(event) => {

@@ -1,4 +1,4 @@
-import { useEffect, useRef, type RefObject } from 'react';
+import { useEffect, useRef, useState, type RefObject } from 'react';
 import { CatPortrait } from './CatPortrait';
 import { StationPortrait } from './StationPortrait';
 import { LumiPortrait } from './Prologue';
@@ -81,6 +81,7 @@ export function CatDialogue({
   const ref = useRef<HTMLElement>(null);
   const answerFeedback = useRef<HTMLParagraphElement>(null);
   const replyArea = useRef<HTMLDivElement>(null);
+  const [sceneShown, setSceneShown] = useState(false);
   const story = dialogueStory(room, conversation);
   const speaker = dialogueSpeaker(room, conversation, index);
   const reflection =
@@ -113,6 +114,11 @@ export function CatDialogue({
       if (target?.isConnected) target.focus({ preventScroll: true });
     };
   }, [field]);
+  function changeLine(nextIndex: number) {
+    setSceneShown(false);
+    replyArea.current?.scrollTo({ top: 0 });
+    onIndex(nextIndex);
+  }
   function next() {
     if (suspended) return;
     if (canRetry) {
@@ -128,12 +134,13 @@ export function CatDialogue({
       return;
     }
     if (last) onFinish();
-    else onIndex(index + 1);
+    else changeLine(index + 1);
   }
   return (
     <section
       ref={ref}
       className="cat-dialogue"
+      data-scene-shown={sceneShown}
       data-speaker={speaker}
       aria-label={speakerDialogueLabels[speaker]}
       tabIndex={-1}
@@ -297,8 +304,17 @@ export function CatDialogue({
         )}
       </div>
       <div className="cat-actions">
+        <button
+          type="button"
+          className="cat-scene-toggle"
+          aria-controls="game-scene"
+          aria-expanded={sceneShown}
+          onClick={() => setSceneShown((shown) => !shown)}
+        >
+          {sceneShown ? 'Скрыть сцену' : 'Показать сцену'}
+        </button>
         {index > 0 && !meaningCheck && (
-          <button onClick={() => onIndex(index - 1)}>Назад</button>
+          <button onClick={() => changeLine(index - 1)}>Назад</button>
         )}
         {conversation === 'success' && !meaningCheck && (
           <button onClick={onRestart}>Начать эпизод заново…</button>

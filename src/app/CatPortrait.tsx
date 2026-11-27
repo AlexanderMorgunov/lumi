@@ -48,7 +48,7 @@ export function CatPortrait({
         ref={portrait}
         className="cat-portrait-motion"
         data-mouth="rest"
-        style={{ backgroundImage: `url(${art}lumi/cat-emotes-v1.png)` }}
+        style={{ backgroundImage: `url(${art}lumi/cat-emotes-v1.webp)` }}
       />
     </div>
   );

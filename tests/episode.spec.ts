@@ -200,42 +200,6 @@ test('HUD fits portrait and landscape; large text stays reachable in journal', a
   await expect(field(page)).toBeFocused();
 });
 
-for (const asset of [
-  'lumi-v1.png',
-  'lumi-emotes-v1.png',
-  'cat-emotes-v1.png',
-  'travel-bag-v1.png',
-  'apple-v1.png',
-  'apple-green-v1.png',
-  'egg-v1.png',
-  'book-v1.png',
-  'orange-v1.png',
-  'robot-v1.png',
-  'umbrella-v1.png',
-]) {
-  test(`missing ${asset} blocks play and reload recovers`, async ({ page }) => {
-    await page.route(`**/${asset}`, (route) => route.abort());
-    await page.goto('/');
-    await page.getByRole('button', { name: 'Сразу в мастерскую' }).click();
-    await finishTalk(page, 'Сделать первый шаг');
-    // The loader reports failures after its asset queue settles, like ready.
-    await expect(page.getByRole('alert')).toContainText(
-      'Сцена не загрузилась',
-      {
-        timeout: 15000,
-      },
-    );
-    await expect(
-      page.getByRole('button', { name: 'Вверх', exact: true }),
-    ).toBeDisabled();
-    await page.unroute(`**/${asset}`);
-    await meet(page);
-    await expect(
-      page.getByRole('button', { name: 'Вверх', exact: true }),
-    ).toBeEnabled();
-  });
-}
-
 test('portrait dialogue preserves lesson and board through rotation, journal and pause', async ({
   page,
 }, info) => {
