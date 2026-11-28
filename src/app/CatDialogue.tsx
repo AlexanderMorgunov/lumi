@@ -1,4 +1,4 @@
-import { useEffect, useRef, type RefObject } from 'react';
+import { useEffect, useRef, type ReactNode, type RefObject } from 'react';
 import { CatPortrait } from './CatPortrait';
 import { StationPortrait } from './StationPortrait';
 import { LumiPortrait } from './Prologue';
@@ -37,8 +37,9 @@ export type { Conversation } from '../domain/dialogue';
 export function CatDialogue({
   conversation,
   index,
+  compact,
   sceneShown,
-  onToggleScene,
+  sceneToggle,
   onIndex,
   onFinish,
   onRestart,
@@ -56,8 +57,9 @@ export function CatDialogue({
 }: {
   conversation: Conversation;
   index: number;
+  compact: boolean;
   sceneShown: boolean;
-  onToggleScene: () => void;
+  sceneToggle: ReactNode;
   onIndex: (index: number) => void;
   onFinish: () => void;
   onRestart: () => void;
@@ -138,6 +140,44 @@ export function CatDialogue({
     if (last) onFinish();
     else changeLine(index + 1);
   }
+  const previousAction = index > 0 && !meaningCheck && (
+    <button onClick={() => changeLine(index - 1)}>Назад</button>
+  );
+  const restartAction = conversation === 'success' && !meaningCheck && (
+    <button
+      aria-label={compact ? 'Начать эпизод заново…' : undefined}
+      onClick={onRestart}
+    >
+      {compact ? 'Заново…' : 'Начать эпизод заново…'}
+    </button>
+  );
+  const continueAction = nextEpisode && (
+    <button className="primary" onClick={onNextEpisode}>
+      {room.definition.continuation
+        ? (room.definition.presentation?.continuationAction ??
+          'Следующая часть')
+        : room.episode === 'chapterFinale'
+          ? 'Отправиться на станцию'
+          : room.definition.message
+            ? 'Следующий эпизод'
+            : 'Следующая просьба'}
+    </button>
+  );
+  const replyAction = (
+    <button
+      className={nextEpisode ? 'quiet' : 'primary'}
+      disabled={!canContinue && !canRetry}
+      onClick={nextEpisode ? onFinish : next}
+    >
+      {nextEpisode
+        ? 'Вернуться к полю'
+        : canRetry
+          ? 'Выбрать другой ответ'
+          : last
+            ? story.action
+            : 'Дальше'}
+    </button>
+  );
   return (
     <section
       ref={ref}
@@ -230,7 +270,11 @@ export function CatDialogue({
               onClick={catVoice.onToggle}
               title={catVoice.enabled ? 'Выключить речь' : 'Включить речь'}
             >
-              {catVoice.enabled ? 'Голос: вкл.' : 'Голос: выкл.'}
+              {compact
+                ? 'Голос'
+                : catVoice.enabled
+                  ? 'Голос: вкл.'
+                  : 'Голос: выкл.'}
             </button>
             <button
               type="button"
@@ -306,46 +350,28 @@ export function CatDialogue({
         )}
       </div>
       <div className="cat-actions">
-        <button
-          type="button"
-          className="cat-scene-toggle"
-          aria-controls="game-scene"
-          aria-expanded={sceneShown}
-          onClick={onToggleScene}
-        >
-          {sceneShown ? 'Скрыть сцену' : 'Показать сцену'}
-        </button>
-        {index > 0 && !meaningCheck && (
-          <button onClick={() => changeLine(index - 1)}>Назад</button>
+        {compact ? (
+          <>
+            <div className="cat-primary-actions">
+              {previousAction}
+              {continueAction || replyAction}
+            </div>
+            {(nextEpisode || restartAction) && (
+              <div className="cat-secondary-actions">
+                {nextEpisode && replyAction}
+                {restartAction}
+              </div>
+            )}
+          </>
+        ) : (
+          <>
+            {sceneToggle}
+            {previousAction}
+            {restartAction}
+            {continueAction}
+            {replyAction}
+          </>
         )}
-        {conversation === 'success' && !meaningCheck && (
-          <button onClick={onRestart}>Начать эпизод заново…</button>
-        )}
-        {nextEpisode && (
-          <button className="primary" onClick={onNextEpisode}>
-            {room.definition.continuation
-              ? (room.definition.presentation?.continuationAction ??
-                'Следующая часть')
-              : room.episode === 'chapterFinale'
-                ? 'Отправиться на станцию'
-                : room.definition.message
-                  ? 'Следующий эпизод'
-                  : 'Следующая просьба'}
-          </button>
-        )}
-        <button
-          className={nextEpisode ? 'quiet' : 'primary'}
-          disabled={!canContinue && !canRetry}
-          onClick={nextEpisode ? onFinish : next}
-        >
-          {nextEpisode
-            ? 'Вернуться к полю'
-            : canRetry
-              ? 'Выбрать другой ответ'
-              : last
-                ? story.action
-                : 'Дальше'}
-        </button>
       </div>
     </section>
   );

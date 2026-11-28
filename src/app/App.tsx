@@ -33,6 +33,16 @@ import {
 } from '../domain/puzzle';
 
 const defaultSettings = platformSettings();
+const mobileDialogueQuery =
+  '(pointer: coarse) and (hover: none) and (max-width: 599px), ' +
+  '(pointer: coarse) and (hover: none) and (orientation: landscape) and (max-width: 1024px) and (max-height: 530px)';
+const usesMobileDialogue = () => matchMedia(mobileDialogueQuery).matches;
+function watchMobileDialogue(onChange: () => void) {
+  const media = matchMedia(mobileDialogueQuery);
+  media.addEventListener('change', onChange);
+  return () => media.removeEventListener('change', onChange);
+}
+
 const controls: { direction: Direction; label: string; icon: string }[] = [
   { direction: 'up', label: 'Вверх', icon: '↑' },
   { direction: 'left', label: 'Влево', icon: '←' },
@@ -125,7 +135,14 @@ export function App({
   const [listening, setListening] = useState(false);
   const [conversation, setConversation] = useState<Conversation | null>(null);
   const [line, setLine] = useState(0);
-  const [dialogueSceneShown, setDialogueSceneShown] = useState(false);
+  const [dialogueScenePreference, setDialogueScenePreference] = useState<
+    boolean | null
+  >(null);
+  const mobileDialogue = useSyncExternalStore(
+    watchMobileDialogue,
+    usesMobileDialogue,
+  );
+  const dialogueSceneShown = dialogueScenePreference ?? mobileDialogue;
   const [rotationHint, setRotationHint] = useState(true);
   const [fullscreenMessage, setFullscreenMessage] = useState('');
   const [status, setStatus] = useState(settings.status);
@@ -306,6 +323,18 @@ export function App({
       onClick={() => void fullscreen()}
     />
   );
+  const sceneToggle = conversation && (
+    <button
+      type="button"
+      className="cat-scene-toggle"
+      aria-controls="game-scene"
+      aria-expanded={dialogueSceneShown}
+      disabled={state.externallyPaused || state.closed || panel !== null}
+      onClick={() => setDialogueScenePreference(!dialogueSceneShown)}
+    >
+      {dialogueSceneShown ? 'Скрыть сцену' : 'Показать сцену'}
+    </button>
+  );
 
   function enterWorkshop() {
     setScreen('workshop');
@@ -459,7 +488,7 @@ export function App({
       )}
       {entered && (
         <section
-          className={`workshop ${conversation ? 'conversing' : ''} ${screen !== 'workshop' ? 'concealed' : ''}`}
+          className={`workshop ${conversation ? 'conversing' : ''} ${conversation && mobileDialogue ? 'mobile-dialogue' : ''} ${screen !== 'workshop' ? 'concealed' : ''}`}
           inert={screen !== 'workshop'}
           aria-label={
             room.definition.message
@@ -467,6 +496,7 @@ export function App({
               : 'Головоломка в мастерской'
           }
           data-episode={room.episode}
+          data-dialogue-scene={conversation ? dialogueSceneShown : undefined}
         >
           <GameViewport
             speaker={dialogueSpeaker(room, conversation, line)}
@@ -500,6 +530,7 @@ export function App({
             </div>
             <nav aria-label="Игровые панели">
               {windowButton}
+              {mobileDialogue && sceneToggle}
               <button
                 className="listen-toggle"
                 aria-label="Слушать слова на поле"
@@ -776,8 +807,9 @@ export function App({
               }}
               conversation={conversation}
               index={line}
+              compact={mobileDialogue}
               sceneShown={dialogueSceneShown}
-              onToggleScene={() => setDialogueSceneShown((shown) => !shown)}
+              sceneToggle={mobileDialogue ? null : sceneToggle}
               onIndex={setLine}
               onFinish={() => setConversation(null)}
               onRestart={() => openPanel('restart')}
